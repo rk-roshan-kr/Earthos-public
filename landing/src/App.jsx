@@ -2268,32 +2268,7 @@ export default function App() {
     return () => unsubscribe();
   }, [act3SmoothProgress]);
 
-  // Load Buy Me a Coffee button script
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js";
-    script.setAttribute('data-name', 'bmc-button');
-    script.setAttribute('data-slug', 'roshankumargupta');
-    script.setAttribute('data-color', '#FFDD00');
-    script.setAttribute('data-emoji', '☕');
-    script.setAttribute('data-font', 'Cookie');
-    script.setAttribute('data-text', 'Buy me a coffee');
-    script.setAttribute('data-outline-color', '#000000');
-    script.setAttribute('data-font-color', '#000000');
-    script.setAttribute('data-coffee-color', '#ffffff');
-    script.async = true;
-    
-    const target = document.getElementById('bmc-container');
-    if (target) {
-      target.appendChild(script);
-    }
-    
-    return () => {
-      if (target) {
-        target.innerHTML = '';
-      }
-    };
-  }, []);
+
 
   // High-performance direct transforms (No-render 120fps animations)
   const leftWidth = useTransform(act3SmoothProgress, [0, 1], ['24vw', '0vw']);
@@ -4216,7 +4191,27 @@ export default function App() {
               }}>
                 Source <ExternalLink size={12} />
               </a>
-              <div id="bmc-container" style={{ display: 'flex', alignItems: 'center', height: '40px' }}></div>
+              <a 
+                href="https://www.buymeacoffee.com/roshankumargupta" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ 
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  height: '40px',
+                  borderRadius: '5px',
+                  overflow: 'hidden',
+                  transition: 'opacity 0.25s'
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.85'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.opacity = '1.0'; }}
+              >
+                <img 
+                  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" 
+                  alt="Buy Me A Coffee" 
+                  style={{ height: '40px', width: 'auto' }}
+                />
+              </a>
             </motion.div>
           </motion.div>
 
