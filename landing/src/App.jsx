@@ -4523,7 +4523,7 @@ export default function App() {
             justifyContent: 'center',
             flexWrap: isNavHovered && isMobile ? 'wrap' : 'nowrap',
             height: isNavHovered ? (isMobile ? 'auto' : '48px') : '4px',
-            width: isNavHovered ? (isMobile ? '90%' : '780px') : '90px',
+            width: isNavHovered ? (isMobile ? '90%' : 'max-content') : '90px',
             borderRadius: isNavHovered ? '24px' : '2px',
             background: isNavHovered ? 'rgba(12, 10, 8, 0.72)' : 'rgba(198, 122, 74, 0.5)',
             border: isNavHovered ? '1px solid rgba(255, 255, 255, 0.08)' : 'none',
@@ -4532,20 +4532,20 @@ export default function App() {
             boxShadow: isNavHovered ? '0 10px 30px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.05)' : 'none',
             transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
             overflow: 'hidden',
-            padding: isNavHovered ? (isMobile ? '0.8rem 1rem' : '0 1.5rem') : '0',
-            gap: isNavHovered ? '0.4rem' : '0',
+            padding: isNavHovered ? (isMobile ? '0.8rem 1rem' : '0 2rem') : '0',
+            gap: isNavHovered ? '0.8rem' : '0',
             cursor: 'pointer',
           }}
         >
           {isNavHovered ? (
             [
-              { label: '01 // Entrance', index: 0 },
-              { label: '02 // Critique', index: 1 },
-              { label: '03 // Convergence', index: 2 },
-              { label: '04 // Lab', index: 3 },
-              { label: '05 // Sectors', index: 4 },
-              { label: '06 // Archive', index: 13 },
-              { label: '07 // Collaboration', index: 14 }
+              { label: 'INTRO', index: 0 },
+              { label: 'CRITIQUE', index: 1 },
+              { label: 'CONVERGENCE', index: 2 },
+              { label: 'LAB', index: 3 },
+              { label: 'SECTORS', index: 4 },
+              { label: 'ARCHIVE', index: 13 },
+              { label: 'CONTACT', index: 14 }
             ].map((item) => (
               <button
                 key={item.index}
