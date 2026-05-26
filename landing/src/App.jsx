@@ -4503,14 +4503,15 @@ export default function App() {
         style={{
           position: 'fixed',
           top: 0,
-          left: 0,
-          width: '100%',
+          right: 0,
+          width: 'auto',
           height: '60px',
           zIndex: 99999,
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'flex-end',
           alignItems: 'flex-start',
           paddingTop: '1.2rem',
+          paddingRight: '2.5rem',
           pointerEvents: 'none',
         }}
       >
@@ -4523,7 +4524,7 @@ export default function App() {
             justifyContent: 'center',
             flexWrap: isNavHovered && isMobile ? 'wrap' : 'nowrap',
             height: isNavHovered ? (isMobile ? 'auto' : '48px') : '4px',
-            width: isNavHovered ? (isMobile ? '90%' : 'max-content') : '90px',
+            width: isNavHovered ? (isMobile ? '90vw' : 'max-content') : '60px',
             borderRadius: isNavHovered ? '24px' : '2px',
             background: isNavHovered ? 'rgba(12, 10, 8, 0.72)' : 'rgba(198, 122, 74, 0.5)',
             border: isNavHovered ? '1px solid rgba(255, 255, 255, 0.08)' : 'none',
