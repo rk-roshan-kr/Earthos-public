@@ -2215,9 +2215,10 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
 export default function App() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isContactOpen, setIsContactOpen] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', purpose: 'Research Collaboration', message: '' });
+  const [formData, setFormData] = useState({ name: '', email: '', purpose: 'Research Collaboration', message: '', customPurpose: '' });
   const [submitStatus, setSubmitStatus] = useState('idle'); // idle | submitting | success | error
   const [isNavHovered, setIsNavHovered] = useState(false);
+  const [attachmentFile, setAttachmentFile] = useState(null);
 
   const handleFormChange = (e) => {
     const { name, value } = e.target;
@@ -2228,18 +2229,28 @@ export default function App() {
     e.preventDefault();
     setSubmitStatus('submitting');
     try {
-      const body = new URLSearchParams({
-        'form-name': 'contact',
-        ...formData
-      }).toString();
+      const data = new FormData();
+      data.append('form-name', 'contact');
+      data.append('name', formData.name);
+      data.append('email', formData.email);
+      if (formData.purpose === 'Other / Custom' && formData.customPurpose) {
+        data.append('purpose', `Custom: ${formData.customPurpose}`);
+      } else {
+        data.append('purpose', formData.purpose);
+      }
+      data.append('message', formData.message);
+      if (attachmentFile) {
+        data.append('attachment', attachmentFile);
+      }
+
       const response = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body
+        body: data
       });
       if (response.ok) {
         setSubmitStatus('success');
-        setFormData({ name: '', email: '', purpose: 'Research Collaboration', message: '' });
+        setFormData({ name: '', email: '', purpose: 'Research Collaboration', message: '', customPurpose: '' });
+        setAttachmentFile(null);
       } else {
         setSubmitStatus('error');
       }
@@ -4296,13 +4307,13 @@ export default function App() {
               style={{
                 position: 'relative',
                 width: '100%',
-                maxWidth: '480px',
+                maxWidth: '490px',
                 background: 'rgba(12, 12, 14, 0.92)',
                 border: '1px solid rgba(198, 122, 74, 0.25)',
                 backdropFilter: 'blur(30px)',
                 WebkitBackdropFilter: 'blur(30px)',
                 boxShadow: '0 20px 50px rgba(0, 0, 0, 0.8)',
-                padding: '3rem 2.5rem',
+                padding: '2.5rem 2.2rem',
                 zIndex: 1,
               }}
             >
@@ -4332,7 +4343,7 @@ export default function App() {
                 ✕
               </button>
 
-              <div className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-copper)', marginBottom: '1.5rem', textTransform: 'uppercase', letterSpacing: '0.15em' }}>
+              <div className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-copper)', marginBottom: '1.2rem', textTransform: 'uppercase', letterSpacing: '0.15em' }}>
                 OBSERVATORY PROTOCOL // REGISTRY INPUT
               </div>
 
@@ -4365,11 +4376,11 @@ export default function App() {
                   </button>
                 </div>
               ) : (
-                <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.8rem' }}>
+                <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.4rem' }}>
                   
                   {/* Name field */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.4)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>IDENTITY / NAME</label>
+                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.5)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>IDENTITY / NAME</label>
                     <input
                       type="text"
                       name="name"
@@ -4381,22 +4392,22 @@ export default function App() {
                       style={{
                         background: 'transparent',
                         border: 'none',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.12)',
+                        borderBottom: '1px solid rgba(255, 255, 255, 0.18)',
                         color: '#ffffff',
                         fontFamily: 'var(--font-mono)',
                         fontSize: '0.85rem',
-                        padding: '0.4rem 0',
+                        padding: '0.3rem 0',
                         outline: 'none',
                         transition: 'border-color 0.25s ease',
                       }}
                       onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
-                      onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)'}
+                      onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.18)'}
                     />
                   </div>
 
                   {/* Email field */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.4)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>UPLINK ADDRESS / EMAIL</label>
+                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.5)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>UPLINK ADDRESS / EMAIL</label>
                     <input
                       type="email"
                       name="email"
@@ -4408,22 +4419,22 @@ export default function App() {
                       style={{
                         background: 'transparent',
                         border: 'none',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.12)',
+                        borderBottom: '1px solid rgba(255, 255, 255, 0.18)',
                         color: '#ffffff',
                         fontFamily: 'var(--font-mono)',
                         fontSize: '0.85rem',
-                        padding: '0.4rem 0',
+                        padding: '0.3rem 0',
                         outline: 'none',
                         transition: 'border-color 0.25s ease',
                       }}
                       onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
-                      onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)'}
+                      onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.18)'}
                     />
                   </div>
 
                   {/* Purpose field */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.4)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>ROUTING / PURPOSE</label>
+                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.5)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>ROUTING / PURPOSE</label>
                     <div style={{ position: 'relative', display: 'flex', flexDirection: 'column' }}>
                       <select
                         name="purpose"
@@ -4433,11 +4444,11 @@ export default function App() {
                         style={{
                           background: 'transparent',
                           border: 'none',
-                          borderBottom: '1px solid rgba(255, 255, 255, 0.12)',
+                          borderBottom: '1px solid rgba(255, 255, 255, 0.18)',
                           color: '#ffffff',
                           fontFamily: 'var(--font-mono)',
                           fontSize: '0.85rem',
-                          padding: '0.4rem 0',
+                          padding: '0.3rem 0',
                           outline: 'none',
                           cursor: 'pointer',
                           appearance: 'none',
@@ -4447,16 +4458,22 @@ export default function App() {
                         }}
                       >
                         <option value="Research Collaboration" style={{ background: '#0a0a0b' }}>Research Collaboration</option>
-                        <option value="Compute Sponsorship" style={{ background: '#0a0a0b' }}>Compute Sponsorship</option>
-                        <option value="Access Request" style={{ background: '#0a0a0b' }}>Codebase Access Request</option>
-                        <option value="General Inquiry" style={{ background: '#0a0a0b' }}>General Inquiry</option>
+                        <option value="Compute & Hardware Sponsorship" style={{ background: '#0a0a0b' }}>Compute & Hardware Sponsorship</option>
+                        <option value="Codebase Access Request" style={{ background: '#0a0a0b' }}>Codebase Access Request</option>
+                        <option value="Algorithm Auditing & Verification" style={{ background: '#0a0a0b' }}>Algorithm Auditing & Verification</option>
+                        <option value="Research Fellowship Application" style={{ background: '#0a0a0b' }}>Research Fellowship Application</option>
+                        <option value="Commercial Licensing & Integration" style={{ background: '#0a0a0b' }}>Commercial Licensing & Integration</option>
+                        <option value="Active Inference Consulting" style={{ background: '#0a0a0b' }}>Active Inference Consulting</option>
+                        <option value="Observatory Node Deployment" style={{ background: '#0a0a0b' }}>Observatory Node Deployment</option>
+                        <option value="Investment & Grants" style={{ background: '#0a0a0b' }}>Investment & Grants</option>
+                        <option value="Other / Custom" style={{ background: '#0a0a0b' }}>Other / Custom Inquiry...</option>
                       </select>
                       <span className="mono" style={{
                         position: 'absolute',
                         right: '0.2rem',
                         top: '50%',
                         transform: 'translateY(-50%)',
-                        color: 'rgba(255, 255, 255, 0.4)',
+                        color: 'rgba(255, 255, 255, 0.5)',
                         fontSize: '0.6rem',
                         pointerEvents: 'none'
                       }}>
@@ -4465,9 +4482,35 @@ export default function App() {
                     </div>
                   </div>
 
+                  {/* Custom purpose specifier (conditionally shown) */}
+                  {formData.purpose === 'Other / Custom' && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                      <label className="mono" style={{ fontSize: '0.58rem', color: 'var(--earth-copper)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>SPECIFY CUSTOM PURPOSE</label>
+                      <input
+                        type="text"
+                        name="customPurpose"
+                        required
+                        value={formData.customPurpose || ''}
+                        onChange={(e) => setFormData(prev => ({ ...prev, customPurpose: e.target.value }))}
+                        disabled={submitStatus === 'submitting'}
+                        placeholder="e.g. Guest Lecture Request"
+                        style={{
+                          background: 'transparent',
+                          border: 'none',
+                          borderBottom: '1px solid var(--earth-copper)',
+                          color: '#ffffff',
+                          fontFamily: 'var(--font-mono)',
+                          fontSize: '0.85rem',
+                          padding: '0.3rem 0',
+                          outline: 'none',
+                        }}
+                      />
+                    </div>
+                  )}
+
                   {/* Message field */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
-                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.4)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>PAYLOAD / MESSAGE</label>
+                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.5)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>PAYLOAD / MESSAGE</label>
                     <textarea
                       name="message"
                       required
@@ -4479,18 +4522,74 @@ export default function App() {
                       style={{
                         background: 'transparent',
                         border: 'none',
-                        borderBottom: '1px solid rgba(255, 255, 255, 0.12)',
+                        borderBottom: '1px solid rgba(255, 255, 255, 0.18)',
                         color: '#ffffff',
                         fontFamily: 'var(--font-mono)',
                         fontSize: '0.85rem',
-                        padding: '0.4rem 0',
+                        padding: '0.3rem 0',
                         outline: 'none',
                         resize: 'none',
                         transition: 'border-color 0.25s ease',
                       }}
                       onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
-                      onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.12)'}
+                      onBlur={(e) => e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.18)'}
                     />
+                  </div>
+
+                  {/* Attachment field */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                    <label className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255, 255, 255, 0.5)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>ATTACHMENT / FILE</label>
+                    <div style={{ position: 'relative', display: 'flex', alignItems: 'center', borderBottom: '1px solid rgba(255, 255, 255, 0.18)', padding: '0.4rem 0' }}>
+                      <input
+                        type="file"
+                        name="attachment"
+                        disabled={submitStatus === 'submitting'}
+                        onChange={(e) => setAttachmentFile(e.target.files[0])}
+                        style={{
+                          display: 'none',
+                        }}
+                        id="form-file-upload"
+                      />
+                      <label
+                        htmlFor="form-file-upload"
+                        style={{
+                          color: 'var(--earth-copper)',
+                          fontFamily: 'var(--font-mono)',
+                          fontSize: '0.8rem',
+                          cursor: 'pointer',
+                          letterSpacing: '0.05em',
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '0.5rem',
+                          transition: 'color 0.2s',
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.color = '#ffffff'}
+                        onMouseLeave={(e) => e.currentTarget.style.color = 'var(--earth-copper)'}
+                      >
+                        📎 {attachmentFile ? 'REPLACE FILE' : 'ATTACH FILE'}
+                      </label>
+                      {attachmentFile && (
+                        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                          <span className="mono" style={{ fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.8)' }}>
+                            {attachmentFile.name.length > 20 ? attachmentFile.name.substring(0, 17) + '...' : attachmentFile.name}
+                          </span>
+                          <button
+                            type="button"
+                            onClick={() => setAttachmentFile(null)}
+                            style={{
+                              background: 'none',
+                              border: 'none',
+                              color: '#ff6b6b',
+                              cursor: 'pointer',
+                              fontSize: '0.8rem',
+                              padding: '0.1rem 0.3rem'
+                            }}
+                          >
+                            ✕
+                          </button>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   {submitStatus === 'error' && (

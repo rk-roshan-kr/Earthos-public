@@ -10,11 +10,12 @@
   <body>
     <div id="root"></div>
     <!-- Hidden form for Netlify Form detection and registration -->
-    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <form name="contact" data-netlify="true" enctype="multipart/form-data" netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="text" name="purpose" />
       <textarea name="message"></textarea>
+      <input type="file" name="attachment" />
     </form>
     <script type="module" src="/src/main.jsx"></script>
   </body>

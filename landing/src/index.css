@@ -6,26 +6,26 @@
   --earth-surface: #12100e;
   --earth-elevated: #1c1915;
   --earth-text: #f5f3f0;
-  --earth-dim: #c5beaf;
-  --earth-muted: #7f7669;
+  --earth-dim: #d8d2c4;      /* Increased contrast */
+  --earth-muted: #9e9486;    /* Increased contrast */
   --earth-copper: #c67a4a;
   --earth-sage: #6b8f7a;
   --earth-sand: #c4a97d;
   --earth-clay: #a85d4a;
-  --earth-stone: #6e6960;
-  --earth-border: rgba(232, 228, 223, 0.12);
+  --earth-stone: #8c867c;    /* Increased contrast */
+  --earth-border: rgba(232, 228, 223, 0.18); /* Increased contrast */
 
   /* ═══ SYNAPSE — neural, unstable, electric ═══ */
   --syn-void: #06080a;
   --syn-surface: #0c0f14;
   --syn-silver: #e2e6eb;
-  --syn-dim: #a1aab8;
-  --syn-muted: #575e6a;
+  --syn-dim: #cbd3de;      /* Increased contrast */
+  --syn-muted: #828c99;    /* Increased contrast */
   --syn-electric: #8b9dc3;
   --syn-crimson: #a85252;
   --syn-plasma: #c4a050;
   --syn-scar: #7d3f3f;
-  --syn-border: rgba(139, 157, 195, 0.16);
+  --syn-border: rgba(139, 157, 195, 0.22); /* Increased contrast */
 
   /* ═══ Typography ═══ */
   --font-serif: 'EB Garamond', Georgia, serif;
