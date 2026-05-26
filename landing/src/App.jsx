@@ -2236,6 +2236,10 @@ export default function App() {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     setSubmitStatus('submitting');
+    
+    // Check if running on localhost / development environment
+    const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    
     try {
       const data = new FormData();
       data.append('form-name', 'contact');
@@ -2249,6 +2253,16 @@ export default function App() {
       data.append('message', formData.message);
       if (attachmentFile) {
         data.append('attachment', attachmentFile);
+      }
+
+      if (isDev) {
+        // Simulate local network latency and succeed
+        console.log('[Dev mode] Simulating Netlify Form submission payload:', Object.fromEntries(data.entries()));
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', purpose: 'Research Collaboration', message: '', customPurpose: '' });
+        setAttachmentFile(null);
+        return;
       }
 
       const response = await fetch('/', {
