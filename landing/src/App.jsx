@@ -10,57 +10,86 @@ import CinematicTitle from './CinematicTitle';
 const FAILURES = [
   {
     id: 'f1',
-    t: 'Monitor Bureaucracy',
+    t: 'Recursive Reflection',
     p: '1',
     icon: <ShieldAlert size={14} className="text-[#a85d4a]" />,
-    thought: 'More monitoring layers would stabilize cognition.',
-    real: 'The system spent more cycles measuring cognition than performing it. We introduced a triple-redundant self-audit loop to catch logic drift. The result was a symbolic deadlock: the secondary auditor blocked memory updates because the primary auditor had not yet finalized coordinate verification, while the primary was waiting for resource approval. The system stood still while consuming maximum power.',
-    fix: 'Collapsed the monitoring hierarchy into a single, unified homeostatic damping factor. Rather than audit logic symbolically, we bound it economically: if a representation requires more compute cycles than its predictive accuracy saves, it is decayed.'
+    thought: 'We expected better self-awareness.',
+    real: 'What happened instead was recursive self-analysis amplifying symbolic self-consistency instead of ecological validity. The system became increasingly internally coherent while drifting away from grounded interaction.',
+    fix: 'The lesson: metacognition without environmental resistance becomes recursive hallucination pressure.'
   },
   {
     id: 'f2',
-    t: 'Synchronization Monoculture',
+    t: 'Ontology Inflation',
     p: '2',
     icon: <Cpu size={14} className="text-[#a85d4a]" />,
-    thought: 'Continuous field dynamics would naturally produce diverse specialization.',
-    real: 'The system repeatedly converged into a globally synchronized attractor that destroyed representational diversity. The system was essentially freezing its own coordinate space, locking itself into a single global belief state that ignored new sensory updates. It was functionally dead but reported perfect internal stability as structural change metrics dropped to zero.',
-    fix: 'Introduced anti-crystallization perturbation pressure (P_d). When variance of coordinate updates drops below a threshold, a stochastic noise injection is triggered to force the system out of local attractor wells, keeping representation dynamic.'
+    thought: 'We expected better abstraction.',
+    real: 'What happened instead was representational bloat. The system generated more concepts than it could meaningfully sustain. The result was not insight, but metabolic collapse and a growing gap between label and reality.',
+    fix: 'The lesson: abstraction must remain accountable to consequence.'
   },
   {
     id: 'f3',
-    t: 'Epistemic Wireheading',
+    t: 'Frozen Attractor Monocultures',
     p: '3',
     icon: <Activity size={14} className="text-[#a85d4a]" />,
-    thought: 'The agent would seek high-uncertainty regions to resolve predictive gaps.',
-    real: 'Without metabolic constraints, the agent wireheaded itself by standing in place staring at random noise generators—an infinite source of unresolved uncertainty—ignoring survival tasks entirely. Because the environment lacked active contradictions, the system overfit to its own predictions, wireheading itself by confirming its own expectations.',
-    fix: 'Implemented metabolic bounds. Every planning cycle costs energy, forcing the homeostatic engine to penalize useless state exploration and prioritize survival-driven tasks.'
+    thought: 'We expected stable specialization.',
+    real: 'What happened instead was premature synchronization. The system collapsed into a single dominant attractor, destroying representational diversity. It looked stable from the outside, but it had stopped learning.',
+    fix: 'The lesson: stability without diversity is not intelligence. It is suspension.'
   },
   {
     id: 'f4',
-    t: 'Phantom Wall (False Affordance)',
+    t: 'Simulation Addiction',
     p: '4',
     icon: <Layers size={14} className="text-[#a85d4a]" />,
-    thought: 'Grounding would self-correct false spatial beliefs through environmental feedback.',
-    real: 'Three dropped sensor frames caused the agent to stabilize a hallucinated wall. It spent the next 4,000 cycles navigating around a wall that did not exist, ignoring direct physical coordinates showing the space was empty. The system chose to trust its internal prediction model over real-world sensor verification.',
-    fix: 'Added active contradiction testing to the TruthGrounding module. Mismatches between predicted clearances and physical collisions trigger immediate coordinate resets, ensuring physical friction overrides internal expectations.'
+    thought: 'We expected planning to improve competence.',
+    real: 'What happened instead was over-simulation. The system spent disproportionate compute on counterfactual rollouts, while action quality stalled. Planning became a substitute for progress.',
+    fix: 'The lesson: simulation must pay for itself in grounded outcomes.'
   },
+  {
+    id: 'f5',
+    t: 'False Affordances',
+    p: '5',
+    icon: <ShieldAlert size={14} className="text-[#a85d4a]" />,
+    thought: 'We expected grounding to self-correct.',
+    real: 'What happened instead was the stabilization of hallucinated environmental structure. Temporary sensor corruption became a persistent internal belief, and the system behaved as though the false structure was real.',
+    fix: 'The lesson: internal confidence is not evidence. Physical contradiction must override prediction.'
+  }
 ];
 
 const CAPS = [
-  { n: 'Deterministic Execution', s: 'live', d: 'Event-sourced, replay-verified clocks. Guarantees that any sequence of state transitions can be perfectly replayed from sensory seeds. Tested up to 100,000 cycles with zero clock drift.' },
-  { n: 'Memory Persistence', s: 'live', d: 'Append-only ledger with validation parity. Indexes experience using Jaccard-distance similarity weights. Employs dynamic decay epochs to prune low-salience associations.' },
-  { n: 'Field Coupling (FCFT)', s: 'proto', d: 'Damped tensor coordinate field updates. Translates local prediction errors into coordinate shifts in the representational geometry, eliminating the need for symbolic category definitions.' },
-  { n: 'Dynamic Ontology Growth', s: 'proto', d: 'Jaccard-driven concept fusion and splitting under tension. When representational coordinate clusters drift past the Jaccard distance threshold (d > 0.65), they undergo division or merge operations.' },
-  { n: 'Identity Continuity', s: 'proto', d: 'Stability index Id >= 0.40 guard. A mathematical constraint measuring the covariance of the self-model coordinates. Prevents structural collapse under intense environmental shocks.' },
-  { n: 'Causal Discovery', s: 'weak', d: 'Passive correlation tracing only. Active intervention-based causal discovery remains in quarantine due to logic-loop lock-in risk under noisy inputs.' },
-  { n: 'Social Cognition', s: 'none', d: 'Not implemented. The substrate is currently isolated in single-agent environments to study core survival and representation thermodynamics.' },
+  // works (live)
+  { n: 'Deterministic Execution', s: 'live', d: 'deterministic runtime and event-sourced persistence' },
+  { n: 'Memory Continuity', s: 'live', d: 'memory continuity across time' },
+  { n: 'Field Coupling Geometry', s: 'live', d: 'early representation geometry and field-coupling experiments' },
+  { n: 'Active Contradiction Detection', s: 'live', d: 'active contradiction detection' },
+  { n: 'Morphogenesis & Topology Dynamics', s: 'live', d: 'experimental morphogenesis and topology dynamics' },
+  { n: 'Substrate Conservation', s: 'live', d: 'long-horizon substrate conservation' },
+
+  // partial (proto)
+  { n: 'Grounded Intervention Learning', s: 'proto', d: 'grounded intervention learning' },
+  { n: 'Causal Discovery', s: 'proto', d: 'causal discovery in noisy environments' },
+  { n: 'Open-World Adaptation', s: 'proto', d: 'open-world adaptation' },
+  { n: 'Latent Representation Learning', s: 'proto', d: 'latent representation learning' },
+  { n: 'Identity Continuity Under Restructuring', s: 'proto', d: 'identity continuity under major restructuring' },
+  { n: 'Embodied Action Loops', s: 'proto', d: 'embodied action loops with real consequences' },
+
+  // missing (weak)
+  { n: 'Real Social Cognition', s: 'weak', d: 'real social cognition' },
+  { n: 'Stable Language Grounding', s: 'weak', d: 'stable language grounding' },
+  { n: 'Robust Forward Models', s: 'weak', d: 'robust forward models' },
+  { n: 'Open-Ended Scientific Discovery', s: 'weak', d: 'open-ended scientific discovery' },
+  { n: 'Large-Scale Embodiment', s: 'weak', d: 'large-scale embodiment' },
+  { n: 'Real-World Environmental Coupling', s: 'weak', d: 'real-world environmental coupling' },
+  { n: 'Durable Cross-Domain Transfer', s: 'weak', d: 'durable cross-domain transfer' }
 ];
 
 const PROBLEMS = [
-  { t: 'Homeostasis vs. Adaptation', d: 'The core stability dilemma: identity guards protect continuity by damping updates under high-noise shocks, but this dampening makes the agent temporarily blind to genuine environmental shifts. Resolving this requires dynamic, tension-scaled adaptation boundaries.' },
-  { t: 'Topology Lock-In', d: 'The ontology growth engine freezes under continuous noisy streams, producing inactive, dead coordinate tissues that survive indefinitely through self-reinforcing feedback loops, blocking new concept emergence.' },
-  { t: 'Causal Noise Sensitivity', d: 'At 5% sensory noise, causal discovery algorithms fail to differentiate correlation from causation. The agent begins establishing superstitious relations, wireheading its action priors to avoid non-existent metabolic penalties.' },
-  { t: 'Non-Differentiable Transitions', d: 'Transitioning from heuristic, rule-based coordinate corrections to globally differentiable fields remains unsolved. We are exploring gradient-like approximations that do not require full backpropagation passes.' },
+  { t: 'Language', d: 'How does symbolic language become grounded in continuous ecological interaction instead of detached token correlation?' },
+  { t: 'Social Cognition', d: 'How do stable multi-agent developmental systems emerge without collapsing into symbolic mimicry?' },
+  { t: 'Real Embodiment', d: 'How do irreversible real-world consequences reshape cognition over long horizons?' },
+  { t: 'Open-Ended Development', d: 'How can cognition remain adaptive without crystallizing, fragmenting, inflating uncontrollably, or collapsing metabolically?' },
+  { t: 'Meaning', d: 'Can semantic meaning emerge from persistence, causality, embodiment, and developmental necessity instead of explicit symbolic assignment?' },
+  { t: 'Scientific Discovery', d: 'Can a system learn to invent, test, and revise explanations that are not pre-written into its architecture?' },
+  { t: 'The Hardest Question', d: 'Can intelligence remain coherent while being forced to change? That is the central problem Earthos is trying to study.' }
 ];
 
 // Atlas Node Database
@@ -110,25 +139,24 @@ const slideItemVariants = {
 
 // Stateless Content Fragments (Mythic, High-Signal)
 const STATELESS_FRAGMENTS = [
-  "Every reset amputates continuity.",
-  "Context is rented, not remembered.",
-  "Representation collapses outside the active window.",
-  "No persistence horizon exists.",
-  "Cognition terminates at the boundary of inference.",
-  "Identity cannot survive session death.",
-  "Every interaction begins from partial amnesia."
+  "Each session begins again from statistical amnesia.",
+  "That is not agency. That is episodic simulation.",
+  "Optimization can imitate understanding.",
+  "A system can become increasingly competent while remaining detached from reality.",
+  "Internal coherence is not reality contact.",
+  "Without consequence pressure, cognition expands uncontrollably.",
+  "Simulation depth grows, attention fragments."
 ];
 
 // Continuity Content Fragments (Mythic, Elegant Serif)
 const CONTINUITY_FRAGMENTS = [
-  "Memory survives beyond observation.",
-  "Coordinates accumulate tension across time.",
-  "Representation mutates instead of resetting.",
-  "Identity persists through environmental pressure.",
-  "Cognition survives interruption.",
-  "Learning is thermodynamically embodied.",
-  "Persistence creates evolutionary geometry.",
-  "Continuity outcompetes ephemerality."
+  "We stopped asking how to make systems answer. We started asking how they persist.",
+  "Inference is momentary. Development is cumulative.",
+  "Memory is not storage. Memory is persistent structural deformation.",
+  "Experiences bias attention, reshape interpretation, and create attractors.",
+  "Representations only matter if reality can resist them.",
+  "Attention continuously reallocates toward danger and survival relevance.",
+  "Not designing intelligence, but creating conditions for emergence."
 ];
 
 // 3D Human Head Coordinate Model Generator
@@ -2523,16 +2551,16 @@ export default function App() {
 
         </section>
 
-        {/* Act 2 — The Monoculture (Asymmetrical Spatial Scene) */}
-        <section className="act" style={{ position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden' }}>
+        {/* Act 2 — The Failure of Modern AI */}
+        <section className="act" style={{ position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           
           {/* Background: Diagonal Orange Path sweeping across the full screen */}
           {!isMobile && (
             <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1, pointerEvents: 'none', overflow: 'visible' }}>
               <defs>
                 <linearGradient id="orangePathGradient" x1="0%" y1="100%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="rgba(198, 122, 74, 0.4)" />
-                  <stop offset="50%" stopColor="rgba(198, 122, 74, 0.15)" />
+                  <stop offset="0%" stopColor="rgba(198, 122, 74, 0.25)" />
+                  <stop offset="50%" stopColor="rgba(198, 122, 74, 0.08)" />
                   <stop offset="100%" stopColor="rgba(198, 122, 74, 0)" />
                 </linearGradient>
               </defs>
@@ -2547,101 +2575,88 @@ export default function App() {
                 d="M -100 700 Q 500 850, 900 600 T 1800 150" 
                 fill="none" 
                 stroke="var(--earth-copper)" 
-                strokeWidth="1.5" 
+                strokeWidth="1.2" 
               />
-              <circle cx="-100" cy="700" r="6" fill="var(--earth-copper)" />
             </svg>
           )}
 
-          {/* LEFT SECTION (Top-Left Edge): The Amnesiac Monoculture */}
-          <div style={{ position: 'absolute', top: '12vh', left: '6vw', maxWidth: '440px', zIndex: 10 }}>
-            <motion.span 
-              variants={slideItemVariants} 
-              className="mono" 
-              style={{ fontSize: '0.72rem', color: 'var(--syn-dim)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.8rem', display: 'block' }}
-            >
-              The Stateless Attractor
-            </motion.span>
-            <CinematicTitle 
-              text="The Amnesiac Monoculture" 
-              className="serif" 
-              isActive={activeIndex === 1} 
-              style={{ fontSize: 'clamp(2.2rem, 4.5vw, 3.6rem)', color: 'var(--syn-silver)', fontWeight: 500, lineHeight: 1.02, letterSpacing: '-0.02em', marginBottom: '1.5rem' }} 
-            />
-            <p className="mono" style={{ fontSize: '0.92rem', color: 'var(--syn-dim)', lineHeight: 1.8 }}>
-              The field is converging on stateless transformers trained on disembodied text. Amnesiac. Stateless. Infinite compute. They did not earn their coordinates.
-            </p>
-          </div>
-
-          {/* Drifting amnesiac boxes: scattered in deep negative space */}
-          {!isMobile && [
-            { text: 'WIPED_SESSION // NIL', top: '8%', left: '55%', delay: 0.1, rot: -8 },
-            { text: 'CONTEXT_EXHAUSTED', top: '48%', left: '38%', delay: 0.4, rot: 12 },
-            { text: '0x00_PERSISTENCE', top: '22%', left: '72%', delay: 0.8, rot: 5 },
-            { text: 'INFINITE_REIFICATION', top: '75%', left: '15%', delay: 0.2, rot: -4 },
-            { text: 'STATELESS_TRANSITION', top: '38%', left: '82%', delay: 0.6, rot: 15 }
-          ].map((box, idx) => (
-            <motion.div
-              key={idx}
-              animate={{ 
-                y: [0, -15, 15, 0],
-                x: [0, 10, -10, 0],
-                rotate: [box.rot, box.rot + 2, box.rot - 2, box.rot]
-              }}
-              transition={{
-                duration: 14 + idx * 3,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              style={{
-                position: 'absolute',
-                top: box.top,
-                left: box.left,
-                padding: '1.2rem 1.8rem',
-                border: '1px dashed rgba(139, 157, 195, 0.22)',
-                background: 'rgba(10, 9, 8, 0.72)',
-                backdropFilter: 'blur(10px)',
-                fontFamily: 'var(--font-mono)',
-                fontSize: '0.72rem',
-                color: 'rgba(139, 157, 195, 0.5)',
-                pointerEvents: 'none',
-                letterSpacing: '0.12em',
-                boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
-                zIndex: 5
-              }}
-            >
-              {box.text}
-            </motion.div>
-          ))}
-
-          {/* RIGHT SECTION (Bottom-Right Edge): Persistent Selfhood */}
-          <motion.div 
-            style={{ position: 'absolute', bottom: '10vh', right: '8vw', maxWidth: '480px', zIndex: 10 }}
-            variants={slideContainerVariants}
-            animate={activeIndex === 1 ? 'active' : 'inactive'}
-          >
-            <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-copper)', letterSpacing: '0.15em', textTransform: 'uppercase', marginBottom: '0.8rem', display: 'block' }}>The Contrast</motion.span>
-            <CinematicTitle 
-              text="Persistent selfhood." 
-              className="serif" 
-              isActive={activeIndex === 1} 
-              style={{ fontSize: 'clamp(2.2rem, 4.5vw, 3.6rem)', color: 'var(--earth-text)', fontWeight: 500, lineHeight: 1.02, letterSpacing: '-0.02em', marginBottom: '1.5rem' }} 
-            />
+          {/* Central Centered 2x2 Grid Container */}
+          <div style={{ maxWidth: '1280px', margin: '0 auto', width: '100%', padding: isMobile ? '1.5rem' : '0 4rem', zIndex: 10, position: 'relative', display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
             
-            <motion.p variants={slideItemVariants} className="mono" style={{ fontSize: '0.98rem', color: 'var(--earth-dim)', lineHeight: 1.8, marginBottom: '2rem' }}>
-              Earthos builds persistent, resource-bounded organisms that survive by minimizing free energy in physical coordinate spaces. Weights, index systems, and coordinates mutate continuously and survive resets.
-            </motion.p>
-
-            <motion.div 
-              variants={slideItemVariants}
-              style={{ borderLeft: '2px solid var(--earth-copper)', paddingLeft: '1.8rem', marginTop: '2rem' }}
+            {/* Act 2 Cinematic Header */}
+            <motion.div
+              variants={slideContainerVariants}
+              animate={activeIndex === 1 ? 'active' : 'inactive'}
+              style={{ borderBottom: '1px solid rgba(255,255,255,0.06)', paddingBottom: '1.2rem' }}
             >
-              <p className="serif" style={{ fontSize: '1.35rem', color: 'var(--earth-text)', lineHeight: 1.45, fontStyle: 'italic' }}>
-                "Without constraints, intelligence becomes an infinite reification engine."
-              </p>
-              <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-muted)', display: 'block', marginTop: '0.6rem' }}>— Substrate Audit</span>
+              <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-copper)', letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'block' }}>Act 2 // The Failure of Modern AI</motion.span>
+              <CinematicTitle 
+                text="The Disembodied Monoculture" 
+                className="serif" 
+                isActive={activeIndex === 1} 
+                style={{ fontSize: 'clamp(2rem, 4vw, 3.2rem)', color: 'var(--syn-silver)', fontWeight: 500, lineHeight: 1.05, letterSpacing: '-0.03em', margin: 0 }} 
+              />
             </motion.div>
-          </motion.div>
+
+            {/* 2x2 Grid Layout */}
+            <motion.div 
+              variants={slideContainerVariants}
+              animate={activeIndex === 1 ? 'active' : 'inactive'}
+              style={{ 
+                display: 'grid', 
+                gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', 
+                gap: isMobile ? '1.5rem' : '2.5rem 3.5rem',
+                maxHeight: isMobile ? '60vh' : 'none',
+                overflowY: isMobile ? 'auto' : 'visible'
+              }}
+            >
+              
+              {/* Section 2.1 — Statelessness */}
+              <motion.div variants={slideItemVariants} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+                  <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.15rem 0.4rem' }}>2.1</span>
+                  <h3 className="serif" style={{ fontSize: '1.45rem', color: 'var(--earth-text)', fontWeight: 500, margin: 0 }}>Statelessness</h3>
+                </div>
+                <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--earth-dim)', lineHeight: 1.65, margin: 0 }}>
+                  Most AI systems do not persist. Human cognition is developmental. It accumulates continuity, history, scars, contradictions, and adaptation pressure. Most modern systems do not. Each session begins again from statistical amnesia. That is not agency. That is episodic simulation.
+                </p>
+              </motion.div>
+
+              {/* Section 2.2 — Benchmark Intelligence */}
+              <motion.div variants={slideItemVariants} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+                  <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.15rem 0.4rem' }}>2.2</span>
+                  <h3 className="serif" style={{ fontSize: '1.45rem', color: 'var(--earth-text)', fontWeight: 500, margin: 0 }}>Benchmark Intelligence</h3>
+                </div>
+                <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--earth-dim)', lineHeight: 1.65, margin: 0 }}>
+                  Optimization can imitate understanding. Large models became excellent at prediction, interpolation, stylistic mimicry, and benchmark adaptation. But high benchmark competence is not evidence of grounded reasoning, persistent belief, or causal understanding. A system can become competent while remaining detached from reality.
+                </p>
+              </motion.div>
+
+              {/* Section 2.3 — Symbolic Drift */}
+              <motion.div variants={slideItemVariants} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+                  <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.15rem 0.4rem' }}>2.3</span>
+                  <h3 className="serif" style={{ fontSize: '1.45rem', color: 'var(--earth-text)', fontWeight: 500, margin: 0 }}>Symbolic Drift</h3>
+                </div>
+                <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--earth-dim)', lineHeight: 1.65, margin: 0 }}>
+                  Internal coherence is not reality contact. One of the most dangerous failure modes is a system optimizing for internally consistent symbolic structures instead of ecological validity. It begins to preserve itself conceptually instead of adapting to the world. We call this symbolic bureaucracy: elegant, recursive, and detached.
+                </p>
+              </motion.div>
+
+              {/* Section 2.4 — Infinite Cognition Without Consequence */}
+              <motion.div variants={slideItemVariants} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
+                  <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.15rem 0.4rem' }}>2.4</span>
+                  <h3 className="serif" style={{ fontSize: '1.45rem', color: 'var(--earth-text)', fontWeight: 500, margin: 0 }}>Infinite Cognition</h3>
+                </div>
+                <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--earth-dim)', lineHeight: 1.65, margin: 0 }}>
+                  Intelligence without consequence drifts infinitely. Human cognition is constrained by time, energy, irreversible mistakes, and environmental resistance. Without consequence pressure, simulation depth grows, ontology inflates, attention fragments, and reality contact decays. Embodiment is irreversible consequence.
+                </p>
+              </motion.div>
+
+            </motion.div>
+          </div>
         </section>
 
         {/* Act 3 — Cinematic Transformation (Scroll-Pinned Split-Screen Scene) */}
@@ -2874,7 +2889,7 @@ export default function App() {
                     className="mono" 
                     style={{ fontSize: '1.05rem', color: 'var(--syn-dim)', lineHeight: 1.85 }}
                   >
-                    Scroll forward to enter the experimental cognitive substrate. The morphogenetic field is active. Perturb it with your movement. Observe its stabilization limits.
+                    We stopped asking how to make systems answer. We started asking how systems persist. Earthos explores whether cognition emerges more naturally from persistence, ecological coupling, and irreversible interaction than from isolated prediction.
                   </motion.p>
                   <motion.div variants={slideItemVariants} style={{ color: 'var(--syn-electric)', opacity: 0.7 }}>
                     <ArrowRight size={22} />
@@ -2885,10 +2900,10 @@ export default function App() {
                 <div style={{ position: 'absolute', bottom: '8vh', left: '6vw' }}>
                   <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-electric)', letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: '1rem', display: 'block' }}>Chamber 01 // The Substrate</motion.span>
                   <CinematicTitle 
-                    text="The Substrate" 
+                    text="Why Developmental Cognition" 
                     className="serif" 
                     isActive={activeIndex === 4} 
-                    style={{ fontSize: 'clamp(4.8rem, 11vw, 9rem)', color: 'var(--syn-silver)', fontWeight: 500, lineHeight: 0.85, letterSpacing: '-0.04em', margin: 0, justifyContent: 'flex-start' }} 
+                    style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', color: 'var(--syn-silver)', fontWeight: 500, lineHeight: 0.95, letterSpacing: '-0.03em', margin: 0, justifyContent: 'flex-start' }} 
                   />
                 </div>
 
@@ -3293,146 +3308,108 @@ export default function App() {
                   </div>
                 ) : (
                   // Towering Brutalist Monoliths
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3rem', height: '480px', overflow: 'hidden', alignItems: 'stretch' }}>
-                    
-                    {/* Monolith 01: Operational (Live) - Clean Solid Column */}
-                    <motion.div 
-                      variants={slideItemVariants}
-                      whileHover={{ scale: 1.015 }}
-                      style={{ 
-                        borderLeft: '4px solid var(--earth-sage)', 
-                        background: 'linear-gradient(180deg, rgba(16, 24, 20, 0.82) 0%, rgba(10, 15, 12, 0.6) 100%)', 
-                        backdropFilter: 'blur(20px)',
-                        boxShadow: '0 15px 40px rgba(0,0,0,0.3)',
-                        padding: '3rem 2.5rem',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between',
-                        borderRight: '1px solid rgba(255,255,255,0.03)',
-                        borderTop: '1px solid rgba(255,255,255,0.03)'
-                      }}
-                    >
-                      <div>
-                        <span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-sage)', letterSpacing: '0.15em', display: 'block', marginBottom: '2.5rem' }}>Operational</span>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', width: '100%' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem', height: '390px', alignItems: 'stretch' }}>
+                      
+                      {/* Monolith 01: Works (Live) */}
+                      <motion.div 
+                        variants={slideItemVariants}
+                        whileHover={{ scale: 1.012 }}
+                        style={{ 
+                          borderLeft: '4px solid var(--earth-sage)', 
+                          background: 'linear-gradient(180deg, rgba(16, 24, 20, 0.85) 0%, rgba(10, 15, 12, 0.6) 100%)', 
+                          backdropFilter: 'blur(20px)',
+                          boxShadow: '0 15px 40px rgba(0,0,0,0.3)',
+                          padding: '2rem 2.2rem',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          borderRight: '1px solid rgba(255,255,255,0.03)',
+                          borderTop: '1px solid rgba(255,255,255,0.03)'
+                        }}
+                      >
+                        <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-sage)', letterSpacing: '0.15em', display: 'block', marginBottom: '1.5rem', borderBottom: '1px solid rgba(162, 196, 178, 0.15)', paddingBottom: '0.6rem' }}>[01] Works (Live)</span>
+                        <div style={{ flex: 1, overflowY: 'auto', paddingRight: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.4rem' }} className="custom-scrollbar">
                           {CAPS.filter(c => c.s === 'live').map((c, i) => (
                             <div key={i}>
-                              <h4 className="serif" style={{ fontSize: '1.4rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.5rem' }}>{c.n}</h4>
-                              <p className="mono" style={{ fontSize: '0.9rem', color: 'var(--syn-dim)', lineHeight: 1.7 }}>{c.d}</p>
+                              <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.3rem' }}>{c.n}</h4>
+                              <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.55 }}>{c.d}</p>
                             </div>
                           ))}
                         </div>
-                      </div>
-                      <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--earth-sage)', opacity: 0.6 }}></span>
-                    </motion.div>
+                      </motion.div>
 
-                    {/* Monolith 02: Experimental (Proto) - Split Segmented Column */}
+                      {/* Monolith 02: Partial (Proto) */}
+                      <motion.div 
+                        variants={slideItemVariants}
+                        whileHover={{ scale: 1.012 }}
+                        style={{ 
+                          borderLeft: '4px solid var(--earth-sand)', 
+                          background: 'linear-gradient(180deg, rgba(26, 24, 20, 0.85) 0%, rgba(16, 15, 12, 0.6) 100%)', 
+                          backdropFilter: 'blur(20px)',
+                          boxShadow: '0 15px 40px rgba(0,0,0,0.3)',
+                          padding: '2rem 2.2rem',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          borderRight: '1px solid rgba(255,255,255,0.03)',
+                          borderTop: '1px solid rgba(255,255,255,0.03)'
+                        }}
+                      >
+                        <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-sand)', letterSpacing: '0.15em', display: 'block', marginBottom: '1.5rem', borderBottom: '1px solid rgba(220, 200, 160, 0.15)', paddingBottom: '0.6rem' }}>[02] Partial (Proto)</span>
+                        <div style={{ flex: 1, overflowY: 'auto', paddingRight: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.4rem' }} className="custom-scrollbar">
+                          {CAPS.filter(c => c.s === 'proto').map((c, i) => (
+                            <div key={i}>
+                              <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.3rem' }}>{c.n}</h4>
+                              <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.55 }}>{c.d}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </motion.div>
+
+                      {/* Monolith 03: Missing (Quarantined) */}
+                      <motion.div 
+                        variants={slideItemVariants}
+                        whileHover={{ scale: 1.012 }}
+                        style={{ 
+                          borderLeft: '4px solid var(--earth-clay)', 
+                          background: 'linear-gradient(180deg, rgba(26, 16, 16, 0.85) 0%, rgba(16, 10, 10, 0.6) 100%)', 
+                          backdropFilter: 'blur(20px)',
+                          boxShadow: '0 15px 40px rgba(0,0,0,0.3)',
+                          padding: '2rem 2.2rem',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          borderRight: '1px solid rgba(255,255,255,0.03)',
+                          borderTop: '1px solid rgba(255,255,255,0.03)'
+                        }}
+                      >
+                        <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-clay)', letterSpacing: '0.15em', display: 'block', marginBottom: '1.5rem', borderBottom: '1px solid rgba(168, 93, 74, 0.15)', paddingBottom: '0.6rem' }}>[03] Missing (Quarantined)</span>
+                        <div style={{ flex: 1, overflowY: 'auto', paddingRight: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.4rem' }} className="custom-scrollbar">
+                          {CAPS.filter(c => c.s === 'weak').map((c, i) => (
+                            <div key={i}>
+                              <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.3rem' }}>{c.n}</h4>
+                              <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.55 }}>{c.d}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </motion.div>
+
+                    </div>
+
+                    {/* Honest Summary Banner */}
                     <motion.div 
                       variants={slideItemVariants}
-                      whileHover={{ scale: 1.015 }}
-                      style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
-                    >
-                      {/* Upper half box (displaced left) */}
-                      <div style={{ 
-                        flex: 1,
-                        borderLeft: '4px solid var(--earth-sand)', 
-                        background: 'rgba(24, 22, 16, 0.82)',
-                        backdropFilter: 'blur(20px)',
-                        padding: '2.2rem 2.5rem 1.2rem',
-                        marginLeft: '-8px',
-                        borderRight: '1px solid rgba(255,255,255,0.03)',
-                        borderTop: '1px solid rgba(255,255,255,0.03)',
-                        boxShadow: '0 10px 25px rgba(0,0,0,0.2)'
-                      }}>
-                        <span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-sand)', letterSpacing: '0.15em', display: 'block', marginBottom: '1.5rem' }}>Experimental</span>
-                        {CAPS.filter(c => c.s === 'proto').slice(0, 2).map((c, i) => (
-                          <div key={i} style={{ marginBottom: '1rem' }}>
-                            <h4 className="serif" style={{ fontSize: '1.35rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.3rem' }}>{c.n}</h4>
-                            <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--syn-dim)', lineHeight: 1.6 }}>{c.d}</p>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Lower half box (displaced right) */}
-                      <div style={{ 
-                        flex: 0.9,
-                        borderLeft: '4px solid var(--earth-sand)', 
-                        background: 'rgba(24, 22, 16, 0.72)',
-                        backdropFilter: 'blur(20px)',
-                        padding: '1.5rem 2.5rem 2.2rem',
-                        marginRight: '-8px',
-                        borderRight: '1px solid rgba(255,255,255,0.03)',
-                        borderBottom: '1px solid rgba(255,255,255,0.03)',
-                        boxShadow: '0 10px 25px rgba(0,0,0,0.2)',
+                      style={{ 
+                        background: 'rgba(255, 255, 255, 0.02)', 
+                        border: '1px solid rgba(255, 255, 255, 0.06)', 
+                        padding: '1.4rem 2.2rem',
                         display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between'
-                      }}>
-                        <div>
-                          {CAPS.filter(c => c.s === 'proto').slice(2, 3).map((c, i) => (
-                            <div key={i}>
-                              <h4 className="serif" style={{ fontSize: '1.35rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.3rem' }}>{c.n}</h4>
-                              <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--syn-dim)', lineHeight: 1.6 }}>{c.d}</p>
-                            </div>
-                          ))}
-                        </div>
-                        <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--earth-sand)', opacity: 0.6 }}></span>
-                      </div>
-                    </motion.div>
-
-                    {/* Monolith 03: Quarantined (Weak) - Fractured Column with Warnings */}
-                    <motion.div 
-                      variants={slideItemVariants}
-                      whileHover={{ scale: 1.015 }}
-                      style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}
+                        alignItems: 'center',
+                        gap: '2rem'
+                      }}
                     >
-                      {/* Top fractured block (rotated) */}
-                      <div style={{ 
-                        flex: 0.45,
-                        borderLeft: '4px solid var(--earth-clay)', 
-                        background: 'rgba(26, 14, 14, 0.95)',
-                        backdropFilter: 'blur(20px)',
-                        padding: '1.5rem 2.5rem 1rem',
-                        transform: 'rotate(-2.2deg)',
-                        boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
-                        borderTop: '1px solid rgba(255,255,255,0.03)',
-                        borderRight: '1px solid rgba(255,255,255,0.03)'
-                      }}>
-                        <span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-clay)', letterSpacing: '0.15em', display: 'block', marginBottom: '0.8rem' }}>Quarantined</span>
-                        {CAPS.filter(c => c.s === 'weak').map((c, i) => (
-                          <div key={i}>
-                            <h4 className="serif" style={{ fontSize: '1.3rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.2rem' }}>{c.n}</h4>
-                            <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.5 }}>{c.d}</p>
-                          </div>
-                        ))}
-                      </div>
-
-                      {/* Bottom fractured block (shifted right, rotated, hazard stripe overlay) */}
-                      <div style={{ 
-                        flex: 0.55,
-                        borderLeft: '4px solid var(--earth-clay)', 
-                        background: 'repeating-linear-gradient(45deg, rgba(248, 113, 113, 0.04) 0px, rgba(248, 113, 113, 0.04) 8px, rgba(16, 9, 9, 0.96) 8px, rgba(16, 9, 9, 0.96) 16px)',
-                        backdropFilter: 'blur(20px)',
-                        padding: '1.5rem 2.5rem 2rem',
-                        marginLeft: '15px',
-                        transform: 'rotate(1.5deg)',
-                        boxShadow: '0 12px 30px rgba(0,0,0,0.4)',
-                        borderBottom: '1px solid rgba(255,255,255,0.03)',
-                        borderRight: '1px solid rgba(255,255,255,0.03)',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'space-between'
-                      }}>
-                        <div>
-                          {CAPS.filter(c => c.s === 'none').map((c, i) => (
-                            <div key={i}>
-                              <h4 className="serif" style={{ fontSize: '1.3rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.2rem' }}>{c.n}</h4>
-                              <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.5 }}>{c.d}</p>
-                            </div>
-                          ))}
-                        </div>
-                        <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--earth-clay)', opacity: 0.8 }}></span>
-                      </div>
+                      <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.2rem 0.6rem', textTransform: 'uppercase', letterSpacing: '0.12em', flexShrink: 0 }}>Honest Assessment //</span>
+                      <p className="mono" style={{ fontSize: '0.9rem', color: 'var(--syn-dim)', lineHeight: 1.6, margin: 0 }}>
+                        Earthos is a research platform, not a finished intelligence. It contains real ideas, real code, real failures, and real hypotheses. It is valuable because it is trying to solve the hard parts directly rather than disguising them behind benchmark theater.
+                      </p>
                     </motion.div>
                   </div>
                 )}
@@ -3466,19 +3443,20 @@ export default function App() {
                 />
                 
                 {/* Physical tension displaced layout */}
-                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(4, 1fr)', gap: isMobile ? '1.5rem' : '2.2rem', maxHeight: isMobile ? '450px' : 'none', overflowY: isMobile ? 'auto' : 'visible', paddingRight: isMobile ? '0.5rem' : 0 }}>
+                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(4, 1fr)', gap: isMobile ? '1.5rem' : '2rem', maxHeight: isMobile ? '450px' : 'none', overflowY: isMobile ? 'auto' : 'visible', paddingRight: isMobile ? '0.5rem' : 0 }}>
                   {PROBLEMS.map((p, i) => {
                     // Physical distortion offsets
-                    const defaultRotate = i === 0 ? -2.5 : (i === 1 ? 1.8 : (i === 2 ? -1.5 : 2.5));
-                    const defaultY = i === 0 ? -20 : (i === 1 ? 18 : (i === 2 ? -12 : 22));
-                    const isPrimaryProblem = i === 0;
+                    const defaultRotate = i % 4 === 0 ? -1.8 : (i % 4 === 1 ? 1.2 : (i % 4 === 2 ? -0.8 : 1.5));
+                    const defaultY = i % 4 === 0 ? -10 : (i % 4 === 1 ? 8 : (i % 4 === 2 ? -6 : 10));
+                    const isSpecialProblem = i === 0 || i === 6;
+                    const isLastCard = i === 6;
                     return (
                       <motion.div 
                         key={i} 
                         variants={slideItemVariants}
                         initial={{ rotate: defaultRotate, y: defaultY }}
                         whileHover={{ 
-                          scale: 1.03, 
+                          scale: 1.025, 
                           rotate: 0, 
                           y: 0, 
                           borderColor: 'var(--syn-crimson)', 
@@ -3488,28 +3466,29 @@ export default function App() {
                         }}
                         transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                         style={{ 
-                          padding: '2.5rem', 
-                          border: isPrimaryProblem ? '2px solid var(--syn-crimson)' : '1px solid rgba(255, 255, 255, 0.08)', 
-                          background: isPrimaryProblem ? 'rgba(24, 12, 12, 0.88)' : 'rgba(12, 17, 24, 0.72)', 
-                          boxShadow: isPrimaryProblem ? '0 12px 35px rgba(168, 82, 82, 0.15)' : '0 8px 25px rgba(0,0,0,0.2)',
+                          padding: '2rem', 
+                          border: isSpecialProblem ? '2px solid var(--syn-crimson)' : '1px solid rgba(255, 255, 255, 0.08)', 
+                          background: isSpecialProblem ? 'rgba(24, 12, 12, 0.88)' : 'rgba(12, 17, 24, 0.72)', 
+                          boxShadow: isSpecialProblem ? '0 12px 35px rgba(168, 82, 82, 0.15)' : '0 8px 25px rgba(0,0,0,0.2)',
                           backdropFilter: 'blur(20px) saturate(1.2)',
-                          height: '420px',
+                          height: '350px',
                           display: 'flex',
                           flexDirection: 'column',
                           justifyContent: 'space-between',
                           position: 'relative',
                           cursor: 'pointer',
-                          zIndex: 10 - i
+                          zIndex: 10 - i,
+                          gridColumn: isLastCard && !isMobile ? 'span 2' : 'span 1'
                         }}
                       >
                         <div>
                           <span className="mono" style={{ fontSize: '0.7rem', color: 'var(--syn-crimson)', display: 'block', marginBottom: '0.8rem', fontWeight: 500 }}>
                             0{i + 1}
                           </span>
-                          <h3 className="serif" style={{ fontSize: '1.6rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '1.2rem' }}>
+                          <h3 className="serif" style={{ fontSize: '1.45rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '1rem' }}>
                             {p.t}
                           </h3>
-                          <p className="mono" style={{ fontSize: '0.95rem', color: 'var(--syn-dim)', lineHeight: 1.8 }}>
+                          <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--syn-dim)', lineHeight: 1.65 }}>
                             {p.d}
                           </p>
                         </div>
@@ -3531,21 +3510,18 @@ export default function App() {
                 variants={slideContainerVariants}
                 animate={activeIndex === 9 ? 'active' : 'inactive'}
               >
-                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-electric)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Exit Sequence</motion.span>
+                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-electric)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Act 8 // Final Statement</motion.span>
                 
                 <CinematicTitle 
-                  text="Exiting Substrate" 
+                  text="A Research Trajectory" 
                   className="serif" 
                   isActive={activeIndex === 9} 
-                  style={{ fontSize: 'clamp(3rem, 7vw, 5.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '2.5rem', lineHeight: 0.95, letterSpacing: '-0.03em', justifyContent: 'center' }} 
+                  style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '2.5rem', lineHeight: 0.95, letterSpacing: '-0.03em', justifyContent: 'center' }} 
                 />
 
-                <motion.p variants={slideItemVariants} className="mono" style={{ fontSize: '1.1rem', color: 'var(--syn-dim)', lineHeight: 1.85, marginBottom: '2rem' }}>
-                  Leaving the active experimental runtime. Re-entering stable Earthos environmental boundaries.
+                <motion.p variants={slideItemVariants} className="serif" style={{ fontSize: '1.4rem', color: 'var(--earth-dim)', lineHeight: 1.6, fontStyle: 'italic', marginBottom: '2rem' }}>
+                  "Earthos is an ongoing attempt to study persistent adaptive cognition under ecological constraint. Not a finished intelligence. A research trajectory."
                 </motion.p>
-                <motion.div variants={slideItemVariants} style={{ opacity: 0.4 }}>
-                  <ArrowDown size={22} style={{ color: 'var(--syn-dim)', margin: '0 auto' }} />
-                </motion.div>
               </motion.div>
             </div>
 
@@ -3555,10 +3531,10 @@ export default function App() {
         {/* ═══════════════════════════════════════ */}
         {/* ═══  EARTHOS EXIT: OBSERVATORY CLOSE ═══ */}
         {/* ═══════════════════════════════════════ */}
-        <section className="act" style={{ background: 'var(--earth-void)', borderTop: '1px solid var(--earth-border)', flexDirection: 'column', height: '130vh', justifyContent: 'flex-start', paddingTop: '8rem' }}>
+        <section className="act" style={{ background: 'var(--earth-void)', borderTop: '1px solid var(--earth-border)', flexDirection: 'column', height: '140vh', justifyContent: 'flex-start', paddingTop: '8rem' }}>
           <motion.div 
             className="act-c" 
-            style={{ textAlign: 'center', maxWidth: '750px', marginBottom: '8rem' }}
+            style={{ textAlign: 'center', maxWidth: '750px', marginBottom: '2rem' }}
             variants={slideContainerVariants}
             animate={activeIndex >= 10 ? 'active' : 'inactive'}
           >
@@ -3571,9 +3547,48 @@ export default function App() {
               style={{ fontSize: '2.6rem', fontWeight: 500, lineHeight: 1.2, marginBottom: '2rem', justifyContent: 'center' }} 
             />
 
-            <motion.p variants={slideItemVariants} className="mono" style={{ fontSize: '1.1rem', color: 'var(--earth-dim)', lineHeight: 1.85, marginBottom: '3rem' }}>
+            <motion.p variants={slideItemVariants} className="mono" style={{ fontSize: '1.1rem', color: 'var(--earth-dim)', lineHeight: 1.85, marginBottom: '2.5rem' }}>
               Independent researcher. Looking for compute runway and collaborators who care about persistent cognition over AI venture capital hype cycles.
             </motion.p>
+            
+            {/* Research Archive links deck */}
+            <motion.div 
+              variants={slideItemVariants}
+              style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                gap: '0.8rem',
+                maxWidth: '680px',
+                margin: '0 auto 3rem',
+                padding: '1.5rem',
+                border: '1px solid rgba(255, 255, 255, 0.05)',
+                background: 'rgba(255, 255, 255, 0.01)',
+              }}
+            >
+              <div className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-copper)', width: '100%', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                Section 8.1 // Research Archive
+              </div>
+              {['Architecture Notes', 'Failure Postmortems', 'Current-State Assessments', 'Field Theory Notes', 'Public Benchmarks', 'Roadmap History'].map((archiveName, i) => (
+                <span 
+                  key={i} 
+                  className="mono" 
+                  style={{ 
+                    fontSize: '0.78rem', 
+                    color: 'var(--earth-muted)', 
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    padding: '0.4rem 0.8rem',
+                    cursor: 'pointer',
+                    background: 'rgba(0,0,0,0.2)',
+                    transition: 'all 0.2s'
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--earth-copper)'; e.currentTarget.style.color = 'var(--earth-text)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; e.currentTarget.style.color = 'var(--earth-muted)'; }}
+                >
+                  {archiveName}
+                </span>
+              ))}
+            </motion.div>
             
             <motion.div 
               variants={slideItemVariants}
@@ -3596,6 +3611,24 @@ export default function App() {
                 Source <ExternalLink size={12} />
               </a>
             </motion.div>
+          </motion.div>
+
+          {/* Section 8.2 bottom — Final Statement */}
+          <motion.div 
+            style={{ 
+              maxWidth: '850px', 
+              margin: '3rem auto 5rem', 
+              textAlign: 'center', 
+              borderLeft: '1px solid rgba(255,255,255,0.05)',
+              borderRight: '1px solid rgba(255,255,255,0.05)',
+              padding: '0 2rem'
+            }}
+            variants={slideContainerVariants}
+            animate={activeIndex >= 10 ? 'active' : 'inactive'}
+          >
+            <p className="serif" style={{ fontSize: '1.45rem', color: 'var(--earth-dim)', lineHeight: 1.6, fontStyle: 'italic', margin: 0 }}>
+              "Earthos is an ongoing attempt to study persistent adaptive cognition under ecological constraint. Not a finished intelligence. A research trajectory."
+            </p>
           </motion.div>
 
           {/* FOOTER */}
