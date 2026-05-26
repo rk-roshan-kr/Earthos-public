@@ -2217,6 +2217,7 @@ export default function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', purpose: 'Research Collaboration', message: '' });
   const [submitStatus, setSubmitStatus] = useState('idle'); // idle | submitting | success | error
+  const [isNavHovered, setIsNavHovered] = useState(false);
 
   const handleFormChange = (e) => {
     const { name, value } = e.target;
@@ -4494,6 +4495,92 @@ export default function App() {
           </div>
         )}
       </AnimatePresence>
+
+      {/* Top Hover Navigation Trigger Zone */}
+      <div 
+        onMouseEnter={() => setIsNavHovered(true)}
+        onMouseLeave={() => setIsNavHovered(false)}
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '60px',
+          zIndex: 99999,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'flex-start',
+          paddingTop: '1.2rem',
+          pointerEvents: 'none',
+        }}
+      >
+        <div 
+          onClick={() => { if (isMobile) setIsNavHovered(!isNavHovered); }}
+          style={{
+            pointerEvents: 'auto',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexWrap: isNavHovered && isMobile ? 'wrap' : 'nowrap',
+            height: isNavHovered ? (isMobile ? 'auto' : '48px') : '4px',
+            width: isNavHovered ? (isMobile ? '90%' : '780px') : '90px',
+            borderRadius: isNavHovered ? '24px' : '2px',
+            background: isNavHovered ? 'rgba(12, 10, 8, 0.72)' : 'rgba(198, 122, 74, 0.5)',
+            border: isNavHovered ? '1px solid rgba(255, 255, 255, 0.08)' : 'none',
+            backdropFilter: isNavHovered ? 'blur(24px) saturate(1.2)' : 'none',
+            WebkitBackdropFilter: isNavHovered ? 'blur(24px) saturate(1.2)' : 'none',
+            boxShadow: isNavHovered ? '0 10px 30px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.05)' : 'none',
+            transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+            overflow: 'hidden',
+            padding: isNavHovered ? (isMobile ? '0.8rem 1rem' : '0 1.5rem') : '0',
+            gap: isNavHovered ? '0.4rem' : '0',
+            cursor: 'pointer',
+          }}
+        >
+          {isNavHovered ? (
+            [
+              { label: '01 // Entrance', index: 0 },
+              { label: '02 // Critique', index: 1 },
+              { label: '03 // Convergence', index: 2 },
+              { label: '04 // Lab', index: 3 },
+              { label: '05 // Sectors', index: 4 },
+              { label: '06 // Archive', index: 13 },
+              { label: '07 // Collaboration', index: 14 }
+            ].map((item) => (
+              <button
+                key={item.index}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (isTransitioning.current) return;
+                  isTransitioning.current = true;
+                  setActiveIndex(item.index);
+                  setTimeout(() => { isTransitioning.current = false; }, 850);
+                  if (isMobile) setIsNavHovered(false);
+                }}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: activeIndex === item.index ? 'var(--earth-copper)' : 'rgba(255, 255, 255, 0.55)',
+                  fontFamily: 'var(--font-mono)',
+                  fontSize: '0.68rem',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.12em',
+                  cursor: 'pointer',
+                  padding: '0.5rem 0.7rem',
+                  transition: 'all 0.2s ease',
+                  whiteSpace: 'nowrap',
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.color = '#ffffff'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.color = activeIndex === item.index ? 'var(--earth-copper)' : 'rgba(255, 255, 255, 0.55)'; }}
+              >
+                {item.label}
+              </button>
+            ))
+          ) : (
+            <span style={{ display: 'block', width: '100%', height: '100%' }}></span>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
