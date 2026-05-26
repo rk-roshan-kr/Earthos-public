@@ -98,10 +98,10 @@ npm run build
 
 ## ⚖️ Licensing & Access
 
-Earthos is a proprietary research platform. Use, distribution, and modification of this codebase are strictly prohibited without an explicit, written license from the Project Head.
+The core operational codebase of Earthos is redacted for public visibility. For access requests, technical discussions, or research inquiries, please reach out directly:
 
-**Project Head**: Roshan Kumar Gupta  
-**Contact**: [roshankumargupta.sh@gmail.com](mailto:roshankumargupta.sh@gmail.com)
+* **Project Head**: Roshan Kumar Gupta
+* **Contact**: [roshankumargupta.sh@gmail.com](mailto:roshankumargupta.sh@gmail.com)
 
 ---
 *Earthos & Synapse Arch are active research projects. We value intellectual honesty, technical humility, and empirical validation over hype.*
