@@ -4251,249 +4251,380 @@ export default function App() {
           0% { opacity: 0.3; }
           100% { opacity: 1; }
         }
+        @keyframes blink {
+          0%, 100% { opacity: 0.35; }
+          50% { opacity: 1; }
+        }
+        .blink {
+          animation: blink 1.2s infinite;
+        }
       `}</style>
 
       <AnimatePresence>
-        {isContactOpen && (
-          <div 
-            style={{
-              position: 'fixed',
-              inset: 0,
-              zIndex: 9999,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '1.5rem',
-            }}
-          >
-            {/* Backdrop overlay */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => { if (submitStatus !== 'submitting') setIsContactOpen(false); }}
+        {isContactOpen && (() => {
+          const nameStatus = formData.name ? "IDENTITY_VALIDATED // OK" : "AWAITING_INPUT";
+          const emailStatus = formData.email ? (/\S+@\S+\.\S+/.test(formData.email) ? "ROUTE_RESOLVED // OK" : "INVALID_UPLINK_ADDR") : "AWAITING_INPUT";
+          const messageStatus = formData.message ? ("PAYLOAD_SIZE: " + formData.message.length + " BYTES // READY") : "AWAITING_INPUT";
+          
+          return (
+            <div 
               style={{
-                position: 'absolute',
+                position: 'fixed',
                 inset: 0,
-                background: 'rgba(0, 2, 5, 0.85)',
-                backdropFilter: 'blur(16px)',
-              }}
-            />
-
-            {/* Modal Box */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              transition={{ type: 'spring', duration: 0.5 }}
-              style={{
-                position: 'relative',
-                width: '100%',
-                maxWidth: '520px',
-                background: 'rgba(10, 11, 13, 0.96)',
-                border: '1px solid var(--earth-copper)',
-                boxShadow: '0 0 50px rgba(198, 122, 74, 0.15), inset 0 0 20px rgba(0,0,0,0.8)',
-                padding: '2.5rem 2rem',
-                zIndex: 1,
+                zIndex: 9999,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '1.5rem',
               }}
             >
-              {/* Close Button */}
-              <button
-                onClick={() => setIsContactOpen(false)}
-                disabled={submitStatus === 'submitting'}
+              {/* Backdrop overlay */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => { if (submitStatus !== 'submitting') setIsContactOpen(false); }}
                 style={{
                   position: 'absolute',
-                  top: '1.25rem',
-                  right: '1.25rem',
-                  background: 'none',
-                  border: 'none',
-                  color: 'var(--earth-dim)',
-                  cursor: 'pointer',
-                  fontSize: '1.2rem',
-                  fontFamily: 'var(--font-mono)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  padding: '0.2rem',
-                  transition: 'color 0.2s',
+                  inset: 0,
+                  background: 'rgba(0, 2, 5, 0.88)',
+                  backdropFilter: 'blur(16px)',
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--earth-copper)'}
-                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--earth-dim)'}
+              />
+
+              {/* Modal Box */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                transition={{ type: 'spring', duration: 0.5 }}
+                style={{
+                  position: 'relative',
+                  width: '100%',
+                  maxWidth: '560px',
+                  background: 'rgba(10, 11, 13, 0.98)',
+                  border: '1px solid var(--earth-copper)',
+                  boxShadow: '0 0 60px rgba(198, 122, 74, 0.2), inset 0 0 30px rgba(0,0,0,0.95)',
+                  padding: '2.5rem 2.2rem',
+                  zIndex: 1,
+                  overflow: 'hidden',
+                }}
               >
-                ✕
-              </button>
+                {/* Corner Crosshairs */}
+                <span className="mono" style={{ position: 'absolute', top: '6px', left: '10px', fontSize: '0.6rem', color: 'rgba(198, 122, 74, 0.4)' }}>+</span>
+                <span className="mono" style={{ position: 'absolute', top: '6px', right: '10px', fontSize: '0.6rem', color: 'rgba(198, 122, 74, 0.4)' }}>+</span>
+                <span className="mono" style={{ position: 'absolute', bottom: '6px', left: '10px', fontSize: '0.6rem', color: 'rgba(198, 122, 74, 0.4)' }}>+</span>
+                <span className="mono" style={{ position: 'absolute', bottom: '6px', right: '10px', fontSize: '0.6rem', color: 'rgba(198, 122, 74, 0.4)' }}>+</span>
 
-              <div className="mono" style={{ fontSize: '0.7rem', color: 'var(--earth-copper)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.15em' }}>
-                OBSERVATORY PROTOCOL // GET IN TOUCH
-              </div>
+                {/* Close Button */}
+                <button
+                  onClick={() => setIsContactOpen(false)}
+                  disabled={submitStatus === 'submitting'}
+                  style={{
+                    position: 'absolute',
+                    top: '1.25rem',
+                    right: '1.25rem',
+                    background: 'none',
+                    border: 'none',
+                    color: 'var(--earth-dim)',
+                    cursor: 'pointer',
+                    fontSize: '1.1rem',
+                    fontFamily: 'var(--font-mono)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '0.2rem',
+                    transition: 'color 0.2s, transform 0.2s',
+                    zIndex: 2,
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = '#ffffff'; e.currentTarget.style.transform = 'rotate(90deg)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--earth-dim)'; e.currentTarget.style.transform = 'rotate(0deg)'; }}
+                >
+                  ✕
+                </button>
 
-              {submitStatus === 'success' ? (
-                <div style={{ textAlign: 'center', padding: '2rem 0' }}>
-                  <div style={{ fontSize: '2.5rem', color: 'var(--earth-copper)', marginBottom: '1rem' }}>✓</div>
-                  <h3 className="mono" style={{ color: '#ffffff', fontSize: '1.1rem', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>TRANSMISSION COMPLETE</h3>
-                  <p className="mono" style={{ color: 'var(--earth-dim)', fontSize: '0.8rem', lineHeight: '1.6' }}>
-                    Your request has been queued into the Earthos registry. We will review your details and connect via secure channels.
-                  </p>
-                  <button
-                    onClick={() => { setIsContactOpen(false); setSubmitStatus('idle'); }}
-                    style={{
-                      marginTop: '2rem',
-                      padding: '0.8rem 2rem',
-                      fontSize: '0.85rem',
-                      fontFamily: 'var(--font-mono)',
-                      border: '1px solid var(--earth-border)',
-                      color: 'var(--earth-text)',
-                      background: 'rgba(255,255,255,0.02)',
-                      cursor: 'pointer',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      transition: 'border 0.2s'
-                    }}
-                    onMouseEnter={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
-                    onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--earth-border)'}
-                  >
-                    Close Registry
-                  </button>
+                <div className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.15em', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <span className="blink" style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#00ff66', display: 'inline-block' }}></span>
+                  OBSERVATORY PROTOCOL // SECURE GATEWAY
                 </div>
-              ) : (
-                <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                  <p className="mono" style={{ color: 'var(--earth-dim)', fontSize: '0.78rem', lineHeight: '1.5', marginBottom: '0.5rem' }}>
-                    Submit details to request codebase access, propose compute collaboration, or discuss developmental active inference research.
-                  </p>
 
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                    <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>YOUR NAME</label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleFormChange}
-                      disabled={submitStatus === 'submitting'}
-                      placeholder="Dr. Arthur Pendelton"
-                      style={{
-                        background: 'rgba(0,0,0,0.4)',
-                        border: '1px solid var(--earth-border)',
-                        color: '#ffffff',
-                        fontFamily: 'var(--font-mono)',
-                        fontSize: '0.85rem',
-                        padding: '0.6rem 0.8rem',
-                        outline: 'none',
-                        transition: 'border-color 0.2s',
-                      }}
-                      onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
-                      onBlur={(e) => e.currentTarget.style.borderColor = 'var(--earth-border)'}
-                    />
-                  </div>
+                {/* System Telemetry Row */}
+                <div className="mono" style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px dashed rgba(198, 122, 74, 0.25)', borderBottom: '1px dashed rgba(198, 122, 74, 0.25)', padding: '0.4rem 0', margin: '0.5rem 0 1.2rem', fontSize: '0.55rem', color: 'var(--earth-muted)', letterSpacing: '0.05em' }}>
+                  <span>UPLINK: ENCRYPTED</span>
+                  <span>DEST: OBSERVATORY_INBOX</span>
+                  <span>SYS: ONLINE</span>
+                </div>
 
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                    <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>EMAIL ADDRESS</label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleFormChange}
-                      disabled={submitStatus === 'submitting'}
-                      placeholder="arthur@lab.org"
+                {submitStatus === 'success' ? (
+                  <div style={{ textAlign: 'center', padding: '2rem 0' }}>
+                    <div className="blink" style={{ fontSize: '2.5rem', color: '#00ff66', marginBottom: '1rem', textShadow: '0 0 20px rgba(0, 255, 102, 0.3)' }}>✓</div>
+                    <h3 className="mono" style={{ color: '#ffffff', fontSize: '1.0rem', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>TRANSMISSION COMPLETE // REGISTRY ACK</h3>
+                    <p className="mono" style={{ color: 'var(--earth-dim)', fontSize: '0.78rem', lineHeight: '1.6', maxWidth: '440px', margin: '0 auto' }}>
+                      Your secure payload has been successfully committed to the Earthos registry. Our interface operators will analyze the parameters and establish secure contact.
+                    </p>
+                    <button
+                      onClick={() => { setIsContactOpen(false); setSubmitStatus('idle'); }}
                       style={{
-                        background: 'rgba(0,0,0,0.4)',
-                        border: '1px solid var(--earth-border)',
-                        color: '#ffffff',
-                        fontFamily: 'var(--font-mono)',
-                        fontSize: '0.85rem',
-                        padding: '0.6rem 0.8rem',
-                        outline: 'none',
-                        transition: 'border-color 0.2s',
-                      }}
-                      onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
-                      onBlur={(e) => e.currentTarget.style.borderColor = 'var(--earth-border)'}
-                    />
-                  </div>
-
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                    <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>PURPOSE OF INTERACTION</label>
-                    <select
-                      name="purpose"
-                      value={formData.purpose}
-                      onChange={handleFormChange}
-                      disabled={submitStatus === 'submitting'}
-                      style={{
-                        background: 'rgba(10,11,13,0.95)',
-                        border: '1px solid var(--earth-border)',
-                        color: '#ffffff',
-                        fontFamily: 'var(--font-mono)',
+                        marginTop: '2.5rem',
+                        padding: '0.8rem 2.2rem',
                         fontSize: '0.8rem',
-                        padding: '0.6rem 0.8rem',
-                        outline: 'none',
-                        cursor: 'pointer',
-                      }}
-                    >
-                      <option value="Research Collaboration">Research Collaboration</option>
-                      <option value="Compute Sponsorship">Compute Sponsorship</option>
-                      <option value="Access Request">Codebase Access Request</option>
-                      <option value="General Inquiry">General Inquiry</option>
-                    </select>
-                  </div>
-
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
-                    <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TRANSMISSION MESSAGE</label>
-                    <textarea
-                      name="message"
-                      required
-                      rows={4}
-                      value={formData.message}
-                      onChange={handleFormChange}
-                      disabled={submitStatus === 'submitting'}
-                      placeholder="Detail your parameters or background..."
-                      style={{
-                        background: 'rgba(0,0,0,0.4)',
-                        border: '1px solid var(--earth-border)',
-                        color: '#ffffff',
                         fontFamily: 'var(--font-mono)',
-                        fontSize: '0.85rem',
-                        padding: '0.6rem 0.8rem',
-                        outline: 'none',
-                        resize: 'none',
-                        transition: 'border-color 0.2s',
+                        border: '1px solid var(--earth-copper)',
+                        color: 'var(--earth-copper)',
+                        background: 'rgba(198, 122, 74, 0.05)',
+                        cursor: 'pointer',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.08em',
+                        transition: 'background-color 0.2s'
                       }}
-                      onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
-                      onBlur={(e) => e.currentTarget.style.borderColor = 'var(--earth-border)'}
-                    />
+                      onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.15)'}
+                      onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.05)'}
+                    >
+                      CLOSE TERMINAL
+                    </button>
                   </div>
-
-                  {submitStatus === 'error' && (
-                    <div className="mono" style={{ color: '#ff6b6b', fontSize: '0.75rem', textAlign: 'center' }}>
-                      Error transmitting details. Please verify your connection or contact directly via roshankumargupta.sh@gmail.com
-                    </div>
-                  )}
-
-                  <button
-                    type="submit"
-                    disabled={submitStatus === 'submitting'}
-                    style={{
-                      marginTop: '0.5rem',
-                      padding: '1.0rem 2.2rem',
-                      fontSize: '0.9rem',
+                ) : submitStatus === 'submitting' ? (
+                  <div style={{ padding: '1rem 0' }}>
+                    <p className="mono" style={{ color: 'var(--earth-dim)', fontSize: '0.75rem', marginBottom: '1rem' }}>
+                      TRANSMITTING ENCRYPTED TELEMETRY CHUNKS...
+                    </p>
+                    <div className="mono" style={{
+                      background: 'rgba(0,0,0,0.85)',
+                      border: '1px solid rgba(198, 122, 74, 0.4)',
+                      padding: '1.25rem',
+                      color: '#00ff66',
+                      fontSize: '0.65rem',
+                      lineHeight: '1.7',
                       fontFamily: 'var(--font-mono)',
-                      border: '1px solid var(--earth-copper)',
-                      color: 'var(--earth-copper)',
-                      background: 'rgba(198, 122, 74, 0.03)',
-                      cursor: submitStatus === 'submitting' ? 'not-allowed' : 'pointer',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      transition: 'background-color 0.2s'
-                    }}
-                    onMouseEnter={(e) => { if (submitStatus !== 'submitting') e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.08)'; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.03)'; }}
-                  >
-                    {submitStatus === 'submitting' ? 'TRANSMITTING...' : 'INITIATE TRANSMISSION'}
-                  </button>
-                </form>
-              )}
-            </motion.div>
-          </div>
-        )}
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.35rem',
+                      boxShadow: 'inset 0 0 15px rgba(0,255,102,0.08)'
+                    }}>
+                      <div style={{ opacity: 0.65 }}>[SYS_LOG] ESTABLISHING CONNECTION GATEWAY...</div>
+                      <div style={{ opacity: 0.75 }}>[SYS_LOG] PEER INBOX IDENTIFIED [OBSERVATORY_INBOX]</div>
+                      <div style={{ opacity: 0.85 }}>[SYS_LOG] GENERATING CRYPTOGRAPHIC TRANSMISSION WRAPPER...</div>
+                      <div style={{ opacity: 0.95 }}>[SYS_LOG] ENCRYPTING PAYLOAD PARAMS WITH OBSERVATORY_KEY</div>
+                      <div style={{ opacity: 1.0 }}>[SYS_LOG] TRANSMITTING BITS VIA SECURE HTTP ENVELOPE...</div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '0.4rem' }}>
+                        <span style={{ color: '#ffffff', fontWeight: 'bold' }}>&gt; TRANSMITTING ACTIVE</span>
+                        <span className="blink" style={{ width: '6px', height: '11px', background: '#00ff66', display: 'inline-block' }}></span>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                    <p className="mono" style={{ color: 'var(--earth-dim)', fontSize: '0.75rem', lineHeight: '1.5', marginBottom: '0.2rem' }}>
+                      Submit parameters below. Transmission packets are directly registered and cryptographically archived.
+                    </p>
+
+                    {/* Field 1: Name */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                      <label className="mono" style={{ fontSize: '0.6rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>[REG_01 // IDENTITY]</label>
+                      <input
+                        type="text"
+                        name="name"
+                        required
+                        value={formData.name}
+                        onChange={handleFormChange}
+                        disabled={submitStatus === 'submitting'}
+                        placeholder="Dr. Arthur Pendelton"
+                        style={{
+                          background: 'rgba(5, 6, 8, 0.65)',
+                          border: '1px solid rgba(198, 122, 74, 0.25)',
+                          borderLeft: '3px solid rgba(198, 122, 74, 0.7)',
+                          color: '#ffffff',
+                          fontFamily: 'var(--font-mono)',
+                          fontSize: '0.8rem',
+                          padding: '0.7rem 0.9rem',
+                          outline: 'none',
+                          transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                        }}
+                        onFocus={(e) => {
+                          e.currentTarget.style.borderColor = 'var(--earth-copper)';
+                          e.currentTarget.style.borderLeftColor = '#00ff66';
+                          e.currentTarget.style.background = 'rgba(20, 16, 14, 0.8)';
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.style.borderColor = 'rgba(198, 122, 74, 0.25)';
+                          e.currentTarget.style.borderLeftColor = 'rgba(198, 122, 74, 0.7)';
+                          e.currentTarget.style.background = 'rgba(5, 6, 8, 0.65)';
+                        }}
+                      />
+                      <span className="mono" style={{ fontSize: '0.52rem', color: formData.name ? '#00ff66' : 'var(--earth-muted)', marginTop: '0.1rem', letterSpacing: '0.05em' }}>
+                        STATUS: {nameStatus}
+                      </span>
+                    </div>
+
+                    {/* Field 2: Email */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                      <label className="mono" style={{ fontSize: '0.6rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>[REG_02 // UPLINK_ADDR]</label>
+                      <input
+                        type="email"
+                        name="email"
+                        required
+                        value={formData.email}
+                        onChange={handleFormChange}
+                        disabled={submitStatus === 'submitting'}
+                        placeholder="arthur@lab.org"
+                        style={{
+                          background: 'rgba(5, 6, 8, 0.65)',
+                          border: '1px solid rgba(198, 122, 74, 0.25)',
+                          borderLeft: '3px solid rgba(198, 122, 74, 0.7)',
+                          color: '#ffffff',
+                          fontFamily: 'var(--font-mono)',
+                          fontSize: '0.8rem',
+                          padding: '0.7rem 0.9rem',
+                          outline: 'none',
+                          transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                        }}
+                        onFocus={(e) => {
+                          e.currentTarget.style.borderColor = 'var(--earth-copper)';
+                          e.currentTarget.style.borderLeftColor = '#00ff66';
+                          e.currentTarget.style.background = 'rgba(20, 16, 14, 0.8)';
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.style.borderColor = 'rgba(198, 122, 74, 0.25)';
+                          e.currentTarget.style.borderLeftColor = 'rgba(198, 122, 74, 0.7)';
+                          e.currentTarget.style.background = 'rgba(5, 6, 8, 0.65)';
+                        }}
+                      />
+                      <span className="mono" style={{ fontSize: '0.52rem', color: formData.email ? (emailStatus.includes('OK') ? '#00ff66' : '#ff6b6b') : 'var(--earth-muted)', marginTop: '0.1rem', letterSpacing: '0.05em' }}>
+                        STATUS: {emailStatus}
+                      </span>
+                    </div>
+
+                    {/* Field 3: Purpose */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                      <label className="mono" style={{ fontSize: '0.6rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>[REG_03 // ROUTING_KEY]</label>
+                      <div style={{ position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                        <select
+                          name="purpose"
+                          value={formData.purpose}
+                          onChange={handleFormChange}
+                          disabled={submitStatus === 'submitting'}
+                          style={{
+                            background: 'rgba(5, 6, 8, 0.65)',
+                            border: '1px solid rgba(198, 122, 74, 0.25)',
+                            borderLeft: '3px solid rgba(198, 122, 74, 0.7)',
+                            color: '#ffffff',
+                            fontFamily: 'var(--font-mono)',
+                            fontSize: '0.8rem',
+                            padding: '0.7rem 0.9rem',
+                            outline: 'none',
+                            cursor: 'pointer',
+                            appearance: 'none',
+                            WebkitAppearance: 'none',
+                            MozAppearance: 'none',
+                            width: '100%',
+                            transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                          }}
+                          onFocus={(e) => {
+                            e.currentTarget.style.borderColor = 'var(--earth-copper)';
+                            e.currentTarget.style.borderLeftColor = '#00ff66';
+                            e.currentTarget.style.background = 'rgba(20, 16, 14, 0.8)';
+                          }}
+                          onBlur={(e) => {
+                            e.currentTarget.style.borderColor = 'rgba(198, 122, 74, 0.25)';
+                            e.currentTarget.style.borderLeftColor = 'rgba(198, 122, 74, 0.7)';
+                            e.currentTarget.style.background = 'rgba(5, 6, 8, 0.65)';
+                          }}
+                        >
+                          <option value="Research Collaboration">Research Collaboration</option>
+                          <option value="Compute Sponsorship">Compute Sponsorship</option>
+                          <option value="Access Request">Codebase Access Request</option>
+                          <option value="General Inquiry">General Inquiry</option>
+                        </select>
+                        <span className="mono" style={{
+                          position: 'absolute',
+                          right: '1.1rem',
+                          top: '50%',
+                          transform: 'translateY(-50%)',
+                          color: 'var(--earth-copper)',
+                          fontSize: '0.65rem',
+                          pointerEvents: 'none'
+                        }}>
+                          ▼
+                        </span>
+                      </div>
+                      <span className="mono" style={{ fontSize: '0.52rem', color: '#00ff66', marginTop: '0.1rem', letterSpacing: '0.05em' }}>
+                        STATUS: ROUTE_SET // {formData.purpose.toUpperCase()}
+                      </span>
+                    </div>
+
+                    {/* Field 4: Message */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                      <label className="mono" style={{ fontSize: '0.6rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>[REG_04 // PAYLOAD]</label>
+                      <textarea
+                        name="message"
+                        required
+                        rows={3}
+                        value={formData.message}
+                        onChange={handleFormChange}
+                        disabled={submitStatus === 'submitting'}
+                        placeholder="Detail your parameters or background..."
+                        style={{
+                          background: 'rgba(5, 6, 8, 0.65)',
+                          border: '1px solid rgba(198, 122, 74, 0.25)',
+                          borderLeft: '3px solid rgba(198, 122, 74, 0.7)',
+                          color: '#ffffff',
+                          fontFamily: 'var(--font-mono)',
+                          fontSize: '0.8rem',
+                          padding: '0.7rem 0.9rem',
+                          outline: 'none',
+                          resize: 'none',
+                          transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                        }}
+                        onFocus={(e) => {
+                          e.currentTarget.style.borderColor = 'var(--earth-copper)';
+                          e.currentTarget.style.borderLeftColor = '#00ff66';
+                          e.currentTarget.style.background = 'rgba(20, 16, 14, 0.8)';
+                        }}
+                        onBlur={(e) => {
+                          e.currentTarget.style.borderColor = 'rgba(198, 122, 74, 0.25)';
+                          e.currentTarget.style.borderLeftColor = 'rgba(198, 122, 74, 0.7)';
+                          e.currentTarget.style.background = 'rgba(5, 6, 8, 0.65)';
+                        }}
+                      />
+                      <span className="mono" style={{ fontSize: '0.52rem', color: formData.message ? '#00ff66' : 'var(--earth-muted)', marginTop: '0.1rem', letterSpacing: '0.05em' }}>
+                        STATUS: {messageStatus}
+                      </span>
+                    </div>
+
+                    {submitStatus === 'error' && (
+                      <div className="mono" style={{ color: '#ff6b6b', fontSize: '0.7rem', textAlign: 'center', border: '1px solid rgba(255, 107, 107, 0.3)', padding: '0.5rem', background: 'rgba(255,107,107,0.05)' }}>
+                        ERROR ENCOUNTERED // CONTACT DIRECTLY VIA: roshankumargupta.sh@gmail.com
+                      </div>
+                    )}
+
+                    <button
+                      type="submit"
+                      disabled={submitStatus === 'submitting'}
+                      style={{
+                        marginTop: '0.6rem',
+                        padding: '0.9rem 2.2rem',
+                        fontSize: '0.82rem',
+                        fontFamily: 'var(--font-mono)',
+                        border: '1px solid var(--earth-copper)',
+                        color: 'var(--earth-copper)',
+                        background: 'rgba(198, 122, 74, 0.04)',
+                        cursor: submitStatus === 'submitting' ? 'not-allowed' : 'pointer',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.1em',
+                        transition: 'all 0.2s ease',
+                        boxShadow: '0 0 15px rgba(198, 122, 74, 0.05)'
+                      }}
+                      onMouseEnter={(e) => { if (submitStatus !== 'submitting') { e.currentTarget.style.backgroundColor = 'var(--earth-copper)'; e.currentTarget.style.color = 'var(--earth-void)'; e.currentTarget.style.boxShadow = '0 0 25px rgba(198, 122, 74, 0.2)'; } }}
+                      onMouseLeave={(e) => { if (submitStatus !== 'submitting') { e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.04)'; e.currentTarget.style.color = 'var(--earth-copper)'; e.currentTarget.style.boxShadow = '0 0 15px rgba(198, 122, 74, 0.05)'; } }}
+                    >
+                      INITIATE SECURE TRANSMISSION
+                    </button>
+                  </form>
+                )}
+              </motion.div>
+            </div>
+          );
+        })()}
       </AnimatePresence>
 
       {/* Top Hover Navigation Trigger Zone */}
