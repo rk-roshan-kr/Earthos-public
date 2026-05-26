@@ -1678,7 +1678,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         }}
         onMouseEnter={e => e.target.style.background = 'rgba(255,255,255,0.14)'}
         onMouseLeave={e => e.target.style.background = 'rgba(255,255,255,0.06)'}
-      >â†‘ PREV SECTION</button>
+      >{"\u2191 PREV SECTION"}</button>
 
       <button
         onClick={onScrollExitDown}
@@ -1695,7 +1695,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         }}
         onMouseEnter={e => e.target.style.background = 'rgba(255,255,255,0.14)'}
         onMouseLeave={e => e.target.style.background = 'rgba(255,255,255,0.06)'}
-      >â†“ NEXT SECTION</button>
+      >{"\u2193 NEXT SECTION"}</button>
 
       {/* Layer 0.8: Giant backdrop words cropped (High contrast) */}
       <div style={{
@@ -4233,7 +4233,7 @@ export default function App() {
           <footer style={{ width: '100%', padding: '4rem 0', borderTop: '1px solid var(--earth-border)', background: 'var(--earth-void)', marginTop: 'auto' }}>
             <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span className="mono" style={{ fontSize: '0.85rem', color: 'var(--earth-muted)' }}>
-                Earthos Substrate Observatory Â· Roshan Kumar Gupta
+                {"Earthos Substrate Observatory \u00B7 Roshan Kumar Gupta"}
               </span>
               <span className="mono" style={{ fontSize: '0.85rem', color: 'var(--earth-muted)', opacity: 0.5 }}>
                 2026
@@ -4522,10 +4522,10 @@ export default function App() {
             alignItems: 'center',
             justifyContent: 'center',
             flexWrap: isNavHovered && isMobile ? 'wrap' : 'nowrap',
-            height: isNavHovered ? (isMobile ? 'auto' : '48px') : '4px',
-            width: isNavHovered ? (isMobile ? '90%' : 'max-content') : '90px',
-            borderRadius: isNavHovered ? '24px' : '2px',
-            background: isNavHovered ? 'rgba(12, 10, 8, 0.72)' : 'rgba(198, 122, 74, 0.5)',
+            height: isNavHovered ? (isMobile ? 'auto' : '48px') : '3px',
+            width: isNavHovered ? (isMobile ? '90%' : 'max-content') : '40px',
+            borderRadius: isNavHovered ? '24px' : '1.5px',
+            background: isNavHovered ? 'rgba(12, 10, 8, 0.72)' : 'rgba(255, 255, 255, 0.15)',
             border: isNavHovered ? '1px solid rgba(255, 255, 255, 0.08)' : 'none',
             backdropFilter: isNavHovered ? 'blur(24px) saturate(1.2)' : 'none',
             WebkitBackdropFilter: isNavHovered ? 'blur(24px) saturate(1.2)' : 'none',
