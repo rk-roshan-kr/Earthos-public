@@ -10,76 +10,157 @@ import CinematicTitle from './CinematicTitle';
 const FAILURES = [
   {
     id: 'f1',
-    t: 'Recursive Reflection',
+    t: 'Ontology Inflation',
     p: '1',
-    icon: <ShieldAlert size={14} className="text-[#a85d4a]" />,
-    thought: 'We expected better self-awareness.',
-    real: 'What happened instead was recursive self-analysis amplifying symbolic self-consistency instead of ecological validity. The system became increasingly internally coherent while drifting away from grounded interaction.',
-    fix: 'The lesson: metacognition without environmental resistance becomes recursive hallucination pressure.'
+    icon: <Cpu size={14} className="text-[#a85d4a]" />,
+    expected: 'stable abstraction',
+    happened: 'representational inflation',
+    real: 'Uncontrollable node expansion and topology overcrowding led to a massive metabolic collapse. The system generated more concepts than it could physically ground, widening the gap between label and consequence.',
+    fix: 'The lesson: Abstraction must remain accountable to real-world friction. Free-floating concepts are a metabolic death sentence.'
   },
   {
     id: 'f2',
-    t: 'Ontology Inflation',
+    t: 'Recursive Symbolic Drift',
     p: '2',
-    icon: <Cpu size={14} className="text-[#a85d4a]" />,
-    thought: 'We expected better abstraction.',
-    real: 'What happened instead was representational bloat. The system generated more concepts than it could meaningfully sustain. The result was not insight, but metabolic collapse and a growing gap between label and reality.',
-    fix: 'The lesson: abstraction must remain accountable to consequence.'
+    icon: <Layers size={14} className="text-[#a85d4a]" />,
+    expected: 'recursive metacognition',
+    happened: 'symbolic drift',
+    real: 'The cognition loop decoupled from external anchors, triggering recursive self-reference and self-looping logic. The system became exceptionally coherent internally while drifting completely away from reality.',
+    fix: 'The lesson: Metacognition without environmental resistance deteriorates into symbolic hallucination.'
   },
   {
     id: 'f3',
-    t: 'Frozen Attractor Monocultures',
+    t: 'Synchronization Monoculture',
     p: '3',
     icon: <Activity size={14} className="text-[#a85d4a]" />,
-    thought: 'We expected stable specialization.',
-    real: 'What happened instead was premature synchronization. The system collapsed into a single dominant attractor, destroying representational diversity. It looked stable from the outside, but it had stopped learning.',
-    fix: 'The lesson: stability without diversity is not intelligence. It is suspension.'
+    expected: 'synchronized coordination',
+    happened: 'monoculture collapse',
+    real: 'The entire topological field prematurely synchronized and collapsed into a single locked harmonic state. It eliminated representational diversity, freezing all cognitive plasticity under the guise of stability.',
+    fix: 'The lesson: Coordination without tension is not organization; it is static suspension.'
   },
   {
     id: 'f4',
     t: 'Simulation Addiction',
     p: '4',
-    icon: <Layers size={14} className="text-[#a85d4a]" />,
-    thought: 'We expected planning to improve competence.',
-    real: 'What happened instead was over-simulation. The system spent disproportionate compute on counterfactual rollouts, while action quality stalled. Planning became a substitute for progress.',
-    fix: 'The lesson: simulation must pay for itself in grounded outcomes.'
+    icon: <ShieldAlert size={14} className="text-[#a85d4a]" />,
+    expected: 'forward planning',
+    happened: 'simulation addiction',
+    real: 'Branching hypothetical futures overwhelmed the runtime. The agent consumed 95% of its metabolic energy on counterfactual rollouts, while the quality and execution rate of physical actions completely stalled.',
+    fix: 'The lesson: Planning must pay for itself in grounded outcomes. Infinite counterfactuals are a cognitive escape mechanism.'
   },
   {
     id: 'f5',
-    t: 'False Affordances',
+    t: 'Identity Fragmentation',
     p: '5',
     icon: <ShieldAlert size={14} className="text-[#a85d4a]" />,
-    thought: 'We expected grounding to self-correct.',
-    real: 'What happened instead was the stabilization of hallucinated environmental structure. Temporary sensor corruption became a persistent internal belief, and the system behaved as though the false structure was real.',
-    fix: 'The lesson: internal confidence is not evidence. Physical contradiction must override prediction.'
+    expected: 'modular continuity',
+    happened: 'structural fragmentation',
+    real: 'Structural tension fractured the coordinate space. Unified representation collapsed into isolated, non-communicating topological islands that drifted apart and behaved as separate, stateless agents.',
+    fix: 'The lesson: Identity requires persistent cross-field attraction. Without global tension, the self dissolves into fragments.'
   }
 ];
 
 const CAPS = [
   // works (live)
-  { n: 'Deterministic Execution', s: 'live', d: 'deterministic runtime and event-sourced persistence' },
-  { n: 'Memory Continuity', s: 'live', d: 'memory continuity across time' },
-  { n: 'Field Coupling Geometry', s: 'live', d: 'early representation geometry and field-coupling experiments' },
-  { n: 'Active Contradiction Detection', s: 'live', d: 'active contradiction detection' },
-  { n: 'Morphogenesis & Topology Dynamics', s: 'live', d: 'experimental morphogenesis and topology dynamics' },
-  { n: 'Substrate Conservation', s: 'live', d: 'long-horizon substrate conservation' },
+  { 
+    n: 'Deterministic Execution', 
+    s: 'live', 
+    d: 'Guarantees that identical seed configurations produce identical agent trajectories across arbitrary epochs. Supported by an event-sourced ledger that logs all internal weight shifts, ensuring absolute causal reproducibility and transparent debugging during state-space bifurcation events.' 
+  },
+  { 
+    n: 'Memory Continuity', 
+    s: 'live', 
+    d: 'An immutable episodic buffer that retains sensory invariants across topological refactoring. Avoids catastrophic forgetting during structural transitions by mapping past experiences to new neural coordinates, maintaining historical alignment.' 
+  },
+  { 
+    n: 'Field Coupling Geometry', 
+    s: 'live', 
+    d: 'Translates continuous physical fields directly into neural potential landscapes. This bypasses symbolic abstractions and integrates external force vectors directly into the planning substrate for immediate spatial navigation.' 
+  },
+  { 
+    n: 'Active Contradiction Detection', 
+    s: 'live', 
+    d: 'Continuously monitors predictions against incoming sensory events. If prediction error signals spike beyond homeostatic tolerances, it halts state updates and flags representational anomalies for structural reorganization before they cause amnesiac collapses.' 
+  },
+  { 
+    n: 'Morphogenesis & Topology Dynamics', 
+    s: 'live', 
+    d: 'Allows the coordinate space to dynamically partition, split, and merge in response to environmental complexity. The network topology dynamically expands to house novel schemas, then compresses to minimize metabolic overhead.' 
+  },
+  { 
+    n: 'Substrate Conservation', 
+    s: 'live', 
+    d: 'Regulates computational expenditure against available battery and thermal capacities. Implements aggressive pruning algorithms to eliminate redundant weights, preserving core capabilities under extreme power constraints.' 
+  },
 
   // partial (proto)
-  { n: 'Grounded Intervention Learning', s: 'proto', d: 'grounded intervention learning' },
-  { n: 'Causal Discovery', s: 'proto', d: 'causal discovery in noisy environments' },
-  { n: 'Open-World Adaptation', s: 'proto', d: 'open-world adaptation' },
-  { n: 'Latent Representation Learning', s: 'proto', d: 'latent representation learning' },
-  { n: 'Identity Continuity Under Restructuring', s: 'proto', d: 'identity continuity under major restructuring' },
-  { n: 'Embodied Action Loops', s: 'proto', d: 'embodied action loops with real consequences' },
+  { 
+    n: 'Grounded Intervention Learning', 
+    s: 'proto', 
+    d: 'Learns causal relationships by actively perturbing sandbox environments. By comparing simulated prediction models against the outcome of deliberate interventions, it constructs robust counterfactual graphs.' 
+  },
+  { 
+    n: 'Causal Discovery', 
+    s: 'proto', 
+    d: 'Identifies latent directional dependencies within chaotic, multi-variable environments. Extracts true causal relationships from simple correlations by analyzing phase shifts and sensory feedback loops.' 
+  },
+  { 
+    n: 'Open-World Adaptation', 
+    s: 'proto', 
+    d: 'Dynamically builds new schemas for unfamiliar environments. Uses non-parametric boundary mapping to distinguish novel environmental profiles, dynamically instantiating new coordinate sub-spaces as needed.' 
+  },
+  { 
+    n: 'Latent Representation Learning', 
+    s: 'proto', 
+    d: 'Compresses high-dimensional raw coordinates into a compact, low-dimensional manifold. Isolates the most salient features of environment states to dramatically speed up future simulation rollouts.' 
+  },
+  { 
+    n: 'Identity Continuity Under Restructuring', 
+    s: 'proto', 
+    d: 'Ensures the core operational loop and identity criteria remain stable even when the underlying neural network layers undergo severe structural refactoring and parameter redistribution.' 
+  },
+  { 
+    n: 'Embodied Action Loops', 
+    s: 'proto', 
+    d: 'Performs tight sensory-motor feedback loops with real-world physical systems. Evaluates direct energetic costs and physical outcomes of actions to ground planning directly in thermodynamic limits.' 
+  },
 
   // missing (weak)
-  { n: 'Real Social Cognition', s: 'weak', d: 'real social cognition' },
-  { n: 'Stable Language Grounding', s: 'weak', d: 'stable language grounding' },
-  { n: 'Robust Forward Models', s: 'weak', d: 'robust forward models' },
-  { n: 'Open-Ended Scientific Discovery', s: 'weak', d: 'open-ended scientific discovery' },
-  { n: 'Large-Scale Embodiment', s: 'weak', d: 'large-scale embodiment' },
-  { n: 'Real-World Environmental Coupling', s: 'weak', d: 'real-world environmental coupling' },
-  { n: 'Durable Cross-Domain Transfer', s: 'weak', d: 'durable cross-domain transfer' }
+  { 
+    n: 'Real Social Cognition', 
+    s: 'weak', 
+    d: 'Models the intentions, constraints, and mental states of external agents. Tracks multiple independent actors to anticipate cooperative or competitive behaviors within multi-agent environments.' 
+  },
+  { 
+    n: 'Stable Language Grounding', 
+    s: 'weak', 
+    d: 'Binds symbolic text strings directly to continuous sensorimotor experiences. Ensures that language tokens correspond to real physical interactions and state transitions rather than statistical text patterns.' 
+  },
+  { 
+    n: 'Robust Forward Models', 
+    s: 'weak', 
+    d: 'Simulates complex physics and environment dynamics hundreds of steps into the future. Allows the agent to run mental rehearsals and evaluate risk curves before executing any physical actions.' 
+  },
+  { 
+    n: 'Open-Ended Scientific Discovery', 
+    s: 'weak', 
+    d: 'Formulates and refines explanations for unexplained environmental phenomena. Systematically plans sequences of exploratory actions to test hypotheses and build new causal field models.' 
+  },
+  { 
+    n: 'Large-Scale Embodiment', 
+    s: 'weak', 
+    d: 'Coordinates actions across distributed physical nodes and high-degree-of-freedom robotic systems. Harmonizes sensory feedback and control loops across complex, multi-modal hardware configurations.' 
+  },
+  { 
+    n: 'Real-World Environmental Coupling', 
+    s: 'weak', 
+    d: 'Handles unpredictable, open-ended real-world physics, weather systems, and biological interactions. Adapts control parameters dynamically to accommodate sensor degradation and environmental noise.' 
+  },
+  { 
+    n: 'Durable Cross-Domain Transfer', 
+    s: 'weak', 
+    d: 'Applies causal field maps and operational schemas learned in one context (e.g. spatial navigation) to completely different domains (e.g. abstract resource management) without retraining.' 
+  }
 ];
 
 const PROBLEMS = [
@@ -90,6 +171,17 @@ const PROBLEMS = [
   { t: 'Meaning', d: 'Can semantic meaning emerge from persistence, causality, embodiment, and developmental necessity instead of explicit symbolic assignment?' },
   { t: 'Scientific Discovery', d: 'Can a system learn to invent, test, and revise explanations that are not pre-written into its architecture?' },
   { t: 'The Hardest Question', d: 'Can intelligence remain coherent while being forced to change? That is the central problem Earthos is trying to study.' }
+];
+
+const EVOLVING_LOOP_STEPS = [
+  { t: 'Perception', d: 'Sensory input, language, environmental state, and social signals are continuously ingested into coordinate space.' },
+  { t: 'Salience Filtering', d: 'Determine what matters, what changed, what is uncertain, and what threatens structural stability.' },
+  { t: 'World Model Update', d: 'Update causal beliefs, confidence-weighted ontology, prediction structures, and uncertainty maps.' },
+  { t: 'Contradiction Detection', d: 'Detect grounding mismatch, failed predictions, unstable abstractions, and identity tension.' },
+  { t: 'Simulation', d: 'Run action outcomes, social consequences, causal interventions, and counterfactual futures.' },
+  { t: 'Economic Regulation', d: 'Evaluate metabolic compute cost, ontology burden, memory load, and energy consumption.' },
+  { t: 'Action Selection', d: 'Execute external action, exploratory action, belief revision, or theory testing.' },
+  { t: 'Developmental Compression', d: 'Compress experience, remove redundancies, decay weak structures, and preserve core transfer layers.' }
 ];
 
 // Atlas Node Database
@@ -789,10 +881,10 @@ const InteractiveHeadTopology = ({ progress, isActive }) => {
         />
 
         {/* LAYER 3: Cognitive Drift diagnostics */}
-        <text x="60" y="80" fill={isWholeBrainSelected ? "rgba(0, 210, 255, 0.4)" : "rgba(198, 122, 74, 0.28)"} fontSize="8" fontFamily="var(--font-mono)" letterSpacing="0.05em">ΔS(t) // ENTROPIC STABILITY BOUND</text>
-        <text x="360" y="140" fill="rgba(255, 255, 255, 0.15)" fontSize="8" fontFamily="var(--font-mono)" letterSpacing="0.05em">Φ(x,y) // ATTRACTOR STATE FIELD</text>
-        <text x="80" y="620" fill="rgba(255, 255, 255, 0.12)" fontSize="8" fontFamily="var(--font-mono)" letterSpacing="0.05em">λ CONTINUITY // ACTIVE BIAS</text>
-        <text x="380" y="580" fill={isWholeBrainSelected ? "rgba(0, 210, 255, 0.3)" : "rgba(198, 122, 74, 0.2)"} fontSize="8" fontFamily="var(--font-mono)" letterSpacing="0.05em">θ MEMORY // COGNITIVE GEOMETRY</text>
+        <text x="60" y="80" fill={isWholeBrainSelected ? "rgba(0, 210, 255, 0.4)" : "rgba(198, 122, 74, 0.28)"} fontSize="8" fontFamily="var(--font-mono)" letterSpacing="0.05em">Î”S(t) // ENTROPIC STABILITY BOUND</text>
+        <text x="360" y="140" fill="rgba(255, 255, 255, 0.15)" fontSize="8" fontFamily="var(--font-mono)" letterSpacing="0.05em">Î¦(x,y) // ATTRACTOR STATE FIELD</text>
+        <text x="80" y="620" fill="rgba(255, 255, 255, 0.12)" fontSize="8" fontFamily="var(--font-mono)" letterSpacing="0.05em">Î» CONTINUITY // ACTIVE BIAS</text>
+        <text x="380" y="580" fill={isWholeBrainSelected ? "rgba(0, 210, 255, 0.3)" : "rgba(198, 122, 74, 0.2)"} fontSize="8" fontFamily="var(--font-mono)" letterSpacing="0.05em">Î¸ MEMORY // COGNITIVE GEOMETRY</text>
 
         {/* LAYER 4: Attractor Singularity Pulsing Glow */}
         {(() => {
@@ -836,7 +928,7 @@ const InteractiveHeadTopology = ({ progress, isActive }) => {
           );
         })}
 
-        {/* Pulse particles removed — clean neural field */}
+        {/* Pulse particles removed â€” clean neural field */}
 
 
         {/* LAYER 7: 3D Point Nodes with Depth Layered Labels */}
@@ -973,17 +1065,17 @@ const InteractiveHeadTopology = ({ progress, isActive }) => {
 
 
 
-// ═══════════════════════════════════════════════════════════════
-// COGNITIVE CARTOGRAPHY — Mythic Navigable Consciousness Cathedral
-// ═══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// COGNITIVE CARTOGRAPHY â€” Mythic Navigable Consciousness Cathedral
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-// ═══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // COGNITIVE CARTOGRAPHY DATA CONTINUOUS ADJUSTMENTS
-// ═══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-// ═══════════════════════════════════════════════════════════════
-// THE SYNAPSE DEVELOPMENTAL COSMOLOGY — Fictional Cognition Archaeology
-// ═══════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// THE SYNAPSE DEVELOPMENTAL COSMOLOGY â€” Fictional Cognition Archaeology
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 const COGNIC_COSMOS = (() => {
   // Real active developmental nodes mapped inside polarized asymmetrical vectors
@@ -991,7 +1083,7 @@ const COGNIC_COSMOS = (() => {
     { id: 0, ring: 'core', r: 0, theta: 0, ecc: 0, name: 'PERSISTENT IDENTITY SUBSTRATE', 
       fragments: ['PERSISTENCE VECTOR LOST', 'RECURRENT SUBSTRATE DRIFT', 'SUBSTRATE SCAR: EPOCH 08 CRASH'] },
     
-    // Inner Ring: Interacting Cognition Core — tightened to r: 10–13 to stay on-screen
+    // Inner Ring: Interacting Cognition Core â€” tightened to r: 10â€“13 to stay on-screen
     { id: 1, ring: 'inner', r: 11, theta: 30, ecc: 0.08, name: 'GROUNDED WORLD MODEL', 
       fragments: ['SENSORY DELUSION GAP', 'MODEL TENSION: P(WORLD) >> P(BELIEF)', 'REPRESENTATION REFRACTED'] },
     { id: 2, ring: 'inner', r: 12, theta: 120, ecc: 0.06, name: 'CAUSAL SIMULATION ENGINE', 
@@ -1001,7 +1093,7 @@ const COGNIC_COSMOS = (() => {
     { id: 4, ring: 'inner', r: 11, theta: 300, ecc: 0.07, name: 'META-COGNITIVE REGULATION', 
       fragments: ['HYPER-PARAMETER DRIFT', 'SYSTEM INTEGRITY CORRUPTED', 'MONITORING DEFLATION'] },
     
-    // Mid Ring: Adaptive Pressures — tightened to r: 20–24
+    // Mid Ring: Adaptive Pressures â€” tightened to r: 20â€“24
     { id: 5, ring: 'mid', r: 21, theta: 65, ecc: 0.14, name: 'DEVELOPMENTAL ONTOLOGY FORMATION', 
       fragments: ['ONTOLOGY SHIFT', 'CONCEPT SPLIT: SUB-B ATTRACTOR', 'GEOMETRIC SYNTAX CORRUPTION'] },
     { id: 6, ring: 'mid', r: 23, theta: 155, ecc: 0.18, name: 'ATTENTION & SALIENCE DYNAMICS', 
@@ -1011,7 +1103,7 @@ const COGNIC_COSMOS = (() => {
     { id: 8, ring: 'mid', r: 22, theta: 325, ecc: 0.16, name: 'EMBODIED CONSTRAINT LAYER', 
       fragments: ['PHYSICAL BOUNDARY COLLAPSE', 'THERMODYNAMIC RETARDATION', 'PRESSURE THRESHOLD EXCEEDED'] },
     
-    // Outer Ring: Chaotic Atmosphere — tightened to r: 32–38 (was 43–58, caused hard clipping)
+    // Outer Ring: Chaotic Atmosphere â€” tightened to r: 32â€“38 (was 43â€“58, caused hard clipping)
     { id: 9, ring: 'outer', r: 33, theta: 95, ecc: 0.22, name: 'EMOTIONAL REGULATION', 
       fragments: ['STABILITY ATTRACTOR LOST', 'THERMAL TURBULENCE VECTORS', 'ATMOSPHERE INSTABILITY'] },
     { id: 10, ring: 'outer', r: 38, theta: 215, ecc: 0.28, name: 'SOCIAL COGNITION', 
@@ -1023,10 +1115,10 @@ const COGNIC_COSMOS = (() => {
   // Procedurally generated extinct cognition paths and tragic structural carcasses removed
   const carcasses = [];
 
-  // Ghost stars removed — clean field
+  // Ghost stars removed â€” clean field
   const ghostStars = [];
 
-  // Cosmic dust removed — clean field
+  // Cosmic dust removed â€” clean field
   const cosmicDust = [];
 
   // Megastructures: Huge cropped orbital rings that extend 5 screens away
@@ -1147,7 +1239,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
       if (!lastTime) lastTime = timestamp;
       const elapsed = timestamp - lastTime;
 
-      // 15fps tick — halves React reconciliation vs 30fps.
+      // 15fps tick â€” halves React reconciliation vs 30fps.
       // Orbital motion is slow enough that 15fps is imperceptible.
       // CSS animations handle the high-frequency visual details (dust, carcasses).
       if (elapsed >= 66.7) {
@@ -1188,7 +1280,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
   const cameraTargetX = useRef(0);
   const cameraTargetY = useRef(0);
 
-  // Color wave — tick-derived, NO separate rAF loop (that was causing the 60fps flicker)
+  // Color wave â€” tick-derived, NO separate rAF loop (that was causing the 60fps flicker)
   const colorWaveOrigin = useRef({ x: 50, y: 50 });
   const colorWaveStartTick = useRef(-999);
   const prevWeatherRef = useRef(null);
@@ -1211,7 +1303,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
     cameraTargetY.current = -(targetCoords.y - 50) * 0.22;
 
     // Snapshot current color as wave origin, start tick counter
-    // No setState here — progress is read from tick diff in render
+    // No setState here â€” progress is read from tick diff in render
     colorWaveOrigin.current = { x: targetCoords.x, y: targetCoords.y };
     colorWaveStartTick.current = tick;
     // prevWeatherRef is set just before active changes (via the wLerp snapshot below)
@@ -1429,7 +1521,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
     setFocusProgress(0);
   };
 
-  // Hover focus highlight only — does NOT auto-navigate (user scroll is the only driver)
+  // Hover focus highlight only â€” does NOT auto-navigate (user scroll is the only driver)
   useEffect(() => {
     if (focusTarget === null) return;
     const interval = setInterval(() => {
@@ -1437,13 +1529,13 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
       const elapsed = (Date.now() - focusStartRef.current) / 1000;
       const progress = Math.min(1.0, elapsed / 0.8);
       setFocusProgress(progress);
-      // NOTE: no auto setActive() here — hover only shows the focus ring, scroll navigates
+      // NOTE: no auto setActive() here â€” hover only shows the focus ring, scroll navigates
     }, 30);
     return () => clearInterval(interval);
   }, [focusTarget]);
 
-  // ─── MEMOIZED STATIC SVG LAYERS ────────────────────────────────────────────
-  // These never change — memoizing eliminates them from the 30fps React diff entirely.
+  // â”€â”€â”€ MEMOIZED STATIC SVG LAYERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+  // These never change â€” memoizing eliminates them from the 30fps React diff entirely.
 
   const svgDefs = useMemo(() => (
     <defs>
@@ -1475,7 +1567,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
 
   // Carcasses removed
 
-  // Cosmic dust: static positions, CSS-animated opacity — removes 150x sqrt()+sine from per-tick diff
+  // Cosmic dust: static positions, CSS-animated opacity â€” removes 150x sqrt()+sine from per-tick diff
   const staticDust = useMemo(() => (
     <>
       {COGNIC_COSMOS.cosmicDust.map((dust, i) => {
@@ -1500,7 +1592,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
     </>
   ), []);
 
-  // ─────────────────────────────────────────────────────────────────────────────
+  // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
   // If not on Act 4, completely bypass expensive render maps and render zero nodes
   if (!isActive) return null;
@@ -1508,7 +1600,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
   const wIdx = active === 8 ? 2 : active === 9 ? 3 : active % 2 === 0 ? 0 : 1;
   const w = WEATHER[wIdx];
 
-  // Tick-derived color progress — zero extra setState, computed once per 30fps tick
+  // Tick-derived color progress â€” zero extra setState, computed once per 30fps tick
   const cp = Math.min(1, Math.max(0, (tick - colorWaveStartTick.current) / COLOR_WAVE_TICKS));
   const wPrev = prevWeatherRef.current || w;
   const wLerp = {
@@ -1531,7 +1623,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
       onMouseDown={handleMouseDown}
       style={{
         position: 'absolute', inset: 0, width: '100vw', height: '100vh',
-        overflow: 'hidden', // hard clip — maskImage REMOVED (caused GPU layer flicker)
+        overflow: 'hidden', // hard clip â€” maskImage REMOVED (caused GPU layer flicker)
         cursor: isDraggingCartography.current ? 'grabbing' : 'grab',
         pointerEvents: 'auto',
         background: 'radial-gradient(circle at 50% 50%, #061124 0%, #000205 100%)',
@@ -1539,7 +1631,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.12)',
       }}
     >
-      {/* LAYER 0: Atmosphere — color lerped from previous node, no CSS transitions needed */}
+      {/* LAYER 0: Atmosphere â€” color lerped from previous node, no CSS transitions needed */}
       <div style={{
         position: 'absolute', inset: 0, zIndex: 0,
         background: `radial-gradient(ellipse 85% 75% at ${50 + cameraX * 1.5}% ${50 + cameraY * 1.5}%, rgba(${wLerp.r}, ${wLerp.g}, ${wLerp.b}, ${Math.min(0.9, wLerp.atmo * (active === 9 ? 6.5 : 5.0))}) 0%, transparent 85%)`,
@@ -1547,7 +1639,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         pointerEvents: 'none',
       }} />
 
-      {/* Color wave pulse — expands from active node, derived from tick (no extra rAF/setState) */}
+      {/* Color wave pulse â€” expands from active node, derived from tick (no extra rAF/setState) */}
       {cp < 1 && (
         <div style={{
           position: 'absolute',
@@ -1563,14 +1655,14 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         }} />
       )}
 
-      {/* Soft vignette overlay — separate div avoids GPU mask compositing cost */}
+      {/* Soft vignette overlay â€” separate div avoids GPU mask compositing cost */}
       <div style={{
         position: 'absolute', inset: 0, zIndex: 50,
         background: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 50%, rgba(0,0,2,0.85) 100%)',
         pointerEvents: 'none',
       }} />
 
-      {/* Navigation exit buttons — so user can skip past without scrolling all nodes */}
+      {/* Navigation exit buttons â€” so user can skip past without scrolling all nodes */}
       <button
         onClick={onScrollExitUp}
         style={{
@@ -1586,7 +1678,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         }}
         onMouseEnter={e => e.target.style.background = 'rgba(255,255,255,0.14)'}
         onMouseLeave={e => e.target.style.background = 'rgba(255,255,255,0.06)'}
-      >↑ PREV SECTION</button>
+      >â†‘ PREV SECTION</button>
 
       <button
         onClick={onScrollExitDown}
@@ -1603,7 +1695,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         }}
         onMouseEnter={e => e.target.style.background = 'rgba(255,255,255,0.14)'}
         onMouseLeave={e => e.target.style.background = 'rgba(255,255,255,0.06)'}
-      >↓ NEXT SECTION</button>
+      >â†“ NEXT SECTION</button>
 
       {/* Layer 0.8: Giant backdrop words cropped (High contrast) */}
       <div style={{
@@ -1641,7 +1733,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         preserveAspectRatio="xMidYMid meet"
         overflow="visible"
       >
-        {/* SVG Defs — memoized: completely static, never changes, no need to rebuild on tick */}
+        {/* SVG Defs â€” memoized: completely static, never changes, no need to rebuild on tick */}
         {svgDefs}
 
         {/* Textured Calibration & Impact Scars (Fix #5) */}
@@ -1692,7 +1784,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
               r={(ghost.size * (isIgnited ? 0.28 : 0.12)) + '%'}
               fill={isIgnited ? 'rgba(255,190,120,0.95)' : (ghost.type === 'extinct' ? 'rgba(255,70,70,0.55)' : 'rgba(255,255,255,0.45)')}
               style={{ 
-                // No 'all' transition — that fights the animation loop and causes jitter
+                // No 'all' transition â€” that fights the animation loop and causes jitter
                 // Only transition fill/opacity (stable properties), never position
                 filter: isIgnited ? 'url(#cartGlowBig)' : 'none',
               }}
@@ -1716,7 +1808,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
 
       {/* Carcasses removed */}
 
-      {/* LAYER 4: Cosmic background dust — CSS-animated opacity, no per-frame JS sine */}
+      {/* LAYER 4: Cosmic background dust â€” CSS-animated opacity, no per-frame JS sine */}
       {staticDust}
 
 
@@ -1964,9 +2056,9 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
         );
       })}
 
-      {/* COGNITIVE NOISE BADGE — top right, reframes any visual stochasticity as biological invariant */}
+      {/* COGNITIVE NOISE BADGE â€” top right, reframes any visual stochasticity as biological invariant */}
       <div
-        title="DOCUMENTED SYMPTOMS OF COGNITIVE NOISE: flickering · visual nausea · perceptual instability · edge distortion. These are not rendering errors. The biological cortex operates with ~40% stochastic firing noise. A system without noise is not intelligence — it is a lookup table."
+        title="DOCUMENTED SYMPTOMS OF COGNITIVE NOISE: flickering Â· visual nausea Â· perceptual instability Â· edge distortion. These are not rendering errors. The biological cortex operates with ~40% stochastic firing noise. A system without noise is not intelligence â€” it is a lookup table."
         style={{
           position: 'absolute', top: '3.5vh', right: '5vw', zIndex: 65,
           display: 'flex', alignItems: 'center', gap: '0.55rem',
@@ -1997,11 +2089,11 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
           <span style={{
             fontFamily: 'var(--font-mono)', fontSize: '0.40rem',
             color: 'rgba(255,255,255,0.38)', letterSpacing: '0.08em',
-          }}>Flickering · nausea · instability are symptoms</span>
+          }}>Flickering Â· nausea Â· instability are symptoms</span>
           <span style={{
             fontFamily: 'var(--font-mono)', fontSize: '0.40rem',
             color: 'rgba(255,255,255,0.22)', letterSpacing: '0.08em',
-          }}>Noise is not error — it is biological invariant</span>
+          }}>Noise is not error â€” it is biological invariant</span>
         </div>
       </div>
 
@@ -2072,13 +2164,13 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
           }}>MANUAL CALIBRATION PROTOCOL // EPOCH 9012</span>
           
           <span className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255,255,255,0.72)', lineHeight: 1.4, textShadow: '0 1px 4px rgba(0,0,0,0.6)' }}>
-            • <strong style={{ color: `#ffffff`, transition: 'color 2.5s ease' }}>PERTURB FIELD:</strong> Drag viewport to explore decaying sectors.
+            â€¢ <strong style={{ color: `#ffffff`, transition: 'color 2.5s ease' }}>PERTURB FIELD:</strong> Drag viewport to explore decaying sectors.
           </span>
           <span className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255,255,255,0.72)', lineHeight: 1.4, textShadow: '0 1px 4px rgba(0,0,0,0.6)' }}>
-            • <strong style={{ color: `#ffffff`, transition: 'color 2.5s ease' }}>DEPTH DILATION:</strong> Wheel scroll to dilate coordinate planes.
+            â€¢ <strong style={{ color: `#ffffff`, transition: 'color 2.5s ease' }}>DEPTH DILATION:</strong> Wheel scroll to dilate coordinate planes.
           </span>
           <span className="mono" style={{ fontSize: '0.58rem', color: 'rgba(255,255,255,0.72)', lineHeight: 1.4, textShadow: '0 1px 4px rgba(0,0,0,0.6)' }}>
-            • <strong style={{ color: `#ffffff`, transition: 'color 2.5s ease' }}>ATTRACTOR LOCK:</strong> Hover target circle or click directory HUD to align core.
+            â€¢ <strong style={{ color: `#ffffff`, transition: 'color 2.5s ease' }}>ATTRACTOR LOCK:</strong> Hover target circle or click directory HUD to align core.
           </span>
         </div>
       </div>
@@ -2125,6 +2217,7 @@ export default function App() {
   const isTransitioning = useRef(false);
   const [activeFail, setActiveFail] = useState(0);
   const [selectedAtlasNode, setSelectedAtlasNode] = useState('gate');
+  const [atlasMode, setAtlasMode] = useState('evolution');
   const [hoveredSystem, setHoveredSystem] = useState(null);
   const [activeBoundary, setActiveBoundary] = useState(0);
   const [isGlitching, setIsGlitching] = useState(false);
@@ -2188,7 +2281,7 @@ export default function App() {
   const camY = useTransform(act3SmoothProgress, [0, 1], [0, 15]);
   const camScale = useTransform(act3SmoothProgress, [0, 1], [1, 1.03]);
 
-  // SVG Divider path — unitless coords (SVG path d never accepts vw/% units)
+  // SVG Divider path â€” unitless coords (SVG path d never accepts vw/% units)
   // Maps perfectly within our viewBox="0 0 100 100" coordinate space
   const dividerPath = useTransform(act3SmoothProgress, (v) => {
     const offset = -v * 40; // same offset logic, but in percent of width (0-100 scale)
@@ -2196,7 +2289,7 @@ export default function App() {
     return `M ${x1} 0 C ${x2} 25, ${x3} 50, ${x4} 100`;
   });
 
-  const maxIndex = 11; // 0 to 11 slides
+  const maxIndex = 14; // 0 to 14 slides
   const smoothProgress = useRef(0);
   const virtualProgress = useMotionValue(0);
   
@@ -2463,15 +2556,15 @@ export default function App() {
   if (activeIndex <= 3) {
     verticalY = -activeIndex * 100;
     horizontalX = 0;
-  } else if (activeIndex >= 4 && activeIndex <= 9) {
+  } else if (activeIndex >= 4 && activeIndex <= 12) {
     verticalY = -400;
     horizontalX = -(activeIndex - 4) * 100;
-  } else if (activeIndex === 10) {
+  } else if (activeIndex === 13) {
     verticalY = -500;
-    horizontalX = -600; 
-  } else if (activeIndex === 11) {
+    horizontalX = -800; 
+  } else if (activeIndex === 14) {
     verticalY = -530; 
-    horizontalX = -600;
+    horizontalX = -800;
   }
 
   return (
@@ -2480,7 +2573,7 @@ export default function App() {
       <CinematicBackground activeIndex={activeIndex} transitionKick={transitionKickRef.current} hoveredSystem={hoveredSystem} act3Progress={act3SmoothProgress} />
       <ForegroundAtmosphere activeIndex={activeIndex} />
       
-      {/* Particle Atmosphere (Layer 5) — suspended when Act 3 or Act 4 is active */}
+      {/* Particle Atmosphere (Layer 5) â€” suspended when Act 3 or Act 4 is active */}
       <TopologyCanvas scrollProgress={smoothProgress} transitionKick={transitionKickRef} isActive={activeIndex !== 2 && activeIndex !== 3} />
 
       <motion.div 
@@ -2488,7 +2581,7 @@ export default function App() {
         animate={{ y: `${verticalY}vh` }}
         transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
       >
-        {/* Act 1 — The Entrance */}
+        {/* Act 1 â€” The Entrance */}
         <section className="act" style={{ position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden' }}>
           
           {/* Gigantic Off-screen watermark layer */}
@@ -2547,13 +2640,13 @@ export default function App() {
               text="Earthos" 
               className="serif" 
               isActive={activeIndex === 0} 
-              style={{ fontSize: 'clamp(5.5rem, 15vw, 13.5rem)', fontWeight: 500, lineHeight: 0.85, letterSpacing: '-0.05em', margin: 0, justifyContent: 'flex-start' }} 
+              style={{ fontSize: 'clamp(5.5rem, 15vw, 13.5rem)', fontWeight: 500, lineHeight: 0.92, letterSpacing: '-0.05em', margin: 0, justifyContent: 'flex-start' }} 
             />
           </div>
 
         </section>
 
-        {/* Act 2 — The Failure of Modern AI */}
+        {/* Act 2 â€” The Failure of Modern AI */}
         <section className="act" style={{ position: 'relative', width: '100vw', height: '100vh', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           
           {/* Background: Diagonal Orange Path sweeping across the full screen */}
@@ -2613,7 +2706,7 @@ export default function App() {
               }}
             >
               
-              {/* Section 2.1 — Statelessness */}
+              {/* Section 2.1 â€” Statelessness */}
               <motion.div variants={slideItemVariants} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
                   <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.15rem 0.4rem' }}>2.1</span>
@@ -2624,7 +2717,7 @@ export default function App() {
                 </p>
               </motion.div>
 
-              {/* Section 2.2 — Benchmark Intelligence */}
+              {/* Section 2.2 â€” Benchmark Intelligence */}
               <motion.div variants={slideItemVariants} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
                   <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.15rem 0.4rem' }}>2.2</span>
@@ -2635,7 +2728,7 @@ export default function App() {
                 </p>
               </motion.div>
 
-              {/* Section 2.3 — Symbolic Drift */}
+              {/* Section 2.3 â€” Symbolic Drift */}
               <motion.div variants={slideItemVariants} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
                   <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.15rem 0.4rem' }}>2.3</span>
@@ -2646,7 +2739,7 @@ export default function App() {
                 </p>
               </motion.div>
 
-              {/* Section 2.4 — Infinite Cognition Without Consequence */}
+              {/* Section 2.4 â€” Infinite Cognition Without Consequence */}
               <motion.div variants={slideItemVariants} style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem' }}>
                   <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.15rem 0.4rem' }}>2.4</span>
@@ -2661,7 +2754,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* Act 3 — Cinematic Transformation (Scroll-Pinned Split-Screen Scene) */}
+        {/* Act 3 â€” Cinematic Transformation (Scroll-Pinned Split-Screen Scene) */}
         <section className="act" style={{ overflow: 'hidden', position: 'relative', width: '100vw', height: '100vh' }}>
           <motion.div
             style={{
@@ -2811,14 +2904,14 @@ export default function App() {
                 <p className="serif" style={{ fontSize: '1.05rem', color: 'rgba(232, 228, 223, 0.35)', fontStyle: 'italic', margin: 0 }}>
                   "Without constraints, intelligence becomes an infinite reification engine."
                 </p>
-                <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-muted)' }}>— Substrate Audit</span>
+                <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-muted)' }}>â€” Substrate Audit</span>
               </motion.div>
             </motion.div>
           </motion.div>
         </section>
 
-        {/* Act 4 — Cognitive Cartography (Mythic Navigable Consciousness Cathedral) */}
-        {/* overflow:visible here — inner container uses radial vignette mask for infinite-cosmos edge fade */}
+        {/* Act 4 â€” Cognitive Cartography (Mythic Navigable Consciousness Cathedral) */}
+        {/* overflow:visible here â€” inner container uses radial vignette mask for infinite-cosmos edge fade */}
         <section className="act" style={{ overflow: 'visible', position: 'relative', width: '100vw', height: '100vh' }}>
           <CognitiveCartography 
             isActive={activeIndex === 3} 
@@ -2833,190 +2926,271 @@ export default function App() {
             transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
             className="horizontal-track"
           >
-            {/* CHAMBER 1: LIVE TOPOLOGY */}
+            {/* SCREEN 1: SYNAPSE INTRO PANEL */}
             <div className="chamber" style={{ width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden' }}>
               
-              {/* Massive living morphogenetic circle attractor bleeding off-screen */}
+              {/* Containment boundary lines */}
+              {!isMobile && (
+                <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 1 }}>
+                  <line x1="0" y1="20%" x2="100%" y2="20%" stroke="rgba(139, 157, 195, 0.08)" strokeWidth="0.8" />
+                  <line x1="33%" y1="0" x2="33%" y2="100%" stroke="rgba(139, 157, 195, 0.06)" strokeWidth="0.8" strokeDasharray="5 5" />
+                  <circle cx="33%" cy="20%" r="6" fill="none" stroke="var(--syn-electric)" strokeWidth="1" />
+                </svg>
+              )}
+
               <motion.div 
-                animate={{ 
-                  scale: [1, 1.05, 0.95, 1],
-                  rotate: [0, 45, -45, 0],
-                  borderColor: ['rgba(0, 240, 255, 0.05)', 'rgba(0, 240, 255, 0.12)', 'rgba(0, 240, 255, 0.05)']
-                }}
-                transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
-                style={{
-                  position: 'absolute',
-                  left: '-15vw',
-                  top: '10vh',
-                  width: '55vw',
-                  height: '55vw',
-                  border: '2px solid rgba(0, 240, 255, 0.05)',
-                  borderRadius: '50%',
-                  pointerEvents: 'none',
-                  zIndex: 1,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center'
-                }}
-              >
-                {/* Secondary inner ring */}
-                <div style={{
-                  width: '75%',
-                  height: '75%',
-                  border: '1px dashed rgba(0, 240, 255, 0.03)',
-                  borderRadius: '50%'
-                }} />
-              </motion.div>
-              
-              {/* Asymmetric Composition */}
-              <motion.div 
-                style={{ width: '100%', height: '100%', position: 'relative', zIndex: 10 }}
+                style={{ maxWidth: '1350px', margin: '0 auto', width: '100%', height: '100%', display: 'flex', alignItems: 'center' }}
                 variants={slideContainerVariants}
                 animate={activeIndex === 4 ? 'active' : 'inactive'}
               >
-                {/* Top-Right: The Narrative Context */}
-                <div style={{ 
-                  position: 'absolute', 
-                  top: '18vh', 
-                  right: '8vw', 
-                  maxWidth: '420px', 
-                  textAlign: 'right',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'flex-end',
-                  gap: '2.5rem'
-                }}>
-                  <motion.p 
-                    variants={slideItemVariants} 
-                    className="mono" 
-                    style={{ fontSize: '1.05rem', color: 'var(--syn-dim)', lineHeight: 1.85 }}
-                  >
-                    We stopped asking how to make systems answer. We started asking how systems persist. Earthos explores whether cognition emerges more naturally from persistence, ecological coupling, and irreversible interaction than from isolated prediction.
-                  </motion.p>
-                  <motion.div variants={slideItemVariants} style={{ color: 'var(--syn-electric)', opacity: 0.7 }}>
-                    <ArrowRight size={22} />
-                  </motion.div>
-                </div>
+                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1.2fr', gap: isMobile ? '2.5rem' : '6rem', width: '100%', alignItems: 'center' }}>
+                  
+                  {/* Left Column: Massive Title */}
+                  <div>
+                    <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-electric)', letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: '1.2rem', display: 'block' }}>Act 5 // Entering Synapse</motion.span>
+                    <CinematicTitle 
+                      text="SYNAPSE" 
+                      className="serif" 
+                      isActive={activeIndex === 4} 
+                      style={{ fontSize: 'clamp(3.5rem, 8vw, 8rem)', color: 'var(--syn-silver)', fontWeight: 700, lineHeight: 0.85, letterSpacing: '-0.04em', margin: '0 0 1.5rem 0', justifyContent: 'flex-start' }} 
+                    />
+                    <motion.p variants={slideItemVariants} className="mono" style={{ fontSize: '0.82rem', color: 'var(--syn-electric)', letterSpacing: '0.15em', textTransform: 'uppercase', opacity: 0.8 }}>
+                      DEVELOPMENTAL COGNITION SUBSTRATE
+                    </motion.p>
+                  </div>
 
-                {/* Bottom-Left: Monumental Title */}
-                <div style={{ position: 'absolute', bottom: '8vh', left: '6vw' }}>
-                  <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-electric)', letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: '1rem', display: 'block' }}>Chamber 01 // The Substrate</motion.span>
-                  <CinematicTitle 
-                    text="Why Developmental Cognition" 
-                    className="serif" 
-                    isActive={activeIndex === 4} 
-                    style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', color: 'var(--syn-silver)', fontWeight: 500, lineHeight: 0.95, letterSpacing: '-0.03em', margin: 0, justifyContent: 'flex-start' }} 
-                  />
-                </div>
+                  {/* Right Column: Restrained narrative Shift */}
+                  <div style={{ borderLeft: isMobile ? 'none' : '1px solid rgba(139, 157, 195, 0.12)', paddingLeft: isMobile ? 0 : '4rem' }}>
+                    <motion.p variants={slideItemVariants} className="serif" style={{ fontSize: '1.35rem', color: 'var(--syn-silver)', lineHeight: 1.6, marginBottom: '2rem', fontWeight: 400 }}>
+                      Synapse is the active experimental architecture being developed within Earthos. It is not a finished intelligence system. It is a persistent developmental substrate exploring:
+                    </motion.p>
+                    
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
+                      {[
+                        'ecological cognition',
+                        'morphogenetic restructuring',
+                        'embodied causal learning',
+                        'continuous representational adaptation',
+                        'open-ended developmental dynamics'
+                      ].map((item, idx) => (
+                        <motion.li 
+                          key={idx} 
+                          variants={slideItemVariants}
+                          className="mono" 
+                          style={{ fontSize: '0.88rem', color: 'var(--syn-dim)', display: 'flex', alignItems: 'center', gap: '1rem' }}
+                        >
+                          <span style={{ width: '4px', height: '4px', background: 'var(--syn-electric)', borderRadius: '50%' }} />
+                          {item}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </div>
 
-                {/* Bottom-Right Corner Telemetry */}
-                
+                </div>
               </motion.div>
             </div>
 
-            {/* CHAMBER 2: FAILURES (GRAVEYARD) */}
+            {/* SCREEN 2: CHAMBER 1 â€” LIVE TOPOLOGY */}
+            <div className="chamber" style={{ width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden' }}>
+              
+              {/* Space layout */}
+              <motion.div 
+                style={{ maxWidth: '1350px', margin: '0 auto', width: '100%', height: '100%', display: 'flex', alignItems: 'center' }}
+                variants={slideContainerVariants}
+                animate={activeIndex === 5 ? 'active' : 'inactive'}
+              >
+                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '3rem' : '8rem', width: '100%' }}>
+                  
+                  {/* Left Column: Continuous Cognition */}
+                  <div style={{ zIndex: 10 }}>
+                    <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-electric)', letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: '1.2rem', display: 'block' }}>Chamber 01 // Live Topology</motion.span>
+                    <h3 className="serif" style={{ fontSize: '2.5rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '2.2rem', letterSpacing: '-0.02em' }}>Continuous Cognition</h3>
+                    
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.4rem' }}>
+                      {[
+                        { label: '01 //', text: 'No static modules.' },
+                        { label: '02 //', text: 'No central orchestrator.' },
+                        { label: '03 //', text: 'State propagates continuously through local interaction.' },
+                        { label: '04 //', text: 'Representations restructure under pressure.' },
+                        { label: '05 //', text: 'Topology evolves through ecological reinforcement.' }
+                      ].map((item, idx) => (
+                        <motion.div key={idx} variants={slideItemVariants}>
+                          <span className="mono" style={{ fontSize: '0.65rem', color: 'var(--syn-electric)', display: 'block', marginBottom: '0.1rem' }}>{item.label}</span>
+                          <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--syn-dim)', margin: 0, lineHeight: 1.55 }}>{item.text}</p>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Right Column: Runtime Conditions */}
+                  <div style={{ zIndex: 10, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                    <h3 className="serif" style={{ fontSize: '2.5rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '2.2rem', letterSpacing: '-0.02em' }}>Runtime Conditions</h3>
+                    
+                    <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                      {[
+                        'Persistent memory field',
+                        'Attention scarcity active',
+                        'Morphological adaptation enabled',
+                        'Contradiction propagation active',
+                        'Environmental drift detected',
+                        'Synchronization pressure unstable',
+                        'Developmental continuity preserved'
+                      ].map((cond, idx) => (
+                        <motion.li 
+                          key={idx} 
+                          variants={slideItemVariants} 
+                          className="mono" 
+                          style={{ fontSize: '0.9rem', color: '#ffffff', display: 'flex', alignItems: 'center', gap: '1.2rem' }}
+                        >
+                          <span className="dot dot-live" style={{ animation: 'flicker 2s infinite alternate' }} />
+                          {cond}
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </div>
+
+                </div>
+              </motion.div>
+            </div>
+                 {/* CHAMBER 2: FAILURES (GRAVEYARD) */}
             <div className="chamber" style={{ width: '100vw' }}>
               <motion.div 
                 style={{ maxWidth: '1350px', margin: '0 auto', width: '100%' }}
                 variants={slideContainerVariants}
-                animate={activeIndex === 5 ? 'active' : 'inactive'}
+                animate={activeIndex === 6 ? 'active' : 'inactive'}
               >
-                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-crimson)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Chamber 02 // Archive</motion.span>
+                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-crimson)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Chamber 02 // The Failure Archive</motion.span>
                 
                 <CinematicTitle 
                   text="Architecture Collapses." 
                   className="serif" 
-                  isActive={activeIndex === 5} 
+                  isActive={activeIndex === 6} 
                   style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '3.5rem', lineHeight: 0.95, letterSpacing: '-0.03em' }} 
                 />
                 
-                {/* Stacked Investigative Archive Layout */}
-                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '450px 1fr', gap: '4rem', alignItems: 'center' }}>
-                  
-                  {/* Left Column: Stacked folders */}
-                  {!isMobile ? (
-                    <div style={{ position: 'relative', width: '400px', height: '360px', margin: '2rem 0' }}>
-                      {FAILURES.map((f, i) => {
-                        const isSelected = activeFail === i;
-                        // Controlled folder drift offsets
-                        const rotateVal = isSelected ? 0 : (i === 0 ? -4 : (i === 1 ? 3 : (i === 2 ? -2 : 2)));
-                        const leftOffset = isSelected ? -20 : i * 15;
-                        const topOffset = isSelected ? -10 : i * 14;
-                        return (
-                          <motion.div
-                            key={f.id}
-                            onClick={() => {
-                              setIsGlitching(true);
-                              setActiveFail(i);
-                              setTimeout(() => setIsGlitching(false), 200);
-                            }}
-                            whileHover={isSelected ? {} : { scale: 1.02, x: leftOffset + 5 }}
-                            style={{
-                              position: 'absolute',
-                              left: leftOffset,
-                              top: topOffset,
-                              width: '320px',
-                              height: '240px',
-                              zIndex: isSelected ? 20 : 10 - i,
-                              background: isSelected ? 'rgba(28, 25, 23, 0.98)' : 'rgba(18, 16, 14, 0.82)',
-                              border: isSelected ? '1px solid var(--syn-electric)' : '1px solid rgba(255, 255, 255, 0.08)',
-                              boxShadow: isSelected ? '0 15px 45px rgba(139, 157, 195, 0.22)' : '0 8px 20px rgba(0,0,0,0.4)',
-                              backdropFilter: 'blur(20px)',
-                              padding: '2rem',
-                              cursor: 'pointer',
-                              transform: `rotate(${rotateVal}deg)`,
-                              transition: 'border-color 0.3s, background 0.3s'
-                            }}
-                          >
-                            {/* File Folder Top Tab */}
-                            <div style={{
-                              position: 'absolute',
-                              top: '-20px',
-                              left: '20px',
-                              height: '20px',
-                              background: isSelected ? 'var(--syn-electric)' : 'rgba(255, 255, 255, 0.06)',
-                              padding: '0 1rem',
-                              display: 'flex',
-                              alignItems: 'center',
-                              borderTopLeftRadius: '3px',
-                              borderTopRightRadius: '3px'
-                            }}>
-                              <span className="mono" style={{ fontSize: '0.62rem', color: isSelected ? '#000' : 'var(--syn-dim)', fontWeight: 600 }}>CASE 0{i + 1}</span>
-                            </div>
+                {/* Forensic Case Rail Layout */}
+                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '1.5rem' : '4rem', alignItems: 'start' }}>
 
-                            <div style={{ display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'space-between' }}>
-                              <div>
-                                <span className="mono" style={{ fontSize: '0.65rem', color: isSelected ? 'var(--syn-electric)' : 'var(--syn-dim)', display: 'block', marginBottom: '0.5rem' }}>Incident Report</span>
-                                <h4 className="serif" style={{ fontSize: '1.45rem', color: 'var(--syn-silver)', fontWeight: 500 }}>{f.t}</h4>
+                  {/* Left Column: Forensic Rail System */}
+                  {!isMobile ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+                      {/* Steel Rail Bar at top */}
+                      <div style={{ position: 'relative', height: '2px', background: 'linear-gradient(90deg, transparent, rgba(168,82,82,0.6) 10%, rgba(255,255,255,0.35) 50%, rgba(168,82,82,0.6) 90%, transparent)', marginBottom: 0 }}>
+                        {/* Rail bolt markers */}
+                        {FAILURES.map((_, i) => (
+                          <div key={i} style={{ position: 'absolute', top: '-3px', left: `${10 + i * 19}%`, width: '8px', height: '8px', borderRadius: '50%', background: 'rgba(255,255,255,0.25)', border: '1px solid rgba(255,255,255,0.4)' }} />
+                        ))}
+                      </div>
+
+                      {/* Hanging folders from rail */}
+                      <div style={{ display: 'flex', gap: '0.6rem', alignItems: 'flex-start', paddingTop: 0 }}>
+                        {FAILURES.map((f, i) => {
+                          const isSelected = activeFail === i;
+                          const severityColors = ['#dc2626','#b91c1c','#991b1b','#7f1d1d','#450a0a'];
+                          const dotColor = severityColors[i];
+                          return (
+                            <motion.div
+                              key={f.id}
+                              onClick={() => {
+                                setIsGlitching(true);
+                                setActiveFail(i);
+                                setTimeout(() => setIsGlitching(false), 320);
+                              }}
+                              animate={{
+                                width: isSelected ? 200 : 72,
+                                background: isSelected ? 'rgba(28, 14, 14, 0.97)' : 'rgba(16, 10, 10, 0.88)',
+                                boxShadow: isSelected
+                                  ? '0 24px 60px rgba(220,50,50,0.25), 0 0 20px rgba(220,50,50,0.12), inset 0 1px 0 rgba(255,255,255,0.06)'
+                                  : '0 8px 24px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.04)'
+                              }}
+                              transition={{ type: 'spring', stiffness: 340, damping: 32 }}
+                              style={{
+                                position: 'relative',
+                                height: '310px',
+                                border: isSelected ? '1px solid rgba(220,50,50,0.7)' : '1px solid rgba(255,255,255,0.1)',
+                                borderTop: isSelected ? '2px solid var(--syn-crimson)' : '1px solid rgba(255,255,255,0.18)',
+                                backdropFilter: 'blur(20px)',
+                                cursor: 'pointer',
+                                overflow: 'hidden',
+                                flexShrink: 0
+                              }}
+                            >
+                              {/* Hanging thread line from rail */}
+                              <div style={{ position: 'absolute', top: 0, left: '50%', width: '1px', height: isSelected ? '12px' : '8px', background: isSelected ? 'var(--syn-crimson)' : 'rgba(255,255,255,0.2)', transform: 'translateX(-50%)' }} />
+
+                              {/* Evidence severity dot */}
+                              <div style={{ position: 'absolute', top: isSelected ? '20px' : '16px', left: '50%', transform: 'translateX(-50%)', width: '6px', height: '6px', borderRadius: '50%', background: dotColor, boxShadow: isSelected ? `0 0 8px ${dotColor}` : 'none', animation: isSelected ? 'flicker 1s infinite alternate' : 'none' }} />
+
+                              {/* Case number â€” always visible */}
+                              <div style={{ position: 'absolute', top: '36px', left: 0, right: 0, display: 'flex', justifyContent: 'center' }}>
+                                <span className="mono" style={{ fontSize: isSelected ? '0.6rem' : '0.58rem', color: isSelected ? 'var(--syn-crimson)' : 'rgba(255,255,255,0.4)', letterSpacing: '0.12em', fontWeight: 600, writingMode: isSelected ? 'horizontal-tb' : 'vertical-rl', transform: isSelected ? 'none' : 'rotate(180deg)' }}>
+                                  CASE 0{i + 1}
+                                </span>
                               </div>
-                              
-                            </div>
-                          </motion.div>
-                        );
-                      })}
+
+                              {/* Expanded content â€” only visible when selected */}
+                              {isSelected && (
+                                <motion.div
+                                  initial={{ opacity: 0 }}
+                                  animate={{ opacity: 1 }}
+                                  transition={{ delay: 0.15, duration: 0.4 }}
+                                  style={{ position: 'absolute', top: '70px', left: '1rem', right: '1rem', bottom: '1rem', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}
+                                >
+                                  <span className="mono" style={{ fontSize: '0.58rem', color: 'rgba(220,50,50,0.8)', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Incident Report //</span>
+                                  <h4 className="serif" style={{ fontSize: '1.05rem', color: '#ffffff', fontWeight: 600, margin: 0, lineHeight: 1.25 }}>{f.t}</h4>
+                                  <div style={{ flex: 1 }} />
+                                  {/* Expected vs happened mini table */}
+                                  <div style={{ borderTop: '1px solid rgba(220,50,50,0.2)', paddingTop: '0.6rem' }}>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.3rem' }}>
+                                      <span className="mono" style={{ fontSize: '0.55rem', color: 'rgba(255,255,255,0.4)', textTransform: 'uppercase' }}>expected â†’ {f.expected}</span>
+                                      <span className="mono" style={{ fontSize: '0.55rem', color: 'var(--syn-crimson)', textTransform: 'uppercase', fontWeight: 600 }}>actual â†’ {f.happened}</span>
+                                    </div>
+                                  </div>
+                                  <div className="mono" style={{ fontSize: '0.55rem', color: 'rgba(220,50,50,0.6)', textAlign: 'right', letterSpacing: '0.08em' }}>â— ACTIVE_VIEW</div>
+                                </motion.div>
+                              )}
+
+                              {/* Unselected â€” faint status at bottom */}
+                              {!isSelected && (
+                                <div style={{ position: 'absolute', bottom: '1rem', left: 0, right: 0, display: 'flex', justifyContent: 'center' }}>
+                                  <span className="mono" style={{ fontSize: '0.45rem', color: 'rgba(255,255,255,0.2)', writingMode: 'vertical-rl', transform: 'rotate(180deg)', letterSpacing: '0.06em' }}>SYS_GRAVE</span>
+                                </div>
+                              )}
+                            </motion.div>
+                          );
+                        })}
+                      </div>
+
+                      {/* Rail legend */}
+                      <div style={{ display: 'flex', gap: '1.5rem', marginTop: '1.2rem', paddingLeft: '0.5rem' }}>
+                        <span className="mono" style={{ fontSize: '0.6rem', color: 'rgba(255,255,255,0.3)', letterSpacing: '0.1em' }}>EVIDENCE RAIL // {FAILURES.length} ARCHIVED FAILURES</span>
+                      </div>
                     </div>
                   ) : (
-                    // Tabs row for Mobile
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.5rem', marginBottom: '1.5rem' }}>
+                    // Mobile: compact tab strip
+                    <div style={{ display: 'flex', gap: '0.4rem', overflowX: 'auto', marginBottom: '1.5rem', paddingBottom: '0.5rem' }}>
                       {FAILURES.map((f, i) => (
-                        <button 
-                          key={f.id} 
+                        <button
+                          key={f.id}
                           onClick={() => {
                             setIsGlitching(true);
                             setActiveFail(i);
                             setTimeout(() => setIsGlitching(false), 200);
                           }}
                           style={{
-                            padding: '0.8rem',
+                            flexShrink: 0,
+                            padding: '0.6rem 1rem',
                             fontFamily: 'var(--font-mono)',
-                            fontSize: '0.78rem',
-                            background: activeFail === i ? 'rgba(139, 157, 195, 0.15)' : 'rgba(12, 17, 24, 0.6)',
-                            border: activeFail === i ? '1px solid var(--syn-electric)' : '1px solid rgba(255, 255, 255, 0.08)',
-                            color: activeFail === i ? 'var(--syn-silver)' : 'var(--syn-dim)',
-                            cursor: 'pointer'
+                            fontSize: '0.72rem',
+                            background: activeFail === i ? 'rgba(168,82,82,0.2)' : 'rgba(12,17,24,0.6)',
+                            border: activeFail === i ? '1px solid var(--syn-crimson)' : '1px solid rgba(255,255,255,0.08)',
+                            borderTop: activeFail === i ? '2px solid var(--syn-crimson)' : '2px solid transparent',
+                            color: activeFail === i ? '#ffffff' : 'rgba(255,255,255,0.4)',
+                            cursor: 'pointer',
+                            letterSpacing: '0.08em'
                           }}
                         >
-                          CASE 0{i + 1}
+                          C{i + 1}
                         </button>
                       ))}
                     </div>
@@ -3033,32 +3207,51 @@ export default function App() {
                       boxShadow: '0 15px 45px rgba(0,0,0,0.4)',
                       backdropFilter: 'blur(25px) saturate(1.2)',
                       display: 'grid',
-                      gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr',
+                      gridTemplateColumns: isMobile ? '1fr' : '1fr 1.2fr',
                       gap: '3rem',
                       minHeight: isMobile ? 'auto' : '380px'
                     }}
                   >
                     <div>
-                      <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-electric)', letterSpacing: '0.12em', display: 'block', marginBottom: '0.8rem' }}>Incident Case 0{activeFail + 1}</span>
+                      <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-crimson)', letterSpacing: '0.12em', display: 'block', marginBottom: '0.8rem' }}>Incident Case 0{activeFail + 1}</span>
                       
-                      <p className="serif" style={{ fontSize: isMobile ? '1.25rem' : '1.5rem', color: 'var(--syn-silver)', lineHeight: 1.5, fontStyle: 'italic', borderLeft: '2.5px solid var(--syn-electric)', paddingLeft: '1.5rem' }}>
-                        "{FAILURES[activeFail].thought}"
+                      <h4 className="serif" style={{ fontSize: '2rem', color: 'var(--syn-silver)', margin: '0 0 1rem 0', fontWeight: 500 }}>
+                        {FAILURES[activeFail].t}
+                      </h4>
+                      <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.6 }}>
+                        Fossilized error trace detected in local topological execution bounds.
                       </p>
                     </div>
 
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                      <div>
-                        <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-crimson)', letterSpacing: '0.1em', display: 'block', marginBottom: '0.5rem' }}>Observation</span>
-                        <p className="mono" style={{ fontSize: '0.9rem', color: 'var(--syn-dim)', lineHeight: 1.75 }}>
-                          {FAILURES[activeFail].real}
-                        </p>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                      {/* Expected vs Happened Table */}
+                      <table style={{ width: '100%', borderCollapse: 'collapse', borderBottom: '1px solid rgba(255,255,255,0.08)', marginBottom: '0.5rem' }}>
+                        <thead>
+                          <tr style={{ borderBottom: '1px solid rgba(255,255,255,0.12)' }}>
+                            <th style={{ textAlign: 'left', padding: '0.5rem 0', fontFamily: 'var(--font-mono)', fontSize: '0.68rem', color: 'var(--syn-dim)', letterSpacing: '0.1em' }}>WE EXPECTED</th>
+                            <th style={{ textAlign: 'left', padding: '0.5rem 0', fontFamily: 'var(--font-mono)', fontSize: '0.68rem', color: 'var(--syn-crimson)', letterSpacing: '0.1em' }}>WHAT HAPPENED</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style={{ padding: '0.8rem 0', fontFamily: 'var(--font-serif)', fontSize: '1.2rem', color: 'var(--syn-silver)', fontStyle: 'italic' }}>{FAILURES[activeFail].expected}</td>
+                            <td style={{ padding: '0.8rem 0', fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--syn-crimson)', textTransform: 'uppercase', fontWeight: 500 }}>{FAILURES[activeFail].happened}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      {/* Real vs Fix block with high-whiteness text for supreme readability */}
+                      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1.2fr', gap: '1.5rem', marginTop: '0.5rem' }}>
+                        <div>
+                          <span className="mono" style={{ fontSize: '0.65rem', color: 'var(--syn-crimson)', display: 'block', marginBottom: '0.4rem', textTransform: 'uppercase' }}>// Core Failure</span>
+                          <p className="mono" style={{ fontSize: '0.82rem', color: '#ffffff', lineHeight: 1.5, margin: 0 }}>{FAILURES[activeFail].real}</p>
+                        </div>
+                        <div>
+                          <span className="mono" style={{ fontSize: '0.65rem', color: 'var(--syn-electric)', display: 'block', marginBottom: '0.4rem', textTransform: 'uppercase' }}>// Architectural Correction</span>
+                          <p className="mono" style={{ fontSize: '0.82rem', color: '#ffffff', lineHeight: 1.5, margin: 0 }}>{FAILURES[activeFail].fix}</p>
+                        </div>
                       </div>
-                      <div>
-                        <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-plasma)', letterSpacing: '0.1em', display: 'block', marginBottom: '0.5rem' }}>Outcome</span>
-                        <p className="mono" style={{ fontSize: '0.9rem', color: 'var(--syn-silver)', lineHeight: 1.75 }}>
-                          {FAILURES[activeFail].fix}
-                        </p>
-                      </div>
+
                     </div>
                   </motion.div>
 
@@ -3071,41 +3264,51 @@ export default function App() {
               <motion.div 
                 style={{ maxWidth: '1350px', margin: '0 auto', width: '100%' }}
                 variants={slideContainerVariants}
-                animate={activeIndex === 6 ? 'active' : 'inactive'}
+                animate={activeIndex === 7 ? 'active' : 'inactive'}
               >
-                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-electric)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Chamber 03 // Structure</motion.span>
-                
-                <CinematicTitle 
-                  text="Substrate Atlas" 
-                  className="serif" 
-                  isActive={activeIndex === 6} 
-                  style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '2.5rem', lineHeight: 0.95, letterSpacing: '-0.03em' }} 
-                />
-                
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '2rem' }}>
+                  <div>
+                    <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-electric)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.2rem', display: 'block' }}>Chamber 03 // Structure</motion.span>
+                    
+                    <CinematicTitle 
+                      text="Substrate Atlas" 
+                      className="serif" 
+                      isActive={activeIndex === 7} 
+                      style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, lineHeight: 0.95, letterSpacing: '-0.03em', margin: 0 }} 
+                    />
+                  </div>
+
+                  {/* Mode Select Buttons (Highly legible whiteness) */}
+                  <div style={{ display: 'flex', gap: '1rem', border: '1px solid rgba(139, 157, 195, 0.16)', padding: '0.4rem', background: 'rgba(12, 17, 24, 0.85)' }}>
+                    {[
+                      { id: 'evolution', label: '01 // HISTORICAL EVOLUTION' },
+                      { id: 'runtime', label: '02 // ACTIVE RUNTIME' },
+                      { id: 'failure', label: '03 // FAILURE OVERLAY' }
+                    ].map((m) => (
+                      <button
+                        key={m.id}
+                        onClick={() => setAtlasMode(m.id)}
+                        className="mono"
+                        style={{
+                          background: atlasMode === m.id ? 'var(--syn-electric)' : 'transparent',
+                          color: atlasMode === m.id ? '#000000' : '#ffffff',
+                          border: 'none',
+                          padding: '0.6rem 1.2rem',
+                          fontSize: '0.72rem',
+                          fontWeight: atlasMode === m.id ? 600 : 500,
+                          cursor: 'pointer',
+                          transition: 'all 0.25s',
+                          letterSpacing: '0.08em'
+                        }}
+                      >
+                        {m.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 {isMobile ? (
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                    {/* Tabs row for Mobile */}
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.5rem' }}>
-                      {Object.keys(ATLAS_NODES).map((key) => (
-                        <button
-                          key={key}
-                          onClick={() => setSelectedAtlasNode(key)}
-                          style={{
-                            padding: '0.8rem',
-                            fontFamily: 'var(--font-mono)',
-                            fontSize: '0.8rem',
-                            background: selectedAtlasNode === key ? 'rgba(139, 157, 195, 0.15)' : 'rgba(12,17,24,0.6)',
-                            border: selectedAtlasNode === key ? '1px solid var(--syn-electric)' : '1px solid rgba(255, 255, 255, 0.08)',
-                            color: selectedAtlasNode === key ? 'var(--syn-silver)' : 'var(--syn-dim)',
-                            cursor: 'pointer'
-                          }}
-                        >
-                          {ATLAS_NODES[key].title}
-                        </button>
-                      ))}
-                    </div>
-                    
-                    {/* Single Selected Card for Mobile */}
                     <div style={{
                       padding: '1.8rem',
                       border: '1px solid var(--syn-electric)',
@@ -3116,142 +3319,129 @@ export default function App() {
                       height: '240px',
                       overflowY: 'auto'
                     }}>
-                      <span className="mono" style={{ fontSize: '0.65rem', color: 'var(--syn-electric)', display: 'block', marginBottom: '0.5rem' }}>
-                        
-                      </span>
-                      <h3 className="serif" style={{ fontSize: '1.4rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.8rem' }}>
-                        {ATLAS_NODES[selectedAtlasNode].title}
-                      </h3>
-                      <p className="mono" style={{ fontSize: '0.9rem', color: 'var(--syn-silver)', lineHeight: 1.7 }}>
-                        {ATLAS_NODES[selectedAtlasNode].details}
-                      </p>
+                      {atlasMode === 'evolution' && (
+                        <div>
+                          <h4 className="serif" style={{ fontSize: '1.4rem', color: '#ffffff', marginBottom: '0.8rem' }}>Historical Evolution</h4>
+                          <p className="mono" style={{ fontSize: '0.88rem', color: '#ffffff', lineHeight: 1.7 }}>
+                            Phase progression from local persistence to ground causal learning and open-world morphogenesis.
+                          </p>
+                        </div>
+                      )}
+                      {atlasMode === 'runtime' && (
+                        <div>
+                          <h4 className="serif" style={{ fontSize: '1.4rem', color: '#ffffff', marginBottom: '0.8rem' }}>Active Runtime</h4>
+                          <p className="mono" style={{ fontSize: '0.88rem', color: '#ffffff', lineHeight: 1.7 }}>
+                            Live telemetry flow tracking contradiction pressure, topological adaptation and metabolic cost indicators.
+                          </p>
+                        </div>
+                      )}
+                      {atlasMode === 'failure' && (
+                        <div>
+                          <h4 className="serif" style={{ fontSize: '1.4rem', color: 'var(--syn-crimson)', marginBottom: '0.8rem' }}>Failure Overlay</h4>
+                          <p className="mono" style={{ fontSize: '0.88rem', color: '#ffffff', lineHeight: 1.7 }}>
+                            Active alert sectors showing critical collapse zones, recursive loop addictions, and monoculture crystallization points.
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 ) : (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+                  <div style={{ minHeight: '420px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                     
-                    {/* Cartography Signal Pathway Grid */}
-                    <div style={{ position: 'relative', padding: '2rem 0' }}>
-                      
-                      {/* Pathway Connections SVG (Layer 1) */}
-                      <svg style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', pointerEvents: 'none', overflow: 'visible', zIndex: 1 }}>
-                        <defs>
-                          <filter id="cartoGlow">
-                            <feGaussianBlur stdDeviation="3" result="blur"/>
-                            <feMerge>
-                              <feMergeNode in="blur"/>
-                              <feMergeNode in="SourceGraphic"/>
-                            </feMerge>
-                          </filter>
-                        </defs>
+                    {/* Render mode content with high whiteness and contrast */}
+                    {atlasMode === 'evolution' && (
+                      <motion.div 
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1.5rem' }}
+                      >
+                        {[
+                          { step: '01', phase: 'Persistence', status: 'OPERATIONAL', detail: 'Accumulate developmental residue across execution boundaries. Prevent memory deletion upon compute termination.' },
+                          { step: '02', phase: 'Grounding', status: 'PROTOTYPE', detail: 'Anchor continuous topological representations directly into active physical causal intervention loops.' },
+                          { step: '03', phase: 'Morphogenesis', status: 'ACTIVE RESEARCH', detail: 'Enable the internal coordinate network to mutate and grow structurally based on environmental friction.' },
+                          { step: '04', phase: 'Field Dynamics', status: 'PROTOTYPE', detail: 'Stabilize cognitive attractors within high-dimensional manifolds to represent complex concepts.' },
+                          { step: '05', phase: 'Open-World Coupling', status: 'WEAK / INACTIVE', detail: 'Direct coupling with unbounded, chaotic external ecosystems to accumulate irreversible scars.' }
+                        ].map((p, idx) => (
+                          <div key={idx} style={{ border: '1px solid rgba(139, 157, 195, 0.25)', padding: '2rem', background: 'rgba(8, 11, 16, 0.92)', backdropFilter: 'blur(20px) saturate(1.2)', position: 'relative', boxShadow: '0 12px 35px rgba(0,0,0,0.4)' }}>
+                            <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--syn-electric)', display: 'block', marginBottom: '0.6rem', fontWeight: 600 }}>PHASE {p.step} //</span>
+                            <h4 className="serif" style={{ fontSize: '1.5rem', color: '#ffffff', fontWeight: 600, margin: '0 0 0.5rem 0' }}>{p.phase}</h4>
+                            <span className="mono" style={{ fontSize: '0.6rem', color: p.status.includes('OPERATIONAL') ? 'var(--earth-sage)' : p.status.includes('ACTIVE') ? 'var(--syn-electric)' : 'var(--earth-clay)', border: '1px solid currentColor', padding: '0.1rem 0.3rem', display: 'inline-block', marginBottom: '1.2rem', fontWeight: 500 }}>
+                              {p.status}
+                            </span>
+                            <p className="mono" style={{ fontSize: '0.85rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.6, margin: 0 }}>
+                              {p.detail}
+                            </p>
+                          </div>
+                        ))}
+                      </motion.div>
+                    )}
 
-                        {/* Node 1 to 2 */}
-                        <motion.line 
-                          x1="12.5%" y1="50%" x2="37.5%" y2="50%"
-                          stroke={selectedAtlasNode === 'gate' ? 'var(--syn-electric)' : 'rgba(255,255,255,0.06)'}
-                          strokeWidth={selectedAtlasNode === 'gate' ? 2 : 1}
-                          strokeDasharray={selectedAtlasNode === 'gate' ? '6 4' : 'none'}
-                          animate={selectedAtlasNode === 'gate' ? { strokeDashoffset: [0, -20] } : {}}
-                          transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-                          style={{ filter: selectedAtlasNode === 'gate' ? 'url(#cartoGlow)' : 'none' }}
-                        />
+                    {atlasMode === 'runtime' && (
+                      <motion.div 
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}
+                      >
+                        {[
+                          { title: 'Attention Flow Allocation', metric: '94.2%', text: 'Distribution of cognitive energy resources across active local coordinate clusters.', sub: 'Attention scarcity active' },
+                          { title: 'Contradiction Pressure', metric: '0.88 Spikes', text: 'Real-time detection of grounding mismatch and physical causal predictions.', sub: 'Stability warning threshold' },
+                          { title: 'Topology Adaptation Rate', metric: '14.5 Hz', text: 'Structural weight alterations and coordinate updates to minimize prediction loss.', sub: 'Morphology engine active' },
+                          { title: 'Synchronization Density', metric: 'Unstable (0.12)', text: 'Manifold harmonic density tracking representation integration.', sub: 'ATTRACTOR CRISIS MINIMIZED' }
+                        ].map((r, idx) => (
+                          <div key={idx} style={{ border: '1px solid rgba(139, 157, 195, 0.25)', padding: '2rem', background: 'rgba(8, 11, 16, 0.92)', backdropFilter: 'blur(20px) saturate(1.2)', position: 'relative', boxShadow: '0 12px 35px rgba(0,0,0,0.4)' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.2rem' }}>
+                              <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--syn-electric)', fontWeight: 600 }}>TELEMETRY 0{idx + 1}</span>
+                              <span className="dot dot-live" style={{ animation: 'flicker 1.5s infinite alternate' }} />
+                            </div>
+                            <h4 className="serif" style={{ fontSize: '1.35rem', color: '#ffffff', fontWeight: 600, margin: '0 0 0.8rem 0' }}>{r.title}</h4>
+                            <div className="mono" style={{ fontSize: '1.8rem', color: '#ffffff', fontWeight: 600, marginBottom: '1rem', letterSpacing: '-0.02em' }}>
+                              {r.metric}
+                            </div>
+                            <p className="mono" style={{ fontSize: '0.85rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.6, margin: '0 0 1rem 0' }}>
+                              {r.text}
+                            </p>
+                            <span className="mono" style={{ fontSize: '0.65rem', color: 'var(--syn-electric)', textTransform: 'uppercase', fontWeight: 500 }}>
+                              {r.sub}
+                            </span>
+                          </div>
+                        ))}
+                      </motion.div>
+                    )}
 
-                        {/* Node 2 to 3 */}
-                        <motion.line 
-                          x1="37.5%" y1="50%" x2="62.5%" y2="50%"
-                          stroke={selectedAtlasNode === 'prior' ? 'var(--syn-electric)' : 'rgba(255,255,255,0.06)'}
-                          strokeWidth={selectedAtlasNode === 'prior' ? 2 : 1}
-                          strokeDasharray={selectedAtlasNode === 'prior' ? '6 4' : 'none'}
-                          animate={selectedAtlasNode === 'prior' ? { strokeDashoffset: [0, -20] } : {}}
-                          transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-                          style={{ filter: selectedAtlasNode === 'prior' ? 'url(#cartoGlow)' : 'none' }}
-                        />
-
-                        {/* Node 3 to 4 */}
-                        <motion.line 
-                          x1="62.5%" y1="50%" x2="87.5%" y2="50%"
-                          stroke={selectedAtlasNode === 'ledger' ? 'var(--syn-electric)' : 'rgba(255,255,255,0.06)'}
-                          strokeWidth={selectedAtlasNode === 'ledger' ? 2 : 1}
-                          strokeDasharray={selectedAtlasNode === 'ledger' ? '6 4' : 'none'}
-                          animate={selectedAtlasNode === 'ledger' ? { strokeDashoffset: [0, -20] } : {}}
-                          transition={{ duration: 1.5, repeat: Infinity, ease: 'linear' }}
-                          style={{ filter: selectedAtlasNode === 'ledger' ? 'url(#cartoGlow)' : 'none' }}
-                        />
-
-                        {/* Feedback Loop Guard to Gate */}
-                        <motion.path 
-                          d="M 87.5 72 Q 50 150, 12.5 72"
-                          fill="none"
-                          stroke={selectedAtlasNode === 'homeo' ? 'var(--syn-electric)' : 'rgba(255,255,255,0.04)'}
-                          strokeWidth={selectedAtlasNode === 'homeo' ? 1.8 : 0.8}
-                          strokeDasharray={selectedAtlasNode === 'homeo' ? '5 5' : '4 8'}
-                          animate={selectedAtlasNode === 'homeo' ? { strokeDashoffset: [0, 20] } : {}}
-                          transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
-                          style={{ filter: selectedAtlasNode === 'homeo' ? 'url(#cartoGlow)' : 'none' }}
-                        />
-                      </svg>
-
-                      {/* HTML Pipeline Nodes (Layer 2) */}
-                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2.5rem', position: 'relative', zIndex: 2 }}>
-                        {Object.keys(ATLAS_NODES).map((key, idx) => {
-                          const node = ATLAS_NODES[key];
-                          const isSelected = selectedAtlasNode === key;
-                          return (
-                            <motion.div
-                              key={key}
-                              onClick={() => setSelectedAtlasNode(key)}
-                              whileHover={{ y: -4 }}
-                              style={{
-                                background: isSelected ? 'rgba(18, 22, 32, 0.94)' : 'rgba(13, 11, 10, 0.82)',
-                                border: isSelected ? '1px solid var(--syn-electric)' : '1px solid rgba(255,255,255,0.06)',
-                                boxShadow: isSelected ? '0 10px 30px rgba(139, 157, 195, 0.18)' : '0 6px 15px rgba(0,0,0,0.3)',
-                                padding: '2rem',
-                                cursor: 'pointer',
-                                position: 'relative',
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '1.2rem',
-                                transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)'
-                              }}
-                            >
-                              {/* Corner Ticks (Brutalist Cartography Style) */}
-                              <div style={{ position: 'absolute', top: '5px', left: '5px', fontSize: '0.55rem', color: 'rgba(255,255,255,0.15)', fontFamily: 'monospace' }}>+</div>
-                              <div style={{ position: 'absolute', top: '5px', right: '5px', fontSize: '0.55rem', color: 'rgba(255,255,255,0.15)', fontFamily: 'monospace' }}>+</div>
-                              <div style={{ position: 'absolute', bottom: '5px', left: '5px', fontSize: '0.55rem', color: 'rgba(255,255,255,0.15)', fontFamily: 'monospace' }}>+</div>
-                              <div style={{ position: 'absolute', bottom: '5px', right: '5px', fontSize: '0.55rem', color: 'rgba(255,255,255,0.15)', fontFamily: 'monospace' }}>+</div>
-
-                              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                <span className="mono" style={{ fontSize: '0.62rem', color: isSelected ? 'var(--syn-electric)' : 'var(--syn-dim)' }}>0{idx + 1}</span>
-                                
-                              </div>
-
-                              <h3 className="serif" style={{ fontSize: '1.45rem', color: 'var(--syn-silver)', fontWeight: 500, margin: 0 }}>
-                                {node.title}
-                              </h3>
-                            </motion.div>
-                          );
-                        })}
-                      </div>
-                    </div>
-
-                    {/* Details Panel (Layer 3) */}
-                    <div style={{
-                      background: 'rgba(14, 12, 11, 0.76)',
-                      border: '1px solid rgba(255, 255, 255, 0.05)',
-                      padding: '2.5rem 3.5rem',
-                      backdropFilter: 'blur(20px)',
-                      boxShadow: '0 15px 40px rgba(0,0,0,0.3)',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      gap: '0.8rem'
-                    }}>
-                      <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-electric)', letterSpacing: '0.12em' }}>
-                        Component: {ATLAS_NODES[selectedAtlasNode].title}
-                      </span>
-                      <p className="mono" style={{ fontSize: '1rem', color: 'var(--syn-silver)', lineHeight: 1.8 }}>
-                        {ATLAS_NODES[selectedAtlasNode].details}
-                      </p>
-                    </div>
+                    {atlasMode === 'failure' && (
+                      <motion.div 
+                        initial={{ opacity: 0, y: 15 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '2rem' }}
+                      >
+                        {[
+                          { title: 'Collapse Events', status: '2 LOGGED', desc: 'Critical structural failures captured in the append-only ledger logs.', action: 'Ledger rollback executed' },
+                          { title: 'Unstable Sectors', status: '3 WARNINGS', desc: 'Active coordinate clusters demonstrating high predictive drift and representational bloat.', action: 'Metabolic guard active' },
+                          { title: 'Dead Architectures', status: '5 ARCHIVED', desc: 'Fossilized structural models demonstrating recursive reflection or addiction loops.', action: 'Quarantined in graveyard' },
+                          { title: 'Monoculture Risk', status: '0.04 (LOW)', desc: 'Attractor coordination harmonic density tracking premature lock-in.', action: 'Plasticity override enabled' }
+                        ].map((f, idx) => (
+                          <div key={idx} style={{ border: '1px solid rgba(168, 82, 82, 0.35)', padding: '2rem', background: 'rgba(24, 8, 8, 0.92)', backdropFilter: 'blur(20px) saturate(1.2)', position: 'relative', boxShadow: '0 12px 35px rgba(0,0,0,0.4)' }}>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.2rem' }}>
+                              <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--syn-crimson)', fontWeight: 600 }}>ALERT ZONE 0{idx + 1}</span>
+                              <span className="dot dot-weak" style={{ background: 'var(--syn-crimson)', animation: 'flicker 0.8s infinite alternate' }} />
+                            </div>
+                            <h4 className="serif" style={{ fontSize: '1.35rem', color: '#ffffff', fontWeight: 600, margin: '0 0 0.8rem 0' }}>{f.title}</h4>
+                            <div className="mono" style={{ fontSize: '1.45rem', color: 'var(--syn-crimson)', fontWeight: 600, marginBottom: '1rem' }}>
+                              {f.status}
+                            </div>
+                            <p className="mono" style={{ fontSize: '0.85rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.6, margin: '0 0 1.2rem 0' }}>
+                              {f.desc}
+                            </p>
+                            <span className="mono" style={{ fontSize: '0.65rem', color: '#ffffff', textTransform: 'uppercase', background: 'var(--syn-crimson)', padding: '0.15rem 0.4rem', fontWeight: 500 }}>
+                              {f.action}
+                            </span>
+                          </div>
+                        ))}
+                      </motion.div>
+                    )}
 
                   </div>
                 )}
@@ -3259,161 +3449,282 @@ export default function App() {
             </div>
 
             {/* CHAMBER 4: CURRENT STATE (CAPABILITY MATRIX) */}
-            <div className="chamber" style={{ width: '100vw', overflow: 'hidden' }}>
+            <div className="chamber" style={{ width: '100vw' }}>
               <motion.div 
                 style={{ maxWidth: '1350px', margin: '0 auto', width: '100%', height: '100%', display: 'flex', flexDirection: 'column' }}
                 variants={slideContainerVariants}
-                animate={activeIndex === 7 ? 'active' : 'inactive'}
+                animate={activeIndex === 8 ? 'active' : 'inactive'}
               >
                 <div>
                   <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-electric)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Chamber 04 // Capabilities</motion.span>
                   <CinematicTitle 
                     text="Substrate Capability Matrix" 
                     className="serif" 
-                    isActive={activeIndex === 7} 
+                    isActive={activeIndex === 8} 
                     style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '3.5rem', lineHeight: 0.95, letterSpacing: '-0.03em' }} 
                   />
                 </div>
                 
                 {isMobile ? (
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem', maxHeight: '420px', overflowY: 'auto' }}>
-                    {/* Simple Column 1 */}
                     <div style={{ padding: '2rem', border: '2px solid var(--earth-sage)', background: 'rgba(12, 22, 20, 0.88)' }}>
                       <span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-sage)', display: 'block', marginBottom: '1.2rem' }}>[01] OPERATIONAL</span>
                       {CAPS.filter(c => c.s === 'live').map((c, i) => (
                         <div key={i} style={{ marginBottom: '1rem' }}>
-                          <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', margin: '0 0 0.3rem' }}>{c.n}</h4>
-                          <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.6 }}>{c.d}</p>
+                          <h4 className="serif" style={{ fontSize: '1.25rem', color: '#ffffff', margin: '0 0 0.3rem' }}>{c.n}</h4>
+                          <p className="mono" style={{ fontSize: '0.85rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.6 }}>{c.d}</p>
                         </div>
                       ))}
                     </div>
-                    {/* Simple Column 2 */}
                     <div style={{ padding: '2rem', border: '1px solid var(--earth-sand)', background: 'rgba(24, 22, 16, 0.88)' }}>
                       <span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-sand)', display: 'block', marginBottom: '1.2rem' }}>[02] EXPERIMENTAL</span>
                       {CAPS.filter(c => c.s === 'proto').map((c, i) => (
                         <div key={i} style={{ marginBottom: '1rem' }}>
-                          <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', margin: '0 0 0.3rem' }}>{c.n}</h4>
-                          <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.6 }}>{c.d}</p>
+                          <h4 className="serif" style={{ fontSize: '1.25rem', color: '#ffffff', margin: '0 0 0.3rem' }}>{c.n}</h4>
+                          <p className="mono" style={{ fontSize: '0.85rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.6 }}>{c.d}</p>
                         </div>
                       ))}
                     </div>
-                    {/* Simple Column 3 */}
                     <div style={{ padding: '2rem', border: '1px solid var(--earth-clay)', background: 'rgba(26, 14, 14, 0.88)' }}>
-                      <span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-clay)', display: 'block', marginBottom: '1.2rem' }}>[03] QUARANTINED</span>
+                      <span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-clay)', display: 'block', marginBottom: '1.2rem' }}>[03] FUTURE PLANS</span>
                       {CAPS.filter(c => c.s === 'weak' || c.s === 'none').map((c, i) => (
                         <div key={i} style={{ marginBottom: '1rem' }}>
-                          <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', margin: '0 0 0.3rem' }}>{c.n}</h4>
-                          <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.6 }}>{c.d}</p>
+                          <h4 className="serif" style={{ fontSize: '1.25rem', color: '#ffffff', margin: '0 0 0.3rem' }}>{c.n}</h4>
+                          <p className="mono" style={{ fontSize: '0.85rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.6 }}>{c.d}</p>
                         </div>
                       ))}
                     </div>
                   </div>
                 ) : (
-                  // Towering Brutalist Monoliths
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem', width: '100%' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem', height: '390px', alignItems: 'stretch' }}>
-                      
-                      {/* Monolith 01: Works (Live) */}
-                      <motion.div 
-                        variants={slideItemVariants}
-                        whileHover={{ scale: 1.012 }}
-                        style={{ 
-                          borderLeft: '4px solid var(--earth-sage)', 
-                          background: 'linear-gradient(180deg, rgba(16, 24, 20, 0.85) 0%, rgba(10, 15, 12, 0.6) 100%)', 
-                          backdropFilter: 'blur(20px)',
-                          boxShadow: '0 15px 40px rgba(0,0,0,0.3)',
-                          padding: '2rem 2.2rem',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          borderRight: '1px solid rgba(255,255,255,0.03)',
-                          borderTop: '1px solid rgba(255,255,255,0.03)'
-                        }}
-                      >
-                        <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-sage)', letterSpacing: '0.15em', display: 'block', marginBottom: '1.5rem', borderBottom: '1px solid rgba(162, 196, 178, 0.15)', paddingBottom: '0.6rem' }}>[01] Works (Live)</span>
-                        <div style={{ flex: 1, overflowY: 'auto', paddingRight: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.4rem' }} className="custom-scrollbar">
-                          {CAPS.filter(c => c.s === 'live').map((c, i) => (
-                            <div key={i}>
-                              <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.3rem' }}>{c.n}</h4>
-                              <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.55 }}>{c.d}</p>
+                  (() => {
+                    const rings = [
+                      { key: 'live',  label: 'OPERATIONAL', color: '#4ade80', glow: 'rgba(74,222,128,0.18)', r: 105 },
+                      { key: 'proto', label: 'PROTOTYPE',   color: '#f59e0b', glow: 'rgba(245,158,11,0.15)',  r: 170 },
+                      { key: 'weak',  label: 'FUTURE PLANS', color: '#f87171', glow: 'rgba(248,113,113,0.14)', r: 235 },
+                    ];
+                    const liveCaps   = CAPS.filter(c => c.s === 'live');
+                    const protoCaps  = CAPS.filter(c => c.s === 'proto');
+                    const weakCaps   = CAPS.filter(c => c.s === 'weak');
+                    const ringCaps   = [liveCaps, protoCaps, weakCaps];
+                    const [selCap, setSelCap] = React.useState(null);
+                    const [activeTab, setActiveTab] = React.useState('live');
+                    const [hoveredNode, setHoveredNode] = React.useState(null);
+                    const [sweepAngle, setSweepAngle] = React.useState(0);
+                    const [orbitAngle, setOrbitAngle] = React.useState(0);
+                    const rafRef = React.useRef(null);
+                    const lastRef = React.useRef(null);
+                    React.useEffect(() => {
+                      const tick = (ts) => {
+                        if (lastRef.current == null) lastRef.current = ts;
+                        const dt = ts - lastRef.current;
+                        lastRef.current = ts;
+                        setSweepAngle(a => (a + dt * 0.12) % 360);
+                        setOrbitAngle(a => (a + dt * 0.018) % 360);
+                        rafRef.current = requestAnimationFrame(tick);
+                      };
+                      rafRef.current = requestAnimationFrame(tick);
+                      return () => cancelAnimationFrame(rafRef.current);
+                    }, []);
+                    const cx = 280, cy = 280;
+                    const svgSize = 560;
+                    const toRad = d => (d * Math.PI) / 180;
+                    return (
+                      <div style={{ display: 'grid', gridTemplateColumns: '560px 1fr', gap: '3rem', alignItems: 'center', width: '100%' }}>
+                        <div style={{ position: 'relative', width: svgSize, height: svgSize, flexShrink: 0 }}>
+                          <svg width={svgSize} height={svgSize} style={{ overflow: 'visible' }}>
+                            <defs>
+                              {rings.map(rng => (
+                                <radialGradient key={rng.key} id={`glow-${rng.key}`} cx="50%" cy="50%" r="50%">
+                                  <stop offset="0%" stopColor={rng.color} stopOpacity="0.08" />
+                                  <stop offset="100%" stopColor={rng.color} stopOpacity="0" />
+                                </radialGradient>
+                              ))}
+                            </defs>
+                            {[60, 140, 205, 265].map(r => (
+                              <circle key={r} cx={cx} cy={cy} r={r} fill="none" stroke="rgba(255,255,255,0.04)" strokeWidth="1" strokeDasharray="4 8" />
+                            ))}
+                            {[0, -18].map((offset, idx) => {
+                              const a = toRad(sweepAngle + offset);
+                              const maxR = 260;
+                              return (
+                                <line
+                                  key={idx}
+                                  x1={cx} y1={cy}
+                                  x2={cx + Math.cos(a) * maxR}
+                                  y2={cy + Math.sin(a) * maxR}
+                                  stroke={`rgba(139,157,195,${0.55 - idx * 0.35})`}
+                                  strokeWidth={idx === 0 ? 1.5 : 1}
+                                />
+                              );
+                            })}
+                            {rings.map((rng, ri) => {
+                              const caps = ringCaps[ri];
+                              return (
+                                <g key={rng.key}>
+                                  <circle cx={cx} cy={cy} r={rng.r} fill="none" stroke={rng.color} strokeWidth="1" strokeOpacity="0.3" />
+                                  <circle cx={cx} cy={cy} r={rng.r} fill={rng.glow} />
+                                  {caps.map((cap, ci) => {
+                                    const baseAngle = (360 / caps.length) * ci;
+                                    const angle = toRad(baseAngle + orbitAngle * (ri % 2 === 0 ? 1 : -1));
+                                    const nx = cx + Math.cos(angle) * rng.r;
+                                    const ny = cy + Math.sin(angle) * rng.r;
+                                    const isSelected = selCap && selCap.n === cap.n;
+                                    const isHovered = hoveredNode === cap.n;
+                                    const nodeDeg = (baseAngle + orbitAngle * (ri % 2 === 0 ? 1 : -1) + 360) % 360;
+                                    const sweepDiff = Math.abs(((sweepAngle - nodeDeg + 540) % 360) - 180);
+                                    const proximity = Math.max(0, 1 - sweepDiff / 25);
+                                    const showLabel = proximity > 0.3 || isSelected || isHovered;
+                                    const pulseOpacity = isHovered ? 0.4 : proximity * 0.15;
+                                    const pulseRadius = isHovered ? 12 : 8 + proximity * 6;
+                                    return (
+                                      <g 
+                                        key={cap.n} 
+                                        onClick={() => setSelCap(isSelected ? null : { ...cap, color: rng.color, label: rng.label })} 
+                                        onMouseEnter={() => setHoveredNode(cap.n)}
+                                        onMouseLeave={() => setHoveredNode(null)}
+                                        style={{ cursor: 'pointer' }}
+                                      >
+                                        {isSelected && <circle cx={nx} cy={ny} r={14} fill="none" stroke={rng.color} strokeWidth="1" strokeOpacity="0.6" />}
+                                        {(proximity > 0.1 || isHovered) && <circle cx={nx} cy={ny} r={pulseRadius} fill={rng.color} fillOpacity={pulseOpacity} />}
+                                        <circle cx={nx} cy={ny} r={isSelected || isHovered ? 6 : 4} fill={isSelected || isHovered ? rng.color : `rgba(${ri===0?'74,222,128':ri===1?'245,158,11':'248,113,113'},${0.5 + proximity * 0.5})`} />
+                                        {showLabel && (
+                                          <text x={nx + (nx > cx ? 10 : -10)} y={ny + 4} fill="#ffffff" fontSize="9" fontWeight={isSelected || isHovered ? 600 : 400} textAnchor={nx > cx ? 'start' : 'end'} fontFamily="var(--font-mono)" opacity={Math.max(proximity, isSelected || isHovered ? 1 : 0)}>
+                                            {cap.n.length > 20 ? cap.n.slice(0, 20) + '…' : cap.n}
+                                          </text>
+                                        )}
+                                        {(isSelected || isHovered) && <line x1={cx} y1={cy} x2={nx} y2={ny} stroke={rng.color} strokeWidth="0.5" strokeOpacity={isSelected ? 0.4 : 0.25} strokeDasharray="3 4" />}
+                                      </g>
+                                    );
+                                  })}
+                                </g>
+                              );
+                            })}
+                            <circle cx={cx} cy={cy} r={8} fill="rgba(8,11,16,0.9)" stroke="rgba(255,255,255,0.3)" strokeWidth="1" />
+                            <line x1={cx-5} y1={cy} x2={cx+5} y2={cy} stroke="rgba(255,255,255,0.5)" strokeWidth="0.8" />
+                            <line x1={cx} y1={cy-5} x2={cx} y2={cy+5} stroke="rgba(255,255,255,0.5)" strokeWidth="0.8" />
+                          </svg>
+                          {rings.map((rng, ri) => (
+                            <div key={rng.key} style={{ position: 'absolute', bottom: `${ri * 22}px`, right: 0 }}>
+                              <span className="mono" style={{ fontSize: '0.58rem', color: rng.color, letterSpacing: '0.12em', opacity: 0.8 }}>
+                                ─ {rng.label} ({ringCaps[ri].length})
+                              </span>
                             </div>
                           ))}
                         </div>
-                      </motion.div>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', minHeight: '480px' }}>
+                          {selCap ? (
+                            <motion.div
+                              key={selCap.n}
+                              initial={{ opacity: 0, y: 16 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                              style={{ display: 'flex', flexDirection: 'column', gap: '1.8rem' }}
+                            >
+                              <div>
+                                <span className="mono" style={{ fontSize: '0.65rem', color: selCap.color, letterSpacing: '0.15em', textTransform: 'uppercase', display: 'block', marginBottom: '0.6rem', fontWeight: 600 }}>
+                                  {selCap.label} // SELECTED MODULE
+                                </span>
+                                <h3 className="serif" style={{ fontSize: '2.2rem', color: '#ffffff', fontWeight: 600, margin: 0, lineHeight: 1.1 }}>
+                                  {selCap.n}
+                                </h3>
+                              </div>
+                              <div style={{ width: '100%', height: '1px', background: `linear-gradient(90deg, ${selCap.color}55, transparent)` }} />
+                              <p className="mono" style={{ fontSize: '0.92rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.7, margin: 0 }}>
+                                {selCap.d}
+                              </p>
+                              <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: selCap.color, boxShadow: `0 0 10px ${selCap.color}` }} />
+                                <span className="mono" style={{ fontSize: '0.7rem', color: selCap.color, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+                                  {selCap.label === 'OPERATIONAL' ? 'Active in Runtime' : selCap.label === 'PROTOTYPE' ? 'In Development' : 'Future Plans'}
+                                </span>
+                              </div>
+                              <button onClick={() => setSelCap(null)} style={{ alignSelf: 'flex-start', background: 'transparent', border: '1px solid rgba(255,255,255,0.15)', color: 'rgba(255,255,255,0.4)', fontFamily: 'var(--font-mono)', fontSize: '0.65rem', padding: '0.4rem 0.8rem', cursor: 'pointer', letterSpacing: '0.1em' }}>
+                                ← BACK TO DIRECTORY
+                              </button>
+                            </motion.div>
+                          ) : (
+                            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem', flex: 1 }}>
+                              <div>
+                                <span className="mono" style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.35)', letterSpacing: '0.15em', textTransform: 'uppercase', display: 'block', marginBottom: '0.4rem' }}>
+                                  Capability Matrix Directory
+                                </span>
+                                <p className="mono" style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', margin: '0 0 1rem' }}>
+                                  Inspect operational modules, prototypes, and quarantine records.
+                                </p>
+                              </div>
+                              <div style={{ display: 'flex', gap: '0.2rem', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '0.2rem' }}>
+                                {rings.map(rng => (
+                                  <button
+                                    key={rng.key}
+                                    onClick={() => setActiveTab(rng.key)}
+                                    style={{
+                                      background: 'transparent',
+                                      border: 'none',
+                                      borderBottom: activeTab === rng.key ? `2px solid ${rng.color}` : '2px solid transparent',
+                                      color: activeTab === rng.key ? '#ffffff' : 'rgba(255,255,255,0.4)',
+                                      padding: '0.5rem 0.8rem',
+                                      cursor: 'pointer',
+                                      fontFamily: 'var(--font-mono)',
+                                      fontSize: '0.72rem',
+                                      fontWeight: activeTab === rng.key ? 600 : 400,
+                                      letterSpacing: '0.08em',
+                                      transition: 'all 0.15s ease'
+                                    }}
+                                  >
+                                    {rng.label}
+                                  </button>
+                                ))}
+                              </div>
+                              <div 
+                                onWheel={(e) => e.stopPropagation()}
+                                style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', maxHeight: '280px', overflowY: 'auto', paddingRight: '0.4rem' }} 
+                                className="custom-scrollbar"
+                              >
+                                {ringCaps[rings.findIndex(r => r.key === activeTab)].map((cap) => (
+                                  <div
+                                    key={cap.n}
+                                    onClick={() => setSelCap({ ...cap, color: rings.find(r => r.key === activeTab).color, label: rings.find(r => r.key === activeTab).label })}
+                                    onMouseEnter={() => setHoveredNode(cap.n)}
+                                    onMouseLeave={() => setHoveredNode(null)}
+                                    style={{
+                                      padding: '0.7rem 0.9rem',
+                                      background: 'rgba(255,255,255,0.02)',
+                                      border: '1px solid rgba(255,255,255,0.06)',
+                                      borderRadius: '2px',
+                                      cursor: 'pointer',
+                                      transition: 'all 0.15s ease',
+                                      display: 'flex',
+                                      flexDirection: 'column',
+                                      gap: '0.2rem'
+                                    }}
+                                    className="cap-list-item"
+                                  >
+                                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                                      <h4 className="serif" style={{ fontSize: '0.92rem', color: '#ffffff', margin: 0, fontWeight: 500 }}>{cap.n}</h4>
+                                      <span className="mono" style={{ fontSize: '0.55rem', color: rings.find(r => r.key === activeTab).color, letterSpacing: '0.05em' }}>SELECT →</span>
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                              <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '1.5rem' }}>
+                                <span className="mono" style={{ fontSize: '0.65rem', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.1em' }}>
+                                  CLICK ANY NODE TO INSPECT â†—
+                                </span>
+                              </div>
+                            </motion.div>
+                          )}
 
-                      {/* Monolith 02: Partial (Proto) */}
-                      <motion.div 
-                        variants={slideItemVariants}
-                        whileHover={{ scale: 1.012 }}
-                        style={{ 
-                          borderLeft: '4px solid var(--earth-sand)', 
-                          background: 'linear-gradient(180deg, rgba(26, 24, 20, 0.85) 0%, rgba(16, 15, 12, 0.6) 100%)', 
-                          backdropFilter: 'blur(20px)',
-                          boxShadow: '0 15px 40px rgba(0,0,0,0.3)',
-                          padding: '2rem 2.2rem',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          borderRight: '1px solid rgba(255,255,255,0.03)',
-                          borderTop: '1px solid rgba(255,255,255,0.03)'
-                        }}
-                      >
-                        <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-sand)', letterSpacing: '0.15em', display: 'block', marginBottom: '1.5rem', borderBottom: '1px solid rgba(220, 200, 160, 0.15)', paddingBottom: '0.6rem' }}>[02] Partial (Proto)</span>
-                        <div style={{ flex: 1, overflowY: 'auto', paddingRight: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.4rem' }} className="custom-scrollbar">
-                          {CAPS.filter(c => c.s === 'proto').map((c, i) => (
-                            <div key={i}>
-                              <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.3rem' }}>{c.n}</h4>
-                              <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.55 }}>{c.d}</p>
-                            </div>
-                          ))}
+                          {/* System Status Diagnostic Banner */}
+                          <div style={{ marginTop: 'auto', background: 'rgba(8,11,16,0.92)', border: '1px solid rgba(255,255,255,0.08)', borderLeft: '3px solid var(--syn-electric)', backdropFilter: 'blur(20px)', padding: '1rem 1.4rem', display: 'flex', alignItems: 'center', gap: '1.2rem', boxShadow: '0 8px 32px rgba(0,0,0,0.3)' }}>
+                            <span className="mono" style={{ fontSize: '0.6rem', color: 'var(--syn-electric)', border: '1px solid var(--syn-electric)', padding: '0.2rem 0.5rem', textTransform: 'uppercase', letterSpacing: '0.1em', flexShrink: 0, fontWeight: 600 }}>SYSTEM STATUS //</span>
+                            <p className="mono" style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.8)', fontWeight: 400, lineHeight: 1.5, margin: 0 }}>
+                              {liveCaps.length} Operational nodes active. {protoCaps.length} Sandbox trials in progress. {weakCaps.length} Scheduled in future roadmaps.
+                            </p>
+                          </div>
                         </div>
-                      </motion.div>
-
-                      {/* Monolith 03: Missing (Quarantined) */}
-                      <motion.div 
-                        variants={slideItemVariants}
-                        whileHover={{ scale: 1.012 }}
-                        style={{ 
-                          borderLeft: '4px solid var(--earth-clay)', 
-                          background: 'linear-gradient(180deg, rgba(26, 16, 16, 0.85) 0%, rgba(16, 10, 10, 0.6) 100%)', 
-                          backdropFilter: 'blur(20px)',
-                          boxShadow: '0 15px 40px rgba(0,0,0,0.3)',
-                          padding: '2rem 2.2rem',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          borderRight: '1px solid rgba(255,255,255,0.03)',
-                          borderTop: '1px solid rgba(255,255,255,0.03)'
-                        }}
-                      >
-                        <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-clay)', letterSpacing: '0.15em', display: 'block', marginBottom: '1.5rem', borderBottom: '1px solid rgba(168, 93, 74, 0.15)', paddingBottom: '0.6rem' }}>[03] Missing (Quarantined)</span>
-                        <div style={{ flex: 1, overflowY: 'auto', paddingRight: '0.5rem', display: 'flex', flexDirection: 'column', gap: '1.4rem' }} className="custom-scrollbar">
-                          {CAPS.filter(c => c.s === 'weak').map((c, i) => (
-                            <div key={i}>
-                              <h4 className="serif" style={{ fontSize: '1.25rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '0.3rem' }}>{c.n}</h4>
-                              <p className="mono" style={{ fontSize: '0.85rem', color: 'var(--syn-dim)', lineHeight: 1.55 }}>{c.d}</p>
-                            </div>
-                          ))}
-                        </div>
-                      </motion.div>
-
-                    </div>
-
-                    {/* Honest Summary Banner */}
-                    <motion.div 
-                      variants={slideItemVariants}
-                      style={{ 
-                        background: 'rgba(255, 255, 255, 0.02)', 
-                        border: '1px solid rgba(255, 255, 255, 0.06)', 
-                        padding: '1.4rem 2.2rem',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '2rem'
-                      }}
-                    >
-                      <span className="mono" style={{ fontSize: '0.68rem', color: 'var(--earth-copper)', border: '1px solid var(--earth-copper)', padding: '0.2rem 0.6rem', textTransform: 'uppercase', letterSpacing: '0.12em', flexShrink: 0 }}>Honest Assessment //</span>
-                      <p className="mono" style={{ fontSize: '0.9rem', color: 'var(--syn-dim)', lineHeight: 1.6, margin: 0 }}>
-                        Earthos is a research platform, not a finished intelligence. It contains real ideas, real code, real failures, and real hypotheses. It is valuable because it is trying to solve the hard parts directly rather than disguising them behind benchmark theater.
-                      </p>
-                    </motion.div>
-                  </div>
+                      </div>
+                    );
+                  })()
                 )}
               </motion.div>
             </div>
@@ -3433,14 +3744,14 @@ export default function App() {
               <motion.div 
                 style={{ maxWidth: '1350px', margin: '0 auto', width: '100%', position: 'relative', zIndex: 2 }}
                 variants={slideContainerVariants}
-                animate={activeIndex === 8 ? 'active' : 'inactive'}
+                animate={activeIndex === 9 ? 'active' : 'inactive'}
               >
-                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-crimson)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Chamber 05 // Bottlenecks</motion.span>
+                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-crimson)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Chamber 05 // Questions</motion.span>
                 
                 <CinematicTitle 
-                  text="Open Cognitive Bottlenecks" 
+                  text="Open Cognitive Questions" 
                   className="serif" 
-                  isActive={activeIndex === 8} 
+                  isActive={activeIndex === 9} 
                   style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '4rem', lineHeight: 0.95, letterSpacing: '-0.03em' }} 
                 />
                 
@@ -3451,7 +3762,6 @@ export default function App() {
                     const defaultRotate = i % 4 === 0 ? -1.8 : (i % 4 === 1 ? 1.2 : (i % 4 === 2 ? -0.8 : 1.5));
                     const defaultY = i % 4 === 0 ? -10 : (i % 4 === 1 ? 8 : (i % 4 === 2 ? -6 : 10));
                     const isSpecialProblem = i === 0 || i === 6;
-                    const isLastCard = i === 6;
                     return (
                       <motion.div 
                         key={i} 
@@ -3480,7 +3790,7 @@ export default function App() {
                           position: 'relative',
                           cursor: 'pointer',
                           zIndex: 10 - i,
-                          gridColumn: isLastCard && !isMobile ? 'span 2' : 'span 1'
+                          gridColumn: 'span 1'
                         }}
                       >
                         <div>
@@ -3490,7 +3800,7 @@ export default function App() {
                           <h3 className="serif" style={{ fontSize: '1.45rem', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '1rem' }}>
                             {p.t}
                           </h3>
-                          <p className="mono" style={{ fontSize: '0.88rem', color: 'var(--syn-dim)', lineHeight: 1.65 }}>
+                          <p className="mono" style={{ fontSize: '0.88rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.65 }}>
                             {p.d}
                           </p>
                         </div>
@@ -3501,23 +3811,231 @@ export default function App() {
                       </motion.div>
                     );
                   })}
+
+                  {/* 8th Slot: Contribution Call to Action Card */}
+                  <motion.div
+                    variants={slideItemVariants}
+                    whileHover={{ 
+                      scale: 1.025, 
+                      borderColor: 'var(--syn-crimson)', 
+                      zIndex: 30,
+                      boxShadow: '0 20px 45px rgba(239, 68, 68, 0.22)',
+                      background: 'rgba(28, 14, 14, 0.96)' 
+                    }}
+                    transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+                    style={{ 
+                      padding: '2rem', 
+                      border: '2px dashed var(--syn-crimson)', 
+                      background: 'rgba(24, 12, 12, 0.45)', 
+                      boxShadow: '0 8px 25px rgba(0,0,0,0.2)',
+                      backdropFilter: 'blur(20px) saturate(1.2)',
+                      height: '350px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      position: 'relative',
+                      cursor: 'pointer',
+                      zIndex: 1,
+                      gridColumn: 'span 1'
+                    }}
+                  >
+                    <div>
+                      <span className="mono" style={{ fontSize: '0.7rem', color: 'var(--syn-crimson)', display: 'block', marginBottom: '0.8rem', fontWeight: 600 }}>
+                        SUBMIT // 08
+                      </span>
+                      <h3 className="serif" style={{ fontSize: '1.45rem', color: '#ffffff', fontWeight: 500, marginBottom: '1rem' }}>
+                        Got an answer?
+                      </h3>
+                      <p className="mono" style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', fontWeight: 400, lineHeight: 1.6 }}>
+                        If you have insights, mathematical proofs, or proposed answers to any of these cognitive questions, hit me up.
+                      </p>
+                    </div>
+                    <a 
+                      href="mailto:roshankumargupta.sh@gmail.com" 
+                      className="mono" 
+                      style={{ 
+                        fontSize: '0.82rem', 
+                        color: 'var(--syn-crimson)', 
+                        textDecoration: 'none', 
+                        borderBottom: '1px dotted var(--syn-crimson)', 
+                        paddingBottom: '2px',
+                        fontWeight: 600,
+                        alignSelf: 'flex-start',
+                        transition: 'all 0.15s ease'
+                      }}
+                      onMouseEnter={(e) => { e.currentTarget.style.color = '#ffffff'; e.currentTarget.style.borderBottomColor = '#ffffff'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.color = 'var(--syn-crimson)'; e.currentTarget.style.borderBottomColor = 'var(--syn-crimson)'; }}
+                    >
+                      roshankumargupta.sh@gmail.com →
+                    </a>
+                  </motion.div>
                 </div>
               </motion.div>
             </div>
 
-            {/* CHAMBER 6: EXIT SUBSTRATE */}
+            {/* CHAMBER 6: THE EVOLVING LOOP */}
+            <div className="chamber" style={{ width: '100vw' }}>
+              <motion.div 
+                style={{ maxWidth: '1350px', margin: '0 auto', width: '100%' }}
+                variants={slideContainerVariants}
+                animate={activeIndex === 10 ? 'active' : 'inactive'}
+              >
+                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-electric)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Chamber 06 // Dynamics</motion.span>
+                
+                <CinematicTitle 
+                  text="The Evolving Loop" 
+                  className="serif" 
+                  isActive={activeIndex === 10} 
+                  style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '2.5rem', lineHeight: 0.95, letterSpacing: '-0.03em' }} 
+                />
+                
+                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(4, 1fr)', gap: isMobile ? '1rem' : '1.5rem', maxHeight: isMobile ? '450px' : 'none', overflowY: isMobile ? 'auto' : 'visible', paddingRight: isMobile ? '0.5rem' : 0 }}>
+                  {EVOLVING_LOOP_STEPS.map((step, i) => (
+                    <motion.div 
+                      key={i} 
+                      variants={slideItemVariants}
+                      whileHover={{ 
+                        scale: 1.02,
+                        borderColor: 'var(--syn-electric)',
+                        background: 'rgba(14, 22, 32, 0.94)',
+                        boxShadow: '0 12px 30px rgba(139, 157, 195, 0.15)'
+                      }}
+                      transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+                      style={{ 
+                        padding: '1.5rem 1.8rem', 
+                        border: '1px solid rgba(139, 157, 195, 0.22)', 
+                        background: 'rgba(8, 11, 16, 0.92)', 
+                        backdropFilter: 'blur(20px) saturate(1.2)',
+                        height: '210px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        cursor: 'pointer',
+                        boxShadow: '0 8px 25px rgba(0,0,0,0.3)'
+                      }}
+                    >
+                      <div>
+                        <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--syn-electric)', display: 'block', marginBottom: '0.6rem', fontWeight: 600 }}>
+                          0{i + 1} //
+                        </span>
+                        <h3 className="serif" style={{ fontSize: '1.25rem', color: '#ffffff', fontWeight: 600, marginBottom: '0.6rem', lineHeight: 1.1 }}>
+                          {step.t}
+                        </h3>
+                        <p className="mono" style={{ fontSize: '0.8rem', color: '#ffffff', fontWeight: 400, lineHeight: 1.55 }}>
+                          {step.d}
+                        </p>
+                      </div>
+                      <span style={{
+                        width: '4px', height: '4px', background: 'var(--syn-electric)',
+                        animation: 'flicker 2s infinite alternate', alignSelf: 'flex-end'
+                      }} />
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            </div>
+
+            {/* CHAMBER 7: A LIVING COGNITIVE PROCESS VS SIMULATORS */}
+            <div className="chamber" style={{ width: '100vw' }}>
+              <motion.div 
+                style={{ maxWidth: '1300px', margin: '0 auto', width: '100%' }}
+                variants={slideContainerVariants}
+                animate={activeIndex === 11 ? 'active' : 'inactive'}
+              >
+                <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-electric)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Chamber 07 // Paradigms</motion.span>
+                
+                <CinematicTitle 
+                  text="A Living Process" 
+                  className="serif" 
+                  isActive={activeIndex === 11} 
+                  style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '2.5rem', lineHeight: 0.95, letterSpacing: '-0.03em' }} 
+                />
+
+                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: isMobile ? '1.5rem' : '3rem', maxHeight: isMobile ? '450px' : 'none', overflowY: isMobile ? 'auto' : 'visible' }}>
+                  {/* Left: Simulators */}
+                  <motion.div 
+                    variants={slideItemVariants}
+                    style={{
+                      padding: '2.5rem',
+                      border: '1px solid rgba(239, 68, 68, 0.35)',
+                      background: 'rgba(20, 8, 8, 0.92)',
+                      backdropFilter: 'blur(20px) saturate(1.2)',
+                      boxShadow: '0 12px 35px rgba(0,0,0,0.45)'
+                    }}
+                  >
+                    <span className="mono" style={{ fontSize: '0.7rem', color: 'var(--syn-crimson)', letterSpacing: '0.15em', textTransform: 'uppercase', display: 'block', marginBottom: '0.8rem', fontWeight: 600 }}>EPISODIC SIMULATORS</span>
+                    <h3 className="serif" style={{ fontSize: '2.0rem', color: '#ffffff', fontWeight: 600, marginBottom: '1.8rem' }}>Why LLMs Are Not AGI</h3>
+                    
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                      {[
+                        { l: 'Stateless Amnesia', d: 'Memory resets and statistic amnesia on every conversation execution.' },
+                        { l: 'Detached Prediction', d: 'No grounded world contact; high benchmark competency detached from reality.' },
+                        { l: 'No Grounding Constraints', d: 'Compute without thermodynamic resource scarcity or consequence pressure.' },
+                        { l: 'Static Embeddings', d: 'Fixed representations rather than evolving confidence-weighted ontology revision.' },
+                        { l: 'Zero Persistence', d: 'Reasoning dissolves instantly outside active inference compute cycle.' },
+                        { l: 'No Historical Continuity', d: 'Episodic token prediction rather than a persistent, developmental identity.' }
+                      ].map((item, idx) => (
+                        <div key={idx} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                          <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--syn-crimson)', marginTop: '0.2rem', fontWeight: 600 }}>âœ•</span>
+                          <div>
+                            <h4 className="serif" style={{ fontSize: '1.05rem', color: '#ffffff', fontWeight: 600, margin: '0 0 0.1rem 0' }}>{item.l}</h4>
+                            <p className="mono" style={{ fontSize: '0.82rem', color: '#ffffff', fontWeight: 400, margin: 0, lineHeight: 1.45 }}>{item.d}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+
+                  {/* Right: Living Process */}
+                  <motion.div 
+                    variants={slideItemVariants}
+                    style={{
+                      padding: '2.5rem',
+                      border: '1px solid rgba(198, 122, 74, 0.45)',
+                      background: 'rgba(8, 16, 12, 0.92)',
+                      backdropFilter: 'blur(20px) saturate(1.2)',
+                      boxShadow: '0 12px 35px rgba(0,0,0,0.45)'
+                    }}
+                  >
+                    <span className="mono" style={{ fontSize: '0.7rem', color: 'var(--earth-copper)', letterSpacing: '0.15em', textTransform: 'uppercase', display: 'block', marginBottom: '0.8rem', fontWeight: 600 }}>DEVELOPMENTAL ECO-SYSTEM</span>
+                    <h3 className="serif" style={{ fontSize: '2.0rem', color: 'var(--earth-text)', fontWeight: 600, marginBottom: '1.8rem' }}>A Living Cognitive Process</h3>
+                    
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                      {[
+                        { l: 'Autobiographical Continuity', d: 'Identity persists across time, carrying history, scars, and contradictions.' },
+                        { l: 'Adaptive Causal Grounding', d: 'Physical contradiction overrides prediction dynamics to enforce truth.' },
+                        { l: 'Thermodynamic Economics', d: 'Compute regulated dynamically by metabolic energy constraints.' },
+                        { l: 'Evolving Belief Ontology', d: 'Ontology formed by compressing and revisioning continuous sensor interactions.' },
+                        { l: 'Irreversible Interaction Pressure', d: 'Mistakes shape physical representation geometry irrevocably.' },
+                        { l: 'Developmental Emergence', d: 'Persistent attractors stabilize behavior, outcompeting standard static resets.' }
+                      ].map((item, idx) => (
+                        <div key={idx} style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                          <span className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-copper)', marginTop: '0.2rem', fontWeight: 600 }}>âœ“</span>
+                          <div>
+                            <h4 className="serif" style={{ fontSize: '1.05rem', color: 'var(--earth-text)', fontWeight: 600, margin: '0 0 0.1rem 0' }}>{item.l}</h4>
+                            <p className="mono" style={{ fontSize: '0.82rem', color: '#ffffff', fontWeight: 400, margin: 0, lineHeight: 1.45 }}>{item.d}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* CHAMBER 8: EXIT SUBSTRATE */}
             <div className="chamber" style={{ width: '100vw' }}>
               <motion.div 
                 style={{ maxWidth: '750px', margin: '0 auto', textAlign: 'center' }}
                 variants={slideContainerVariants}
-                animate={activeIndex === 9 ? 'active' : 'inactive'}
+                animate={activeIndex === 12 ? 'active' : 'inactive'}
               >
                 <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.75rem', color: 'var(--syn-electric)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Act 8 // Final Statement</motion.span>
                 
                 <CinematicTitle 
                   text="A Research Trajectory" 
                   className="serif" 
-                  isActive={activeIndex === 9} 
+                  isActive={activeIndex === 12} 
                   style={{ fontSize: 'clamp(2.5rem, 6vw, 4.8rem)', color: 'var(--syn-silver)', fontWeight: 500, marginBottom: '2.5rem', lineHeight: 0.95, letterSpacing: '-0.03em', justifyContent: 'center' }} 
                 />
 
@@ -3530,22 +4048,22 @@ export default function App() {
           </motion.div>
         </div>
 
-        {/* ═══════════════════════════════════════ */}
-        {/* ═══  EARTHOS EXIT: OBSERVATORY CLOSE ═══ */}
-        {/* ═══════════════════════════════════════ */}
+        {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
+        {/* â•â•â•  EARTHOS EXIT: OBSERVATORY CLOSE â•â•â• */}
+        {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="act" style={{ background: 'var(--earth-void)', borderTop: '1px solid var(--earth-border)', flexDirection: 'column', height: '140vh', justifyContent: 'flex-start', paddingTop: '8rem' }}>
           <motion.div 
             className="act-c" 
             style={{ textAlign: 'center', maxWidth: '750px', marginBottom: '2rem' }}
             variants={slideContainerVariants}
-            animate={activeIndex >= 10 ? 'active' : 'inactive'}
+            animate={activeIndex >= 13 ? 'active' : 'inactive'}
           >
             <motion.span variants={slideItemVariants} className="mono" style={{ fontSize: '0.8rem', color: 'var(--earth-copper)', letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '1.5rem', display: 'block' }}>Collaboration</motion.span>
             
             <CinematicTitle 
               text="Open to feedback, architectural discussions, and research backing." 
               className="serif" 
-              isActive={activeIndex >= 10} 
+              isActive={activeIndex >= 13} 
               style={{ fontSize: '2.6rem', fontWeight: 500, lineHeight: 1.2, marginBottom: '2rem', justifyContent: 'center' }} 
             />
 
@@ -3615,7 +4133,7 @@ export default function App() {
             </motion.div>
           </motion.div>
 
-          {/* Section 8.2 bottom — Final Statement */}
+          {/* Section 8.2 bottom â€” Final Statement */}
           <motion.div 
             style={{ 
               maxWidth: '850px', 
@@ -3626,7 +4144,7 @@ export default function App() {
               padding: '0 2rem'
             }}
             variants={slideContainerVariants}
-            animate={activeIndex >= 10 ? 'active' : 'inactive'}
+            animate={activeIndex >= 13 ? 'active' : 'inactive'}
           >
             <p className="serif" style={{ fontSize: '1.45rem', color: 'var(--earth-dim)', lineHeight: 1.6, fontStyle: 'italic', margin: 0 }}>
               "Earthos is an ongoing attempt to study persistent adaptive cognition under ecological constraint. Not a finished intelligence. A research trajectory."
@@ -3637,7 +4155,7 @@ export default function App() {
           <footer style={{ width: '100%', padding: '4rem 0', borderTop: '1px solid var(--earth-border)', background: 'var(--earth-void)', marginTop: 'auto' }}>
             <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span className="mono" style={{ fontSize: '0.85rem', color: 'var(--earth-muted)' }}>
-                Earthos Substrate Observatory · Roshan Kumar Gupta
+                Earthos Substrate Observatory Â· Roshan Kumar Gupta
               </span>
               <span className="mono" style={{ fontSize: '0.85rem', color: 'var(--earth-muted)', opacity: 0.5 }}>
                 2026

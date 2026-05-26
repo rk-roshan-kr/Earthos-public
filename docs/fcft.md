@@ -33,46 +33,36 @@ For every local representation region, the tensor tracks:
 * `identity_stability`: Index of self-model continuity.
 
 ### 2. Damped Coordinate Updates
-Couplings between dimensions are applied as damped delta operations in every cognitive tick. A global damping factor ($d \in [0.0, 1.0]$) is computed by the homeostasis engine to prevent positive feedback runaways.
+Couplings between dimensions are applied as damped delta operations in every cognitive tick. A global damping factor (d, bounded between 0.0 and 1.0) is computed by the homeostasis engine to prevent positive feedback runaways.
 
 The specific, implemented coupling dynamics in code are:
 
-* **Contradiction to Uncertainty & Grounding**: A high contradiction load increases uncertainty and reduces grounding confidence:
-  $$\Delta \text{uncertainty\_mass} = \text{contradiction\_load} \times 0.10 \times d$$
-  $$\Delta \text{grounding\_confidence} = -\text{uncertainty\_mass} \times 0.05 \times d$$
-
-* **Uncertainty to Salience**: Regions with high uncertainty attract attention, raising their salience:
-  $$\Delta \text{salience\_distribution} = \text{uncertainty\_mass} \times 0.15 \times d$$
-
-* **Economic Pressure to Density & Compression**: High resource consumption forces compaction and density reduction:
-  $$\Delta \text{ontology\_density} = -\text{economic\_pressure} \times 0.08 \times d$$
-  $$\Delta \text{compression\_efficiency} = \text{economic\_pressure} \times 0.05 \times d$$
-
-* **Identity to Simulation Damping**: Instability in the selfhood model dampens forward planning branching to prevent identity fracture:
-  $$\Delta \text{simulation\_pressure} = -(1.0 - \text{identity\_stability}) \times 0.15 \times d$$
+* **Contradiction to Uncertainty & Grounding**: A high contradiction load directly scales up the local uncertainty mass (scaled by 0.10 of the active damping factor), which in turn degrades the overall grounding confidence score (by 0.05 of the accumulated uncertainty).
+* **Uncertainty to Salience**: Regions with high uncertainty mass attract attentional resources, shifting the salience distribution towards those coordinates to prioritize resolution (scaled by 0.15 of the damping factor).
+* **Economic Pressure to Density & Compression**: When system resource consumption is high, economic pressure decreases ontology density (pruning unused nodes at 0.08 of pressure) and increases compression efficiency by triggering structural merging protocols (at 0.05 of pressure).
+* **Identity to Simulation Damping**: Low identity stability indicates self-model fragility, which actively dampens simulation pressure by restricting deep branching and counterfactual exploration to prevent structural collapse (scaled by 0.15 of the damping factor).
 
 ---
 
-## 🔮 Cognitive Free Energy ($F_c$)
+## 🔮 Cognitive Free Energy (Fc)
 
-FCFT defines a unified free energy metric $F_c$ to evaluate the system's global state:
+FCFT defines a unified free energy metric Fc to evaluate the system's global state as the sum of its underlying tensions:
 
-$$F_c = E_p + E_r + E_i + E_m + E_s$$
+Fc = Predictive Error (Ep) + Representational Instability (Er) + Identity Discontinuity (Ei) + Metabolic Energy (Em) + Simulation Divergence (Es)
 
-* $E_p$ (Predictive Error): Global discrepancy between forecast and observation.
-* $E_r$ (Representational Instability): High-frequency jitter in coordinate space.
-* $E_i$ (Identity Discontinuity): Step-wise changes in the self-model coordinates.
-* $E_m$ (Metabolic Energy): Current cycle execution cost.
-* $E_s$ (Simulation Divergence): Variance between hypothetical paths.
+* **Predictive Error (Ep)**: Global discrepancy between forecast and observation.
+* **Representational Instability (Er)**: High-frequency jitter in coordinate space.
+* **Identity Discontinuity (Ei)**: Step-wise changes in the self-model coordinates.
+* **Metabolic Energy (Em)**: Current cycle execution cost.
+* **Simulation Divergence (Es)**: Variance between hypothetical paths.
 
 ### Coordinate Mutation Dynamics
-Concept positions within `AdaptiveRepresentationalGeometry` are updated according to gradients derived from this free energy, pulling representation coordinates toward stable regions:
+Concept positions within `AdaptiveRepresentationalGeometry` are updated according to gradients derived from this free energy, pulling representation coordinates toward stable regions. 
 
-$$dM_r = -\nabla F_c(M_r) \cdot dt + \sigma_r \cdot dW_t + \Phi_{env}$$
-
-* $\nabla F_c(M_r)$: Gradient pulling coordinates toward a stable state.
-* $\sigma_r \cdot dW_t$: Stochastic Brownian drift to simulate exploratory restructuring.
-* $\Phi_{env}$: Environmental force vector.
+This process is driven by:
+1. Gradient descent pulling coordinates toward a stable state of lowest free energy.
+2. Controlled stochastic Brownian drift to simulate exploratory restructuring (scaled inversely with the current identity stability to prevent white-noise dissolution).
+3. Active environmental force vectors.
 
 > ### Failure Note — Phase 37.1
 > In early versions of coordinate mutations, the stochastic noise term ($\sigma_r \cdot dW_t$) was unconstrained. During high-entropy observation ticks, this noise induced a step-change in coordinates that bypassed the identity stability guard entirely, causing what we call "symbolic relapse"—the system's coordinate representations dissolved into white noise in less than 50 ticks. We solved this by scaling $\sigma_r$ inversely with the current `identity_stability` value.

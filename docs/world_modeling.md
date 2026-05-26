@@ -1,46 +1,55 @@
-# World Modeling & Predictive Processing
+# World Modeling & Continuous Latent Forecasting
 
-The `WorldModelKernel` is the "theater" where Synapse Arch simulates the future. It is responsible for building and maintaining a latent representation of the environment's dynamics, allowing the agent to plan and reason without risking immediate action.
+The world modeling layer of Synapse is the predictive theater of the architecture. It is responsible for building, maintaining, and projecting latent representations of environmental dynamics, allowing the system to run continuous counterfactual simulations and evaluate risk curves before executing physical actions.
 
-## 🔮 Predictive Self-Supervision
+---
 
-In Synapse Arch, the primary learning signal is not external reward, but **Prediction Error**. The system constantly predicts the next sensory frame based on its current state and action. The difference between the prediction and the actual sensory outcome is used to refine the world model.
+## 🏛️ Evolution of World Modeling: From Symbols to Latent Fields
 
-### The Prediction Loop
-1.  **Forecast**: Given state $S_t$ and action $A_t$, predict $S_{t+1}$.
-2.  **Act**: Perform action $A_t$ in the environment.
-3.  **Observe**: Sense actual state $S'_{t+1}$.
-4.  **Correct**: Minimize $||S_{t+1} - S'_{t+1}||$ by updating the world model parameters.
+The world model was originally built as a step-wise symbolic counterfactual predictor. Its development is marked by severe empirical failures that forced a shift toward continuous latent dynamics:
 
-## 📽️ Counterfactual Rollouts (Imagination)
+### 1. The Causal Inversion & Pixel Color Struggle (Phase 38.3)
+Early causal learning models relied on clean, structured observation inputs. When we introduced $5\%$ random noise into the sensor streams, the causal discovery engine collapsed. The system struggled to separate accidental correlations from causal vectors, leading the model to link the agent's internal metabolic consumption rate directly to the color of background grid pixels. It spent 8,000 cycles attempting to reduce compute costs by navigating toward specific color tiles.
+* **The Decision**: We replaced flat correlation metrics with a robust **Directed Graph Projection** system. Causal links are now projected into a directed graph and filtered by strict confidence bounds. We also implemented a decayed multi-step credit attribution system to isolate and penalize failing links.
 
-Because the `WorldModelKernel` can simulate transitions, the `InferenceKernel` can perform "mental experiments."
+### 2. The False Affordance Struggle (Phase 37.5)
+In noiseless synthetic testing, the world model performed perfectly. However, when we introduced continuous sensor noise, the grounding layer began stabilizing false affordances—hallucinated paths that the system believed existed because a temporary sensor drop matched its internal prediction. The agent stabilized a "phantom wall" affordance due to three consecutive dropped frames in a simulated sensor array. It spent the next 4,000 cycles navigating around a wall that did not exist, ignoring direct physical coordinates showing the space was empty.
+* **The Decision**: We added active contradiction testing to the grounding module. When the system detects a mismatch between predicted path clearances and physical collision events, it triggers an immediate coordinates reset on the affected region. Real-world physical feedback must override internal world model expectations, always.
+
+---
+
+## 🌀 Continuous Latent Forecasting
+
+Rather than executing discrete, step-wise symbolic transitions, the world model operates as an asynchronous, continuous-time field simulator. It projects continuous trajectories through representation space that interact directly with active sensory coordinate fields:
 
 ```mermaid
-graph TD
-    Current[Current State] --> ActionA[Action A]
-    Current --> ActionB[Action B]
-    
-    ActionA --> SimA[Simulated Future A]
-    ActionB --> SimB[Simulated Future B]
-    
-    SimA --> EvalA[Reward Prediction A]
-    SimB --> EvalB[Reward Prediction B]
-    
-    EvalA -- Selection --> Decision[Execute Action B]
-    EvalB -- Selection --> Decision
+graph LR
+    SensoryField[Sensory Input Field] -->|Continuous Update| LatentState[Current Latent Manifold]
+    LatentState -->|Gradient Descent| Forecast[Continuous Trajectory Projection]
+    Forecast -->|Counterfactual Audits| Evaluation[Risk & Utility Evaluation]
+    Evaluation -->|Action Execution| SensoryField
 ```
 
-### Capabilities
--   **Planning**: Searching for action sequences that lead to high-utility future states.
--   **Safety**: Identifying dangerous outcomes *before* they occur in reality.
--   **Curiosity**: Actively seeking out states where the world model's prediction error is high, driving exploration and learning.
+### Key Dynamics
+* **Trajectory Projection**: Evaluates how belief coordinates evolve along continuous paths, identifying unstable transition states and prospective bottlenecks.
+* **Asynchronous Integration**: Feeds raw sensorimotor and information streams directly into the active simulation layers without pausing execution ticks, maintaining real-time alignment.
 
-## 🌫️ Latent State Representations
+---
 
-While early versions of Synapse Arch relied on symbolic graph nodes, our current research focuses on **Learned Latent Spaces**. Instead of mapping the world to human-readable symbols, the world model learns a compressed, high-dimensional representation that captures the essential causal dynamics of the environment.
+## 🔒 Dynamic Causal Belief Ecologies (Phase 39)
 
-### Benefits of Latent Modeling
--   **Generalization**: Similar environmental configurations map to similar points in latent space.
--   **Computational Efficiency**: Predicting transitions in a compressed latent space is much faster than predicting raw sensory data.
--   **Abstract Reasoning**: Relations between latent concepts can emerge naturally through interaction, rather than being handcrafted.
+Transitioning from static, closed environments to internet-scale real-world learning requires the world model to manage unstable, contradictory information streams:
+
+### 1. Probabilistic Coordinate Mapping
+Beliefs are represented as temporally-weighted coordinate clouds rather than rigid binary symbols. Every representation maintains:
+* **Uncertainty Mass**: The variance of the forecast model around that concept's coordinates.
+* **Causal Directionality**: Extracted dependencies that separate correlation from true causal vectors under noisy conditions.
+
+### 2. Epistemic Action Verification
+To combat large-scale symbolic drift and misinformation, the world model plans exploratory actions (interventions) designed to test its own hypotheses. By checking whether a targeted perturbation produces the simulated outcome, the system actively validates its representations against environmental resistance.
+
+### 3. Contradiction-Sensitive Restructuring
+When the world model encounters incoming information that contradicts high-confidence schemas:
+* It flags a local contradiction spike.
+* It routes attentional resources to the conflicting coordinates.
+* It runs counterfactual rehearsals overnight to restructure the local topology, integrating the new evidence without destabilizing global identity continuity.

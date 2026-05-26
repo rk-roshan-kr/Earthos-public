@@ -8,15 +8,18 @@ export default function CinematicTitle({ text, className, style, isActive }) {
     <h2 className={className} style={{ 
       display: 'flex', 
       flexWrap: 'wrap', 
-      overflow: 'hidden', 
-      ...style 
+      overflow: 'hidden',
+      ...style,
+      paddingBottom: style?.paddingBottom ? style.paddingBottom : '0.25em',
+      marginBottom: style?.marginBottom ? style.marginBottom : '-0.25em'
     }}>
       {words.map((word, i) => (
         <span key={i} style={{ 
           overflow: 'hidden', 
           display: 'inline-block', 
           marginRight: '0.3em',
-          paddingBottom: '0.12em' 
+          paddingBottom: '0.25em',
+          marginBottom: '-0.25em'
         }}>
           <motion.span
             variants={{

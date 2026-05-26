@@ -173,6 +173,13 @@ export default function TopologyCanvas({ scrollProgress, transitionKick, isActiv
           const force = ((maxDist - md) / maxDist) * (inSynapseZone ? 1.2 : 0.6);
           n.vx += (mdx / md) * force;
           n.vy += (mdy / md) * force;
+          
+          if (inSynapseZone && md < 55) {
+            n.permanentlyScarred = true;
+            // Statefully displace baseline coordinate anchors
+            n.hx += (mdx / md) * 0.15;
+            n.hy += (mdy / md) * 0.15;
+          }
         }
 
         n.x += n.vx;
@@ -207,7 +214,10 @@ export default function TopologyCanvas({ scrollProgress, transitionKick, isActiv
               alpha = ratio * 0.05 * globalAlphaMultiplier;
               color = `rgba(168, 93, 74, ${alpha})`;
             } else if (inSynapseZone) {
-              if (isGraveyard && a.scarred && b.scarred) {
+              if (a.permanentlyScarred || b.permanentlyScarred) {
+                alpha = ratio * 0.22 * globalAlphaMultiplier;
+                color = `rgba(168, 82, 82, ${alpha})`; // Crimson stateful scars
+              } else if (isGraveyard && a.scarred && b.scarred) {
                 alpha = ratio * 0.25 * globalAlphaMultiplier;
                 color = `rgba(107, 48, 48, ${alpha})`; // Red failure scars
               } else {
@@ -253,6 +263,24 @@ export default function TopologyCanvas({ scrollProgress, transitionKick, isActiv
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
         ctx.fill();
+
+        // Stateful residue overlay
+        if (n.permanentlyScarred && inSynapseZone) {
+          ctx.strokeStyle = `rgba(168, 82, 82, ${0.45 * globalAlphaMultiplier})`;
+          ctx.lineWidth = 0.5;
+          ctx.beginPath();
+          ctx.moveTo(n.x - 4, n.y);
+          ctx.lineTo(n.x + 4, n.y);
+          ctx.moveTo(n.x, n.y - 4);
+          ctx.lineTo(n.x, n.y + 4);
+          ctx.stroke();
+
+          // Delicate outer trace ring
+          ctx.strokeStyle = `rgba(168, 82, 82, ${0.18 * globalAlphaMultiplier})`;
+          ctx.beginPath();
+          ctx.arc(n.x, n.y, n.r + 3, 0, Math.PI * 2);
+          ctx.stroke();
+        }
       }
 
       raf = requestAnimationFrame(render);

@@ -1,12 +1,14 @@
-# Research Philosophy: The Earthos Program & Project Synapse
+# Research Philosophy: The Earthos Project & Synapse Architecture
 
-Earthos was established as a high-conviction research program to build sovereign, persistent systems. Our goal is to escape the intellectual monoculture of modern AI and venture along a different branch of the developmental trajectory.
+Earthos is a long-horizon research project dedicated to building sovereign, persistent systems. Within this project, **Synapse** is the name of the primary architecture currently being developed. 
+
+Synapse is not a complete or final project in itself; it is the name of our initial architecture designed around a human-inspired path toward AGI. Because we are committed to open-ended cognitive research, the Earthos project will explore other alternative architectures and developmental attempts in the future.
 
 ```mermaid
 graph TD
-    A[Earthos Program: Umbrella for Radical Change] --> B[Project Synapse: Active Inference Substrate]
-    A --> C[Future Project B: Alternate Embodiment Stack]
-    A --> D[Future Project C: Latent World Model Arena]
+    A[Earthos Project: Sovereign Cognitive Research] --> B[Synapse Architecture: Human-Inspired Substrate]
+    A --> C[Future Architecture B: Alternate Embodiment Stack]
+    A --> D[Future Architecture C: Latent World Model Arena]
     
     style A fill:#1a1d24,stroke:#9d4edd,stroke-width:2px;
     style B fill:#111317,stroke:#00f2fe,stroke-width:2px;
@@ -22,7 +24,7 @@ The current AI landscape is dominated by scaling static, episodic transformers. 
 
 Earthos rejects this monoculture. We assert that general intelligence is a **survival strategy** that can only emerge from an active, persistent organism interacting with an environment under metabolic and structural constraints.
 
-| Dimension | Episodic LLMs | Earthos & Synapse Substrates |
+| Dimension | Episodic LLMs | Synapse Architecture (under Earthos) |
 | :--- | :--- | :--- |
 | **Persistence** | Stateless windows; context resets every session. | Permanent, stateful history; memory and weights persist continuously. |
 | **Learning** | Frozen weights (outside expensive fine-tuning). | Continuous local adaptation and paradigm evolution. |

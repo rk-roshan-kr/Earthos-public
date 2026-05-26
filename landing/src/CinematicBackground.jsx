@@ -11,9 +11,11 @@ const BACKGROUND_WORDS = [
   "ATLAS",
   "TELEMETRY",
   "BOUNDS",
+  "LOOP",
+  "PROCESS",
   "EXIT",
-  "PERSISTENCE",
-  "COLLECTIVE"
+  "COLLABORATION",
+  "PERSISTENCE"
 ];
 
 function GiantOrbitRing({ activeIndex, transitionKick, hoveredSystem, act3Progress = 0 }) {
@@ -70,7 +72,7 @@ function GiantOrbitRing({ activeIndex, transitionKick, hoveredSystem, act3Progre
           targetColor = 'rgba(198, 122, 74, 0.35)'; // Warm amber active glow
         }
       }
-    } else if (activeIndex >= 4 && activeIndex <= 9) {
+    } else if (activeIndex >= 4 && activeIndex <= 11) {
       // Synapse Act
       targetZ = (activeIndex - 4) * -45 - 60;
       targetTiltX = 72 + (activeIndex - 4) * 2;
@@ -270,7 +272,7 @@ export default function CinematicBackground({ activeIndex, transitionKick, hover
         targetY = 45 + act3Progress * 5;        // continuous drift to center
         targetColor = `rgba(198, 122, 74, ${0.08 + act3Progress * 0.10})`; // continuous expansion
       }
-    } else if (activeIndex >= 4 && activeIndex <= 9) {
+    } else if (activeIndex >= 4 && activeIndex <= 11) {
       // Synapse
       targetX = 30 + (activeIndex - 4) * 8;
       targetY = 40 + Math.sin(activeIndex) * 15;
@@ -356,7 +358,7 @@ export default function CinematicBackground({ activeIndex, transitionKick, hover
           className="serif"
           style={{
             position: 'absolute',
-            left: activeIndex >= 4 && activeIndex <= 9 ? '45%' : '5%',
+            left: activeIndex >= 4 && activeIndex <= 11 ? '45%' : '5%',
             bottom: '8%',
             fontSize: '22vw',
             fontWeight: 700,
