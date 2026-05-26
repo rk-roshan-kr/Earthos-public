@@ -1,6 +1,6 @@
 # Bounded Substrate Architecture
 
-The core architecture is organized as a **Bounded Substrate**—a deterministic execution environment structured into distinct kernels. Rather than acting as fixed cognitive organs, these kernels represent **governance and authority boundaries**. They define strict data isolation, resource allocation, and execution invariants, preventing developmental drift and code fragmentation as the system adapts.
+The core architecture is organized as a **Bounded Substrate**—a deterministic execution environment structured into distinct boundaries. Rather than acting as fixed cognitive organs, these boundaries represent **governance and authority zones**. They define strict data isolation, resource allocation, and execution invariants, preventing developmental drift and code fragmentation as the system adapts.
 
 ---
 
@@ -18,7 +18,7 @@ graph TD
     end
     
     subgraph Experimental_Cognition [Frontier Experimental Cognition]
-        FCFT[Field Coupling Field Dynamics]
+        FCFT[Field Coupling Dynamics]
         Morpho[Morphogenetic Topology Fields]
         Geometry[Representational Geometry]
     end
@@ -42,19 +42,19 @@ graph TD
 
 These boundaries are strictly frozen and enforce execution invariants:
 
-### 1. Execution Boundary (formerly ExecutionKernel)
+### 1. Execution Boundary
 * **Responsibility**: Orchestrates deterministic, tick-based runtime steps.
 * **Invariants**: Ensures bit-perfect repeatability of cognitive cycles by enforcing immutable state updates and event logging.
 
-### 2. Governance Boundary (formerly GovernanceKernel)
+### 2. Governance Boundary
 * **Responsibility**: Constitutional evaluation of structural changes.
 * **Invariants**: Rejects policy updates that violate core safety limits, block-rates anomalous actions, and audits identity continuity.
 
-### 3. Economics Boundary (formerly CognitiveEconomicsKernel)
+### 3. Economics Boundary
 * **Responsibility**: CPU cycles and memory allocations manager.
 * **Invariants**: Enforces strict execution caps. Every computation (rollouts, indexing, retrieval) must pay a variable tick-energy cost.
 
-### 4. Memory Boundary (formerly MemoryKernel)
+### 4. Memory Boundary
 * **Responsibility**: Manages the persistence engine and episodic/semantic indices.
 * **Invariants**: Restricts write access. Snapshots are compiled strictly from validated events written to the append-only event ledger.
 
@@ -65,16 +65,13 @@ These boundaries are strictly frozen and enforce execution invariants:
 These represent the active research areas where representation and planning are self-organized rather than hard-coded:
 
 ### 1. Field Coupling Dynamics (FCFT)
-* **Concept**: A mathematical model mapping interaction between cognitive state dimensions (uncertainty, contradiction, economics, identity stability).
-* **Operational Mapping**: In code, this translates to damped updates on a `CognitiveStateTensor` across local regions. For example, high contradiction values gradually suppress grounding confidence and scale up uncertainty, which draws attentional resources.
+A mathematical model mapping interactions between cognitive state dimensions (uncertainty, contradiction, economics, identity stability). Changes in one dimension naturally propagate to alter behavior across the system.
 
 ### 2. Morphogenetic Topology Fields
-* **Concept**: Dynamics governing the growth, split, and fusion of concepts based on developmental pressure.
-* **Operational Mapping**: Monitored by the `OntologyGrowthEngine`. The engine measures semantic drift (Jaccard distance across epochs) and triggers merging or splitting operations to resolve local simulation inefficiencies.
+Dynamics governing the growth, split, and fusion of concepts based on developmental pressure. The system measures semantic drift and triggers merging or splitting operations to resolve local simulation inefficiencies.
 
 ### 3. Representational Geometry
-* **Concept**: Continuous coordinates representing abstract concepts and their relationships, rather than discrete nodes in a static graph.
-* **Operational Mapping**: Instantiated in `AdaptiveRepresentationalGeometry`. Concept coordinates are dynamically updated using simulated gradients derived from Cognitive Free Energy ($F_c$), environment pressures, and damping constraints.
+Continuous coordinates representing abstract concepts and their relationships, rather than discrete nodes in a static graph. Concept coordinates are dynamically updated using gradients derived from the cognitive free energy functional, environment pressures, and damping constraints.
 
 ---
 
