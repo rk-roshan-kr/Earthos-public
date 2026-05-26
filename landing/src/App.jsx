@@ -4187,9 +4187,25 @@ export default function App() {
                 padding: '1.0rem 2.2rem', fontSize: '0.95rem', fontFamily: 'var(--font-mono)', 
                 border: '1px solid var(--earth-border)', color: 'var(--earth-dim)', 
                 textDecoration: 'none', letterSpacing: '0.08em', textTransform: 'uppercase',
-                display: 'inline-flex', alignItems: 'center', gap: '0.5rem'
-              }}>
+                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+                transition: 'border-color 0.2s, color 0.2s'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--earth-copper)'; e.currentTarget.style.color = 'var(--earth-text)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--earth-border)'; e.currentTarget.style.color = 'var(--earth-dim)'; }}
+              >
                 Source <ExternalLink size={12} />
+              </a>
+              <a href="https://www.buymeacoffee.com/roshankumargupta" target="_blank" rel="noopener noreferrer" style={{ 
+                padding: '1.0rem 2.2rem', fontSize: '0.95rem', fontFamily: 'var(--font-mono)', 
+                border: '1px solid var(--earth-border)', color: 'var(--earth-dim)', 
+                textDecoration: 'none', letterSpacing: '0.08em', textTransform: 'uppercase',
+                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+                transition: 'border-color 0.2s, color 0.2s'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--earth-copper)'; e.currentTarget.style.color = 'var(--earth-text)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--earth-border)'; e.currentTarget.style.color = 'var(--earth-dim)'; }}
+              >
+                Support ☕
               </a>
             </motion.div>
           </motion.div>
@@ -4227,37 +4243,6 @@ export default function App() {
 
       </motion.div>
 
-      {/* Persistent Buy Me a Coffee Floating Button */}
-      <div 
-        style={{
-          position: 'fixed',
-          top: '2rem',
-          right: '2rem',
-          zIndex: 9999,
-          pointerEvents: 'auto',
-        }}
-      >
-        <a 
-          href="https://www.buymeacoffee.com/roshankumargupta" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          style={{ 
-            display: 'inline-flex', 
-            borderRadius: '5px', 
-            overflow: 'hidden', 
-            boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
-            transition: 'transform 0.2s ease, opacity 0.2s ease',
-          }}
-          onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; e.currentTarget.style.opacity = '0.9'; }}
-          onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.opacity = '1.0'; }}
-        >
-          <img 
-            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" 
-            alt="Buy Me A Coffee" 
-            style={{ height: '36px', width: 'auto' }}
-          />
-        </a>
-      </div>
 
       {/* Embedded Styles for custom animations like flickers */}
       <style>{`
