@@ -2268,6 +2268,33 @@ export default function App() {
     return () => unsubscribe();
   }, [act3SmoothProgress]);
 
+  // Load Buy Me a Coffee button script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js";
+    script.setAttribute('data-name', 'bmc-button');
+    script.setAttribute('data-slug', 'roshankumargupta');
+    script.setAttribute('data-color', '#FFDD00');
+    script.setAttribute('data-emoji', '☕');
+    script.setAttribute('data-font', 'Cookie');
+    script.setAttribute('data-text', 'Buy me a coffee');
+    script.setAttribute('data-outline-color', '#000000');
+    script.setAttribute('data-font-color', '#000000');
+    script.setAttribute('data-coffee-color', '#ffffff');
+    script.async = true;
+    
+    const target = document.getElementById('bmc-container');
+    if (target) {
+      target.appendChild(script);
+    }
+    
+    return () => {
+      if (target) {
+        target.innerHTML = '';
+      }
+    };
+  }, []);
+
   // High-performance direct transforms (No-render 120fps animations)
   const leftWidth = useTransform(act3SmoothProgress, [0, 1], ['24vw', '0vw']);
   const leftX = useTransform(act3SmoothProgress, [0, 1], ['0vw', '-230vw']);
@@ -4212,10 +4239,11 @@ export default function App() {
 
           {/* FOOTER */}
           <footer style={{ width: '100%', padding: '4rem 0', borderTop: '1px solid var(--earth-border)', background: 'var(--earth-void)', marginTop: 'auto' }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
               <span className="mono" style={{ fontSize: '0.85rem', color: 'var(--earth-muted)' }}>
                 Earthos Substrate Observatory Â· Roshan Kumar Gupta
               </span>
+              <div id="bmc-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}></div>
               <span className="mono" style={{ fontSize: '0.85rem', color: 'var(--earth-muted)', opacity: 0.5 }}>
                 2026
               </span>
