@@ -4079,7 +4079,7 @@ export default function App() {
                 flexWrap: 'wrap',
                 justifyContent: 'center',
                 gap: '0.8rem',
-                maxWidth: '680px',
+                maxWidth: '750px',
                 margin: '0 auto 3rem',
                 padding: '1.5rem',
                 border: '1px solid rgba(255, 255, 255, 0.05)',
@@ -4089,9 +4089,27 @@ export default function App() {
               <div className="mono" style={{ fontSize: '0.72rem', color: 'var(--earth-copper)', width: '100%', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 Section 8.1 // Research Archive
               </div>
-              {['Architecture Notes', 'Failure Postmortems', 'Current-State Assessments', 'Field Theory Notes', 'Public Benchmarks', 'Roadmap History'].map((archiveName, i) => (
-                <span 
+              {[
+                { name: 'Research Manifesto', file: 'manifesto.md' },
+                { name: 'Research Philosophy', file: 'research_philosophy.md' },
+                { name: 'Architecture Notes', file: 'architecture.md' },
+                { name: 'Dataflow Design', file: 'dataflow.md' },
+                { name: 'Failure Postmortems', file: 'lessons.md' },
+                { name: 'Current-State Assessments', file: 'current_state.md' },
+                { name: 'Field Theory Notes', file: 'fcft.md' },
+                { name: 'Public Benchmarks', file: 'benchmarking.md' },
+                { name: 'Roadmap History', file: 'roadmap.md' },
+                { name: 'Governance Kernel', file: 'governance.md' },
+                { name: 'Embodied Cognition', file: 'embodiment.md' },
+                { name: 'Reinforcement Learning', file: 'reinforcement_learning.md' },
+                { name: 'Substrate Freeze', file: 'substrate_freeze.md' },
+                { name: 'World Modeling', file: 'world_modeling.md' }
+              ].map((link, i) => (
+                <a 
                   key={i} 
+                  href={`https://github.com/rk-roshan-kr/Earthos-public/blob/main/docs/${link.file}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mono" 
                   style={{ 
                     fontSize: '0.78rem', 
@@ -4100,13 +4118,15 @@ export default function App() {
                     padding: '0.4rem 0.8rem',
                     cursor: 'pointer',
                     background: 'rgba(0,0,0,0.2)',
-                    transition: 'all 0.2s'
+                    transition: 'all 0.2s',
+                    textDecoration: 'none',
+                    display: 'inline-block'
                   }}
                   onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--earth-copper)'; e.currentTarget.style.color = 'var(--earth-text)'; }}
                   onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; e.currentTarget.style.color = 'var(--earth-muted)'; }}
                 >
-                  {archiveName}
-                </span>
+                  {link.name}
+                </a>
               ))}
             </motion.div>
             
