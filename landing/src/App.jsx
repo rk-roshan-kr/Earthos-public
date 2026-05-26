@@ -139,24 +139,26 @@ const slideItemVariants = {
 
 // Stateless Content Fragments (Mythic, High-Signal)
 const STATELESS_FRAGMENTS = [
-  "Each session begins again from statistical amnesia.",
-  "That is not agency. That is episodic simulation.",
-  "Optimization can imitate understanding.",
-  "A system can become increasingly competent while remaining detached from reality.",
-  "Internal coherence is not reality contact.",
-  "Without consequence pressure, cognition expands uncontrollably.",
-  "Simulation depth grows, attention fragments."
+  "Memory expires with execution.",
+  "No developmental residue persists.",
+  "Every interaction begins structurally cold.",
+  "Continuity exists only as simulation.",
+  "Reasoning dissolves outside active compute.",
+  "No internal history survives interruption.",
+  "Stateless systems cannot accumulate identity.",
+  "Inference replaces persistence."
 ];
 
 // Continuity Content Fragments (Mythic, Elegant Serif)
 const CONTINUITY_FRAGMENTS = [
-  "We stopped asking how to make systems answer. We started asking how they persist.",
-  "Inference is momentary. Development is cumulative.",
-  "Memory is not storage. Memory is persistent structural deformation.",
-  "Experiences bias attention, reshape interpretation, and create attractors.",
-  "Representations only matter if reality can resist them.",
-  "Attention continuously reallocates toward danger and survival relevance.",
-  "Not designing intelligence, but creating conditions for emergence."
+  "Cognition survives beyond observation.",
+  "Environmental pressure reshapes future structure.",
+  "Memory alters subsequent interpretation.",
+  "Representations inherit prior tension.",
+  "Identity persists through adaptive mutation.",
+  "Contradiction drives restructuring.",
+  "Persistence creates attractor stability.",
+  "Development outcompetes reset."
 ];
 
 // 3D Human Head Coordinate Model Generator
@@ -2728,8 +2730,8 @@ export default function App() {
                   pointerEvents: act3Progress > 0.7 ? 'none' : 'auto',
                 }}
               >
-                <span className="mono" style={{ fontSize: '0.65rem', color: 'var(--syn-dim)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'block' }}>Stateless</span>
-                <h2 className="serif" style={{ fontSize: '1.4rem', color: 'var(--syn-silver)', margin: '0 0 1.2rem 0', fontWeight: 500, lineHeight: 0.95 }}>Amnesia</h2>
+                <span className="mono" style={{ fontSize: '0.65rem', color: 'var(--syn-dim)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.5rem', display: 'block' }}>EPHEMERAL SYSTEMS</span>
+                <h2 className="serif" style={{ fontSize: '1.4rem', color: 'var(--syn-silver)', margin: '0 0 1.2rem 0', fontWeight: 500, lineHeight: 0.95 }}>Session Logic</h2>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
                   {STATELESS_FRAGMENTS.map((frag, idx) => (
@@ -2765,8 +2767,8 @@ export default function App() {
                 scale: rightTitleScale,
                 transformOrigin: 'left center'
               }}>
-                <motion.h2 className="serif" style={{ fontSize: rightTitleFontSize, color: 'var(--earth-text)', margin: 0, fontWeight: 500, lineHeight: 0.85, letterSpacing: '-0.04em' }}>Continuity</motion.h2>
-                <motion.span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-copper)', letterSpacing: '0.22em', marginLeft: subTextMargin, display: 'block', marginTop: '0.4rem' }}>// OF FORM</motion.span>
+                <motion.h2 className="serif" style={{ fontSize: rightTitleFontSize, color: 'var(--earth-text)', margin: 0, fontWeight: 500, lineHeight: 0.85, letterSpacing: '-0.04em' }}>Development</motion.h2>
+                <motion.span className="mono" style={{ fontSize: '0.75rem', color: 'var(--earth-copper)', letterSpacing: '0.22em', marginLeft: subTextMargin, display: 'block', marginTop: '0.4rem' }}>// AS GEOMETRY</motion.span>
               </motion.div>
 
               {/* Content fragments */}
@@ -2784,7 +2786,7 @@ export default function App() {
               }}>
                 {CONTINUITY_FRAGMENTS.map((frag, idx) => (
                   <div key={idx}>
-                    <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--earth-copper)', display: 'block', marginBottom: '0.1rem', fontWeight: 500 }}>PERSISTENCE 0{idx + 1} //</span>
+                    <span className="mono" style={{ fontSize: '0.62rem', color: 'var(--earth-copper)', display: 'block', marginBottom: '0.1rem', fontWeight: 500 }}>CONTINUITY 0{idx + 1} //</span>
                     <motion.p className="serif" style={{ fontSize: rightFragFontSize, fontWeight: 400, margin: 0, letterSpacing: '-0.01em', lineHeight: 1.35 }}>{frag}</motion.p>
                   </div>
                 ))}
