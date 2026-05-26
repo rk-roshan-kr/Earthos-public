@@ -4191,27 +4191,6 @@ export default function App() {
               }}>
                 Source <ExternalLink size={12} />
               </a>
-              <a 
-                href="https://www.buymeacoffee.com/roshankumargupta" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                style={{ 
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  height: '40px',
-                  borderRadius: '5px',
-                  overflow: 'hidden',
-                  transition: 'opacity 0.25s'
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.opacity = '0.85'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.opacity = '1.0'; }}
-              >
-                <img 
-                  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" 
-                  alt="Buy Me A Coffee" 
-                  style={{ height: '40px', width: 'auto' }}
-                />
-              </a>
             </motion.div>
           </motion.div>
 
@@ -4247,6 +4226,38 @@ export default function App() {
         </section>
 
       </motion.div>
+
+      {/* Persistent Buy Me a Coffee Floating Button */}
+      <div 
+        style={{
+          position: 'fixed',
+          top: '2rem',
+          right: '2rem',
+          zIndex: 9999,
+          pointerEvents: 'auto',
+        }}
+      >
+        <a 
+          href="https://www.buymeacoffee.com/roshankumargupta" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          style={{ 
+            display: 'inline-flex', 
+            borderRadius: '5px', 
+            overflow: 'hidden', 
+            boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
+            transition: 'transform 0.2s ease, opacity 0.2s ease',
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; e.currentTarget.style.opacity = '0.9'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.opacity = '1.0'; }}
+        >
+          <img 
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" 
+            alt="Buy Me A Coffee" 
+            style={{ height: '36px', width: 'auto' }}
+          />
+        </a>
+      </div>
 
       {/* Embedded Styles for custom animations like flickers */}
       <style>{`
