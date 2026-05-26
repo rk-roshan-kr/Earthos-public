@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@300;400;500&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  /* ═══ EARTHOS — geological, grounded, persistent ═══ */
+  --earth-void: #0a0908;
+  --earth-surface: #12100e;
+  --earth-elevated: #1c1915;
+  --earth-text: #f5f3f0;
+  --earth-dim: #c5beaf;
+  --earth-muted: #7f7669;
+  --earth-copper: #c67a4a;
+  --earth-sage: #6b8f7a;
+  --earth-sand: #c4a97d;
+  --earth-clay: #a85d4a;
+  --earth-stone: #6e6960;
+  --earth-border: rgba(232, 228, 223, 0.12);
+
+  /* ═══ SYNAPSE — neural, unstable, electric ═══ */
+  --syn-void: #06080a;
+  --syn-surface: #0c0f14;
+  --syn-silver: #e2e6eb;
+  --syn-dim: #a1aab8;
+  --syn-muted: #575e6a;
+  --syn-electric: #8b9dc3;
+  --syn-crimson: #a85252;
+  --syn-plasma: #c4a050;
+  --syn-scar: #7d3f3f;
+  --syn-border: rgba(139, 157, 195, 0.16);
+
+  /* ═══ Typography ═══ */
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+  
+  --ease-slow: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Reset & Setup */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { 
+  background: var(--earth-void); 
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: var(--earth-text);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.vertical-wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0; left: 0;
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+}
+
+.act {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  flex-shrink: 0;
+}
+
+.act-c {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  position: relative;
+}
+
+.act-w {
+  width: 100vw;
+  height: 100vh;
+}
+
+::selection { background: var(--earth-copper); color: var(--earth-void); }
+
+/* Typography Helpers */
+.serif { font-family: var(--font-serif); letter-spacing: -0.01em; }
+.mono { font-family: var(--font-mono); }
+.sans { font-family: var(--font-sans); }
+
+/* Z-Space & Environments */
+.env-layer {
+  position: relative;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#topology-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Horizontal scroll track inside Synapse */
+.horizontal-track {
+  display: flex;
+  height: 100%;
+  width: 600vw;
+  will-change: transform;
+}
+
+.chamber {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  position: relative;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  overflow: hidden;
+}
+
+.ftab {
+  width: 100%;
+  padding: 1.5rem 1.8rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--syn-border);
+  color: var(--syn-dim);
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.ftab.on {
+  background: rgba(139, 157, 195, 0.06);
+  color: var(--syn-silver);
+  border-left: 3px solid var(--syn-electric);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot-live { background: var(--earth-sage); }
+.dot-proto { background: var(--earth-sand); }
+.dot-weak { background: var(--earth-clay); }
+.dot-none { background: #444; }
+
+/* Utilities */
+.glass-panel {
+  background: rgba(22, 20, 18, 0.72);
+  backdrop-filter: blur(20px) saturate(1.2);
+  border: 1px solid rgba(232, 228, 223, 0.12);
+}
+
+.synapse-glass {
+  background: rgba(12, 17, 24, 0.72);
+  backdrop-filter: blur(20px) saturate(1.2);
+  border: 1px solid rgba(139, 157, 195, 0.16);
+}
+
+@media (max-width: 768px) {
+  .chamber {
+    padding: 1.5rem !important;
+  }
+  .act-c {
+    padding: 0 1.5rem !important;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateZ(-40px) scale(0.96);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-50%, -50%) translateZ(-40px) scale(1.04);
+    opacity: 1;
+  }
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+/* Cognitive noise pulse — irregular rhythm mimics actual neural stochasticity */
+@keyframes cogNoisePulse {
+  0%   { opacity: 1;    transform: scale(1); }
+  15%  { opacity: 0.3;  transform: scale(0.7); }
+  30%  { opacity: 0.9;  transform: scale(1.1); }
+  55%  { opacity: 0.15; transform: scale(0.6); }
+  70%  { opacity: 1;    transform: scale(1.2); }
+  85%  { opacity: 0.5;  transform: scale(0.85); }
+  100% { opacity: 1;    transform: scale(1); }
+}

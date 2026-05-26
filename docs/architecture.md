@@ -1,107 +1,83 @@
-# System Architecture
+# Bounded Substrate Architecture
 
-Synapse Arch is structured as a **Sovereign Substrate**, a rigid hierarchy of functional kernels that together form a complete cognitive operating system. This modular yet tightly integrated approach ensures that every cognitive responsibility maps to exactly one authoritative kernel, preventing the architectural drift common in complex AI systems.
+The core architecture is organized as a **Bounded Substrate**—a deterministic execution environment structured into distinct kernels. Rather than acting as fixed cognitive organs, these kernels represent **governance and authority boundaries**. They define strict data isolation, resource allocation, and execution invariants, preventing developmental drift and code fragmentation as the system adapts.
 
-## 🗺️ Sovereign Kernel DAG
+---
 
-The following diagram illustrates the topological dependencies between the nine sovereign kernels.
+## 🗺️ Substrate Topology
+
+The architecture is divided into two distinct zones: the stable, deterministic substrate, and the frontier of experimental, self-organizing representation fields.
 
 ```mermaid
 graph TD
-    Execution[ExecutionKernel] --> Governance[GovernanceKernel]
-    Execution --> Telemetry[RuntimeTelemetryKernel]
-    Execution --> Economics[CognitiveEconomicsKernel]
-    
-    Governance --> Knowledge[KnowledgeKernel]
-    Governance --> RL[GroundedReinforcementKernel]
-    
-    Economics --> Inference[InferenceKernel]
-    Economics --> World[WorldModelKernel]
-    
-    Knowledge --> Memory[MemoryKernel]
-    Knowledge --> Inference
-    
-    World --> RL
-    World --> Inference
-    
-    RL --> Memory
-    Inference --> Memory
-    
-    subgraph Core_Substrate
-        Execution
-        Governance
-        Telemetry
-        Economics
+    subgraph Stable_Substrate [Stable Substrate & Governance Boundaries]
+        Execution[Execution Boundary] --> Governance[Governance Boundary]
+        Execution --> Telemetry[Telemetry Boundary]
+        Execution --> Economics[Economics Boundary]
+        Governance --> Memory[Memory Boundary]
     end
     
-    subgraph Cognitive_Layer
-        World
-        Inference
-        Knowledge
-        RL
+    subgraph Experimental_Cognition [Frontier Experimental Cognition]
+        FCFT[Field Coupling Field Dynamics]
+        Morpho[Morphogenetic Topology Fields]
+        Geometry[Representational Geometry]
     end
     
-    subgraph Persistence_Layer
-        Memory
-    end
+    Stable_Substrate -.->|Regulates compute & constraints| Experimental_Cognition
+    Experimental_Cognition -.->|Reports metrics & invariants| Stable_Substrate
+
+    style Execution fill:#111317,stroke:#00f2fe,stroke-width:1px;
+    style Governance fill:#111317,stroke:#00f2fe,stroke-width:1px;
+    style Telemetry fill:#111317,stroke:#00f2fe,stroke-width:1px;
+    style Economics fill:#111317,stroke:#00f2fe,stroke-width:1px;
+    style Memory fill:#111317,stroke:#00f2fe,stroke-width:1px;
+    style FCFT fill:#1a1d24,stroke:#9d4edd,stroke-width:2px;
+    style Morpho fill:#1a1d24,stroke:#9d4edd,stroke-width:2px;
+    style Geometry fill:#1a1d24,stroke:#9d4edd,stroke-width:2px;
 ```
 
-## 🛡️ Kernel Responsibilities
+---
 
-### 1. ExecutionKernel
-The "Heartbeat" of the system. It handles:
--   Deterministic tick-based runtime.
--   Topological scheduling of kernel operations.
--   Isolation of state mutations during cognitive cycles.
+## 🛡️ Stable Substrate Boundaries
 
-### 2. GovernanceKernel
-The "Constitutional" layer. It ensures:
--   Integrity evaluation of new abstractions.
--   Approval of policy mutations.
--   Detection of cognitive drift or "wireheading" (reward hacking).
+These boundaries are strictly frozen and enforce execution invariants:
 
-### 3. CognitiveEconomicsKernel
-The "Resource Manager". It manages:
--   Allocation of CPU/Memory budget for recursive tasks.
--   Priority scoring for concurrent cognitive threads.
--   Optimization of compute vs. epistemic gain.
+### 1. Execution Boundary (formerly ExecutionKernel)
+* **Responsibility**: Orchestrates deterministic, tick-based runtime steps.
+* **Invariants**: Ensures bit-perfect repeatability of cognitive cycles by enforcing immutable state updates and event logging.
 
-### 4. WorldModelKernel
-The "Imagination" engine. It provides:
--   Latent space simulation of environment dynamics.
--   Counterfactual rollouts (what-if scenarios).
--   Forward prediction of sensory outcomes.
+### 2. Governance Boundary (formerly GovernanceKernel)
+* **Responsibility**: Constitutional evaluation of structural changes.
+* **Invariants**: Rejects policy updates that violate core safety limits, block-rates anomalous actions, and audits identity continuity.
 
-### 5. InferenceKernel
-The "Reasoner". It handles:
--   Multi-hop symbolic deduction.
--   Probabilistic strategy search.
--   Conflict resolution between competing hypotheses.
+### 3. Economics Boundary (formerly CognitiveEconomicsKernel)
+* **Responsibility**: CPU cycles and memory allocations manager.
+* **Invariants**: Enforces strict execution caps. Every computation (rollouts, indexing, retrieval) must pay a variable tick-energy cost.
 
-### 6. KnowledgeKernel
-The "Librarian". It manages:
--   The abstraction lifecycle (generalization and pruning).
--   Ontology maintenance and versioning.
--   Representation of core concepts and their relations.
+### 4. Memory Boundary (formerly MemoryKernel)
+* **Responsibility**: Manages the persistence engine and episodic/semantic indices.
+* **Invariants**: Restricts write access. Snapshots are compiled strictly from validated events written to the append-only event ledger.
 
-### 7. GroundedReinforcementKernel
-The "Learner". It performs:
--   Reality-grounded policy updates.
--   Causal credit assignment.
--   Exploration vs. exploitation management.
+---
 
-### 8. MemoryKernel
-The "Store". It provides:
--   Epistemic persistence across sessions.
--   High-fidelity episodic retrieval.
--   Semantic knowledge indexing.
+## 🧬 Frontier Experimental Cognition Layers
 
-### 9. RuntimeTelemetryKernel
-The "Observer". It tracks:
--   Causal lineage of every cognitive decision.
--   System-wide performance metrics.
--   Live state visualization data.
+These represent the active research areas where representation and planning are self-organized rather than hard-coded:
+
+### 1. Field Coupling Dynamics (FCFT)
+* **Concept**: A mathematical model mapping interaction between cognitive state dimensions (uncertainty, contradiction, economics, identity stability).
+* **Operational Mapping**: In code, this translates to damped updates on a `CognitiveStateTensor` across local regions. For example, high contradiction values gradually suppress grounding confidence and scale up uncertainty, which draws attentional resources.
+
+### 2. Morphogenetic Topology Fields
+* **Concept**: Dynamics governing the growth, split, and fusion of concepts based on developmental pressure.
+* **Operational Mapping**: Monitored by the `OntologyGrowthEngine`. The engine measures semantic drift (Jaccard distance across epochs) and triggers merging or splitting operations to resolve local simulation inefficiencies.
+
+### 3. Representational Geometry
+* **Concept**: Continuous coordinates representing abstract concepts and their relationships, rather than discrete nodes in a static graph.
+* **Operational Mapping**: Instantiated in `AdaptiveRepresentationalGeometry`. Concept coordinates are dynamically updated using simulated gradients derived from Cognitive Free Energy ($F_c$), environment pressures, and damping constraints.
+
+---
 
 ## 🧊 The Substrate Freeze Principle
 
-To maintain structural integrity, the Synapse Arch core is subject to a **Substrate Freeze**. No new kernels can be added to the core substrate. All additional functionality (e.g., specific sensory encoders, tool adapters, or environment interfaces) must be implemented as **Policies** or **Subsystems** owned by one of the nine kernels.
+To prevent the architecture from collapsing under its own complexity, the stable boundaries are subject to a strict **Substrate Freeze**. No new execution or governance boundaries can be introduced. All new sensory encoders, perceptual models, and behavioral policies must fit within these existing boundaries and interface with the experimental cognition layers under economic constraints.

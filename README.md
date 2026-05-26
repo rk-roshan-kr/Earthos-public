@@ -1,58 +1,47 @@
-# Synapse Arch
+# Earthos: Stable Substrates & Developmental Cognition
 
-**Persistent Embodied Adaptive Cognition Research Platform**
+**An experimental developmental cognition research program investigating persistent adaptive intelligence under ecological, embodied, and computational constraints.**
 
-Synapse Arch is an experimental cognitive architecture designed to explore the emergence of intelligence through persistent world interaction, causal modeling, and embodied adaptation. Unlike episodic large language models (LLMs), Synapse Arch maintains a continuous cognitive state, prioritizing reality-grounded learning over disembodied text prediction.
+> [!IMPORTANT]
+> **Core Disclaimer**: Earthos is not claiming to have solved AGI. The current architecture is an evolving developmental cognition substrate research platform exploring persistent embodied adaptive intelligence under real-world constraints.
 
-## 🧠 Research Philosophy
+---
 
-The project is rooted in the belief that genuine intelligence is not a byproduct of next-token prediction, but rather an emergent property of an agent's struggle to model, predict, and survive within a complex environment. Synapse Arch shifts the focus from "scaling laws" of parameters to "scaling laws" of competence through:
+## 🏛️ Research Program Philosophy
 
-*   **Persistent Selfhood**: No environment resets. Memory, damage, and world consequences persist across the agent's entire lifecycle.
-*   **Embodied Grounding**: Cognition is coupled to a sensorimotor loop. The agent must sense, predict, and act to refine its internal world model.
-*   **Substrate Sovereignty**: A minimal, "frozen" architectural substrate ensures deterministic execution and prevents structural fragmentation.
-*   **Predictive Self-Supervision**: Learning is driven by the drive to minimize prediction error in the world model, fostering the emergence of latent behavioral priors.
+The Earthos program shifts the focus of AI development from giant parameter scaling and static, episodic token-benchmarks to **competence scaling** within bounded resource environments. We explore how intelligence and causal representation space emerge when a system is subjected to survival, active inference, and metabolic constraints.
 
-## 🏗️ Sovereign Kernel Architecture
+* **Persistent Identity Continuity**: The system does not undergo environment resets. Memory, state, and world consequences persist continuously across the agent's entire lifecycle.
+* **Embodied Grounding**: Perceptual inputs and coordinate updates are validated against concrete environmental outcomes.
+* **Bounded Substrate Boundaries**: A minimal, frozen core of stable boundaries ensures deterministic execution, resource allocation, and execution invariants.
+* **Predictive Self-Supervision**: Learning is driven by the desire to minimize prediction error in the world model, forcing the emergence of latent priors.
 
-Synapse Arch is built on a "Sovereign Substrate" of nine distinct kernels, each holding absolute authority over a specific cognitive domain:
+---
 
-1.  **ExecutionKernel**: Orchestrates deterministic runtime and topological scheduling.
-2.  **GovernanceKernel**: Evaluates system integrity and approves architectural mutations.
-3.  **CognitiveEconomicsKernel**: Manages limited compute resources and priority scoring.
-4.  **WorldModelKernel**: Handles simulation, counterfactual rollouts, and imagination.
-5.  **InferenceKernel**: Performs symbolic and probabilistic reasoning and strategy search.
-6.  **KnowledgeKernel**: Manages the abstraction lifecycle and ontology maintenance.
-7.  **GroundedReinforcementKernel**: Updates policies and assigns credit based on reality-grounded feedback.
-8.  **MemoryKernel**: Ensures persistence through episodic retrieval and semantic storage.
-9.  **RuntimeTelemetryKernel**: Monitors causal lineage and system-wide telemetry.
+## ⚙️ Documentation Map
 
-## ⚠️ Current Research State & Limitations
+Explore our core documentation to understand the research direction and architecture:
 
-This repository represents an active research platform, not a finished product. We explicitly acknowledge several current limitations as we move toward V2:
+* **[The Manifesto](docs/manifesto.md)**: Details the philosophical shift, comparison with episodic LLMs, and what Earthos is explicitly NOT.
+* **[Bounded Substrate Architecture](docs/architecture.md)**: Explains the Execution, Economics, Governance, and Memory boundaries, separating stable layers from experimental layers.
+* **[Current State & Capabilities](docs/current_state.md)**: Provides a status matrix of capabilities (Operational, Prototype, Theoretical, Future), central open problems, and known limitations.
+* **[Research Failures & Lessons](docs/lessons.md)**: Examines our major historical struggles, including ontology inflation, symbolic theater, and recursive architecture addiction.
+* **[Field Coupling & Geometry (FCFT)](docs/fcft.md)**: Details the mathematical concepts and code-governed mappings of Field Coupling Field Theory.
+* **[Empirical Validation](docs/benchmarking.md)**: Outlines our validation philosophy, falsification criteria, and verification matrix.
+* **[Developmental Adaptation](docs/reinforcement_learning.md)**: Discusses active inference, endogenous intentionality, and adaptation dynamics.
+* **[Execution Workflows](docs/dataflow.md)**: Visualizes the open-world learning and pressure-driven reorganization loops.
+* **[Research Roadmap](docs/roadmap.md)**: Maps out completed, current (Phase 38+), and future milestones.
 
-*   **Weak Neural Representations**: The system currently relies on hybrid symbolic-neural structures; fully learned latent spaces are an active area of research.
-*   **Limited Multimodal Scaling**: While the sensory framework supports multimodal input, the perceptual learning stack is in early development.
-*   **Incomplete World Models**: Predictive accuracy in high-entropy environments remains a significant challenge.
-*   **No Large-Scale Training**: Current benchmarks focus on qualitative architectural integrity and low-to-medium complexity environments.
-
-## 🚀 Future Roadmap
-
-Our upcoming research phases focus on:
--   **Neural Substrate Deepening**: Integrating scalable differentiable learning directly into the sovereign kernels.
--   **Latent Dynamics Learning**: Moving from symbolic graph relations to learned latent world models.
--   **Cross-Domain Competence Scaling**: Benchmarking the architecture across diverse embodied environments.
-
-## 🛠️ Getting Started
-
-See `docs/architecture.md` for a deep dive into the system internals and `examples/minimal_boot.py` for a basic demonstration of the cognitive loop.
+---
 
 ## ⚖️ Licensing & Access
 
-Synapse Arch is a proprietary research platform. Use, distribution, and modification of this codebase are strictly prohibited without an explicit, written license from the Project Head.
+Earthos is a proprietary research platform. Use, distribution, and modification of this codebase are strictly prohibited without an explicit, written license from the Project Head.
 
-**Project Head**: Roshan Kumar Gupta
+For an interactive explanation of the Synapse active inference flow, check out our React-based [Interactive Landing Page](landing/index.html).
+
+**Project Head**: Roshan Kumar Gupta  
 **Contact**: [roshankumargupta.sh@gmail.com](mailto:roshankumargupta.sh@gmail.com)
 
 ---
-*Synapse Arch is a research project. We value architectural honesty and empirical validation over hype.*
+*Earthos & Synapse Arch are active research projects. We value intellectual honesty, technical humility, and empirical validation over hype.*

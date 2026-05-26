@@ -1,42 +1,41 @@
 # Research Roadmap
 
-The development of Synapse Arch is divided into long-term research phases, each targeting a specific advancement in persistent embodied cognition.
-
-## Phase 25: Competence Scaling (Current)
-*   **Objective**: Operationalize the shift from episodic benchmarks to a self-supervised, reality-grounded intelligent organism.
-*   **Key Tasks**:
-    -   Implementation of continuous sensorimotor loops.
-    -   Establishing predictive self-supervised learning pressure.
-    -   Coupling cognition to embodied survival constraints.
-    -   Emergence of latent behavioral priors.
-
-## Phase 26: Neural Substrate Integration
-*   **Objective**: Replace hand-crafted symbolic structures with scalable neural representations while maintaining substrate sovereignty.
-*   **Key Tasks**:
-    -   Deployment of learned latent world models.
-    -   Integration of differentiable learning into the `GroundedReinforcementKernel`.
-    -   Neural-symbolic hybrid reasoning for high-horizon planning.
-
-## Phase 27: Multimodal Grounding & Perception
-*   **Objective**: Enhance the agent's ability to process and fuse diverse sensory streams.
-*   **Key Tasks**:
-    -   Advanced visual-tactile fusion for manipulation tasks.
-    -   Temporal causal modeling of high-entropy environments.
-    -   Proprioceptive refinement for complex body control.
-
-## Phase 28: Autonomous Knowledge Construction
-*   **Objective**: Move toward a system that can autonomously discover and verify its own ontological abstractions.
-*   **Key Tasks**:
-    -   Automated hypothesis generation and experimental testing.
-    -   Causal discovery from raw sensory streams.
-    -   Recursive self-improvement of the governance and integrity layers.
-
-## Phase 29: Collaborative Multi-Agent Research
-*   **Objective**: Exploring the emergence of shared world models and communication between persistent cognitive agents.
-*   **Key Tasks**:
-    -   Inter-agent knowledge transfer protocols.
-    -   Collaborative problem solving in survival-constrained environments.
-    -   Emergent communication as a coordination mechanism.
+This roadmap details the milestones of the Earthos research program. We separate historical completions from our current active phase and future convergence targets.
 
 ---
-*Note: This roadmap is subject to change based on empirical findings and research breakthroughs. Every phase is guided by the core principles of architectural sovereignty and reality-grounding.*
+
+## 🏛️ Historical Phases (Completed)
+
+### Phase 1 to 24: Core Scaffolding
+* **Focus**: Established the basic Python runtime execution, deterministic event ledger logging, and symbolic reasoning stub kernels.
+
+### Phase 25 to 30: Consolidation & Grounding
+* **Focus**: Substrate purification (pruning redundant symbolic modules under the substrate freeze policy). Implemented the first active sensory streams and paced reality ingestion gates.
+
+### Phase 31 to 37: Field Coupling & Geometry Foundations
+* **Focus**: Introduced continuous coordinate spaces (`AdaptiveRepresentationalGeometry`) and defined the basic coupling metrics between tension, uncertainty, and economic bounds (FCFT).
+
+---
+
+## 🔬 Current Active Phase (Phase 38+)
+
+### Phase 38: Representational Grounding & Topology Dynamics
+We are currently evaluating representational stability under active inputs.
+* **Objective**: Stabilize selfhood boundaries and identity continuity ($I_d$) under active coordinate drift and memory restructuring.
+* **Active Tasks**:
+  * Testing the `DelusionResistanceMonitor` against false ontology loop lock-ins in noisy environments.
+  * Auditing the `OntologyGrowthEngine` to prevent conflicting split/fuse directives during stream exposure.
+  * Hardening the `FCFTOperationalizationRuntime` under extreme environmental shock scenarios (gravity inversion simulations).
+
+---
+
+## 🔮 Future Convergence Targets
+
+### Phase 39: Differentiable Substrates
+* **Objective**: Fully replace handcrafted gradient approximations with differentiable backpropagation systems across the representation tensor.
+
+### Phase 40: Multi-Agent Convergence
+* **Objective**: Explore the emergence of shared communication protocols and collaborative memory structures in multi-agent sandbox environments.
+
+### Phase 41: Open-World Generalization
+* **Objective**: Port the platform from synthetic simulations to high-entropy physical interaction labs to validate real competence scaling.

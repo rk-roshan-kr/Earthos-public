@@ -1,45 +1,46 @@
-# Benchmarking & Competence Metrics
+# Empirical Validation & Benchmarking
 
-Traditional AI benchmarks (e.g., MMLU, GSM8K) are often poorly suited for evaluating persistent embodied agents. Synapse Arch utilizes a custom benchmarking framework focused on **Competence Scaling** and **Architectural Integrity**.
+Rather than evaluating the platform using static language benchmarks (such as MMLU or GSM8K) or relying on arbitrary progress scores, Earthos utilizes an empirical validation matrix grounded in system resilience and representational stability.
 
-## 📈 Competence Scaling Chart
+---
 
-We track the agent's progress through a multi-dimensional metric of competence.
+## 🔬 Validation Philosophy & Falsification
 
-```mermaid
-xychart-beta
-    title "Cognitive Competence Scaling"
-    x-axis [Phase 23, Phase 24, Phase 25, Phase 26 (Target)]
-    y-axis "Competence Index (0-1.0)" 0 --> 1.0
-    line [0.15, 0.38, 0.62, 0.85]
-```
+A cognitive mechanism is not considered validated simply because the code executes without errors. We define strict experimental boundaries to test our hypotheses:
 
-## 🛠️ Primary Metrics
+1. **Environmental Resistance**: The agent must interact with simulations containing dynamic entropy and resource limits. Success is defined as maintaining stable homeostatic indices over extended execution horizons.
+2. **Causal Shock Testing**: We actively inject contradictory or corrupted inputs (e.g., causal inversions where expected physics fail) to observe whether the grounding layer detects and rejects the contamination, rather than absorbing it.
+3. **Falsification Criteria**: A representational update algorithm is considered falsified if:
+   * It results in a runaway positive feedback loop in the Cognitive State Tensor.
+   * It drops the Identity Stability index ($I_d$) below the safety threshold ($0.4$).
+   * It triggers persistent belief loops that ignore direct physical counter-evidence (wireheading/delusion).
 
-### 1. Survival Horizon ($T_{survive}$)
-The number of contiguous ticks the agent can persist in a constrained environment (e.g., limited energy, fluctuating conditions) before system failure or "death."
+---
 
-### 2. Prediction Accuracy ($P_{acc}$)
-The precision of the `WorldModelKernel` in forecasting future sensory states. This is measured as the inverse of the global prediction error.
-$$P_{acc} = 1 - \frac{1}{N} \sum_{i=1}^N ||S_{i} - S'_{i}||$$
+## 📊 "What We Thought" vs. "What Actually Happened"
 
-### 3. Inference Efficiency ($\eta_{inf}$)
-The ratio of goal-achievement progress to the compute resources (cycles/memory) consumed. High efficiency indicates a well-optimized `CognitiveEconomicsKernel`.
+### 1. Synthetic Grid-World Grounding
+* **What We Thought**: Navigating a noiseless simulated grid-world and avoiding obstacles would demonstrate true grounding and conceptual correctness.
+* **What Actually Happened**: The agent memorized the static ruleset of the grid-world and achieved $100\%$ task success, but when we introduced a $0.05$ probability of sensor dropout, it suffered catastrophic grounding collapse. It kept walking into walls, attempting to verify non-existent paths. It was overfitting to a noiseless ruleset, not learning to ground.
 
-### 4. Epistemic Stability
-The rate at which new abstractions are confirmed and promoted to "Stable" or "Invariant" status by the `GovernanceKernel`.
+### 2. Causal Discovery Tracing
+* **What We Thought**: The agent would extract clean, multi-hop causal paths from sequential inputs by analyzing temporal correlations.
+* **What Actually Happened**: Without active motor interventions, the passive causal discovery engine repeatedly mistook metabolic decay rates (which naturally decrease over time) as the "cause" of unrelated environmental changes. It was establishing spurious causal links, a failure mode we call *associative reification*.
 
-## 🔬 Benchmark Environments
+> ### Research Note — Phase 37.6
+> The transition from simple grid-worlds to continuous control sandboxes took twice as long as anticipated. We spent days debugging why the coordinate updating code kept throwing overflow errors, only to realize that continuous, real-time sensor updates triggered a high-frequency jitter in coordinate space ($E_r \to 1.0$) that overwhelmed the Jaccard drift monitors. We had to implement a moving-average smoothing filter on input streams just to keep the substrate stable.
 
-We test the architecture across a series of standardized research environments:
--   **Grid-World Survival**: Basic resource gathering and threat avoidance.
--   **Continuous Control**: Motor control tasks requiring high-frequency sensorimotor feedback.
--   **Causal Discovery Labs**: Environments designed to test the agent's ability to infer hidden causal mechanisms.
--   **High-Entropy Simulation**: Real-world physics simulations with noise and unpredictable events.
+---
 
-## ⚖️ Architectural Integrity Audit
+## 📋 Capability Verification Matrix
 
-Beyond task performance, we audit the architecture itself:
--   **Kernel Sovereignty Violation Count**: Ensuring no kernel exceeds its authority.
--   **Determinism Check**: Verifying bit-perfect replay of event logs.
--   **Mutation Drift**: Measuring the rate of change in internal policies to ensure stability.
+We track specific capability milestones using the status matrix detailed in our [Current State Guide](current_state.md):
+
+| Target Capability | Validation Environment | Primary Metric | Verification Status |
+| :--- | :--- | :--- | :--- |
+| **Deterministic Replay** | Any | Bit-perfect parity of snapshot states compiled from raw event ledger logs. | Operational |
+| **Paced Gateway Filtering**| High-toxicity streams | Exposure rate adjustments and input token rejection ratios. | Prototype |
+| **Ontological Fusion/Split**| Concept drift labs | Reduction in Jaccard coordinate drift and simulation cycles efficiency. | Prototype |
+| **Identity Continuity** | Restructuring cycles | Identity Stability index ($I_d \ge 0.4$) during memory compaction. | Prototype |
+| **Causal Discovery** | Causal inversion labs | Rate of correct causal link extraction from stream sequences. | Weak / Early Prototype |
+| **Open-World Grounding** | Noise-injected control | Rate of contradiction detection and belief self-correction. | Primitive / Early Prototype |
