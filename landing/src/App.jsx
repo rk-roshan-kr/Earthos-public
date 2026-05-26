@@ -1666,7 +1666,7 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
       <button
         onClick={onScrollExitUp}
         style={{
-          position: 'absolute', top: '1.2vh', left: '50%',
+          position: 'absolute', top: '4.8vh', left: '50%',
           transform: 'translateX(-50%)',
           zIndex: 60, background: 'rgba(255,255,255,0.06)',
           border: '1px solid rgba(255,255,255,0.18)',
@@ -4503,15 +4503,14 @@ export default function App() {
         style={{
           position: 'fixed',
           top: 0,
-          right: 0,
-          width: 'auto',
+          left: 0,
+          width: '100%',
           height: '60px',
           zIndex: 99999,
           display: 'flex',
-          justifyContent: 'flex-end',
+          justifyContent: 'center',
           alignItems: 'flex-start',
           paddingTop: '1.2rem',
-          paddingRight: '2.5rem',
           pointerEvents: 'none',
         }}
       >
@@ -4524,7 +4523,7 @@ export default function App() {
             justifyContent: 'center',
             flexWrap: isNavHovered && isMobile ? 'wrap' : 'nowrap',
             height: isNavHovered ? (isMobile ? 'auto' : '48px') : '4px',
-            width: isNavHovered ? (isMobile ? '90vw' : 'max-content') : '60px',
+            width: isNavHovered ? (isMobile ? '90%' : 'max-content') : '90px',
             borderRadius: isNavHovered ? '24px' : '2px',
             background: isNavHovered ? 'rgba(12, 10, 8, 0.72)' : 'rgba(198, 122, 74, 0.5)',
             border: isNavHovered ? '1px solid rgba(255, 255, 255, 0.08)' : 'none',
