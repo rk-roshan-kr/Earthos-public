@@ -4505,7 +4505,7 @@ export default function App() {
           top: 0,
           left: 0,
           width: '100%',
-          height: '60px',
+          height: '90px',
           zIndex: 99999,
           display: 'flex',
           justifyContent: 'center',
