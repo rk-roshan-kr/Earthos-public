@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { motion, useMotionValue, useSpring, useTransform, animate } from 'framer-motion';
+import { motion, useMotionValue, useSpring, useTransform, animate, AnimatePresence } from 'framer-motion';
 import { ExternalLink, ArrowDown, ArrowRight, Activity, Cpu, ShieldAlert, Layers } from 'lucide-react';
 import TopologyCanvas from './Topology';
 import CinematicBackground from './CinematicBackground';
@@ -2214,6 +2214,39 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
 
 export default function App() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isContactOpen, setIsContactOpen] = useState(false);
+  const [formData, setFormData] = useState({ name: '', email: '', purpose: 'Research Collaboration', message: '' });
+  const [submitStatus, setSubmitStatus] = useState('idle'); // idle | submitting | success | error
+
+  const handleFormChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitStatus('submitting');
+    try {
+      const body = new URLSearchParams({
+        'form-name': 'contact',
+        ...formData
+      }).toString();
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body
+      });
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', purpose: 'Research Collaboration', message: '' });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (err) {
+      console.error(err);
+      setSubmitStatus('error');
+    }
+  };
   const isTransitioning = useRef(false);
   const [activeFail, setActiveFail] = useState(0);
   const [selectedAtlasNode, setSelectedAtlasNode] = useState('gate');
@@ -4134,14 +4167,20 @@ export default function App() {
               variants={slideItemVariants}
               style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}
             >
-              <a href="mailto:roshankumargupta.sh@gmail.com" style={{ 
-                padding: '1.0rem 2.2rem', fontSize: '0.95rem', fontFamily: 'var(--font-mono)', 
-                border: '1px solid var(--earth-copper)', color: 'var(--earth-copper)', 
-                textDecoration: 'none', letterSpacing: '0.08em', textTransform: 'uppercase',
-                transition: 'background-color 0.2s'
-              }}>
+              <button 
+                onClick={() => setIsContactOpen(true)}
+                style={{ 
+                  padding: '1.0rem 2.2rem', fontSize: '0.95rem', fontFamily: 'var(--font-mono)', 
+                  border: '1px solid var(--earth-copper)', color: 'var(--earth-copper)', 
+                  background: 'transparent', cursor: 'pointer',
+                  textDecoration: 'none', letterSpacing: '0.08em', textTransform: 'uppercase',
+                  transition: 'background-color 0.2s'
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.05)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; }}
+              >
                 Get in touch
-              </a>
+              </button>
               <a href="https://github.com/rk-roshan-kr/Earthos-public" target="_blank" rel="noopener noreferrer" style={{ 
                 padding: '1.0rem 2.2rem', fontSize: '0.95rem', fontFamily: 'var(--font-mono)', 
                 border: '1px solid var(--earth-border)', color: 'var(--earth-dim)', 
@@ -4193,6 +4232,249 @@ export default function App() {
           100% { opacity: 1; }
         }
       `}</style>
+
+      <AnimatePresence>
+        {isContactOpen && (
+          <div 
+            style={{
+              position: 'fixed',
+              inset: 0,
+              zIndex: 9999,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '1.5rem',
+            }}
+          >
+            {/* Backdrop overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => { if (submitStatus !== 'submitting') setIsContactOpen(false); }}
+              style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'rgba(0, 2, 5, 0.85)',
+                backdropFilter: 'blur(16px)',
+              }}
+            />
+
+            {/* Modal Box */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              transition={{ type: 'spring', duration: 0.5 }}
+              style={{
+                position: 'relative',
+                width: '100%',
+                maxWidth: '520px',
+                background: 'rgba(10, 11, 13, 0.96)',
+                border: '1px solid var(--earth-copper)',
+                boxShadow: '0 0 50px rgba(198, 122, 74, 0.15), inset 0 0 20px rgba(0,0,0,0.8)',
+                padding: '2.5rem 2rem',
+                zIndex: 1,
+              }}
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setIsContactOpen(false)}
+                disabled={submitStatus === 'submitting'}
+                style={{
+                  position: 'absolute',
+                  top: '1.25rem',
+                  right: '1.25rem',
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--earth-dim)',
+                  cursor: 'pointer',
+                  fontSize: '1.2rem',
+                  fontFamily: 'var(--font-mono)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '0.2rem',
+                  transition: 'color 0.2s',
+                }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--earth-copper)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'var(--earth-dim)'}
+              >
+                ✕
+              </button>
+
+              <div className="mono" style={{ fontSize: '0.7rem', color: 'var(--earth-copper)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.15em' }}>
+                OBSERVATORY PROTOCOL // GET IN TOUCH
+              </div>
+
+              {submitStatus === 'success' ? (
+                <div style={{ textAlign: 'center', padding: '2rem 0' }}>
+                  <div style={{ fontSize: '2.5rem', color: 'var(--earth-copper)', marginBottom: '1rem' }}>✓</div>
+                  <h3 className="mono" style={{ color: '#ffffff', fontSize: '1.1rem', marginBottom: '0.75rem', letterSpacing: '0.05em' }}>TRANSMISSION COMPLETE</h3>
+                  <p className="mono" style={{ color: 'var(--earth-dim)', fontSize: '0.8rem', lineHeight: '1.6' }}>
+                    Your request has been queued into the Earthos registry. We will review your details and connect via secure channels.
+                  </p>
+                  <button
+                    onClick={() => { setIsContactOpen(false); setSubmitStatus('idle'); }}
+                    style={{
+                      marginTop: '2rem',
+                      padding: '0.8rem 2rem',
+                      fontSize: '0.85rem',
+                      fontFamily: 'var(--font-mono)',
+                      border: '1px solid var(--earth-border)',
+                      color: 'var(--earth-text)',
+                      background: 'rgba(255,255,255,0.02)',
+                      cursor: 'pointer',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.08em',
+                      transition: 'border 0.2s'
+                    }}
+                    onMouseEnter={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
+                    onMouseLeave={(e) => e.currentTarget.style.borderColor = 'var(--earth-border)'}
+                  >
+                    Close Registry
+                  </button>
+                </div>
+              ) : (
+                <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                  <p className="mono" style={{ color: 'var(--earth-dim)', fontSize: '0.78rem', lineHeight: '1.5', marginBottom: '0.5rem' }}>
+                    Submit details to request codebase access, propose compute collaboration, or discuss developmental active inference research.
+                  </p>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                    <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>YOUR NAME</label>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleFormChange}
+                      disabled={submitStatus === 'submitting'}
+                      placeholder="Dr. Arthur Pendelton"
+                      style={{
+                        background: 'rgba(0,0,0,0.4)',
+                        border: '1px solid var(--earth-border)',
+                        color: '#ffffff',
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '0.85rem',
+                        padding: '0.6rem 0.8rem',
+                        outline: 'none',
+                        transition: 'border-color 0.2s',
+                      }}
+                      onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
+                      onBlur={(e) => e.currentTarget.style.borderColor = 'var(--earth-border)'}
+                    />
+                  </div>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                    <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>EMAIL ADDRESS</label>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleFormChange}
+                      disabled={submitStatus === 'submitting'}
+                      placeholder="arthur@lab.org"
+                      style={{
+                        background: 'rgba(0,0,0,0.4)',
+                        border: '1px solid var(--earth-border)',
+                        color: '#ffffff',
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '0.85rem',
+                        padding: '0.6rem 0.8rem',
+                        outline: 'none',
+                        transition: 'border-color 0.2s',
+                      }}
+                      onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
+                      onBlur={(e) => e.currentTarget.style.borderColor = 'var(--earth-border)'}
+                    />
+                  </div>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                    <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>PURPOSE OF INTERACTION</label>
+                    <select
+                      name="purpose"
+                      value={formData.purpose}
+                      onChange={handleFormChange}
+                      disabled={submitStatus === 'submitting'}
+                      style={{
+                        background: 'rgba(10,11,13,0.95)',
+                        border: '1px solid var(--earth-border)',
+                        color: '#ffffff',
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '0.8rem',
+                        padding: '0.6rem 0.8rem',
+                        outline: 'none',
+                        cursor: 'pointer',
+                      }}
+                    >
+                      <option value="Research Collaboration">Research Collaboration</option>
+                      <option value="Compute Sponsorship">Compute Sponsorship</option>
+                      <option value="Access Request">Codebase Access Request</option>
+                      <option value="General Inquiry">General Inquiry</option>
+                    </select>
+                  </div>
+
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                    <label className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-muted)', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TRANSMISSION MESSAGE</label>
+                    <textarea
+                      name="message"
+                      required
+                      rows={4}
+                      value={formData.message}
+                      onChange={handleFormChange}
+                      disabled={submitStatus === 'submitting'}
+                      placeholder="Detail your parameters or background..."
+                      style={{
+                        background: 'rgba(0,0,0,0.4)',
+                        border: '1px solid var(--earth-border)',
+                        color: '#ffffff',
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '0.85rem',
+                        padding: '0.6rem 0.8rem',
+                        outline: 'none',
+                        resize: 'none',
+                        transition: 'border-color 0.2s',
+                      }}
+                      onFocus={(e) => e.currentTarget.style.borderColor = 'var(--earth-copper)'}
+                      onBlur={(e) => e.currentTarget.style.borderColor = 'var(--earth-border)'}
+                    />
+                  </div>
+
+                  {submitStatus === 'error' && (
+                    <div className="mono" style={{ color: '#ff6b6b', fontSize: '0.75rem', textAlign: 'center' }}>
+                      Error transmitting details. Please verify your connection or contact directly via roshankumargupta.sh@gmail.com
+                    </div>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={submitStatus === 'submitting'}
+                    style={{
+                      marginTop: '0.5rem',
+                      padding: '1.0rem 2.2rem',
+                      fontSize: '0.9rem',
+                      fontFamily: 'var(--font-mono)',
+                      border: '1px solid var(--earth-copper)',
+                      color: 'var(--earth-copper)',
+                      background: 'rgba(198, 122, 74, 0.03)',
+                      cursor: submitStatus === 'submitting' ? 'not-allowed' : 'pointer',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.08em',
+                      transition: 'background-color 0.2s'
+                    }}
+                    onMouseEnter={(e) => { if (submitStatus !== 'submitting') e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.08)'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.03)'; }}
+                  >
+                    {submitStatus === 'submitting' ? 'TRANSMITTING...' : 'INITIATE TRANSMISSION'}
+                  </button>
+                </form>
+              )}
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
