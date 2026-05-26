@@ -4192,7 +4192,7 @@ export default function App() {
             
             <motion.div 
               variants={slideItemVariants}
-              style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center' }}
+              style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}
             >
               <button 
                 onClick={() => setIsContactOpen(true)}
@@ -4216,6 +4216,7 @@ export default function App() {
               }}>
                 Source <ExternalLink size={12} />
               </a>
+              <div id="bmc-container" style={{ display: 'flex', alignItems: 'center', height: '40px' }}></div>
             </motion.div>
           </motion.div>
 
@@ -4239,11 +4240,10 @@ export default function App() {
 
           {/* FOOTER */}
           <footer style={{ width: '100%', padding: '4rem 0', borderTop: '1px solid var(--earth-border)', background: 'var(--earth-void)', marginTop: 'auto' }}>
-            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1.5rem' }}>
+            <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <span className="mono" style={{ fontSize: '0.85rem', color: 'var(--earth-muted)' }}>
                 Earthos Substrate Observatory Â· Roshan Kumar Gupta
               </span>
-              <div id="bmc-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}></div>
               <span className="mono" style={{ fontSize: '0.85rem', color: 'var(--earth-muted)', opacity: 0.5 }}>
                 2026
               </span>
