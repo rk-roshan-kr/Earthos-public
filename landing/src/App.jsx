@@ -1384,6 +1384,14 @@ const CognitiveCartography = ({ isActive, onScrollExitDown, onScrollExitUp }) =>
     };
 
     const handleKeyDown = (e) => {
+      if (
+        e.target.tagName === 'INPUT' ||
+        e.target.tagName === 'TEXTAREA' ||
+        e.target.tagName === 'SELECT' ||
+        e.target.isContentEditable
+      ) {
+        return;
+      }
       const now = Date.now();
       if (now - lastScrollTime.current < 650) {
         if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', ' '].includes(e.key)) {
@@ -2550,6 +2558,14 @@ export default function App() {
     };
 
     const handleKeyDown = (e) => {
+      if (
+        e.target.tagName === 'INPUT' ||
+        e.target.tagName === 'TEXTAREA' ||
+        e.target.tagName === 'SELECT' ||
+        e.target.isContentEditable
+      ) {
+        return;
+      }
       if (isTransitioning.current) return;
 
       // Delegate Act 4 page scrolling to CognitiveCartography
@@ -4458,14 +4474,8 @@ export default function App() {
                         }}
                       >
                         <option value="Research Collaboration" style={{ background: '#0a0a0b' }}>Research Collaboration</option>
-                        <option value="Compute & Hardware Sponsorship" style={{ background: '#0a0a0b' }}>Compute & Hardware Sponsorship</option>
-                        <option value="Codebase Access Request" style={{ background: '#0a0a0b' }}>Codebase Access Request</option>
-                        <option value="Algorithm Auditing & Verification" style={{ background: '#0a0a0b' }}>Algorithm Auditing & Verification</option>
-                        <option value="Research Fellowship Application" style={{ background: '#0a0a0b' }}>Research Fellowship Application</option>
-                        <option value="Commercial Licensing & Integration" style={{ background: '#0a0a0b' }}>Commercial Licensing & Integration</option>
-                        <option value="Active Inference Consulting" style={{ background: '#0a0a0b' }}>Active Inference Consulting</option>
-                        <option value="Observatory Node Deployment" style={{ background: '#0a0a0b' }}>Observatory Node Deployment</option>
-                        <option value="Investment & Grants" style={{ background: '#0a0a0b' }}>Investment & Grants</option>
+                        <option value="Codebase Access" style={{ background: '#0a0a0b' }}>Codebase Access</option>
+                        <option value="General Inquiry" style={{ background: '#0a0a0b' }}>General Inquiry</option>
                         <option value="Other / Custom" style={{ background: '#0a0a0b' }}>Other / Custom Inquiry...</option>
                       </select>
                       <span className="mono" style={{
