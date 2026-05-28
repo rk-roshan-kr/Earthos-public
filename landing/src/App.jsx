@@ -2289,6 +2289,7 @@ export default function App() {
   const [activeBoundary, setActiveBoundary] = useState(0);
   const [isGlitching, setIsGlitching] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [showMobileNotice, setShowMobileNotice] = useState(false);
 
   // Act 3 Cinematic Transformation scroll-pinned virtual timeline
   const act3ProgressValue = useMotionValue(0);
@@ -2369,7 +2370,11 @@ export default function App() {
   // Resize listener for mobile check
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      const isMob = window.innerWidth <= 768;
+      setIsMobile(isMob);
+      if (isMob && !sessionStorage.getItem('earthos_mobile_notice_dismissed')) {
+        setShowMobileNotice(true);
+      }
     };
     window.addEventListener('resize', handleResize);
     handleResize(); // Initial call
@@ -2646,7 +2651,93 @@ export default function App() {
 
   return (
     <div className="env-layer">
-      {/* Layered Cinematic Background & Atmosphere Orbits */}
+      {/* Mobile check environment warning */}
+      <AnimatePresence>
+        {showMobileNotice && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            style={{
+              position: 'fixed',
+              inset: 0,
+              zIndex: 100000,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              background: 'rgba(5, 5, 6, 0.95)',
+              backdropFilter: 'blur(20px)',
+              padding: '1.5rem',
+            }}
+          >
+            <motion.div
+              initial={{ scale: 0.95, y: 15 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.95, y: 15 }}
+              transition={{ type: 'spring', duration: 0.45 }}
+              style={{
+                width: '100%',
+                maxWidth: '440px',
+                background: 'rgba(15, 15, 18, 0.9)',
+                border: '1px solid rgba(198, 122, 74, 0.3)',
+                padding: '2.5rem 2rem',
+                textAlign: 'center',
+                boxShadow: '0 20px 50px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(198, 122, 74, 0.05)',
+                position: 'relative',
+              }}
+            >
+              {/* Corner crosshairs */}
+              <span className="mono" style={{ position: 'absolute', top: '6px', left: '10px', fontSize: '0.6rem', color: 'rgba(198, 122, 74, 0.4)' }}>+</span>
+              <span className="mono" style={{ position: 'absolute', top: '6px', right: '10px', fontSize: '0.6rem', color: 'rgba(198, 122, 74, 0.4)' }}>+</span>
+              <span className="mono" style={{ position: 'absolute', bottom: '6px', left: '10px', fontSize: '0.6rem', color: 'rgba(198, 122, 74, 0.4)' }}>+</span>
+              <span className="mono" style={{ position: 'absolute', bottom: '6px', right: '10px', fontSize: '0.6rem', color: 'rgba(198, 122, 74, 0.4)' }}>+</span>
+
+              <div className="mono" style={{ fontSize: '0.65rem', color: 'var(--earth-copper)', marginBottom: '1.5rem', textTransform: 'uppercase', letterSpacing: '0.15em' }}>
+                SYSTEM CHECK // DETECTED SCREEN VIEW
+              </div>
+              
+              <div className="serif" style={{ fontSize: '1.5rem', color: '#ffffff', marginBottom: '1rem', lineHeight: '1.3' }}>
+                Optimal Observatory Parameters Required
+              </div>
+              
+              <p className="mono" style={{ color: 'var(--earth-dim)', fontSize: '0.78rem', lineHeight: '1.6', marginBottom: '2.2rem', textAlign: 'left' }}>
+                For the intended active inference simulation experience, high-fidelity WebGL graphics, and optimal layout performance, we recommend opening this terminal from a desktop or laptop computer.
+              </p>
+              
+              <button
+                onClick={() => {
+                  sessionStorage.setItem('earthos_mobile_notice_dismissed', 'true');
+                  setShowMobileNotice(false);
+                }}
+                style={{
+                  width: '100%',
+                  padding: '0.9rem 1.5rem',
+                  fontSize: '0.78rem',
+                  fontFamily: 'var(--font-mono)',
+                  border: '1px solid var(--earth-copper)',
+                  color: 'var(--earth-copper)',
+                  background: 'rgba(198, 122, 74, 0.05)',
+                  cursor: 'pointer',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                  transition: 'all 0.25s ease',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = 'var(--earth-copper)';
+                  e.currentTarget.style.color = 'var(--earth-void)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'rgba(198, 122, 74, 0.05)';
+                  e.currentTarget.style.color = 'var(--earth-copper)';
+                }}
+              >
+                PROCEED TO OBSERVATORY
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+      {/* Layered Cinematic Background & Atmosphere Orbits }
       <CinematicBackground activeIndex={activeIndex} transitionKick={transitionKickRef.current} hoveredSystem={hoveredSystem} act3Progress={act3SmoothProgress} />
       <ForegroundAtmosphere activeIndex={activeIndex} />
       
