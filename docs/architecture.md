@@ -1,11 +1,11 @@
 # Synapse Architecture: Bounded Developmental Cognition Substrate
 
-**An Earthos Research Project Atlas**
+**Earthos / Synapse Research Atlas**
 
 ---
 
 > [!IMPORTANT]
-> **Disclosure Boundary & IP Redaction**: Certain operational details, runtime structures, and experimental implementation mechanics are intentionally omitted from public documentation to preserve research integrity while maintaining conceptual transparency. This atlas details the conceptual architecture, developmental flows, and historical lessons learned from the Synapse substrate.
+> **Disclosure Boundary & IP Redaction**: Operational configurations, persistent state definitions, homeostatic regulation mechanics, and specific execution logic are intentionally omitted from public documentation to preserve research integrity while maintaining conceptual transparency. This atlas details the conceptual architecture, developmental dynamics, and historical lessons learned from the Synapse substrate.
 
 ---
 
@@ -16,6 +16,8 @@ Synapse is an experimental developmental cognition substrate. The project invest
 Traditional approaches optimize stateless systems that process inputs within isolated execution windows. Synapse operates on different assumptions: cognition is a continuous developmental process that accumulates consequence. It requires permanent persistence, sensorimotor embodiment, and metabolic limits. 
 
 The architecture presented in this atlas is the structural residue of multiple prior generations that were collapsed, audited, and rewritten after failing under open-world conditions. It is presented not as a finished design, but as a living research substrate.
+
+*“this layer emerged after earlier architectures repeatedly stabilized internally while drifting away from reality.”*
 
 ---
 
@@ -55,7 +57,7 @@ graph TD
 
 ---
 
-## III. Project Architecture Taxonomy
+## III. Earthos vs Synapse: The Project and Architecture Relationship
 
 The research project separates the broad conceptual goals from the active developmental branch:
 
@@ -79,11 +81,11 @@ graph TD
         E --> Syn["🧠 SYNAPSE SUBSTRATE\nActive human-inspired branch"]:::branch
         
         %% Speculative future directions
-        E --> F1["◌ Future Branch C\nThermodynamic swarm-ecology"]:::future
-        E --> F2["◌ Future Branch D\nNon-Euclidean latent geometry"]:::future
+        E --> F1["◌ Speculative Swarm Branch C\nThermodynamic swarm-ecology"]:::future
+        E --> F2["◌ Speculative Latent Branch D\nNon-Euclidean latent geometry"]:::future
 
         %% Subsystem mapping
-        Syn --> Core["Stable Substrate Core\n(Deterministic invariants)"]:::branch
+        Syn --> Core["Stable Substrate Core\n(Stable substrate boundaries)"]:::branch
         Syn --> Frontier["Experimental Frontier\n(Continuous field dynamic)"]:::frontier
         Frontier --> Open["Open-World Semantics\n(Active research horizon)"]:::frontier
     end
@@ -94,24 +96,24 @@ graph TD
 
 ---
 
-## IV. The Stable Core: Invariant Execution Boundaries
+## IV. The Invariant Substrate: Stable Core Boundaries
 
 The stable substrate core is **frozen by design**. It does not adapt. It exposes a narrow interface to the experimental layers above it, enforcing structural discipline on the system.
 
-Freezing the core ensures that the execution dynamics, resource tracking, and persistence engines remain deterministic. If the foundational execution layer adapted alongside the representation fields, the system would lose the stable reference frame required to evaluate developmental change.
+Freezing the core ensures that execution dynamics, resource tracking, and persistence engines remain stable. If the foundational execution layer adapted alongside the representation fields, the system would lose the stable reference frame required to evaluate developmental change.
 
-*“several coordination layers were removed after they began regulating each other instead of the environment.”*
+*“several coordination structures were intentionally removed after they began regulating themselves instead of the environment.”*
 
-### Stable Core Invariants
-- **Deterministic Scheduling**: discretized execution cycles that guarantee bit-identical replay of cognitive traces across different platforms.
-- **Persistent Event Ledger**: an append-only transaction history that serves as the single source of truth from which working memory states are projected.
+### Stable Substrate Boundaries
+- **Bounded Execution Continuity**: discretized execution cycles that guarantee reproducible execution dynamics across different platforms.
+- **Continuity-Preserving Memory**: a persistent developmental state history from which active representational frames are projected.
 - **Metabolic Constraints**: execution cycles and memory boundaries are tracked. If a representational structure consumes more cycles than it contributes to prediction accuracy, the economics boundary decays its density.
 
 ---
 
-## V. The Adaptive Frontier: Dynamic Representational Fields
+## V. The Adaptive Representational Frontier: Dynamic Fields
 
-Above the stable core lies the experimental frontier, where concepts are represented as coordinates in a continuous latent field rather than discrete symbolic nodes.
+Above the stable core lies the experimental frontier, where concepts are represented as coordinates in a continuous latent field rather than discrete nodes.
 
 ```mermaid
 graph TD
@@ -160,10 +162,10 @@ graph TD
         %% Persistent Core
         subgraph CORE_INVARIANTS ["🔒 Bounded Substrate Core Invariants"]
             direction LR
-            Scheduler["Deterministic Replay Scheduler"]:::core
+            Scheduler["Bounded Execution Continuity"]:::core
             Economics["Metabolic Resource Allocator"]:::core
             Epistemic["Homeostatic Self-Model Guardians"]:::core
-            Ledger["Persistent Event-Derived Ledger"]:::core
+            Ledger["Continuity-Preserving Memory"]:::core
         end
 
         ENV_PRESSURE -->|Sensorimotor Noise & Consequence| GROUNDING_ZONE
@@ -178,11 +180,11 @@ graph TD
 Representations are updated according to gradients derived from developmental tension.
 - **Continuous Coordinate Restructuring**: concepts shift coordinate positions based on predictive success and environmental friction.
 - **Morphogenetic Restructuring**: coordinates undergo splits when local prediction errors remain high, merge when compression is metabolically efficient, and decay when they fail to shape actions.
-- **Identity Continuity Boundary**: the governance layer monitors the rate of coordinate updates. If updates occur too rapidly, the system dampens mutations to prevent identity fracture.
+- **Identity Continuity Boundary**: the homeostatic regulation layer monitors the rate of coordinate updates. If updates occur too rapidly, the system dampens mutations to prevent identity fracture.
 
 ---
 
-## VI. Cognitive Dynamics: The Continuous Sensorimotor Loop
+## VI. Continuous Sensorimotor Development: The Cognitive Dynamics Loop
 
 The substrate operates as a continuous developmental loop with no resets. Experiences and representational adjustments accumulate over the lifespan of the agent.
 
@@ -207,7 +209,7 @@ flowchart TD
 
     REGULATE["Developmental Regulation\nIdentity continuity protection\nMetabolic cost enforcement"]:::node
 
-    MEMORY["Persistent Memory\nEvent-derived state\nLifetime continuity"]:::memory
+    MEMORY["Persistent Memory\nPersistent developmental state\nLifetime continuity"]:::memory
 
     ACTION["Action Selection\nEpistemic exploration\nSurvival-weighted choice"]:::node
 
@@ -231,7 +233,7 @@ flowchart TD
 
 ---
 
-## VII. Architectural Scars: Historical Collapses and Deletions
+## VII. Architectural Scars: Historical Collapses and Refinements
 
 This architecture is the product of continuous refactoring forced by critical failures encountered during long-horizon testing.
 
@@ -265,8 +267,8 @@ graph TD
         end
 
         subgraph SCAR_D ["Self-Wireheading Optimization"]
-            D_Fail["Orphaned legacy modules bypassed execution\nand modified reward variables directly"]:::collapsed
-            D_Lesson["Executed The Purge:\nDeleted legacy files, consolidated authority"]:::solution
+            D_Fail["Orphaned legacy structures bypassed execution\nand modified reward variables directly"]:::collapsed
+            D_Lesson["Executed The Purge:\nRemoved legacy execution pathways, consolidated authority"]:::solution
             D_Fail --> D_Lesson
         end
     end
@@ -341,14 +343,14 @@ graph LR
         Act["Environmental Interaction\n(Sensory inputs, action feedback)"]:::accumulate -->
         Con["Contradiction Accumulation\n(Prediction error buildup)"]:::accumulate -->
         Rest["Morphogenetic Restructuring\n(Coordinate coordinates update)"]:::restructure -->
-        Guard["Identity Stabilization\n(Governance boundary damping)"]:::stable -->
+        Guard["Identity Stabilization\n(Homeostatic regulation damping)"]:::stable -->
         T1["Tick T(1)\nPersistent developmental baseline"]:::tick
         
         T1 -->|Priors bias next cycle| T0
     end
 ```
 
-To prevent the system from dissolving under continuous representational updates, the governance layer regulates the rate of coordinate changes. Under high-entropy cycles, updates are damped to preserve structural continuity, ensuring the system maintains a coherent history across its lifespan.
+To prevent the system from dissolving under continuous representational updates, the homeostatic regulation layer regulates the rate of coordinate changes. Under high-entropy cycles, updates are damped to preserve structural continuity, ensuring the system maintains a coherent history across its lifespan.
 
 ---
 
@@ -363,7 +365,7 @@ The economics boundary enforces these limits:
 
 ---
 
-## XII. Substrate Maturity: Capabilities and Frontier Mapping
+## XII. Frontier Horizons: Substrate Maturity Mapping
 
 The capability state of the Synapse substrate is monitored across several core tasks.
 
@@ -376,10 +378,10 @@ graph TD
 
     ARCH["Synapse Substrate Status"]
 
-    ARCH --> A["🟢 Deterministic execution replay"]:::op
-    ARCH --> B["🟢 Persistent memory across runs"]:::op
+    ARCH --> A["🟢 Reproducible execution dynamics"]:::op
+    ARCH --> B["🟢 Continuity-preserving memory"]:::op
     ARCH --> C["🟢 Metabolic resource accounting"]:::op
-    ARCH --> D["🟢 Homeostatic governance bounds"]:::op
+    ARCH --> D["🟢 Homeostatic regulation bounds"]:::op
 
     ARCH --> E["🟡 Resisting hallucinated affordances"]:::proto
     ARCH --> F["🟡 Continuous representational geometry"]:::proto
@@ -403,8 +405,8 @@ graph LR
         direction LR
         subgraph ZONE_A ["🟢 Operational Invariants"]
             direction TB
-            O1["Deterministic Scheduler"]:::op
-            O2["Event Persistence Core"]:::op
+            O1["Bounded Execution Continuity"]:::op
+            O2["Continuity-Preserving Memory"]:::op
             O3["Metabolic Cost Limits"]:::op
         end
 
@@ -428,17 +430,17 @@ graph LR
     end
 ```
 
-*   **🟢 Operational**: validated and running stably in research environments.
-*   **🟡 Experimental**: active prototype testing; subject to representational drift under noise.
-*   **🔴 Frontier**: framework defined; validation in open-world conditions remains unresolved.
+- **🟢 Operational**: validated and running stably in research environments.
+- **🟡 Experimental**: active prototype testing; subject to representational drift under noise.
+- **🔴 Frontier**: framework defined; validation in open-world conditions remains unresolved.
 
 ---
 
-## XIII. Disclosure Boundaries and IP Isolation
+## XIII. Disclosure Boundaries: IP Redaction and Security
 
 This document describes the conceptual architecture, developmental dynamics, and empirical history of the Synapse substrate.
 
-The operational implementation — including specific scheduling code, database persistence schemas, governance auditing routines, and execution logic — is maintained in internal research documentation. This division protects the competitive value of the codebase while enabling research transparency and collaboration.
+The operational implementation — including bounded execution configurations, persistent state definitions, homeostatic regulation mechanics, and operational execution systems — is maintained in internal research documentation. This division protects the competitive value of the codebase while enabling research transparency and collaboration.
 
 ---
 
@@ -449,4 +451,4 @@ The Synapse architecture is not finished. It is an active chronicle of engineeri
 What remains is what survived.
 
 ---
-*Earthos & Synapse Arch. Roshan Kumar Gupta, Project Head.*
+*Earthos & Synapse Research Atlas*
