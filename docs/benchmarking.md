@@ -1,46 +1,67 @@
 # Empirical Validation & Benchmarking
 
-Rather than evaluating the platform using static language benchmarks (such as MMLU or GSM8K) or relying on arbitrary progress scores, Earthos utilizes an empirical validation matrix grounded in system resilience and representational stability.
+Earthos does not evaluate the Synapse substrate using standard language benchmarks. MMLU scores and GSM8K performance are not meaningful measures of developmental cognition.
+
+The validation philosophy is different: does the system behave differently — better — because it has lived longer?
 
 ---
 
-## 🔬 Validation Philosophy & Falsification
+## Validation Philosophy
 
-A cognitive mechanism is not considered validated simply because the code executes without errors. We define strict experimental boundaries to test our hypotheses:
+A cognitive mechanism is not considered validated because it executes without errors. It is validated when it produces predictable, directional behavior under adversarial environmental conditions.
 
-1. **Environmental Resistance**: The agent must interact with simulations containing dynamic entropy and resource limits. Success is defined as maintaining stable homeostatic indices over extended execution horizons.
-2. **Causal Shock Testing**: We actively inject contradictory or corrupted inputs (e.g., causal inversions where expected physics fail) to observe whether the grounding layer detects and rejects the contamination, rather than absorbing it.
-3. **Falsification Criteria**: A representational update algorithm is considered falsified if:
-   * It results in a runaway positive feedback loop in the Cognitive State Tensor.
-   * It drops the Identity Stability index ($I_d$) below the safety threshold ($0.4$).
-   * It triggers persistent belief loops that ignore direct physical counter-evidence (wireheading/delusion).
+Our validation framework is built around three commitments:
 
----
+**Environmental resistance testing.** The substrate is placed into simulated environments with genuine resource scarcity, sensor noise, dynamic entropy, and unpredictable event sequences. Success is not task completion. Success is the maintenance of representational coherence and behavioral competence over extended horizons.
 
-## 📊 "What We Thought" vs. "What Actually Happened"
+**Causal shock testing.** We actively inject contradictory or corrupted inputs — situations where expected environmental dynamics fail or reverse — to observe whether the grounding layer detects the contamination and refuses to absorb it, or whether it silently updates its beliefs into incoherence.
 
-### 1. Synthetic Grid-World Grounding
-* **What We Thought**: Navigating a noiseless simulated grid-world and avoiding obstacles would demonstrate true grounding and conceptual correctness.
-* **What Actually Happened**: The agent memorized the static ruleset of the grid-world and achieved $100\%$ task success, but when we introduced a $0.05$ probability of sensor dropout, it suffered catastrophic grounding collapse. It kept walking into walls, attempting to verify non-existent paths. It was overfitting to a noiseless ruleset, not learning to ground.
-
-### 2. Causal Discovery Tracing
-* **What We Thought**: The agent would extract clean, multi-hop causal paths from sequential inputs by analyzing temporal correlations.
-* **What Actually Happened**: Without active motor interventions, the passive causal discovery engine repeatedly mistook metabolic decay rates (which naturally decrease over time) as the "cause" of unrelated environmental changes. It was establishing spurious causal links, a failure mode we call *associative reification*.
-
-> ### Research Note — Phase 37.6
-> The transition from simple grid-worlds to continuous control sandboxes took twice as long as anticipated. We spent days debugging why the coordinate updating code kept throwing overflow errors, only to realize that continuous, real-time sensor updates triggered a high-frequency jitter in coordinate space ($E_r \to 1.0$) that overwhelmed the Jaccard drift monitors. We had to implement a moving-average smoothing filter on input streams just to keep the substrate stable.
+**Persistence-advantage testing.** We compare persistent agents against stateless episodic baselines under the same environmental conditions. The core hypothesis of the project — that persistence provides a genuine structural advantage — must be measurable, not just asserted.
 
 ---
 
-## 📋 Capability Verification Matrix
+## What "What We Thought" vs "What Actually Happened" Looks Like
 
-We track specific capability milestones using the status matrix detailed in our [Current State Guide](current_state.md):
+### Synthetic Grid-World Grounding
 
-| Target Capability | Validation Environment | Primary Metric | Verification Status |
-| :--- | :--- | :--- | :--- |
-| **Deterministic Replay** | Any | Bit-perfect parity of snapshot states compiled from raw event ledger logs. | Operational |
-| **Paced Gateway Filtering**| High-toxicity streams | Exposure rate adjustments and input token rejection ratios. | Prototype |
-| **Ontological Fusion/Split**| Concept drift labs | Reduction in Jaccard coordinate drift and simulation cycles efficiency. | Prototype |
-| **Identity Continuity** | Restructuring cycles | Identity Stability index ($I_d \ge 0.4$) during memory compaction. | Prototype |
-| **Causal Discovery** | Causal inversion labs | Rate of correct causal link extraction from stream sequences. | Weak / Early Prototype |
-| **Open-World Grounding** | Noise-injected control | Rate of contradiction detection and belief self-correction. | Primitive / Early Prototype |
+We thought that navigating a simulated grid-world and avoiding obstacles would demonstrate genuine spatial grounding. The agent achieved near-perfect task success in the noiseless environment.
+
+When we introduced sensory dropout at a low probability, it collapsed. The agent navigated into walls it knew were there because its internal model trusted its prior predictions more than its current sensors. It was overfitting to a clean ruleset, not learning to ground.
+
+Grounding is not demonstrated by performance in ideal conditions. It is revealed by behavior under degraded conditions.
+
+### Causal Discovery Under Passive Observation
+
+We thought the system would extract clean causal relationships from sequential observations. Without active motor interventions to test hypotheses, the causal discovery process repeatedly mistook naturally correlated environmental features for causal relationships. It was discovering correlation, not causation.
+
+The lesson: passive observation is insufficient for causal learning. The agent must act, observe consequences, and compare against predictions.
+
+---
+
+## Current Capability Assessment
+
+The following reflects our honest assessment of current developmental state:
+
+| Capability | Status |
+|---|---|
+| Deterministic execution replay | Operational |
+| Persistent memory across sessions | Operational |
+| Developmental continuity under restructuring | Prototype — under active investigation |
+| Embodied grounding in simulated environments | Prototype — limited to synthetic conditions |
+| Causal relationship learning from interaction | Early prototype — fragile under noise |
+| Semantic grounding in open-world conditions | Primitive — primary research frontier |
+
+These assessments are directional, not precise. The status of each capability evolves as experiments progress. We do not claim more than early evidence suggests.
+
+---
+
+## What We Are Not Measuring
+
+We are not measuring token prediction accuracy, benchmark performance, or conversational quality. These metrics are appropriate for episodic language systems. They are not appropriate for developmental cognition research.
+
+The metrics that matter here are: does the system degrade gracefully under noise? Does it accumulate representational competence over time? Does it detect and resist corrupted beliefs rather than absorbing them?
+
+These are harder to measure, which is part of why the field defaults to easier proxies. We are trying not to.
+
+> [!NOTE]
+> Specific validation environments, experimental configurations, exact measurement methodologies, and internal telemetry are maintained in research archives and are excluded from public documentation.

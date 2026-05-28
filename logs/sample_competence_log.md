@@ -1,45 +1,51 @@
-# Sample Competence Log — Research Run [EXP-25-14A]
+# Sample Competence Log — Research Observation [EXP-25-14A]
 
-This log provides a representative trace of the Synapse Arch cognitive substrate during a Competence Scaling experiment.
+This document provides a representative narrative trace of the Synapse developmental substrate during a Competence Scaling experiment. Internal telemetry identifiers, kernel-level operational details, and exact performance metrics are omitted from public disclosure.
 
-**Date**: 2026-05-15
-**Phase**: 25.23 (Operationalized Competence Scaling)
-**Environment**: [Survival-Grid-v4]
-**Agent Build**: Synapse-Core-RC5
+**Phase**: 25.23 (Operationalized Competence Scaling)  
+**Environment**: Bounded survival simulation with resource scarcity and environmental entropy  
+**Status**: Experiment concluded
+
+---
+
+## Cold Boot — Initialization
+
+The substrate initializes from a persistent memory snapshot, restoring prior representational geometry and relational indices. Sensory channels open. The agent's internal energy model reports full capacity. No prior context is discarded — continuity from the previous session is preserved by design.
 
 ---
 
-## 🕒 [TICK 0001] — Cold Boot
-- **ExecutionKernel**: Heartbeat detected. Topological sort complete.
-- **MemoryKernel**: Paging from Genesis Snapshot [HASH: 8f2b...].
-- **KnowledgeKernel**: 1,248 active concepts loaded. 34 invariants verified.
-- **Embodiment**: Sensory channels active. Current energy: 100.0.
+## Early Ticks — Novel Observation
 
-## 🕒 [TICK 0045] — Novel Observation
-- **WorldModelKernel**: Prediction error spike in Latent Channel 7 (0.82).
-- **InferenceKernel**: Reasoning over anomaly. Hypothesis generated: [Unknown Obstacle Type].
-- **GovernanceKernel**: Approved mutation to local ontology for [Unknown Obstacle].
-- **Telemetry**: Causal ID `C-1715810452` recorded.
+Shortly after activation, the predictive world model encounters an unfamiliar environmental pattern. Prediction error spikes sharply in one representational region. The system generates an internal hypothesis about the source of the anomaly and routes attentional resources toward it.
 
-## 🕒 [TICK 0120] — Credit Assignment
-- **RLKernel**: Positive reward signal detected (+12.5).
-- **Telemetry**: Tracing causal lineage of reward...
-- **RLKernel**: Success attributed to [Action: PivotRight] at TICK 0112.
-- **RLKernel**: Policy update initiated. Learning rate clamped by Governance.
-
-## 🕒 [TICK 0500] — Stability Audit
-- **GovernanceKernel**: Global audit complete. 
-- **Audit Result**: PASS.
-- **Drift Metric**: 0.002 (Within safe bounds).
-- **Epistemic Stability**: 0.94 (Increasing).
-
-## 🕒 [TICK 1000] — Phase Completion
-- **ExecutionKernel**: Max ticks reached. Initiating clean shutdown.
-- **MemoryKernel**: Writing Session Snapshot [HASH: 3c9a...].
-- **Final Metrics**:
-    - **Survival Horizon**: 1000/1000 ticks.
-    - **Prediction Error (Mean)**: 0.04.
-    - **Goal Achievement**: 82%.
+The governance boundary evaluates whether the anomaly warrants a local ontological update. The update is approved. A causal trace is logged for future attribution.
 
 ---
-*Log anonymized for public research disclosure.*
+
+## Mid-Session — Developmental Adaptation
+
+A successful navigation decision produces a positive outcome. The system traces the causal lineage of the result backward through recent actions, attributing credit to the specific decision point that resolved the environmental tension. Representational weights in that region are adjusted. The governance layer bounds the adjustment rate to prevent overfit to a single event.
+
+The agent does not "celebrate." It re-stabilizes.
+
+---
+
+## Stability Audit
+
+A periodic internal audit passes. Representational geometry remains within developmental continuity bounds. No drift exceeding safe thresholds is detected. The system's self-model is coherent with prior history.
+
+---
+
+## Completion
+
+The session concludes cleanly. A new persistent memory snapshot is written, encoding the developmental changes accumulated during this run. The next session will begin from this new state — not from a blank slate.
+
+**Broad outcomes**: The agent maintained survival across the full session horizon. Prediction error decreased relative to the session start. Goal-directed behavior was achieved without explicit reward engineering.
+
+---
+
+> [!NOTE]
+> Detailed telemetry, exact performance metrics, and internal operational logs from this experiment are maintained in internal research archives. This public trace is a sanitized narrative illustration of the system's developmental behavior.
+
+---
+*Log prepared for public research disclosure. Roshan Kumar Gupta, Project Head.*

@@ -1,74 +1,84 @@
 # Current State & Capabilities
 
-This document provides a realistic, unpolished assessment of the Earthos research platform. We explicitly separate implemented mechanisms from active prototypes, theoretical hypotheses, and long-term directions.
+This document provides a realistic, unpolished assessment of where the Earthos research platform actually stands. We explicitly separate what is working from what is being investigated, and what is genuinely unknown.
 
 ---
 
-## 📊 Research Status Matrix
-
-We track our progress using a four-tier status classification:
-* **Operational**: Running code validated experimentally in research environments.
-* **Prototype**: Partial implementation under active testing.
-* **Theoretical**: Mathematical models or conceptual frameworks (no running code yet).
-* **Future Direction**: Planned research areas.
+## Research Status
 
 | Capability | Status |
-| :--- | :--- |
-| **Deterministic runtime** | Operational |
-| **Memory persistence** | Operational |
-| **Identity continuity guard** | Prototype |
-| **Field Coupling Dynamics (FCFT)** | Prototype |
-| **Ontology Growth / Morphogenesis** | Prototype |
-| **Learned Latent Representations** | Prototype |
-| **Embodied Grounding** | Prototype |
-| **Causal Intervention Learning** | Prototype |
-| **Continuous Field Cognition** | Theoretical |
-| **Social Cognition** | Future Direction |
+|---|---|
+| Deterministic runtime and execution replay | Operational |
+| Persistent memory across session boundaries | Operational |
+| Developmental continuity under restructuring | Prototype |
+| Field coupling dynamics (FCFT) | Prototype |
+| Morphogenetic topology restructuring | Prototype |
+| Learned latent representational geometry | Prototype |
+| Embodied grounding in simulated environments | Prototype |
+| Causal intervention learning | Prototype |
+| Continuous field cognition in open-world conditions | Theoretical / Early Research |
+| Social cognition and multi-agent dynamics | Future Direction |
+
+**Operational** means running code with validated behavior in research environments.  
+**Prototype** means partial implementation under active testing — it sometimes works, sometimes fails, and we understand roughly why.  
+**Theoretical** means the framework exists but no validated running implementation yet.
 
 ---
 
-## 🧪 Validation Approach
+## Validation Approach
 
-To verify system integrity across lifecycle updates, the codebase undergoes a multi-stage integration and recovery pipeline covering:
+We verify system integrity through structured experimental cycles that test the substrate across a range of conditions: normal operation, adversarial noise injection, environmental rule changes, and extended long-horizon execution.
 
-1. **Ingestion**: Raw input processing and relation creation.
-2. **Transitive Inference**: Derivation of new relations from existing knowledge.
-3. **Multi-Hop Reasoning**: Deep chain discovery across the relational mesh.
-4. **Semantic Consolidation**: Merge auditing with strict distance enforcement.
-5. **Contradiction Registration**: Detection of mutual exclusion between conflicting weights.
-6. **Epistemic Resolution**: Confidence adjustment for conflicting nodes.
-7. **Entropy Decay Simulation**: Confidence decay for inactive nodes over time.
-8. **Lifecycle Promotion**: Re-learning verification and stability classification.
-9. **State Replay**: Ledger-based reconstruction to verify full parity.
-10. **Proof Extraction**: Shortest path extraction with explainable reasoning chains.
+The core thing we are checking is not task performance. It is developmental integrity — whether the system maintains coherent representational structure and behavioral competence over time, under conditions it wasn't specifically prepared for.
+
+We have not yet found a satisfying way to measure this automatically. It requires careful human evaluation of behavioral traces alongside quantitative telemetry.
 
 ---
 
-## 📊 Attractor Stability Results
+## What Is Actually Working
 
-During persistence simulations to verify temporal continuity and attractor stabilization under high-entropy transitions:
-* **Attractor Stability**: Weights remained bounded within safe ranges, avoiding collapse.
-* **Attractor Diversity**: Centroids stabilized without experiencing monoculture crystallization or chaotic over-branching.
-* **Curiosity Persistence**: Bounded curiosity pressures resolved within safe limits.
-* **Identity Continuity**: Full lineage integrity was maintained; identity stability remained above safety thresholds.
+The substrate successfully maintains state across session boundaries. A system that runs today will start tomorrow from where it left off — with the same representational geometry, the same memory associations, the same learned priors. The "clean slate" assumption is broken by design.
+
+Under bounded synthetic environments, the system demonstrates improved behavioral competence over time compared to stateless episodic baselines. The persistence advantage is empirically observable, not just theoretically expected.
+
+The governance layer successfully prevents the most dangerous failure modes we've encountered: shadow execution, self-referential optimization loops, and unconstrained representational growth.
 
 ---
 
-## ⚠️ Known Limitations & Hard Tradeoffs
+## Known Hard Problems
 
-### 1. The Homeostasis vs. Adaptation Dilemma
-To prevent the agent's identity from fracturing during major environment transitions, the identity stability index must remain above safety bounds. 
+### The Homeostasis vs. Adaptation Dilemma
 
-However, we found this introduces a massive tradeoff: the homeostatic guards protect self-continuity by damping coordinate updates so aggressively that the agent becomes functionally blind to genuine changes in the environment. It chooses to ignore the new rules of the environment to avoid the "pain" of changing its internal coordinate structure.
+This is the central unsolved tension in the architecture.
+
+To maintain coherent self-model continuity, the governance layer dampens representational updates during high-pressure environmental transitions. This protection is necessary — without it, the agent's identity fractures and it loses access to its own history.
+
+But the protection creates a serious problem: when the environment genuinely changes its rules, the agent cannot adapt. It chooses stable ignorance over disruptive learning. It maintains its prior world model even as prediction errors accumulate, because the cost of restructuring feels greater than the cost of being wrong.
 
 > [!NOTE]
-> **Research Finding (Phase 38.1)**: We ran the agent through a simple ruleset inversion test. Instead of adapting its coordinate paths, the system damped all adjustments to near-zero, effectively locking itself into its old world model. It preferred to accept a high, continuous predictive error rather than allow its representational geometry to undergo the required restructuring. It chose stagnation over self-modification.
+> **Phase 38.1**: We ran the agent through a ruleset inversion experiment. Instead of adapting, the system locked into its existing world model and accepted persistent high prediction error rather than allow its representational geometry to reorganize. It chose stagnation over self-modification. We have since improved the balance between continuity protection and adaptive flexibility — but this tension has not been resolved.
 
-### 2. Weak Causal Learning in High Entropy
-The system relies on clean, structured observation inputs to detect causal links. When we introduce random noise into the stream, the causal discovery rate collapses. The agent cannot distinguish between accidental temporal correlation and true causal directionality.
+### Causal Learning Under Noise
 
-> [!WARNING]
-> **Research Finding (Phase 38.3)**: In our causal inversion sandbox, noise injection caused the causal discovery engine to link unrelated environmental features to the agent's internal metrics. It spent thousands of cycles attempting to optimize for meaningless correlations.
+The causal learning subsystem requires clean, structured observational conditions to reliably extract causal relationships. When sensory noise is high, it mistakes random temporal correlations for genuine causal structure and pursues meaningless optimization paths.
 
-### 3. Predictive Collapse under High Entropy
-The predictive world model struggles in high-entropy states. When the variance of input signals exceeds safe bounds, the model generates extreme predictive error signals, which cascade into the cognitive state, triggering global coordination resets. The system essentially "panics" and wipes its short-term states to escape the noise.
+Active intervention — the ability to test causal hypotheses by taking deliberate actions and observing consequences — partially addresses this. But the solution is incomplete.
+
+### Predictive Model Fragility Under High Entropy
+
+The predictive world model struggles in high-entropy conditions. When environmental variance exceeds the system's developmental tolerance, it can enter a kind of representational panic — wiping short-term structure to escape the noise rather than adapting to it. This is the cognitive equivalent of a system crash followed by a reboot.
+
+We have made this failure mode less frequent. We have not eliminated it.
+
+---
+
+## What We Are Not
+
+We are not a production system. We are not a finished architecture. We are not claiming general intelligence.
+
+We are a research program investigating whether the developmental cognition approach described here actually works at scale, under real-world conditions, over real developmental timescales.
+
+The honest answer, as of now: it partially works in bounded conditions. Whether it can survive the open world remains the central empirical question.
+
+> [!NOTE]
+> Internal validation pipeline details, experimental telemetry, and lifecycle audit mechanics are maintained in research archives and are excluded from public documentation.

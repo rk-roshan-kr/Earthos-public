@@ -1,81 +1,91 @@
-# The Earthos Manifesto: Stable Substrates & Developmental Cognition
+# The Earthos Manifesto
 
 > [!IMPORTANT]
-> **Core Research Disclaimer**: Earthos is not claiming to have solved AGI. The current codebase is an evolving developmental cognition research platform exploring persistent, embodied, adaptive intelligence under real-world, computational, and ecological constraints. It is an active research program, not a commercial product or a proven cognitive architecture.
+> **Research Disclaimer**: Earthos is not claiming to have solved AGI. The current platform is an evolving developmental cognition research program exploring persistent, embodied, adaptive intelligence under real-world, computational, and ecological constraints. It is an active research program, not a commercial product or a proven cognitive architecture.
 
 ---
 
-## 🏛️ What Earthos Is NOT
+## What Earthos Is NOT
 
-To prevent the common narrative drift of modern AI hype, Earthos is explicitly defined by what it refuses to be:
-* **NOT a chatbot framework**: We do not build conversational assistants or optimize for polite, chat-centric dialogue flow.
-* **NOT an LLM wrapper**: We do not build scripting layers designed to chain calls to static commercial APIs.
-* **NOT an autonomous AGI claim**: We do not claim to have built a general intelligence. It is an experimental sandbox to investigate developmental dynamics.
-* **NOT a production-ready system**: This is a frontier research platform with known failure modes, designed to document engineering scars, tradeoffs, and correction loops.
+To prevent narrative drift into the kind of hype that makes AI research harder to take seriously, Earthos is explicitly defined by what it refuses to be:
+
+- **NOT a chatbot framework** — we do not build conversational assistants or optimize for polite dialogue flow.
+- **NOT an LLM wrapper** — we do not build scripting layers designed to chain calls to commercial APIs.
+- **NOT an AGI claim** — we do not claim to have built general intelligence. We are investigating the conditions under which developmental cognition might scale.
+- **NOT a production-ready system** — this is a frontier research platform with documented failure modes. Its purpose is to generate honest research findings, not deployable software.
 
 ---
 
-## 🧬 Core Vision: Exploring a Different Branch
+## Core Vision: A Different Branch
 
-The modern artificial intelligence paradigm has converged into an intellectual monoculture. Ever-larger static transformers are trained on disembodied web text to predict the next token. These systems are stateless, disembodied, and computationally infinite from their own perspective.
+The modern AI paradigm has converged into an intellectual monoculture. Ever-larger static models are trained on disembodied text to predict the next token. These systems are stateless — they have no history, no consequences, no metabolic costs. Each interaction is an isolated performance.
 
-We are traveling on a different branch:
+We are investigating what happens when you take those assumptions away.
 
 ```mermaid
 graph TD
-    classDef stable fill:#07090b,stroke:#00f2fe,stroke-width:1.5px,color:#fff;
-    classDef experimental fill:#07090b,stroke:#9d4edd,stroke-width:1.5px,color:#fff;
-    
-    Substrate[Stable Substrate Core] --> Exec[Deterministic Execution Boundary]:::stable
-    Substrate --> Econ[Economics & Metabolism Boundary]:::stable
-    Substrate --> Gov[Governance & Truth Boundary]:::stable
-    Substrate --> Mem[Persistent Memory Boundary]:::stable
-    
-    Substrate --> Dynamics[Continuous Cognitive Fields]:::experimental
-    Dynamics --> FCFT[Field Coupling Field Theory]:::experimental
-    Dynamics --> Morph[Ontology Morphogenesis]:::experimental
-    Dynamics --> Geom[Representational Geometry]:::experimental
+    classDef active fill:#07090b,stroke:#00f2fe,stroke-width:1.5px,color:#c8ccd4;
+    classDef frontier fill:#07090b,stroke:#9d4edd,stroke-width:1.5px,color:#c8ccd4;
+    classDef future fill:#07090b,stroke:#444,stroke-width:1px,color:#666,stroke-dasharray: 4 4;
+
+    Earthos[Earthos Research Program] --> Synapse[Synapse Architecture]:::active
+    Earthos --> AltB[Future Architecture B]:::future
+    Earthos --> AltC[Future Architecture C]:::future
+
+    Synapse --> Core[Stable Substrate Core]:::active
+    Synapse --> Frontier[Experimental Cognition Frontier]:::frontier
 ```
 
-Earthos shifts the research focus from parameter scaling to **competence scaling** within a bounded developmental cognition framework. We investigate how stable execution constraints force the emergence of robust, adaptive world models.
+Earthos shifts the research focus from **parameter scaling** to **competence scaling under ecological constraint** — investigating how intelligence develops when an agent must survive, adapt, and maintain coherent identity over time.
 
 ---
 
-## ⚙️ Foundational Pillars
+## Foundational Pillars
 
 ### 1. Bounded Substrate Architecture
-Rather than engineering complex, shifting cognitive organs, we define a frozen execution boundary. The core codebase (handling logging, memory serialization, resource consumption, and telemetry clocks) is locked. All cognitive complexity, task adaptation, and conceptual abstractions must emerge dynamically within the continuous coordinate fields, preventing codebase bloat.
+
+We maintain a small, frozen stable core and allow all cognitive complexity to emerge within self-organizing experimental fields layered above it. The stable core never adapts. The experimental frontier reorganizes continuously. This separation is what makes the system scientifically meaningful — without a stable reference frame, it is impossible to measure developmental change.
 
 ### 2. Persistent Identity Continuity
-The system does not undergo epoch resets or environment wipes. experiences, memory index associations, and network coordinate mutations persist across the entire lifecycle of the agent. The core problem is to maintain selfhood coherence (Identity Stability $I_d \ge 0.4$) under constant, real-time sensory inputs.
+
+The system does not undergo epoch resets or environment wipes. Experiences, memory associations, and representational updates persist across the entire lifecycle. The core research problem is maintaining coherent selfhood under continuous, real-time environmental pressure — not just within a single session, but across developmental time.
 
 ### 3. Open-World Grounding
-Internal representations are not validated by logical self-consistency or syntactic beauty. They are experimentally validated against environmental friction. When the agent's internal predictions clash with sensory feedback, the system does not silently adjust its weights—it generates localized developmental tension ($P_d$) that forces structural coordinate updates.
+
+Internal representations are not validated by logical self-consistency or linguistic coherence. They are tested against environmental friction. When the system's predictions clash with sensory feedback, that friction generates developmental tension that forces representational restructuring.
+
+Grounding is not a module. It is a continuous pressure.
 
 ### 4. Bounded Cognitive Metabolism
-No compute is assumed free. Every cycle spent on counterfactual simulation, path planning, and memory consolidation incurs an explicit metabolic cost in the homeostatic engine. The agent must choose between spending resources to plan or conserving energy to survive, forcing the emergence of abstraction pruning.
+
+No compute is assumed free. Every cognitive operation — simulation, planning, memory consolidation, representational restructuring — has a metabolic cost. The system must choose between spending resources to plan and conserving them to survive. This constraint forces the emergence of efficient, well-structured cognition rather than unchecked abstraction growth.
 
 ---
 
-## ⚖️ Paradigmatic Comparison
+## Paradigmatic Comparison
 
-| Architectural Dimension | Episodic LLM Agents | Earthos Developmental Substrates |
-| :--- | :--- | :--- |
-| **Persistence Horizon** | Stateless. Wiped after each chat window context limit. | Lifecycle-long persistence of weights, memory indexes, and coordinates. |
-| **Metabolic Budgeting** | Assumed infinite. Every API call or token generation is free to the agent. | Explicit metabolic caps. Compute overhead incurs homeostatic penalties. |
-| **Representational State** | Static token embeddings and fixed pre-trained parameters. | Continuous coordinate drift in `AdaptiveRepresentationalGeometry`. |
-| **Adaptation Trigger** | Offline gradient descent on offline datasets. | Real-time coordinate mutation driven by Cognitive Free Energy ($F_c$) gradients. |
-| **Self-Auditing** | External alignment checks and system prompt instructions. | Deterministic `TruthGrounding` audits checking for contradiction loop lock-ins. |
-| **Ontological Growth** | Static vocabulary size. | Dynamic node fusion and splitting driven by Jaccard drift under pressure. |
+| Dimension | Episodic LLM Agents | Earthos Developmental Architecture |
+|---|---|---|
+| **Persistence** | Stateless; wiped after each session | Lifecycle-long continuity of memory and representational structure |
+| **Metabolic Model** | Compute costs ignored by the agent | Explicit metabolic constraints drive all cognitive decisions |
+| **Representation** | Static embeddings from frozen training | Continuous representational geometry that restructures under developmental pressure |
+| **Adaptation** | Offline gradient descent against static datasets | Real-time restructuring driven by environmental friction |
+| **Self-Auditing** | External alignment and prompt engineering | Active internal grounding that tests predictions against physical consequence |
+| **Ontological Growth** | Fixed vocabulary determined at training | Dynamic concept ecology that grows, consolidates, and prunes under developmental pressure |
 
 ---
 
-## 🔬 The Research Method: Humility & Postmortems
+## The Research Method: Humility Over Hype
 
-We believe the path to general intelligence requires documenting engineering failures, rather than polishing public narratives. We structure our development around:
+We believe the path toward general intelligence requires documenting failures honestly rather than polishing public narratives. Our development is structured around:
 
-1. **Tradeoff Transparency**: Documenting why systems fail (such as the homeostasis vs. adaptation dilemma, where identity guards prevent the agent from learning new environments).
-2. **Failure Analysis**: Actively sharing postmortems on structural problems (such as monitor bureaucracy, ontology inflation, and synchronization monoculture attractors).
-3. **Correction Verification**: Verifying code changes against continuous noise-injected control environments, rather than static language puzzles.
+1. **Tradeoff transparency** — documenting why systems fail (the homeostasis vs. adaptation dilemma, the false affordance problem, causal learning under noise).
+2. **Failure analysis** — actively sharing postmortems on structural problems: monitor bureaucracy, symbolic theater, synchronization monocultures.
+3. **Reality-grounded verification** — testing against adversarial noise-injected environments rather than static benchmarks.
 
-Our target is not to build a system that appears intelligent, but to understand the fundamental laws of persistent, bounded, adaptive cognition.
+Our target is not a system that appears intelligent. It is a program that generates honest findings about what persistent, bounded, developmentally-grounded cognition actually requires.
+
+---
+
+> [!NOTE]
+> Certain operational details, runtime structures, and experimental implementation mechanics are intentionally omitted from public documentation to preserve research integrity while maintaining conceptual transparency. The documentation describes what the architecture attempts to achieve and where it currently fails — not how it is implemented.

@@ -1,55 +1,71 @@
 # Research Philosophy: The Earthos Project & Synapse Architecture
 
-Earthos is a long-horizon research project dedicated to building sovereign, persistent systems. Within this project, **Synapse** is the name of the primary architecture currently being developed. 
+---
 
-Synapse is not a complete or final project in itself; it is the name of our initial architecture designed around a human-inspired path toward AGI. Because we are committed to open-ended cognitive research, the Earthos project will explore other alternative architectures and developmental attempts in the future.
+## What Earthos Is
+
+Earthos is a long-horizon research program dedicated to exploring developmental cognition — intelligence that grows, adapts, and maintains structural continuity over time under ecological constraint.
+
+It is not a product. It is not a claim. It is an active research commitment.
+
+The program is deliberately structured as an open-ended investigation. If the current architectural approach reaches fundamental limits, Earthos will explore alternative architectures. Synapse is the first branch, not the final answer.
+
+---
+
+## What Synapse Is
+
+**Synapse** is the name of the primary architecture currently under development within Earthos. It is a human-inspired cognitive substrate — meaning it draws structural and functional inspiration from biological cognition, not because biology is the only valid template, but because biological intelligence is the only proven example of general-purpose developmental cognition we have.
+
+Synapse is not a simulation of a brain. It is an architecture that borrows functional principles — persistent memory, metabolic constraint, prediction-error-driven adaptation, embodied grounding — and implements them in computational form under the constraints of a real research environment with limited resources.
 
 ```mermaid
 graph TD
-    A[Earthos Project: Sovereign Cognitive Research] --> B[Synapse Architecture: Human-Inspired Substrate]
-    A --> C[Future Architecture B: Alternate Embodiment Stack]
-    A --> D[Future Architecture C: Latent World Model Arena]
-    
-    style A fill:#1a1d24,stroke:#9d4edd,stroke-width:2px;
-    style B fill:#111317,stroke:#00f2fe,stroke-width:2px;
-    style C fill:#111317,stroke:#4a5568,stroke-width:1px,stroke-dasharray: 5 5;
-    style D fill:#111317,stroke:#4a5568,stroke-width:1px,stroke-dasharray: 5 5;
+    classDef program fill:#0f1115,stroke:#9d4edd,stroke-width:2px,color:#c8ccd4;
+    classDef active fill:#0f1115,stroke:#00f2fe,stroke-width:2px,color:#c8ccd4;
+    classDef future fill:#0f1115,stroke:#333,stroke-width:1px,color:#555,stroke-dasharray: 5 5;
+
+    E[Earthos Research Program]:::program --> S[Synapse — Human-Inspired Branch]:::active
+    E --> F1[Future Architecture B — TBD]:::future
+    E --> F2[Future Architecture C — TBD]:::future
 ```
 
 ---
 
-## 🧱 The Core Critique of Next-Token Prediction
+## The Core Critique
 
-The current AI landscape is dominated by scaling static, episodic transformers. These systems are stateless, disembodied, and optimized to minimize surprise over next-token predictions in static datasets. 
+The current AI landscape is dominated by scaling static transformers — models trained offline against fixed datasets to predict the next token. These systems have achieved remarkable capability within their domain, but they share a structural limitation: they are stateless, disembodied, and computationally unconstrained from their own perspective.
 
-Earthos rejects this monoculture. We assert that general intelligence is a **survival strategy** that can only emerge from an active, persistent organism interacting with an environment under metabolic and structural constraints.
+They cannot remember. They cannot develop. They cannot survive.
 
-| Dimension | Episodic LLMs | Synapse Architecture (under Earthos) |
-| :--- | :--- | :--- |
-| **Persistence** | Stateless windows; context resets every session. | Permanent, stateful history; memory and weights persist continuously. |
-| **Learning** | Frozen weights (outside expensive fine-tuning). | Continuous local adaptation and paradigm evolution. |
-| **Objective** | Minimize token cross-entropy surprise. | Minimize prediction error against reality (Active Inference). |
-| **Presence** | Disembodied text processors. | Embodied sensorimotor agents. |
-| **Resource constraint** | Invariant to execution costs (handled by API/provider). | Explicit cognitive economics (budgets planning and simulation energy). |
+Earthos rejects this as the only research direction worth pursuing. We assert that **general intelligence is a survival strategy** — something that emerges from an organism that persists through time, operates under real constraints, and must maintain coherent structure while continuously adapting to an environment that doesn't care whether it succeeds.
+
+This is a research bet. We are not certain it is correct. We are investigating whether it is.
 
 ---
 
-## 🧬 Embodied Predictive Intelligence
+## The Research Posture
 
-Our methodology centers on **Active Inference** and **Predictive World Modeling**. 
+Earthos takes the position that:
 
-### 1. Causal World Modeling
-Rather than memorizing patterns, the agent builds a dynamic model of environmental dynamics. This model is constantly tested through actions, forcing the emergence of latent causal schemas.
+**Failure is data.** The most useful information comes from carefully-documented failures, not polished capability demonstrations. Our research philosophy is structured around postmortems, tradeoff transparency, and honest assessment of what the architecture cannot yet do.
 
-### 2. Epistemic Action
-Action is not simply an output vector; it is a mechanism for gathering information. The agent takes actions to resolve uncertainty, test hypotheses, and gather data, negotiating its reality continuously.
+**Authenticity over appearance.** We are more interested in understanding what developmental cognition actually requires than in building systems that appear intelligent under favorable conditions.
+
+**Long horizons matter.** Research that produces genuine insight on timescales of years is more valuable than impressive demonstrations that do not generalize. We are building for the long run.
+
+**Ecological grounding is the hard part.** Internal symbolic consistency is easy. Maintaining grounded representations that track environmental reality over developmental time — under noise, contradiction, and continuous change — is the actual problem.
 
 ---
 
-## 🏛️ High-Conviction Risk Taking
+## High-Conviction Research Bets
 
-Earthos is explicitly designed to take risks that typical VC-backed startups and academic labs cannot. 
+Earthos is explicitly structured to pursue research directions that typical commercial AI labs cannot prioritize:
 
-1. **API/Model Independence**: Synapse is designed to build a sovereign substrate, reducing reliance on third-party API providers.
-2. **Cognitive Metabolism**: We treat compute as a limited resource, forcing the system to optimize its focus, pruning useless abstractions to survive.
-3. **No Magic Abstractions**: Every layer must map directly to the deterministic event ledger.
+- **Substrate independence**: Building developmental cognition that does not depend on the continued availability of commercial API providers.
+- **Genuine persistence**: Investigating what happens when an agent cannot reset — when consequences accumulate and history cannot be discarded.
+- **Ecological constraint as a feature**: Treating metabolic and resource limits not as engineering problems to be solved, but as the developmental pressure that forces the emergence of efficient, structured cognition.
+
+These are not guaranteed to work. They are commitments to an approach we believe is underexplored and potentially important.
+
+> [!NOTE]
+> Certain operational details, runtime structures, and experimental implementation mechanics are intentionally omitted from public documentation. The research philosophy, architectural orientation, and honest failure record are public. The implementation is not.

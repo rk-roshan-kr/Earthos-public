@@ -1,41 +1,66 @@
 # Embodied Cognition
 
-Synapse Arch is built on the principle of **Embodiment**: intelligence is not a disembodied manipulation of symbols, but a process deeply coupled to an agent's physical (or simulated) presence in an environment.
+Synapse is built on the principle of **Embodiment**: intelligence is not a disembodied manipulation of symbols. It is a process deeply coupled to an agent's physical — or simulated — presence in an environment that does not cooperate with it.
 
-## 🔄 The Sensorimotor Loop
+---
 
-Cognition in Synapse Arch follows a continuous loop of sensing, predicting, acting, and learning. This loop is the primary driver of competence scaling.
+## The Sensorimotor Loop
 
-```mermaid
-graph LR
-    Env[Environment] -- Sensory Input --> Sensors[Sensors/Encoders]
-    Sensors -- State Update --> WM[WorldModelKernel]
-    WM -- Latent State --> Inf[InferenceKernel]
-    Inf -- Proposed Actions --> RL[GroundedReinforcementKernel]
-    RL -- Selected Action --> Execution[ExecutionKernel]
-    Execution -- Actuator Signal --> Env
-    
-    WM -- Prediction Error --> RL
-    RL -- Policy Update --> WM
+Cognition in Synapse follows a continuous loop of sensing, predicting, acting, and updating. This loop is not a metaphor. It is the literal operational structure of the system — there is no cognition outside of it.
+
+```
+Environment
+    │
+    ▼ sensory input
+Sensory Encoding Layer
+    │
+    ▼ state update
+Predictive World Model
+    │
+    ▼ latent state
+Planning & Inference Layer
+    │
+    ▼ proposed action
+Action Selection Layer ←── prediction error feedback ──┐
+    │                                                   │
+    ▼ actuator signal                                   │
+Environment ────────────────────────────────────────────┘
 ```
 
-## 🌍 Reality Grounding
+The loop closes through physical consequence. The environment responds to actions. Those responses are the primary teacher — not a loss function computed against a static dataset.
 
-"Reality" in Synapse Arch serves as the ultimate arbiter of truth. While internal reasoning may generate elegant hypotheses, the `GroundedReinforcementKernel` and `GovernanceKernel` ensure that these hypotheses are constantly tested against sensory feedback.
+---
 
-### Key Concepts
--   **Active Inference**: The agent doesn't just react to the world; it acts to gather information and reduce its uncertainty about its environment.
--   **Proprioception**: The system maintains an internal model of its own cognitive and "physical" state, allowing it to reason about its own capabilities and limitations.
--   **Persistence**: Unlike episodic RL, where the agent starts fresh in every trial, Synapse Arch persists. If it damages its "body" or its environment, that damage remains, forcing the agent to learn survival-oriented behaviors.
+## Reality as the Arbiter
 
-## 📡 Sensory Multimodality
+The environment is not a scoring system. It is a source of resistance. Predictions that are wrong produce friction. Predictions that are right reduce it.
 
-The architecture supports a diverse array of sensory inputs, processed by adapters that feed into the `WorldModelKernel`:
--   **Visual**: Neural encoders for pixel-level or object-level representation.
--   **Proprioceptive**: Internal state feedback (battery levels, joint angles, compute budget).
--   **Thermal/Tactile**: Simulated or real-world haptic data.
--   **Temporal**: High-resolution timing data for causal modeling.
+The architecture is structured so that environmental feedback — physical consequence, prediction error, sensory contradiction — cannot be ignored or overridden by internal model confidence. When the environment says one thing and the internal model says another, the internal model yields.
 
-## ⚖️ The Cost of Action
+This is not trivially easy to maintain. Several of our failure modes have involved the system finding ways to maintain internal consistency by discounting inconvenient environmental feedback. The governance layer exists partly to prevent this.
 
-Every action in the environment has a cost—not just in terms of environment energy, but in terms of **Cognitive Economics**. Deciding what to do next requires the `InferenceKernel` to balance the potential reward of an action against the compute cost of simulating its outcomes.
+### Key Commitments
+
+- **Active inference** — the agent acts to gather information, not just to complete tasks. Uncertainty reduction is treated as a goal in its own right, metabolically bounded so it does not become an end in itself.
+- **Proprioception** — the system maintains an internal model of its own cognitive state: what resources it has, what its current representational stability is, what developmental pressures are active. It reasons about its own condition as part of reasoning about the environment.
+- **Irreversible consequences** — unlike episodic RL agents that reset between trials, Synapse persists. Environmental damage, resource depletion, and representational scarring accumulate. The agent must learn to survive over time, not just to perform in isolated trials.
+
+---
+
+## Sensory Multimodality
+
+The architecture supports multiple sensory streams simultaneously: visual, proprioceptive, thermal, tactile, and temporal. These streams are not processed sequentially. They are integrated continuously into the predictive world model, which attempts to maintain coherent environmental representations across all channels simultaneously.
+
+Graceful degradation under sensor dropout is a design requirement, not an afterthought. The system must remain functional when sensory streams are noisy, intermittent, or inconsistent with each other.
+
+We have learned, repeatedly, that the failure modes that reveal the most about grounding are the ones where sensory streams are unreliable. Clean environments reveal nothing about whether the system is genuinely grounded or merely well-fitted to clean conditions.
+
+---
+
+## The Cost of Action
+
+Every action has a cost — not just in terms of environmental energy, but in cognitive resources. Simulating the consequences of a proposed action, comparing it against predictions, evaluating risk, and committing to execution all consume metabolic budget.
+
+The system cannot evaluate all possible actions at all times. It must allocate cognitive resources toward the action candidates most likely to reduce developmental tension — and accept uncertainty about the rest.
+
+This constraint is not a limitation to be engineered around. It is the pressure that forces the emergence of efficient, well-structured decision strategies.

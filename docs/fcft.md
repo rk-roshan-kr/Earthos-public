@@ -1,65 +1,62 @@
 # Field Coupling Dynamics & Representational Geometry
 
-This document outlines the theoretical framework of **Field Coupling Field Theory (FCFT)** and **Representational Geometry** in Earthos.
+This document describes the theoretical orientation of **Field Coupling Field Theory (FCFT)** — the conceptual framework guiding how Earthos models the relationship between cognitive pressure, representational structure, and developmental continuity.
+
+The full mathematical formalization of FCFT is maintained in internal research archives. What follows is a conceptual map.
 
 ---
 
-## 🧬 Field Coupling Dynamics: Core Concepts
+## The Core Intuition
 
-Rather than treating cognitive variables (e.g., uncertainty, contradiction, economics, stability) as isolated outputs of distinct symbolic modules, FCFT treats them as interacting dimensions within a continuous cognitive state across different regions. 
+Most cognitive architectures treat mental variables — uncertainty, attention, contradiction, memory pressure — as isolated outputs of distinct processing modules. One subsystem computes uncertainty. Another computes attention. They pass signals to each other through defined interfaces.
 
-The goal is to model how changes in one dimension (e.g., detecting a contradiction) naturally propagate to alter behavior in other dimensions (e.g., shifting attention and halting updates to preserve identity stability).
+FCFT takes a different stance: these are not independent variables. They are coupled dimensions of a single continuous cognitive field. A shift in one dimension propagates — with delay, damping, and ecological constraint — into every other dimension.
+
+The consequence is that cognition behaves less like a pipeline and more like a **pressure ecology**. When contradiction accumulates in one region, it doesn't just flag an error. It reshapes the attentional landscape, alters the metabolic allocation, and modifies what kinds of representational updates are permitted elsewhere.
 
 > ### Research Note — Phase 35.1
-> A lot of the early FCFT equations looked impressive and operationalized almost nothing. We spent weeks writing beautiful LaTeX derivations of thermodynamic coordinate transformations, only to discover the runtime engine was executing a series of arbitrary linear clamp functions because the real gradients were too noisy to compute. 
-> 
-> The painful lesson: mathematical aesthetics are not evidence of grounded cognition. We have rewritten this section to represent only what is operationalized in the current codebase.
+> A lot of the early FCFT equations looked impressive and operationalized almost nothing. We spent weeks writing beautiful LaTeX derivations of thermodynamic coordinate transformations, only to discover the runtime was executing something far simpler because the real gradients were too noisy to compute cleanly.
+>
+> The painful lesson: mathematical aesthetics are not evidence of grounded cognition. This framework now represents only what is empirically tested, not what looks elegant on paper.
 
 ---
 
-## ⚙️ Operational Principles
+## Representational Geometry
 
-To prevent this framework from becoming "physics theater," every coupling mechanism must map to concrete runtime behavior.
+Concepts within Synapse are not stored as discrete nodes in a static graph. They exist as **coordinate positions within a continuous representational space** — positions that shift under developmental pressure, stabilize under reinforcement, and decay under metabolic constraint.
 
-### 1. The Cognitive State Dimensions
-For every local representation region, the system tracks:
-* **Contradiction Load**: Accumulation of conflicting observation signals.
-* **Uncertainty Mass**: Degree of unresolved prediction variance.
-* **Grounding Confidence**: Density of verified physical matches.
-* **Salience Distribution**: Attentional weight allocation.
-* **Simulation Pressure**: Compute overhead during counterfactual rollouts.
-* **Ontology Density**: Number of active nodes in the representational layer.
-* **Compression Efficiency**: Success rate of concept fusion operations.
-* **Identity Stability**: Index of self-model continuity.
+This geometry is not fixed. It restructures as the system encounters new environmental friction, resolves contradictions, and accumulates experience. Regions of the space under sustained pressure may split, merge, or decay entirely — not by explicit programmer instruction, but as an emergent consequence of developmental dynamics.
 
-### 2. Coupling Dynamics
-Couplings between dimensions are applied as damped operations in every cognitive tick. A global damping factor is computed by the homeostasis engine to prevent positive feedback runaways.
-
-The key coupling relationships are:
-* **Contradiction → Uncertainty & Grounding**: High contradiction load scales up local uncertainty, which in turn degrades grounding confidence.
-* **Uncertainty → Salience**: Regions with high uncertainty attract attentional resources, shifting focus toward those coordinates to prioritize resolution.
-* **Economic Pressure → Density & Compression**: Under resource constraints, economic pressure decreases ontology density (pruning unused nodes) and increases compression efficiency by triggering structural merging.
-* **Identity → Simulation Damping**: Low identity stability restricts deep branching and counterfactual exploration to prevent structural collapse.
+The geometry is the memory. The movements within it are learning.
 
 ---
 
-## 🔮 Cognitive Free Energy
+## Cognitive Free Energy
 
-FCFT defines a unified free energy metric to evaluate the system's global state as the sum of its underlying tensions:
+FCFT orients the system's development around a unified developmental tension — an internal measure of how far the current representational state is from a stable, grounded configuration.
 
-* **Predictive Error**: Global discrepancy between forecast and observation.
-* **Representational Instability**: High-frequency jitter in coordinate space.
-* **Identity Discontinuity**: Step-wise changes in the self-model coordinates.
-* **Metabolic Energy**: Current cycle execution cost.
-* **Simulation Divergence**: Variance between hypothetical paths.
+This tension integrates several pressures:
+- Discrepancy between the system's predictions and what the environment actually delivers
+- Structural instability in the representational field itself
+- The metabolic cost of maintaining the current representational configuration
+- The coherence of the system's self-model across time
 
-### Coordinate Mutation Dynamics
-Concept positions within the representational geometry are updated according to gradients derived from this free energy, pulling representation coordinates toward stable regions. 
+The architecture attempts to move toward lower developmental tension — not by optimizing a fixed objective, but by responding to pressure gradients that emerge from the interaction between internal state and environmental reality.
 
-This process is driven by:
-1. Gradient descent pulling coordinates toward a stable state of lowest free energy.
-2. Controlled stochastic drift to simulate exploratory restructuring (scaled inversely with identity stability to prevent dissolution).
-3. Active environmental force vectors.
+> [!NOTE]
+> Whether this pressure landscape converges to stable, grounded cognition under open-world conditions is the central empirical question of Phase 39 research. We do not yet know. This is not a solved problem.
 
-> ### Failure Note — Phase 37.1
-> In early versions of coordinate mutations, the stochastic noise term was unconstrained. During high-entropy observation ticks, this noise induced step-changes in coordinates that bypassed the identity stability guard entirely, causing what we call "symbolic relapse"—the system's coordinate representations dissolved into white noise in less than 50 ticks. We solved this by scaling noise inversely with the current identity stability value.
+---
+
+## What FCFT Is Not
+
+FCFT is not a claim that we have formalized cognition mathematically. It is a theoretical orientation — a set of commitments about how to *think about* the relationship between cognitive pressure, representational change, and developmental continuity.
+
+The framework guides experimental design and architectural decisions. It does not guarantee outcomes.
+
+Early versions of nearly every mechanism we designed under FCFT failed in practice. The framework survived because it correctly predicted the *direction* of failure, even when it couldn't prevent it.
+
+---
+
+> [!NOTE]
+> Operational details, coupling structures, coordinate update dynamics, and internal computational substrate organization are maintained in internal research documentation and are intentionally excluded from public disclosure to preserve research integrity.

@@ -1,42 +1,46 @@
-# Substrate Freeze & Sovereignty
+# The Substrate Freeze Principle
 
-The stability of Synapse Arch relies on two fundamental architectural invariants: **Substrate Freeze** and **Kernel Sovereignty**. These principles prevent the system from collapsing into an unmanageable collection of "black-box" modules.
+Complexity is easy to add. It is nearly impossible to remove once it has grown roots.
 
-## 🧊 The Substrate Freeze
+The Substrate Freeze is the architectural discipline that prevents the Synapse substrate from collapsing under its own accumulated weight.
 
-The **Substrate Freeze** is a design constraint that prohibits the introduction of new top-level architectural components (Kernels). By fixing the core architecture at nine sovereign kernels, we force all cognitive complexity to be managed *within* established domains rather than by inflating the system's structural footprint.
+---
 
-### Why Freeze?
--   **Inter-kernel Predictability**: Communication protocols between kernels remain stable.
--   **Auditability**: The flow of data and authority is always traceable to one of nine sources.
--   **Resource Guarantees**: The `CognitiveEconomicsKernel` can reason about system-wide costs with a fixed overhead model.
+## The Principle
 
-## 🛡️ Kernel Sovereignty (The One-Authority Principle)
+The stable core of the Synapse architecture — the boundaries responsible for execution, memory, resource accounting, and developmental continuity — is **frozen**. No new boundaries are added to this core. All new capabilities, sensors, encoders, and cognitive behaviors must be expressed within the existing structure, not by extending it.
 
-Every cognitive responsibility—from "simulating the next sensory frame" to "pruning an unused abstraction"—must map to exactly **one** sovereign kernel.
+This is not a temporary constraint. It is a permanent architectural commitment.
 
-### The Invariants
-1.  **Exclusivity**: No two kernels can share authority over the same responsibility.
-2.  **Completeness**: No cognitive task can exist outside the authority of the nine kernels.
-3.  **Isolation**: State mutations owned by Kernel A cannot be directly modified by Kernel B; they must be requested via standardized protocols.
+---
 
-### Authority Map Example
-| Responsibility | Sovereign Owner |
-| :--- | :--- |
-| Simulation & Imagination | **WorldModelKernel** |
-| Reasoning & Planning | **InferenceKernel** |
-| Policy Update & Exploration | **GroundedReinforcementKernel** |
-| Memory Persistence | **MemoryKernel** |
-| Mutation Approval | **GovernanceKernel** |
-| Topological Scheduling | **ExecutionKernel** |
+## Why This Matters
 
-## ⚙️ Deterministic Runtime
+Every time a new top-level structural component is added to a complex system, the communication surface grows. With a small fixed set of core boundaries, the interfaces between them are well-understood, auditable, and stable. The system's authority structure is always traceable. Resource accounting remains predictable.
 
-Synapse Arch implements a **Strictly Deterministic Runtime**. Given the same initial state and the same sequence of input events, the system will *always* reach the same internal state and produce the same outputs.
+When the core boundaries proliferate, none of these properties hold. Communication becomes implicit, authority becomes ambiguous, and resource guarantees become impossible. The system becomes a collection of black boxes waiting for a subtle failure to cascade.
 
-### Implementation of Determinism
--   **Tick-Based Execution**: Time is discretized into "ticks." All kernels process events and update state in a topologically sorted sequence within each tick.
--   **Event-Sourcing**: Every change to the system state is captured as an immutable event. Replaying the event log reconstructs the system state perfectly.
--   **Controlled Randomness**: Any probabilistic operation (e.g., in RL exploration or world-model sampling) uses a deterministic seed managed by the `ExecutionKernel`.
+We have seen this failure mode in our own history. The Purge of Phase 25 was a direct response to it: a significant portion of the codebase was deleted because accumulated complexity had produced shadow execution paths that bypassed the intended governance structure entirely.
 
-This determinism is not just for debugging; it is the foundation of **Causal Auditability**, allowing researchers to rewind and analyze the precise sequence of "thoughts" that led to a specific behavior.
+The Substrate Freeze is the engineering discipline that prevents that from happening again.
+
+---
+
+## Architectural Discipline in Practice
+
+Adding new capabilities to Synapse does not mean writing new boundaries. It means understanding the problem deeply enough to express the new capability through the existing cognitive field dynamics.
+
+This is harder. It takes longer. It requires understanding the system rather than extending it.
+
+But it produces a system that remains coherent, auditable, and structurally honest as it becomes more capable — rather than one that grows complex infrastructure and mistakes that complexity for intelligence.
+
+---
+
+## What Is Not Frozen
+
+The experimental frontier — representational geometry, developmental pressure fields, morphogenetic topology — is explicitly not frozen. These layers are expected to reorganize, restructure, and adapt as the system encounters new environmental conditions.
+
+The freeze applies only to the stable core that makes this experimentation safe. The frontier can reorganize freely precisely because the core will not.
+
+> [!NOTE]
+> Specific boundary definitions, kernel counts, authority structures, and enforcement mechanisms are maintained in internal research documentation and are intentionally excluded from public disclosure.
