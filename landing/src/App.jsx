@@ -2291,6 +2291,29 @@ export default function App() {
   const [isMobile, setIsMobile] = useState(false);
   const [showMobileNotice, setShowMobileNotice] = useState(false);
 
+  // Concentric Capability Scanner state hooks (moved to top level to comply with React hook rules)
+  const [selCap, setSelCap] = useState(null);
+  const [activeTab, setActiveTab] = useState('live');
+  const [hoveredNode, setHoveredNode] = useState(null);
+  const [sweepAngle, setSweepAngle] = useState(0);
+  const [orbitAngle, setOrbitAngle] = useState(0);
+  const rafRef = useRef(null);
+  const lastRef = useRef(null);
+
+  useEffect(() => {
+    if (isMobile) return;
+    const tick = (ts) => {
+      if (lastRef.current == null) lastRef.current = ts;
+      const dt = ts - lastRef.current;
+      lastRef.current = ts;
+      setSweepAngle(a => (a + dt * 0.12) % 360);
+      setOrbitAngle(a => (a + dt * 0.018) % 360);
+      rafRef.current = requestAnimationFrame(tick);
+    };
+    rafRef.current = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [isMobile]);
+
   // Act 3 Cinematic Transformation scroll-pinned virtual timeline
   const act3ProgressValue = useMotionValue(0);
   const act3SmoothProgress = useSpring(act3ProgressValue, { damping: 30, stiffness: 180 });
@@ -2739,7 +2762,7 @@ export default function App() {
           </motion.div>
         )}
       </AnimatePresence>
-      {/* Layered Cinematic Background & Atmosphere Orbits }
+      {/* Layered Cinematic Background & Atmosphere Orbits */}
       <CinematicBackground activeIndex={activeIndex} transitionKick={transitionKickRef.current} hoveredSystem={hoveredSystem} act3Progress={act3SmoothProgress} />
       <ForegroundAtmosphere activeIndex={activeIndex} />
       
