@@ -1,19 +1,19 @@
 # Earthos
 
-**A long-horizon research program exploring developmental cognition under ecological constraint.**
+**A long-horizon research project exploring developmental cognition under ecological constraint.**
 
 ---
 
 > [!IMPORTANT]
-> Earthos is not a claim of solved general intelligence. It is an active research program investigating whether persistent, embodied, developmentally-grounded cognition can survive open-world conditions without collapsing into symbolic chaos. The current system exhibits interesting properties under bounded conditions. Whether it generalizes remains the central empirical question.
+> Earthos is not a claim of solved general intelligence. It is an active research project investigating whether persistent, embodied, developmentally-grounded cognition can survive open-world conditions without collapsing into symbolic chaos. The current system exhibits interesting properties under bounded conditions. Whether it generalizes remains the central empirical question.
 
 ---
 
 ## What is Earthos?
 
-Earthos is the research program. Its scope is broad: investigating developmental branches of cognition — intelligence that grows under pressure, maintains structural continuity over time, and adapts to environments that do not cooperate.
+Earthos is the research project. Its scope is broad: investigating developmental branches of cognition — intelligence that grows under pressure, maintains structural continuity over time, and adapts to environments that do not cooperate.
 
-If the current architectural approach reaches fundamental limits, the program will explore alternatives. The commitment is to the research direction, not to any specific implementation.
+If the current architectural approach reaches fundamental limits, the project will explore alternatives. The commitment is to the research direction, not to any specific implementation.
 
 ## What is Synapse?
 
@@ -61,7 +61,7 @@ These are not rhetorical questions. They are the actual open problems.
 | Document | Topic |
 |---|---|
 | [The Manifesto](docs/manifesto.md) | What Earthos is, what it isn't, and why |
-| [Research Philosophy](docs/research_philosophy.md) | Program structure, Earthos vs Synapse, research posture |
+| [Research Philosophy](docs/research_philosophy.md) | Project structure, Earthos vs Synapse, research posture |
 | [Substrate Architecture](docs/architecture.md) | Stable core vs experimental frontier |
 | [Field Coupling Theory](docs/fcft.md) | Conceptual framework for coupled developmental fields |
 | [Cognitive Governance](docs/governance.md) | Homeostatic balance, anti-delusion, bounded adaptation |
@@ -79,7 +79,7 @@ These are not rhetorical questions. They are the actual open problems.
 
 ## Access & Contact
 
-The core operational codebase is not included in this public repository. This repository contains the conceptual documentation, research philosophy, and architectural framing of the Earthos program.
+The core operational codebase is not included in this public repository. This repository contains the conceptual documentation, research philosophy, and architectural framing of the Earthos project.
 
 Certain operational details, runtime structures, and experimental implementation mechanics are intentionally omitted from public documentation to preserve research integrity while maintaining conceptual transparency.
 

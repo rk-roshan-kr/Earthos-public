@@ -1,7 +1,7 @@
 # The Earthos Manifesto
 
 > [!IMPORTANT]
-> **Research Disclaimer**: Earthos is not claiming to have solved AGI. The current platform is an evolving developmental cognition research program exploring persistent, embodied, adaptive intelligence under real-world, computational, and ecological constraints. It is an active research program, not a commercial product or a proven cognitive architecture.
+> **Research Disclaimer**: Earthos is not claiming to have solved AGI. The current platform is an evolving developmental cognition research project exploring persistent, embodied, adaptive intelligence under real-world, computational, and ecological constraints. It is an active research project, not a commercial product or a proven cognitive architecture.
 
 ---
 
@@ -28,7 +28,7 @@ graph TD
     classDef frontier fill:#07090b,stroke:#9d4edd,stroke-width:1.5px,color:#c8ccd4;
     classDef future fill:#07090b,stroke:#444,stroke-width:1px,color:#666,stroke-dasharray: 4 4;
 
-    Earthos[Earthos Research Program] --> Synapse[Synapse Architecture]:::active
+    Earthos[Earthos Research Project] --> Synapse[Synapse Architecture]:::active
     Earthos --> AltB[Future Architecture B]:::future
     Earthos --> AltC[Future Architecture C]:::future
 

@@ -4,11 +4,11 @@
 
 ## What Earthos Is
 
-Earthos is a long-horizon research program dedicated to exploring developmental cognition — intelligence that grows, adapts, and maintains structural continuity over time under ecological constraint.
+Earthos is a long-horizon research project dedicated to exploring developmental cognition — intelligence that grows, adapts, and maintains structural continuity over time under ecological constraint.
 
 It is not a product. It is not a claim. It is an active research commitment.
 
-The program is deliberately structured as an open-ended investigation. If the current architectural approach reaches fundamental limits, Earthos will explore alternative architectures. Synapse is the first branch, not the final answer.
+The project is deliberately structured as an open-ended investigation. If the current architectural approach reaches fundamental limits, Earthos will explore alternative architectures. Synapse is the first branch, not the final answer.
 
 ---
 
@@ -24,7 +24,7 @@ graph TD
     classDef active fill:#0f1115,stroke:#00f2fe,stroke-width:2px,color:#c8ccd4;
     classDef future fill:#0f1115,stroke:#333,stroke-width:1px,color:#555,stroke-dasharray: 5 5;
 
-    E[Earthos Research Program]:::program --> S[Synapse — Human-Inspired Branch]:::active
+    E[Earthos Research Project]:::program --> S[Synapse — Human-Inspired Branch]:::active
     E --> F1[Future Architecture B — TBD]:::future
     E --> F2[Future Architecture C — TBD]:::future
 ```

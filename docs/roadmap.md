@@ -1,6 +1,6 @@
 # Earthos: Research Roadmap
 
-Earthos is a long-horizon research program exploring persistent developmental cognition under ecological constraint. This roadmap documents the evolution of an experimental cognition substrate — the failures, restructurings, and partial breakthroughs encountered along the way.
+Earthos is a long-horizon research project exploring persistent developmental cognition under ecological constraint. This roadmap documents the evolution of an experimental cognition substrate — the failures, restructurings, and partial breakthroughs encountered along the way.
 
 This is not a march toward "solved AGI." It is an active engineering chronicle.
 
@@ -21,7 +21,7 @@ The three commitments that define the research:
 3. **Grounding is the hard part.** Internal symbolic coherence is easy to fake. Making representations that remain anchored to physical consequence over time — that is the actual problem.
 
 > [!NOTE]
-> **Program Scope**: Earthos is the overarching research program. **Synapse** is the initial, human-inspired architecture currently under development within Earthos. If Synapse hits fundamental limits, alternative non-human-inspired architectures will be explored under the Earthos umbrella.
+> **Project Scope**: Earthos is the overarching research project. **Synapse** is the initial, human-inspired architecture currently under development within Earthos. If Synapse hits fundamental limits, alternative non-human-inspired architectures will be explored under the Earthos umbrella.
 
 ---
 
@@ -176,7 +176,7 @@ Current grounding environments are synthetic simulations. Real-world coupling at
 
 Whether language can emerge from embodied developmental necessity — rather than being trained in from static text — is an open empirical question, not a solved problem.
 
-Earthos is an active research program. The current substrate exhibits interesting emergent properties under controlled conditions. We make no claims about general intelligence, consciousness, or human-level cognition.
+Earthos is an active research project. The current substrate exhibits interesting emergent properties under controlled conditions. We make no claims about general intelligence, consciousness, or human-level cognition.
 
 ---
 

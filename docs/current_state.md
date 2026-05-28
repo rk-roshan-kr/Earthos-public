@@ -76,7 +76,7 @@ We have made this failure mode less frequent. We have not eliminated it.
 
 We are not a production system. We are not a finished architecture. We are not claiming general intelligence.
 
-We are a research program investigating whether the developmental cognition approach described here actually works at scale, under real-world conditions, over real developmental timescales.
+We are a research project investigating whether the developmental cognition approach described here actually works at scale, under real-world conditions, over real developmental timescales.
 
 The honest answer, as of now: it partially works in bounded conditions. Whether it can survive the open world remains the central empirical question.
 

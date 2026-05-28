@@ -49,6 +49,7 @@ graph LR
             B3 --> B4["Persistent Memory Ledger\n(Accumulated state history)"]:::persistent
             B4 -->|Priors shape future updates| B1
         end
+        A4 ~~~ B1
     end
 ```
 
