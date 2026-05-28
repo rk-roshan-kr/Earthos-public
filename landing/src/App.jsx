@@ -2372,7 +2372,9 @@ export default function App() {
     const handleResize = () => {
       const isMob = window.innerWidth <= 768;
       setIsMobile(isMob);
-      if (isMob && !sessionStorage.getItem('earthos_mobile_notice_dismissed')) {
+      
+      const isPhoneOrTablet = (window.innerWidth <= 1024) || /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isPhoneOrTablet && !sessionStorage.getItem('earthos_mobile_notice_dismissed')) {
         setShowMobileNotice(true);
       }
     };
