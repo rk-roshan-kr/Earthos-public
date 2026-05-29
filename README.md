@@ -1,6 +1,6 @@
 # Earthos
 
-**A long-horizon research project exploring developmental cognition under ecological constraint.**
+**A long-horizon research project exploring developmental predictive cognition under ecological constraint.**
 
 ---
 
@@ -19,15 +19,15 @@ If the current architectural approach reaches fundamental limits, the project wi
 
 **Synapse** is the primary architecture currently under development within Earthos — a human-inspired cognitive substrate designed around three structural commitments that distinguish it from conventional AI systems:
 
-- **Lifetime persistence** — no epoch resets, no environment wipes. Consequences accumulate. History is preserved. The agent develops over developmental time, not within isolated sessions.
-- **Ecological constraint** — compute, memory, and sensor bandwidth are treated as genuinely finite resources. The system must choose what to attend to, what to consolidate, and what to let decay.
-- **Grounded adaptation** — representations are tested against environmental friction, not logical self-consistency. When predictions fail, developmental tension forces restructuring. The environment is the arbiter.
+- **Lifetime persistence** — no epoch resets, no environment wipes. Consequences accumulate. History is preserved through State Clones resolving identity across developmental time.
+- **Ecological constraint** — compute, memory, and sensor bandwidth are treated as genuinely finite resources. The Decision Ecology must choose what to attend to, what to consolidate, and what to let decay.
+- **Grounded adaptation** — representations are tested against environmental friction, not logical self-consistency. When counterfactual predictions fail, developmental tension forces the Developmental Adaptation Engine to restructure the system's World Models.
 
 ## The Research Bet
 
 The dominant AI paradigm is scaling stateless transformers trained offline against fixed datasets. These systems are impressive within their domain and share a structural limitation: they cannot persist, they cannot develop, and they have no ecological relationship with their environment.
 
-We are investigating what happens when you take those assumptions away — when an agent must survive continuously under real constraints, maintain coherent identity over developmental time, and adapt to an environment it cannot control.
+We are investigating what happens when you take those assumptions away — when an agent must survive continuously under real constraints, maintain coherent identity over developmental time, and adapt to an environment it cannot control by building predictive simulations of reality.
 
 This is a bet on a different branch of research. We are not certain it is correct. We are running the experiment.
 
@@ -35,7 +35,7 @@ This is a bet on a different branch of research. We are not certain it is correc
 
 ## Current State
 
-The Synapse substrate is in active prototype development. Core capabilities that are operational include deterministic execution replay and persistent memory across sessions. Active research areas include embodied grounding under noise, causal learning from environmental interaction, and developmental continuity under representational restructuring.
+The Synapse substrate is in active prototype development. Core capabilities that are operational include deterministic execution replay and persistent memory across sessions. Active research areas include State Cloning, Cognitive Map construction, counterfactual search via Decision Ecology, and developmental continuity under representational restructuring.
 
 The honest assessment: several core capabilities work under bounded synthetic conditions. Open-world conditions remain an unresolved frontier.
 
@@ -49,7 +49,7 @@ The problems we are actively working on — and do not yet have answers to:
 
 - **The homeostasis vs. adaptation dilemma** — How does a system maintain coherent identity while still adapting to genuine environmental change? Too much continuity protection produces rigidity. Too little produces fragmentation.
 - **Causal learning under noise** — Extracting genuine causal structure from noisy, continuous observation streams without confusing correlation for causation.
-- **Semantic grounding at scale** — Whether representational structures can remain anchored to environmental reality under sustained exposure to high-volume, high-contradiction information streams.
+- **Semantic grounding at scale** — Whether representational structures (Cognitive Maps) can remain anchored to environmental reality under sustained exposure to high-volume, high-contradiction information streams.
 - **Curiosity without addiction** — Epistemic exploration is necessary for developmental learning. Unconstrained, it becomes a resource sink that crowds out survival behavior.
 
 These are not rhetorical questions. They are the actual open problems.
@@ -62,8 +62,8 @@ These are not rhetorical questions. They are the actual open problems.
 |---|---|
 | [The Manifesto](docs/manifesto.md) | What Earthos is, what it isn't, and why |
 | [Research Philosophy](docs/research_philosophy.md) | Project structure, Earthos vs Synapse, research posture |
-| [Substrate Architecture](docs/architecture.md) | Stable core vs experimental frontier |
-| [Field Coupling Theory](docs/fcft.md) | Conceptual framework for coupled developmental fields |
+| [Substrate Architecture](docs/architecture.md) | Stable core vs experimental frontier (Maps, World Models, DAE) |
+| [Field Coupling Theory](docs/fcft.md) | *Experimental Hypothesis:* Continuous field dynamics |
 | [Cognitive Governance](docs/governance.md) | Homeostatic balance, anti-delusion, bounded adaptation |
 | [Embodied Cognition](docs/embodiment.md) | Sensorimotor loop, active inference, ecological cost |
 | [Developmental Adaptation](docs/reinforcement_learning.md) | Active inference vs reward maximization |

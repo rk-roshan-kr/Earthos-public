@@ -12,19 +12,19 @@ Cognition in Synapse follows a continuous loop of sensing, predicting, acting, a
 Environment
     │
     ▼ sensory input
-Sensory Encoding Layer
+Context Executive Layer (gating)
     │
-    ▼ state update
-Predictive World Model
+    ▼ state clones
+Cognitive Maps & Schema Ecology
     │
-    ▼ latent state
-Planning & Inference Layer
+    ▼ structured representation
+Predictive World Model (Belief Ecology)
     │
-    ▼ proposed action
-Action Selection Layer ←── prediction error feedback ──┐
-    │                                                   │
-    ▼ actuator signal                                   │
-Environment ────────────────────────────────────────────┘
+    ▼ counterfactual futures
+Decision Ecology ←── prediction error feedback ──┐
+    │                                             │
+    ▼ actuator signal                             │
+Environment ──────────────────────────────────────┘
 ```
 
 The loop closes through physical consequence. The environment responds to actions. Those responses are the primary teacher — not a loss function computed against a static dataset.
@@ -41,9 +41,9 @@ This is not trivially easy to maintain. Several of our failure modes have involv
 
 ### Key Commitments
 
-- **Active inference** — the agent acts to gather information, not just to complete tasks. Uncertainty reduction is treated as a goal in its own right, metabolically bounded so it does not become an end in itself.
-- **Proprioception** — the system maintains an internal model of its own cognitive state: what resources it has, what its current representational stability is, what developmental pressures are active. It reasons about its own condition as part of reasoning about the environment.
-- **Irreversible consequences** — unlike episodic RL agents that reset between trials, Synapse persists. Environmental damage, resource depletion, and representational scarring accumulate. The agent must learn to survive over time, not just to perform in isolated trials.
+- **Active inference** — the agent acts to gather information, not just to complete tasks. Epistemic curiosity — the drive to reduce uncertainty — is one of several competing pressures within the Decision Ecology, metabolically bounded so it does not become an end in itself.
+- **Proprioception** — the system maintains an internal model of its own cognitive state: what resources it has, what its current representational stability is, what developmental pressures are active. It reasons about its own condition as part of reasoning about the environment. This self-model is critical for the Developmental Adaptation Engine's ability to detect when structural reorganization is needed.
+- **Irreversible consequences** — unlike episodic RL agents that reset between trials, Synapse persists. Environmental damage, resource depletion, and representational scarring accumulate. The agent must learn to survive over time, not just to perform in isolated trials. The Identity Continuity Layer exists specifically to ensure the system's developmental trajectory remains coherent through these accumulated consequences.
 
 ---
 

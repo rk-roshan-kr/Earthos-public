@@ -1,33 +1,38 @@
-# Field Coupling Dynamics & Representational Geometry
+# Field Coupling Foundational Theory (FCFT)
+**Status: Experimental Representational Hypothesis**
 
-This document describes the theoretical orientation of **Field Coupling Field Theory (FCFT)** — the conceptual framework guiding how Earthos models the relationship between cognitive pressure, representational structure, and developmental continuity.
+This document describes the theoretical orientation of **Field Coupling Foundational Theory (FCFT)** — an experimental conceptual framework exploring how cognitive pressure, representational structure, and developmental continuity might interact in a continuous latent field.
 
-The full mathematical formalization of FCFT is maintained in internal research archives. What follows is a conceptual map.
+> [!WARNING]
+> **Architectural Status Update**: As of Migration 02 and 03, FCFT is no longer considered the primary structural mechanism for Earthos/Synapse. The architecture has formally shifted toward **Contextual State Cloning** and structured **Cognitive Maps** to resolve semantic ambiguity and identity tracking. FCFT remains an active but secondary *Experimental Representational Hypothesis* investigating continuous field dynamics underneath these discrete topologies.
+
+The full mathematical formalization of FCFT is maintained in internal research archives. What follows is a conceptual map of the hypothesis.
 
 ---
 
 ## The Core Intuition
 
-Most cognitive architectures treat mental variables — uncertainty, attention, contradiction, memory pressure — as isolated outputs of distinct processing modules. One subsystem computes uncertainty. Another computes attention. They pass signals to each other through defined interfaces.
+Most cognitive architectures treat mental variables — uncertainty, attention, contradiction, memory pressure — as isolated outputs of distinct processing modules. 
 
-FCFT takes a different stance: these are not independent variables. They are coupled dimensions of a single continuous cognitive field. A shift in one dimension propagates — with delay, damping, and ecological constraint — into every other dimension.
+FCFT hypothesizes a different stance: these are coupled dimensions of a single continuous cognitive field. A shift in one dimension propagates — with delay, damping, and ecological constraint — into every other dimension. 
 
-The consequence is that cognition behaves less like a pipeline and more like a **pressure ecology**. When contradiction accumulates in one region, it doesn't just flag an error. It reshapes the attentional landscape, alters the metabolic allocation, and modifies what kinds of representational updates are permitted elsewhere.
+When contradiction accumulates, it reshapes the attentional landscape, alters the metabolic allocation, and modifies what kinds of representational updates are permitted elsewhere.
 
 > ### Research Note — Phase 35.1
-> A lot of the early FCFT equations looked impressive and operationalized almost nothing. We spent weeks writing beautiful LaTeX derivations of thermodynamic coordinate transformations, only to discover the runtime was executing something far simpler because the real gradients were too noisy to compute cleanly.
+> Early FCFT equations looked impressive but operationalized almost nothing. We spent weeks writing beautiful derivations of thermodynamic coordinate transformations, only to discover the runtime was executing something far simpler because the real gradients were too noisy to compute cleanly.
 >
 > The painful lesson: mathematical aesthetics are not evidence of grounded cognition. This framework now represents only what is empirically tested, not what looks elegant on paper.
 
 ---
 
-## Representational Geometry
+## Representational Geometry (Experimental)
 
-Concepts within Synapse are not stored as discrete nodes in a static graph. They exist as **coordinate positions within a continuous representational space** — positions that shift under developmental pressure, stabilize under reinforcement, and decay under metabolic constraint.
+Under the FCFT hypothesis, concepts are not stored as discrete nodes but exist as **coordinate positions within a continuous representational space** — positions that shift under developmental pressure, stabilize under reinforcement, and decay under metabolic constraint.
 
-This geometry is not fixed. It restructures as the system encounters new environmental friction, resolves contradictions, and accumulates experience. Regions of the space under sustained pressure may split, merge, or decay entirely — not by explicit programmer instruction, but as an emergent consequence of developmental dynamics.
+This geometry is not fixed. It restructures as the system encounters new environmental friction. Regions of the space under sustained pressure may split, merge, or decay entirely as an emergent consequence of developmental dynamics.
 
-The geometry is the memory. The movements within it are learning.
+**Why this was downgraded:**
+While theoretically elegant, continuous coordinate restructuring struggled with catastrophic context contamination during open-world testing. This failure drove the architecture toward the more discrete graph traversal methods provided by State Cloning and CSCG.
 
 ---
 
@@ -36,25 +41,20 @@ The geometry is the memory. The movements within it are learning.
 FCFT orients the system's development around a unified developmental tension — an internal measure of how far the current representational state is from a stable, grounded configuration.
 
 This tension integrates several pressures:
-- Discrepancy between the system's predictions and what the environment actually delivers
-- Structural instability in the representational field itself
-- The metabolic cost of maintaining the current representational configuration
-- The coherence of the system's self-model across time
+- Discrepancy between predictions and reality (World Model error)
+- Structural instability in the representational field
+- Metabolic cost of maintaining current representations
+- Coherence of the system's self-model across time
 
-The architecture attempts to move toward lower developmental tension — not by optimizing a fixed objective, but by responding to pressure gradients that emerge from the interaction between internal state and environmental reality.
-
-> [!NOTE]
-> Whether this pressure landscape converges to stable, grounded cognition under open-world conditions is the central empirical question of Phase 39 research. We do not yet know. This is not a solved problem.
+The hypothesis states that the architecture attempts to move toward lower developmental tension by responding to pressure gradients that emerge from the interaction between internal state and environmental reality.
 
 ---
 
 ## What FCFT Is Not
 
-FCFT is not a claim that we have formalized cognition mathematically. It is a theoretical orientation — a set of commitments about how to *think about* the relationship between cognitive pressure, representational change, and developmental continuity.
+FCFT is not the operational architecture of Synapse. It is a theoretical orientation — a set of commitments about how to *think about* cognitive pressure. 
 
-The framework guides experimental design and architectural decisions. It does not guarantee outcomes.
-
-Early versions of nearly every mechanism we designed under FCFT failed in practice. The framework survived because it correctly predicted the *direction* of failure, even when it couldn't prevent it.
+Early versions of nearly every mechanism we designed under FCFT failed in practice. The framework survived as an experimental hypothesis because it correctly predicted the *direction* of failure, even when it couldn't prevent it.
 
 ---
 

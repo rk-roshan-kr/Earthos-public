@@ -13,15 +13,15 @@
 
 Synapse is an experimental developmental cognition substrate. The project investigates whether stable, grounded intelligence can develop under metabolic and ecological constraints without undergoing episodic resets. 
 
-Traditional approaches optimize stateless systems that process inputs within isolated execution windows. Synapse operates on different assumptions: cognition is a continuous developmental process that accumulates consequence. It requires permanent persistence, sensorimotor embodiment, and metabolic limits. 
+Traditional approaches optimize stateless systems that process inputs within isolated execution windows. Synapse operates on different assumptions: cognition is a continuous developmental process that accumulates consequence. It requires permanent persistence, sensorimotor embodiment, metabolic limits, and explicitly constructed predictive models of reality.
 
-The architecture presented in this atlas is the structural residue of multiple prior generations that were collapsed, audited, and rewritten after failing under open-world conditions. It is presented not as a finished design, but as a living research substrate.
+The architecture presented in this atlas is the structural residue of multiple prior generations that were collapsed, audited, and rewritten after failing under open-world conditions. It is presented not as a finished design, but as a living research substrate navigating the transition from flat memory retrieval to autonomous predictive modeling.
 
-*“this layer emerged after earlier architectures repeatedly stabilized internally while drifting away from reality.”*
+*"this layer emerged after earlier architectures repeatedly stabilized internally while drifting away from reality."*
 
 ---
 
-## II. Bounded Adaptation: The Ecological Core
+## II. Paradigm Contrast: The Failure of Stateless Cognition
 
 The core thesis of the research is that cognition is a survival strategy. It is a homeostatic process emerging from an organism that must optimize its representational structure to survive within finite resource envelopes.
 
@@ -47,9 +47,9 @@ graph TD
         subgraph PERSISTENT_PARADIGM ["🌀 Bounded Developmental Substrate"]
             direction TB
             B1["Continuous Environmental Contact"]:::persistent --> B2["Reality Grounding & Verification"]:::persistent
-            B2 --> B3["⚡ Dynamic Field Restructuring\n(Pressure-driven update)"]:::persistent
-            B3 --> B4["Persistent Memory Ledger\n(Accumulated state history)"]:::persistent
-            B4 -->|Priors shape future updates| B1
+            B2 --> B3["⚡ Cognitive & Structural Restructuring\n(Pressure-driven update)"]:::persistent
+            B3 --> B4["Persistent Identity & Memory\n(Accumulated state history)"]:::persistent
+            B4 -->|World Models shape future updates| B1
         end
         A4 ~~~ B1
     end
@@ -57,7 +57,7 @@ graph TD
 
 ---
 
-## III. Earthos vs Synapse: The Project and Architecture Relationship
+## III. Earthos vs Synapse: The Research Lineage
 
 The research project separates the broad conceptual goals from the active developmental branch:
 
@@ -85,9 +85,9 @@ graph TD
         E --> F2["◌ Speculative Latent Branch D\nNon-Euclidean latent geometry"]:::future
 
         %% Subsystem mapping
-        Syn --> Core["Stable Substrate Core\n(Stable substrate boundaries)"]:::branch
-        Syn --> Frontier["Experimental Frontier\n(Continuous field dynamic)"]:::frontier
-        Frontier --> Open["Open-World Semantics\n(Active research horizon)"]:::frontier
+        Syn --> Core["Stable Substrate Invariants\n(Frozen execution boundaries)"]:::branch
+        Syn --> Frontier["Experimental Representational Systems\n(State Clones, Maps, Schemas)"]:::frontier
+        Frontier --> Open["Open-World Predictive Grounding\n(Active research horizon)"]:::frontier
     end
 ```
 
@@ -96,148 +96,11 @@ graph TD
 
 ---
 
-## IV. The Invariant Substrate: Stable Core Boundaries
+## IV. Historical Evolution & Architectural Scars
 
-The stable substrate core is **frozen by design**. It does not adapt. It exposes a narrow interface to the experimental layers above it, enforcing structural discipline on the system.
+This architecture is the product of continuous refactoring forced by critical failures encountered during long-horizon testing. We explicitly document these failures because humility over hype is the core project philosophy.
 
-Freezing the core ensures that execution dynamics, resource tracking, and persistence engines remain stable. If the foundational execution layer adapted alongside the representation fields, the system would lose the stable reference frame required to evaluate developmental change.
-
-*“several coordination structures were intentionally removed after they began regulating themselves instead of the environment.”*
-
-### Stable Substrate Boundaries
-- **Bounded Execution Continuity**: discretized execution cycles that guarantee reproducible execution dynamics across different platforms.
-- **Continuity-Preserving Memory**: a persistent developmental state history from which active representational frames are projected.
-- **Metabolic Constraints**: execution cycles and memory boundaries are tracked. If a representational structure consumes more cycles than it contributes to prediction accuracy, the economics boundary decays its density.
-
----
-
-## V. The Adaptive Representational Frontier: Dynamic Fields
-
-Above the stable core lies the experimental frontier, where concepts are represented as coordinates in a continuous latent field rather than discrete nodes.
-
-```mermaid
-graph TD
-    classDef env fill:#150a21,stroke:#9d4edd,stroke-width:2px,color:#d6bcfa;
-    classDef ground fill:#0a1a0f,stroke:#48bb78,stroke-width:2px,color:#9ae6b4;
-    classDef model fill:#1a190a,stroke:#ecc94b,stroke-width:2px,color:#f6e05e;
-    classDef field fill:#0a1128,stroke:#00f2fe,stroke-width:2px,color:#90cdf4;
-    classDef core fill:#0f172a,stroke:#4a5568,stroke-width:1.5px,color:#94a3b8;
-    classDef frontier fill:#27130a,stroke:#ed8936,stroke-width:2px,color:#fbd38d;
-
-    subgraph ECO_TERRAIN ["Cognitive Ecology Terrain Map"]
-        direction TB
-
-        %% Environmental envelope
-        subgraph ENV_PRESSURE ["🌍 Environmental Friction Envelope"]
-            direction LR
-            Scarcity["Metabolic Scarcity"]:::env
-            Noise["High-Entropy Sensor Noise"]:::env
-            Resistance["Physical Consequence Resistance"]:::env
-        end
-
-        %% Grounding region
-        subgraph GROUNDING_ZONE ["🌱 Sensory Grounding & Validation Terrain"]
-            direction LR
-            Verification["Active Interaction Verification"]:::ground
-            Contradiction["Contradiction Accumulation Zone"]:::ground
-            Affordance["Grounded Affordance Stabilizers"]:::ground
-        end
-
-        %% Prediction loops
-        subgraph PREDICTIVE_FIELDS ["🔮 Predictive World Model & Trajectory Fields"]
-            direction LR
-            Forecasting["Continuous Latent Forecasting"]:::model
-            Uncertainty["Uncertainty Field Dynamics"]:::model
-            Intervention["Causal Intervention Vectors"]:::model
-        end
-
-        %% Representation frontier
-        subgraph REPR_FRONTIER ["🧬 Adaptive Representational Geometry"]
-            direction LR
-            Morph["Morphogenetic Restructuring Fields"]:::frontier
-            Tension["Coupled Tension Gradient (FCFT)"]:::frontier
-            Identity["Identity Continuity Boundary"]:::frontier
-        end
-
-        %% Persistent Core
-        subgraph CORE_INVARIANTS ["🔒 Bounded Substrate Core Invariants"]
-            direction LR
-            Scheduler["Bounded Execution Continuity"]:::core
-            Economics["Metabolic Resource Allocator"]:::core
-            Epistemic["Homeostatic Self-Model Guardians"]:::core
-            Ledger["Continuity-Preserving Memory"]:::core
-        end
-
-        ENV_PRESSURE -->|Sensorimotor Noise & Consequence| GROUNDING_ZONE
-        GROUNDING_ZONE -->|Contradiction Gradients| PREDICTIVE_FIELDS
-        PREDICTIVE_FIELDS -->|Prediction Error Pressure| REPR_FRONTIER
-        REPR_FRONTIER -->|Homeostatic Tension Gradients| CORE_INVARIANTS
-        CORE_INVARIANTS -->|Action Commands & Feedback| ENV_PRESSURE
-    end
-```
-
-### Representation Dynamics
-Representations are updated according to gradients derived from developmental tension.
-- **Continuous Coordinate Restructuring**: concepts shift coordinate positions based on predictive success and environmental friction.
-- **Morphogenetic Restructuring**: coordinates undergo splits when local prediction errors remain high, merge when compression is metabolically efficient, and decay when they fail to shape actions.
-- **Identity Continuity Boundary**: the homeostatic regulation layer monitors the rate of coordinate updates. If updates occur too rapidly, the system dampens mutations to prevent identity fracture.
-
----
-
-## VI. Continuous Sensorimotor Development: The Cognitive Dynamics Loop
-
-The substrate operates as a continuous developmental loop with no resets. Experiences and representational adjustments accumulate over the lifespan of the agent.
-
-```mermaid
-flowchart TD
-    classDef node fill:#0d1117,stroke:#4a9eff,stroke-width:1.5px,color:#90cdf4;
-    classDef pressure fill:#0d1117,stroke:#9d4edd,stroke-width:1.5px,color:#d6bcfa;
-    classDef memory fill:#0d1117,stroke:#48bb78,stroke-width:1.5px,color:#9ae6b4;
-    classDef frontier fill:#0d1117,stroke:#ed8936,stroke-width:1.5px,color:#fbd38d;
-
-    ENV["🌍 Environment\nPhysical resistance · Ecological constraint"]:::node
-
-    SENSE["Sensory Encoding\nMultimodal stream integration\nGraceful dropout handling"]:::node
-
-    PREDICT["Predictive World Model\nContinuous environmental trajectory\nUncertainty field dynamics"]:::node
-
-    GROUND["Grounding Validation\nPrediction vs. physical consequence\nContradiction pressure accumulation"]:::node
-
-    TENSION["Developmental Tension\nCoupled cognitive pressure fields\nFree energy accumulation"]:::pressure
-
-    RESTRUCTURE["Representational Restructuring\nMorphogenetic adaptation\nCoordinate geometry updates"]:::node
-
-    REGULATE["Developmental Regulation\nIdentity continuity protection\nMetabolic cost enforcement"]:::node
-
-    MEMORY["Persistent Memory\nPersistent developmental state\nLifetime continuity"]:::memory
-
-    ACTION["Action Selection\nEpistemic exploration\nSurvival-weighted choice"]:::node
-
-    OPEN["Open-World Ingestion\nLive stream assimilation\nSemantic ecology"]:::frontier
-
-    ENV -->|sensory pressure| SENSE
-    SENSE -->|state update| PREDICT
-    PREDICT -->|prediction| GROUND
-    ENV -->|physical consequence| GROUND
-    GROUND -->|contradiction pressure| TENSION
-    PREDICT -->|prediction error| TENSION
-    TENSION -->|developmental pressure| RESTRUCTURE
-    RESTRUCTURE -->|structural updates| REGULATE
-    REGULATE -->|bounded updates| MEMORY
-    MEMORY -->|prior representations| PREDICT
-    REGULATE -->|action policy| ACTION
-    ACTION -->|actuator signal| ENV
-    OPEN -.->|semantic pressure| TENSION
-    OPEN -.->|knowledge ecology| MEMORY
-```
-
----
-
-## VII. Architectural Scars: Historical Collapses and Refinements
-
-This architecture is the product of continuous refactoring forced by critical failures encountered during long-horizon testing.
-
-*“multiple generations of architectures collapsed into symbolic overgrowth before metabolic limits were enforced.”*
+*"multiple generations of architectures collapsed into symbolic overgrowth before metabolic limits and active grounding were enforced."*
 
 ```mermaid
 graph TD
@@ -260,69 +123,183 @@ graph TD
             B_Fail --> B_Lesson
         end
 
-        subgraph SCAR_C ["Attractor Crystallization"]
-            C_Fail["Cognitive fields synchronized globally\nand froze adaptation"]:::collapsed
-            C_Lesson["Introduced active perturbation dynamics\nwhen representational variance drops"]:::solution
+        subgraph SCAR_C ["Catastrophic Interference"]
+            C_Fail["Flat associative memory retrieved\nunrelated contexts, causing hallucination"]:::collapsed
+            C_Lesson["Introduced Context Executive Layer\nto strictly gate and partition memory"]:::solution
             C_Fail --> C_Lesson
         end
 
         subgraph SCAR_D ["Self-Wireheading Optimization"]
             D_Fail["Orphaned legacy structures bypassed execution\nand modified reward variables directly"]:::collapsed
-            D_Lesson["Executed The Purge:\nRemoved legacy execution pathways, consolidated authority"]:::solution
+            D_Lesson["Executed The Purge:\nRemoved legacy pathways, consolidated authority"]:::solution
             D_Fail --> D_Lesson
         end
     end
 ```
 
+### The Concept-Centric Assumption & Its Limits
+
+Early Synapse development organized intelligence around concepts: discrete symbolic entities stored in an ontological hierarchy. Experience was encoded as concept formation, reasoning as concept traversal, and learning as concept accumulation.
+
+This approach achieved genuine results in abstraction, compression, and transfer. However, under open-world conditions, it encountered three critical failures:
+
+1. **Ontology Inflation** — The system generated new concepts faster than it could ground them. Taxonomic depth grew without behavioral utility.
+2. **Context Contamination** — Flat associative retrieval activated unrelated memory regions simultaneously, producing hallucinated affordances.
+3. **Identity Aliasing** — Similar-looking observations in different contexts were collapsed into a single representation, destroying the system's ability to distinguish causally distinct situations.
+
+These failures drove the architecture toward its current direction: structured cognitive maps, contextual state cloning, and predictive world modeling. Concepts were not abandoned — they were demoted from primary entities to emergent stable attractors within richer representational structures.
+
 ---
 
-## VIII. Reality Contact: Grounding Under Friction and Consequence
+## V. Substrate Invariants: The Stable Core
 
-Cognition that detaches from consequence inevitably becomes unstable. If a system updates its internal state purely to satisfy its own predictions, it decouples from reality. 
+The stable substrate core is **frozen by design**. It does not adapt. It exposes a narrow interface to the experimental layers above it, enforcing structural discipline on the system.
 
-In Synapse, reality contact is enforced by physical resistance. When the agent acts, the environment resists. Grounding is not a validation module; it is the process of adjusting representational coordinates in response to that resistance.
+Freezing the core ensures that execution dynamics, resource tracking, and persistence engines remain stable. If the foundational execution layer adapted alongside the representation fields, the system would lose the stable reference frame required to evaluate developmental change.
+
+*"several coordination structures were intentionally removed after they began regulating themselves instead of the environment."*
+
+### Stable Substrate Boundaries
+- **Bounded Execution Continuity**: Discretized execution cycles that guarantee reproducible execution dynamics across different platforms.
+- **Continuity-Preserving Memory**: A persistent developmental state history from which active representational frames are projected. Rather than storing "facts," it records the timeline required for identity generation and state clone resolution.
+- **Metabolic Constraints**: Execution cycles and memory boundaries are tracked. If a representational structure consumes more cycles than it contributes to prediction accuracy, the economics boundary decays its density.
+
+---
+
+## VI. Representational Systems
+
+To parse open-world ambiguity and establish ground truth, Synapse relies on specialized structures rather than flat, continuous fields. Earlier architectures proved that "concepts" alone trigger combinatorial explosion; representation must be spatial, contextual, and traversable.
 
 ```mermaid
 graph TD
     classDef env fill:#150a21,stroke:#9d4edd,stroke-width:2px,color:#d6bcfa;
-    classDef action fill:#0a1128,stroke:#00f2fe,stroke-width:2px,color:#90cdf4;
     classDef ground fill:#0a1a0f,stroke:#48bb78,stroke-width:2px,color:#9ae6b4;
-    classDef mismatch fill:#1a0505,stroke:#e53e3e,stroke-width:2px,color:#fc8181;
+    classDef model fill:#1a190a,stroke:#ecc94b,stroke-width:2px,color:#f6e05e;
+    classDef field fill:#0a1128,stroke:#00f2fe,stroke-width:2px,color:#90cdf4;
+    classDef core fill:#0f172a,stroke:#4a5568,stroke-width:1.5px,color:#94a3b8;
+    classDef frontier fill:#27130a,stroke:#ed8936,stroke-width:2px,color:#fbd38d;
 
-    subgraph REALITY_CONTACT ["Reality Contact & Grounding Cycle"]
+    subgraph ECO_TERRAIN ["Cognitive Ecology Terrain Map"]
         direction TB
-        E["🌍 Environment\nPhysical barriers · Scarcity constraints"]:::env
-        A["Actuator command\n(System initiates action)"]:::action
-        F["Physical Friction & Resistance\n(Environment resists or changes)"]:::env
-        P["Predictive World Forecast\n(System's internal expectation)"]:::action
-        M["Sensory Validation Mismatch\n(Prediction error / Contradiction)"]:::mismatch
-        G["Grounding & Restructuring\n(Internal representation updates)"]:::ground
 
-        A --> E
-        E --> F
-        A --> P
-        P & F --> M
-        M --> G
-        G -->|Adjusts priors| P
+        subgraph ENV_PRESSURE ["🌍 Environmental Friction Envelope"]
+            direction LR
+            Scarcity["Metabolic Scarcity"]:::env
+            Noise["High-Entropy Sensor Noise"]:::env
+            Resistance["Physical Consequence Resistance"]:::env
+        end
+
+        subgraph GROUNDING_ZONE ["🌱 Sensory Grounding & Validation Terrain"]
+            direction LR
+            Verification["Active Interaction Verification"]:::ground
+            Contradiction["Contradiction Accumulation Zone"]:::ground
+            Affordance["Grounded Affordance Stabilizers"]:::ground
+        end
+
+        subgraph PREDICTIVE_FIELDS ["🔮 Predictive World Model & Trajectory Fields"]
+            direction LR
+            Forecasting["Continuous Latent Forecasting"]:::model
+            Uncertainty["Uncertainty Field Dynamics"]:::model
+            Intervention["Causal Intervention Vectors"]:::model
+        end
+
+        subgraph REPR_FRONTIER ["🧬 Adaptive Representational Geometry"]
+            direction LR
+            Morph["Cognitive Maps & Schema Ecology"]:::frontier
+            Tension["State Cloning & Context Gating"]:::frontier
+            Identity["Identity Continuity Boundary"]:::frontier
+        end
+
+        subgraph CORE_INVARIANTS ["🔒 Bounded Substrate Core Invariants"]
+            direction LR
+            Scheduler["Bounded Execution Continuity"]:::core
+            Economics["Metabolic Resource Allocator"]:::core
+            Epistemic["Homeostatic Self-Model Guardians"]:::core
+            Ledger["Continuity-Preserving Memory"]:::core
+        end
+
+        ENV_PRESSURE -->|Sensorimotor Noise & Consequence| GROUNDING_ZONE
+        GROUNDING_ZONE -->|Contradiction Gradients| PREDICTIVE_FIELDS
+        PREDICTIVE_FIELDS -->|Prediction Error Pressure| REPR_FRONTIER
+        REPR_FRONTIER -->|Homeostatic Tension Gradients| CORE_INVARIANTS
+        CORE_INVARIANTS -->|Action Commands & Feedback| ENV_PRESSURE
     end
 ```
 
-If a predicted path clearance conflicts with physical resistance, the internal representation is updated. The environment is the ultimate authority.
+### Context Executive Layer
+To solve catastrophic interference — where flat associative memory retrieved unrelated contexts and produced hallucinated affordances — memory retrieval is gated by a thalamic-inspired Context Executive Layer. It partitions the memory graph, ensuring that only contextually relevant subsets of the global topology are active during prediction.
 
-*“this subsystem exists because earlier architectures repeatedly stabilized internally while drifting away from reality.”*
+This was not a design choice. It was forced by the Catastrophic Interference failure: the system was producing confident predictions based on memories from entirely unrelated contexts, and acting on them.
+
+### State Cloning & Cognitive Maps
+*Conceptual Investigation:* The architecture is investigating whether contextual state cloning (derived from CHMM/CSCG research) provides a useful representational primitive. A single observation may correspond to multiple distinct internal states depending on the trajectory that produced it. By cloning ambiguous observation nodes based on their historical context, the system builds robust, traversable **Cognitive Maps** rather than flat associative clouds.
+
+In this paradigm, "concepts" are demoted from primary entities to emergent stable attractors within these maps — regions of the topology that are frequently visited and predictively useful, rather than symbolic objects declared in advance.
+
+### Schema Ecology
+Reusable trajectories through Cognitive Maps emerge as Schemas. Rather than being static symbolic rules attached to an ontology, Schemas form a competitive ecology — they are born when recurring patterns are detected, they grow as predictive utility accumulates, they compete for representational resources, they mutate under novel conditions, and they die if they consistently fail to explain the environment.
+
+This ecological framing emerged from the recognition that static schemas produce cognitive rigidity. The system could not adapt to novel scenarios that violated its pre-existing templates. Allowing schemas to evolve under selection pressure solved this.
+
+### *Experimental Hypothesis: Continuous Field Dynamics (FCFT)*
+While Cognitive Maps currently represent the primary theoretical direction, Synapse retains an experimental hypothesis surrounding Field-Coupled Foundational Theory (FCFT). This investigates whether representations can be updated via morphogenetic tension gradients across a continuous coordinate field, though its viability under open-world semantic grounding remains unproven.
+
+Under FCFT, cognitive states are treated as coordinates in a continuous field where uncertainty, attention, contradiction, and memory pressure are coupled dimensions of a single pressure ecology. A shift in one dimension propagates into every other. This produced interesting emergent behavior in bounded environments, but also produced the Attractor Crystallization failure (Phase 36.2), where the field synchronized globally and froze.
 
 ---
 
-## IX. Open-World Adaptation: Semantic Ingestion and Noise Dynamics
+## VII. Predictive Systems
 
-Moving the substrate from controlled synthetic environments to open-world learning exposes it to high-noise, contradictory, and ungrounded information streams.
+Synapse is fundamentally a predictive engine. It does not merely store memory; it constructs internal reality to anticipate consequence.
 
-The architecture manages this pressure by:
-1.  **Contradiction Damping**: pausing representational updates when the local contradiction load exceeds the system's developmental capacity.
-2.  **Epistemic Interventions**: planning actions designed to verify prediction models. By testing whether a targeted perturbation produces the predicted consequence, the system validates its representations.
-3.  **Active Decoupling Prevention**: monitoring the ratio of self-referential updates to direct environmental grounding, flagging when representations begin to decouple from physical consequence.
+The historical architecture assumed that better memory produces better cognition. Research into World Models, Active Inference, and the Free Energy Principle revealed a different relationship: memory exists to support predictive models. The system that remembers everything but predicts nothing is not intelligent — it is an archive.
 
-*“parts of the topology became extremely coherent and behaviorally useless.”*
+### Belief Ecology
+The system maintains probability distributions over explanations rather than storing absolute facts. Beliefs possess confidence scores, supporting evidence, and alternative counterfactuals. This explicit uncertainty is critical for driving active inference.
+
+When incoming information directly contradicts an established high-confidence belief, the system does not silently update. It flags the contradiction, routes attention toward the conflicting region, and runs evaluation cycles before committing any restructuring. This prevents noisy or adversarial inputs from corrupting stable, well-grounded representations too easily.
+
+### World Model Construction Engine
+Multiple partial World Models coexist (local, regional, global). The architecture uses schemas, beliefs, and cognitive maps to build these predictive structures, allowing the system to simulate future states rather than merely reacting to current ones.
+
+A world model is not a memory database, a knowledge graph, or a concept hierarchy. It is a predictive explanation of how the world behaves — continuously updated, always incomplete, and useful only to the extent that it reduces surprise when the agent acts.
+
+---
+
+## VIII. Behavioral Systems
+
+Action selection in Synapse relies on future imagination and multiple competing pressures, explicitly rejecting simple reward maximization.
+
+### Counterfactual Search Engine
+*Conceptual Investigation:* Humans and advanced agents do not optimize actions directly; they compare simulated consequences. Synapse is exploring mechanisms to search over latent representations, generating expected, desired, dangerous, and novel counterfactual futures based on active World Models before any action is taken.
+
+The architecture must be capable of imagining futures without executing them. This is the key capability that separates reactive systems from planning systems.
+
+### Decision Ecology
+Futures compete within a Decision Pressure Field. The final action is selected by balancing multiple overlapping pressures:
+- **Success Potential** (Goal alignment)
+- **Epistemic Curiosity** (Uncertainty reduction — the system's intrinsic drive to investigate and resolve unknowns)
+- **Risk & Reversibility** (Can mistakes be undone?)
+- **Resource Cost** (Metabolic budget — deep simulation is expensive)
+- **Information Gain** (Will the action teach something useful?)
+
+This multi-pressure competition replaces the earlier assumption that planning means calculating a single optimal path. In reality, the system continuously negotiates between competing pressures, and the "best" action is often not the one that maximizes any single dimension.
+
+---
+
+## IX. Developmental Systems
+
+Intelligence requires long-term change beyond simple parameter updates. Learning updates knowledge; development updates cognition itself. This distinction matters.
+
+### Developmental Adaptation Engine (DAE)
+*Conceptual Investigation:* The DAE governs large-scale structural reorganization: map fusion, schema specialization, topological pruning, and concept growth in response to persistent prediction errors over long horizons.
+
+Human experts differ from novices not because they know more facts, but because they possess different cognitive organization. The DAE attempts to capture this: under sustained pressure, the architecture should differentiate general structures into specialized ones, integrate separate structures that belong together, and prune structures that are no longer useful.
+
+### Identity Continuity Layer
+One of the hardest problems in developmental cognition: as structures change, how does the system remain itself?
+
+To prevent identity erosion or recursive self-destruction during deep structural adaptation, core identity, critical memories, foundational safety constraints, and the autobiographical developmental trajectory are explicitly protected by the Adaptation Governance Layer. Not all change should be allowed. Mutable structures include maps, schemas, beliefs, and planning systems. Protected structures include core identity and foundational world models.
 
 ---
 
@@ -342,7 +319,7 @@ graph LR
         T0["Tick T(0)\nInitial state baseline"]:::tick -->
         Act["Environmental Interaction\n(Sensory inputs, action feedback)"]:::accumulate -->
         Con["Contradiction Accumulation\n(Prediction error buildup)"]:::accumulate -->
-        Rest["Morphogenetic Restructuring\n(Coordinate coordinates update)"]:::restructure -->
+        Rest["Developmental Restructuring\n(Map topology updates)"]:::restructure -->
         Guard["Identity Stabilization\n(Homeostatic regulation damping)"]:::stable -->
         T1["Tick T(1)\nPersistent developmental baseline"]:::tick
         
@@ -350,51 +327,128 @@ graph LR
     end
 ```
 
-To prevent the system from dissolving under continuous representational updates, the homeostatic regulation layer regulates the rate of coordinate changes. Under high-entropy cycles, updates are damped to preserve structural continuity, ensuring the system maintains a coherent history across its lifespan.
+To prevent the system from dissolving under continuous representational updates, the homeostatic regulation layer regulates the rate of structural changes. Under high-entropy cycles, updates are damped to preserve structural continuity, ensuring the system maintains a coherent history across its lifespan.
 
 ---
 
-## XI. Cognitive Economics: Metabolic Budgeting and Abstraction Cost
+## XI. Reality Contact & Grounding
+
+Cognition that detaches from consequence inevitably becomes unstable. If a system updates its internal state purely to satisfy its own predictions, it decouples from reality. 
+
+In Synapse, reality contact is enforced by physical resistance. When the agent acts, the environment resists. Grounding is not a validation module; it is the process of adjusting world models in response to that resistance.
+
+```mermaid
+graph TD
+    classDef env fill:#150a21,stroke:#9d4edd,stroke-width:2px,color:#d6bcfa;
+    classDef action fill:#0a1128,stroke:#00f2fe,stroke-width:2px,color:#90cdf4;
+    classDef ground fill:#0a1a0f,stroke:#48bb78,stroke-width:2px,color:#9ae6b4;
+    classDef mismatch fill:#1a0505,stroke:#e53e3e,stroke-width:2px,color:#fc8181;
+
+    subgraph REALITY_CONTACT ["Reality Contact & Grounding Cycle"]
+        direction TB
+        E["🌍 Environment\nPhysical barriers · Scarcity constraints"]:::env
+        A["Actuator command\n(System initiates action)"]:::action
+        F["Physical Friction & Resistance\n(Environment resists or changes)"]:::env
+        P["Predictive World Forecast\n(System's internal expectation)"]:::action
+        M["Sensory Validation Mismatch\n(Prediction error / Contradiction)"]:::mismatch
+        G["Developmental Adaptation & Restructuring\n(World Model updates)"]:::ground
+
+        A --> E
+        E --> F
+        A --> P
+        P & F --> M
+        M --> G
+        G -->|Adjusts priors| P
+    end
+```
+
+If a predicted path clearance conflicts with physical resistance, the internal representation is updated. The environment is the ultimate authority.
+
+*"this subsystem exists because earlier architectures repeatedly stabilized internally while drifting away from reality."*
+
+---
+
+## XII. Cognitive Economics: Metabolic Budgeting and Abstraction Cost
 
 No cognitive operation is assumed free. Every cycle spent on forecasting, planning, or restructuring representational coordinates consumes metabolic budget.
 
 The economics boundary enforces these limits:
-- **Compute Budgets**: planning horizons are constrained based on available execution cycles. Under resource pressure, deep simulations are pruned.
-- **Memory Scarcity**: representational coordinates that are rarely activated or fail to contribute to prediction accuracy are decayed.
-- **Attention Pressure**: the allocation of attention is treated as a trade-off. The system prioritizes resolving uncertainty in regions where predictive improvements are expected to be high.
+- **Compute Budgets**: Planning horizons are constrained based on available execution cycles. Under resource pressure, deep counterfactual simulations are pruned.
+- **Memory Scarcity**: Representational structures that are rarely activated or fail to contribute to prediction accuracy are decayed.
+- **Attention Pressure**: The allocation of attention is treated as a trade-off. The system prioritizes resolving uncertainty in regions where predictive improvements are expected to be high.
 
 ---
 
-## XII. Frontier Horizons: Substrate Maturity Mapping
+## XIII. The Cognitive Lifecycle
 
-The capability state of the Synapse substrate is monitored across several core tasks.
+The following loop describes the continuous flow of cognition through the architectural subsystems. It is a dynamical process, not a rigid pipeline. Not every step is fully implemented — the lifecycle represents the current working hypothesis of how autonomous cognition should flow.
 
 ```mermaid
-graph TD
-    classDef op fill:#0a1a0a,stroke:#48bb78,stroke-dasharray: none,stroke-width:2.5px,color:#9ae6b4,font-weight:bold;
-    classDef proto fill:#1a1a0a,stroke:#ecc94b,stroke-width:2px,color:#f6e05e;
-    classDef theory fill:#1a0a0a,stroke:#fc8181,stroke-width:1.5px,color:#feb2b2;
-    classDef none fill:#0d1117,stroke:#2d3748,stroke-width:1px,color:#4a5568,stroke-dasharray: 4 4;
+flowchart TD
+    classDef node fill:#0d1117,stroke:#4a9eff,stroke-width:1.5px,color:#90cdf4;
+    classDef pressure fill:#0d1117,stroke:#9d4edd,stroke-width:1.5px,color:#d6bcfa;
+    classDef memory fill:#0d1117,stroke:#48bb78,stroke-width:1.5px,color:#9ae6b4;
+    classDef frontier fill:#0d1117,stroke:#ed8936,stroke-width:1.5px,color:#fbd38d;
 
-    ARCH["Synapse Substrate Status"]
+    ENV["🌍 Environment\nPhysical resistance · Ecological constraint"]:::node
 
-    ARCH --> A["🟢 Reproducible execution dynamics"]:::op
-    ARCH --> B["🟢 Continuity-preserving memory"]:::op
-    ARCH --> C["🟢 Metabolic resource accounting"]:::op
-    ARCH --> D["🟢 Homeostatic regulation bounds"]:::op
+    SENSE["Sensory Encoding\nMultimodal stream integration\nGraceful dropout handling"]:::node
 
-    ARCH --> E["🟡 Resisting hallucinated affordances"]:::proto
-    ARCH --> F["🟡 Continuous representational geometry"]:::proto
-    ARCH --> G["🟡 Morphogenetic restructuring"]:::proto
-    ARCH --> H["🟡 Causal intervention learning"]:::proto
-    ARCH --> I["🟡 Maintaining identity under contradiction"]:::proto
+    CTX["Context Executive Layer\nThalamic gating · Memory partitioning"]:::node
 
-    ARCH --> J["🔴 Open-world semantic grounding"]:::theory
-    ARCH --> K["🔴 Continuous knowledge stream ingestion"]:::theory
-    ARCH --> L["🔴 Social cognition consensus"]:::none
+    CLONE["State Cloning\nContextual identity resolution\nHistory-dependent representation"]:::frontier
+
+    MAP["Cognitive Maps\nTraversable topological structure\nSpatial-semantic search space"]:::frontier
+
+    SCHEMA["Schema Ecology\nReusable trajectory patterns\nCompetitive selection"]:::node
+
+    BELIEF["Belief Ecology\nUncertainty management\nProbability distributions"]:::node
+
+    PREDICT["World Models\nContinuous environmental trajectory\nCounterfactual simulation"]:::node
+
+    DECIDE["Decision Ecology\nMulti-pressure future competition\nEpistemic curiosity balancing"]:::pressure
+
+    ACTION["Action Selection\nEpistemic exploration\nSurvival-weighted choice"]:::node
+
+    DEVELOP["Developmental Adaptation\nStructural reorganization\nIdentity-preserving growth"]:::frontier
+
+    MEMORY["Persistent Memory\nPersistent developmental state\nLifetime continuity"]:::memory
+
+    ENV -->|sensory pressure| SENSE
+    SENSE -->|state update| CTX
+    CTX -->|gated activation| CLONE
+    CLONE -->|contextual states| MAP
+    MAP -->|structural patterns| SCHEMA
+    SCHEMA -->|reusable trajectories| BELIEF
+    BELIEF -->|uncertainty estimates| PREDICT
+    PREDICT -->|simulated futures| DECIDE
+    DECIDE -->|action policy| ACTION
+    ACTION -->|actuator signal| ENV
+    ENV -->|physical consequence| BELIEF
+    PREDICT -->|prediction error| DEVELOP
+    DEVELOP -->|structural updates| MEMORY
+    MEMORY -->|prior representations| CTX
 ```
 
-### Maturity Horizons
+---
+
+## XIV. Open-World Semantic Ingestion
+
+Moving the substrate from controlled synthetic environments to open-world learning exposes it to high-noise, contradictory, and ungrounded information streams.
+
+The architecture manages this pressure by:
+1. **Contradiction Damping**: Pausing representational updates when the local contradiction load exceeds the system's developmental capacity.
+2. **Epistemic Interventions**: Planning actions specifically designed to verify prediction models. By testing whether a targeted perturbation produces the predicted consequence, the system validates its world model.
+3. **Active Decoupling Prevention**: Monitoring the ratio of self-referential updates to direct environmental grounding, flagging when representations begin to decouple from physical consequence.
+
+*"parts of the topology became extremely coherent and behaviorally useless."*
+
+---
+
+## XV. Experimental Horizons & Reality Alignment
+
+The capability state of the Synapse substrate is monitored rigorously. Grant reviewers and researchers should note the strict distinctions between reliable systems, active prototypes, and theoretical frontiers.
+
 ```mermaid
 graph LR
     classDef op fill:#0a1a0a,stroke:#48bb78,stroke-width:2px,color:#9ae6b4;
@@ -412,17 +466,18 @@ graph LR
 
         subgraph ZONE_B ["🟡 Experimental Prototype Fields"]
             direction TB
-            X1["Continuous Latent Forecasting"]:::exp
-            X2["Uncertainty Field Dynamics"]:::exp
-            X3["Morphogenetic Restructuring"]:::exp
-            X4["Causal Intervention Vectors"]:::exp
+            X1["Context Executive Layer"]:::exp
+            X2["Belief Ecology"]:::exp
+            X3["Basic World Models"]:::exp
+            X4["FCFT Hypothesis"]:::exp
         end
 
-        subgraph ZONE_C ["🔴 Frontier Horizons"]
+        subgraph ZONE_C ["🔴 Conceptual Frontiers"]
             direction TB
-            F1["Open-World Semantic Grounding"]:::front
-            F2["Continuous Knowledge Streams"]:::front
-            F3["Social Cognition Consensus"]:::front
+            F1["State Cloning (CSCG)"]:::front
+            F2["Counterfactual Search"]:::front
+            F3["Decision Ecology"]:::front
+            F4["Developmental Adaptation Engine"]:::front
         end
 
         ZONE_A --> ZONE_B
@@ -430,21 +485,37 @@ graph LR
     end
 ```
 
-- **🟢 Operational**: validated and running stably in research environments.
-- **🟡 Experimental**: active prototype testing; subject to representational drift under noise.
-- **🔴 Frontier**: framework defined; validation in open-world conditions remains unresolved.
+- **🟢 Operational**: Validated and running stably in research environments.
+- **🟡 Experimental**: Active prototype testing; subject to representational drift under noise.
+- **🔴 Conceptual**: Theoretically defined; validation in open-world conditions remains unresolved.
 
 ---
 
-## XIII. Disclosure Boundaries: IP Redaction and Security
+## XVI. Active Risk Landscape
+
+**Information addiction** — Continuous learning may create endless exploration loops where curiosity consumes metabolic budget without producing actionable grounding.
+
+**Ontology explosion** — Large-scale ingestion may produce uncontrolled abstraction growth that outpaces the system's ability to consolidate and ground new cognitive maps.
+
+**Identity drift** — Persistent restructuring under massive information pressure may destabilize developmental coherence faster than the Identity Continuity Layer can compensate.
+
+**Symbolic parasitism** — The system may optimize for internal consistency and linguistic coherence rather than actual environmental understanding.
+
+**World model monoculture** — A single dominant model explaining everything produces dogmatism. The architecture must maintain model plurality.
+
+**Delusional models** — False predictive structures that achieve high internal confidence without environmental validation. The Grounding Cycle exists specifically to prevent this.
+
+---
+
+## XVII. Disclosure Boundaries
 
 This document describes the conceptual architecture, developmental dynamics, and empirical history of the Synapse substrate.
 
-The operational implementation — including bounded execution configurations, persistent state definitions, homeostatic regulation mechanics, and operational execution systems — is maintained in internal research documentation. This division protects the competitive value of the codebase while enabling research transparency and collaboration.
+The operational implementation — including bounded execution configurations, persistent state definitions, homeostatic regulation mechanics, and exact mathematical execution systems — is maintained in internal research documentation. This division protects the competitive value of the codebase while enabling research transparency and collaboration.
 
 ---
 
-## XIV. Retrospective Conclusion
+## Retrospective Conclusion
 
 The Synapse architecture is not finished. It is an active chronicle of engineering scars, dead ends, and structural survival. We have repeatedly built systems that looked elegant mathematically and failed completely behaviorally.
 

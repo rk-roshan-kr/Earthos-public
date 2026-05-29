@@ -97,3 +97,25 @@ The causal learning system assumes that the signal it is analyzing is structured
 > **Phase 38.3**: Noise injection caused the causal system to link random environmental features to internal metrics. The agent spent significant cycles optimizing for correlations that had no causal basis. It was very busy doing nothing useful.
 
 Active intervention — testing hypotheses through deliberate action rather than passive observation — partially addresses this. But causal learning under high noise remains fragile. We are not confident it is solved.
+
+---
+
+## 9. Catastrophic Interference & Memory Contamination
+
+Flat associative memory retrieval with no contextual gating produced hallucinated affordances. The system retrieved memories from entirely unrelated contexts, treated them as relevant, and acted on them with full confidence.
+
+> [!WARNING]
+> **Phase 37.8**: The agent retrieved navigation memories while reasoning about a software debugging context. It attempted to "walk around" a compile error. The retrieval system had no concept of contextual boundaries.
+
+This failure drove the introduction of the Context Executive Layer — thalamic-inspired gating that partitions memory so that only contextually relevant subsets of the topology are active during prediction. It also revealed a deeper problem: the architecture had been treating all observations as equally relevant regardless of the trajectory that produced them.
+
+---
+
+## 10. Concept-Centric Ontology Inflation
+
+The original architecture organized intelligence around concepts as primary entities. This produced genuine results in abstraction and compression, but failed catastrophically under open-world conditions.
+
+> [!IMPORTANT]
+> **Phase 35–38**: The system generated new concepts faster than it could ground them. Taxonomic depth grew without behavioral utility. The ontology became an elaborate, expensive structure that consumed resources and produced no predictive improvement.
+
+This failure was not a bug — it was a consequence of the architectural assumption that "concepts are primary." The shift toward cognitive maps and schema ecology emerged directly from this failure: representations should be traversable topologies, not hierarchical taxonomies.

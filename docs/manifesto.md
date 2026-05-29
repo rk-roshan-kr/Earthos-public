@@ -36,7 +36,7 @@ graph TD
     Synapse --> Frontier[Experimental Cognition Frontier]:::frontier
 ```
 
-Earthos shifts the research focus from **parameter scaling** to **competence scaling under ecological constraint** — investigating how intelligence develops when an agent must survive, adapt, and maintain coherent identity over time.
+Earthos shifts the research focus from **parameter scaling** to **competence scaling under ecological constraint** — investigating how intelligence develops when an agent must survive, adapt, and maintain coherent identity over time through explicit **World Models**.
 
 ---
 
@@ -44,21 +44,19 @@ Earthos shifts the research focus from **parameter scaling** to **competence sca
 
 ### 1. Bounded Substrate Architecture
 
-We maintain a small, frozen stable core and allow all cognitive complexity to emerge within self-organizing experimental fields layered above it. The stable core never adapts. The experimental frontier reorganizes continuously. This separation is what makes the system scientifically meaningful — without a stable reference frame, it is impossible to measure developmental change.
+We maintain a small, frozen stable core and allow all cognitive complexity (Cognitive Maps, Belief Ecology, Decision Ecology) to emerge within self-organizing experimental fields layered above it. The stable core never adapts. The experimental frontier reorganizes continuously via Developmental Adaptation. This separation is what makes the system scientifically meaningful.
 
 ### 2. Persistent Identity Continuity
 
-The system does not undergo epoch resets or environment wipes. Experiences, memory associations, and representational updates persist across the entire lifecycle. The core research problem is maintaining coherent selfhood under continuous, real-time environmental pressure — not just within a single session, but across developmental time.
+The system does not undergo epoch resets or environment wipes. Experiences, schemas, and representational updates persist across the entire lifecycle. The core research problem is maintaining coherent selfhood under continuous, real-time environmental pressure — ensuring **State Clones** resolve ambiguous history into stable identity across developmental time.
 
 ### 3. Open-World Grounding
 
-Internal representations are not validated by logical self-consistency or linguistic coherence. They are tested against environmental friction. When the system's predictions clash with sensory feedback, that friction generates developmental tension that forces representational restructuring.
-
-Grounding is not a module. It is a continuous pressure.
+Internal representations are not validated by logical self-consistency or linguistic coherence. They are tested against environmental friction. When the system's simulated counterfactual futures clash with sensory feedback, that prediction error generates developmental tension forcing structural reorganization.
 
 ### 4. Bounded Cognitive Metabolism
 
-No compute is assumed free. Every cognitive operation — simulation, planning, memory consolidation, representational restructuring — has a metabolic cost. The system must choose between spending resources to plan and conserving them to survive. This constraint forces the emergence of efficient, well-structured cognition rather than unchecked abstraction growth.
+No compute is assumed free. Every cognitive operation — counterfactual search, memory consolidation, topological restructuring — has a metabolic cost. The **Decision Ecology** must balance epistemic curiosity against resource scarcity. This constraint forces the emergence of efficient, well-structured cognition rather than unchecked abstraction growth.
 
 ---
 
@@ -66,12 +64,12 @@ No compute is assumed free. Every cognitive operation — simulation, planning, 
 
 | Dimension | Episodic LLM Agents | Earthos Developmental Architecture |
 |---|---|---|
-| **Persistence** | Stateless; wiped after each session | Lifecycle-long continuity of memory and representational structure |
-| **Metabolic Model** | Compute costs ignored by the agent | Explicit metabolic constraints drive all cognitive decisions |
-| **Representation** | Static embeddings from frozen training | Continuous representational geometry that restructures under developmental pressure |
-| **Adaptation** | Offline gradient descent against static datasets | Real-time restructuring driven by environmental friction |
-| **Self-Auditing** | External alignment and prompt engineering | Active internal grounding that tests predictions against physical consequence |
-| **Ontological Growth** | Fixed vocabulary determined at training | Dynamic concept ecology that grows, consolidates, and prunes under developmental pressure |
+| **Persistence** | Stateless; wiped after each session | Lifecycle-long continuity of memory and map topologies |
+| **Metabolic Model** | Compute costs ignored by the agent | Explicit metabolic constraints drive Decision Ecology |
+| **Representation** | Static embeddings from frozen training | Traversable Cognitive Maps and Predictive World Models |
+| **Adaptation** | Offline gradient descent against static datasets | Structural reorganization via the Developmental Adaptation Engine |
+| **Action Selection** | Direct instruction / prompt-following | Counterfactual Search comparing simulated futures |
+| **Ontological Growth** | Fixed vocabulary determined at training | Dynamic schema ecology that grows, consolidates, and prunes |
 
 ---
 
@@ -79,11 +77,11 @@ No compute is assumed free. Every cognitive operation — simulation, planning, 
 
 We believe the path toward general intelligence requires documenting failures honestly rather than polishing public narratives. Our development is structured around:
 
-1. **Tradeoff transparency** — documenting why systems fail (the homeostasis vs. adaptation dilemma, the false affordance problem, causal learning under noise).
-2. **Failure analysis** — actively sharing postmortems on structural problems: monitor bureaucracy, symbolic theater, synchronization monocultures.
+1. **Tradeoff transparency** — documenting why systems fail (the homeostasis vs. adaptation dilemma, identity erosion, causal learning under noise).
+2. **Failure analysis** — actively sharing postmortems on structural problems: monitor bureaucracy, symbolic theater, concept-centric memory bloat.
 3. **Reality-grounded verification** — testing against adversarial noise-injected environments rather than static benchmarks.
 
-Our target is not a system that appears intelligent. It is a program that generates honest findings about what persistent, bounded, developmentally-grounded cognition actually requires.
+Our target is not a system that appears intelligent. It is a program that generates honest findings about what persistent, bounded, predictive cognition actually requires.
 
 ---
 

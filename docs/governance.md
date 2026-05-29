@@ -60,4 +60,10 @@ The goal is to prevent the system from becoming a closed symbolic loop that main
 
 Governance currently cannot perfectly distinguish between legitimate representational adaptation and pathological drift. It cannot reliably detect when curiosity-driven exploration has crossed into information addiction. It cannot always correctly calibrate the tradeoff between continuity and flexibility in rapidly-changing environments.
 
+These limitations are directly connected to the architecture's broader research directions:
+
+- The **Decision Ecology** is investigating whether multiple competing pressures (epistemic curiosity vs. metabolic cost vs. risk) can self-regulate exploration without a centralized governance override.
+- The **Developmental Adaptation Engine** is investigating whether structural reorganization (map pruning, schema specialization) can be governed by an Adaptation Governance Layer that explicitly protects core identity while allowing mutable structures to change.
+- The **Identity Continuity Layer** is a conceptual safeguard ensuring that long-term goals, critical memories, and foundational safety constraints are protected from destructive restructuring.
+
 These are not engineering oversights. They are the actual hard problems. We are working on them.
