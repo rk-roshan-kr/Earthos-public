@@ -6,23 +6,28 @@ This document provides a realistic, unpolished assessment of where the Earthos r
 
 ## Research Status
 
-| Capability | Status |
-|---|---|
-| Deterministic runtime and execution replay | Operational |
-| Persistent memory across session boundaries | Operational |
-| Context Executive Layer (Gating) | Prototype |
-| Schema Ecology (Prediction tracking) | Prototype |
-| Probabilistic Belief Ecology | Prototype |
-| Basic Forward World Models | Prototype |
-| Counterfactual Search Engine | Conceptual |
-| State Cloning Engine (Identity tracking) | Conceptual |
-| Decision Ecology (Multi-pressure planning) | Conceptual |
-| Developmental Adaptation Engine | Conceptual |
-| Field coupling dynamics (FCFT) | Experimental Hypothesis |
+Following the validation cycles of Phase 39, the active implementation status of all Synapse components is structured as follows:
 
-**Operational** means running code with validated behavior in research environments.  
-**Prototype** means partial implementation under active testing — it sometimes works, sometimes fails, and we understand roughly why.  
-**Conceptual** means theoretically defined and accepted via architecture migrations, but no production code exists yet. Aspirational research direction.  
+| Capability | Status | Notes |
+|---|---|---|
+| Deterministic runtime and execution replay | Operational | Core session replay achieves 100% parity |
+| Persistent memory across session boundaries | Operational | Graph storage, paging, and persistence fully functional |
+| Identity Continuity Layer | Operational | Verified multi-hop selfhood protection hashes via falsification suite |
+| Context Executive Layer (Gating) | Prototype | Verification of gating transitions completed |
+| State Cloning Engine (Identity tracking) | Prototype | Contextual clone resolution and genealogy tracking implemented |
+| Cognitive Maps (Structured compilation) | Prototype | Topological maps with similarity search active |
+| Schema Ecology (Prediction tracking) | Prototype | Conditional schema extraction and Analogical Rebinding under active testing |
+| Belief Ecology (Probabilistic updating) | Prototype | Dynamic updates via expectation violations active |
+| Prediction Error Registry | Prototype | Recording expectations, outcomes, and local free energy variables |
+| Surprise Engine | Prototype | Variational surprise calculations and attention routing active |
+| Counterfactual Search Engine | Prototype | Branching projection tree verified under search budgets |
+| Decision Ecology (Multi-pressure planning) | Prototype | Instrumental vs. Epistemic value competitions under test |
+| Developmental Adaptation Engine | Prototype | Map fusion and topological pruning active |
+| Field coupling dynamics (FCFT) | Experimental Hypothesis | Continuous sensorimotor coordinate layers beneath discrete topologies |
+
+**Operational** means running code with fully validated, reproducible behavior in target research environments.  
+**Prototype** means partial implementation under active testing—the code exists, passes its unit tests, but is still under integration and scaling validation.  
+**Conceptual** means theoretically defined but without active source files in the primary repository.  
 **Experimental Hypothesis** means an unproven representational paradigm being tested alongside core mechanics.
 
 ---
@@ -45,30 +50,20 @@ The governance layer successfully prevents the most dangerous failure modes we'v
 
 ---
 
-## Known Hard Problems
+## Known Hard Problems (Prediction-Centric)
 
-### The Homeostasis vs. Adaptation Dilemma
-
-This is the central unsolved tension in the architecture.
-
-To maintain coherent self-model continuity, the governance layer dampens representational updates during high-pressure environmental transitions. This protection is necessary — without it, the agent's identity fractures and it loses access to its own history.
+### 1. The Homeostasis vs. Adaptation Dilemma
+This is the central unsolved tension in the architecture. To maintain coherent self-model continuity, the governance layer dampens representational updates during high-pressure environmental transitions. This protection is necessary—without it, the agent's identity fractures, its local maps collapse under sudden surprise gradients, and it loses access to its own history.
 
 But the protection creates a serious problem: when the environment genuinely changes its rules, the agent cannot adapt. It chooses stable ignorance over disruptive learning. It maintains its prior **World Model** even as prediction errors accumulate, because the cost of restructuring feels greater than the cost of being wrong.
 
-> [!NOTE]
-> **Phase 38.1**: We ran the agent through a ruleset inversion experiment. Instead of adapting, the system locked into its existing world model and accepted persistent high prediction error rather than allow its representational geometry to reorganize. It chose stagnation over self-modification. We have since improved the balance between continuity protection and adaptive flexibility — but this tension has not been resolved.
+### 2. Causal Learning and Epistemic Curiosity under Noise
+The causal learning subsystem requires clean, structured observational conditions to reliably extract causal relationships. When sensory noise is high, it mistakes random temporal correlations for genuine causal structure and pursues meaningless optimization paths. 
 
-### Causal Learning Under Noise
+Adopting Schema-Based Active Inference (S-HAI)—where actions are driven by epistemic value to reduce uncertainty in high-entropy maps—partially mitigates this. However, balancing metabolic limits against curiosity remains an open calibration problem.
 
-The causal learning subsystem requires clean, structured observational conditions to reliably extract causal relationships. When sensory noise is high, it mistakes random temporal correlations for genuine causal structure and pursues meaningless optimization paths.
-
-Active inference — the ability to test causal hypotheses by taking deliberate actions to reduce uncertainty (Epistemic Curiosity) — partially addresses this. But the solution is incomplete.
-
-### Predictive Model Fragility Under High Entropy
-
-The predictive World Model struggles in high-entropy conditions. When environmental variance exceeds the system's developmental tolerance, it can enter a kind of representational panic — wiping short-term structure to escape the noise rather than adapting to it. This is the cognitive equivalent of a system crash followed by a reboot.
-
-We have made this failure mode less frequent. We have not eliminated it.
+### 3. Surprise Calibration and Attention Saturation
+The Surprise Engine (`prediction_surprise_subsystem.py`) gates attention and halts map updates when expectation violations exceed the attention threshold. Under sustained open-world noise, the system can enter a state of **attention saturation**—where constant surprise signals prevent the agent from stabilizing *any* belief, leading to representational panic and the cognitive equivalent of a system crash.
 
 ---
 

@@ -49,54 +49,54 @@ This section documents the formal pivots in the research direction, establishing
 
 Under this realignment, the future phase sequence is restructured as follows:
 
-### Phase 39: Sequence-First Latent State Foundations (🟢 Realigned)
-*   *Objective*: Replace the continuous morphogenetic field layer with a sequence-first Cloned HMM (CHMM) and CSCG representation substrate.
+### Phase 39: Sequence-First Latent State Foundations & Prediction-Centric Gating (🟢 Realigned)
+*   *Objective*: Replace legacy unconstrained morphogenetic fields with a sequence-first Cloned HMM/CSCG representation substrate and establish the Prediction Error Registry & Surprise Engine.
 *   *Key Tasks*:
-    *   Implement contextual observation cloning (State Cloning Engine).
-    *   Construct action-gated sequence transition matrices.
-    *   Achieve context disambiguation in aliased simulated corridors.
-    *   Establish Context Executive Layer for memory partitioning.
+    *   Implement contextual observation cloning with genealogy tracking (`CloneLineage` and `CognitiveSnapshot`).
+    *   Build exact `SurpriseEngine` (`prediction_surprise_subsystem.py`) to measure mathematical violations of expectations.
+    *   Implement `predictive_error_field` to calculate coordinate transition discrepancies.
+    *   Establish Thalamic `ContextExecutiveLayer` gating transition priorities via variational surprise.
+    *   Validate 4-level progressive snapshot corruption/restoration safeguards.
 
-### Phase 40: Factorized Schema Ecologies (🟢 Realigned)
-*   *Objective*: Establish object-oriented causal representation.
+### Phase 40: Factorized Schema Ecologies & Future Simulation (🟢 Realigned)
+*   *Objective*: Extract object-oriented causal representations and enable branching counterfactual futures.
 *   *Key Tasks*:
-    *   Extract conditional schemas from sequential state-space interactions.
-    *   Build analogical schema rebinding structures.
-    *   Implement schema competition, mutation, and ecological dynamics.
-    *   Verify zero-shot causal transfer under physical rule changes.
+    *   Extract conditional schemas from sequential state-space transitions.
+    *   Build `CounterfactualSimulationEngine` (`counterfactual_simulation_engine.py`) to simulate branching state clones as future trajectories.
+    *   Implement schema competition, mutation, and ecological selection dynamics.
+    *   Verify zero-shot causal transfer under physical rule changes by rebinding schemas.
 
-### Phase 41: World Models & Belief Ecology (🟢 Realigned)
-*   *Objective*: Implement predictive cognition substrate.
+### Phase 41: World Models & Belief Dynamics (🟢 Realigned)
+*   *Objective*: Implement predictive world models and active belief update fields.
 *   *Key Tasks*:
-    *   Build multiple partial World Models (local, regional, global) from schemas and maps.
-    *   Implement Belief Ecology with probability distributions over explanations.
-    *   Validate counterfactual simulation capability.
-    *   Integrate Active Inference epistemic value into path search.
+    *   Build local, regional, and global predictive world models from schemas and maps.
+    *   Deploy `Violation-of-Expectation Framework` to dynamically update belief confidence based on surprise.
+    *   Integrate Active Inference epistemic value to drive path selection towards high-uncertainty regions.
+    *   Validate belief stability under noisy, conflicting sensory streams.
 
-### Phase 42: Decision Ecology & Counterfactual Search (🟢 Realigned)
-*   *Objective*: Implement multi-pressure action selection.
+### Phase 42: Decision Ecology & Epistemic Pressure (🟢 Realigned)
+*   *Objective*: Implement action selection via multi-pressure competition.
 *   *Key Tasks*:
-    *   Build Counterfactual Search Engine for latent future comparison.
-    *   Implement Decision Ecology with competing pressures (success, curiosity, risk, cost).
-    *   Absorb intentionality/curiosity as epistemic pressure within the ecology.
-    *   Validate planning under metabolic constraint.
+    *   Construct Decision Ecology balancing Instrumental Value, Epistemic Curiosity, Resource Cost, and Risk.
+    *   Absorb legacy intentionality layers as epistemic curiosity within the pressure ecology.
+    *   Validate planning decisions under strict metabolic and memory budgeting.
 
-### Phase 43: Developmental Adaptation Engine (🟢 Realigned)
-*   *Objective*: Implement structural cognitive development.
+### Phase 43: Developmental Adaptation & Identity Guards (🟢 Realigned)
+*   *Objective*: Implement developmental map restructuring under sustained surprise pressure.
 *   *Key Tasks*:
-    *   Build DAE for map fusion, schema specialization, and topological pruning.
-    *   Implement Identity Continuity Layer protecting core selfhood.
+    *   Build DAE for map fusion and structural pruning under high cumulative surprise.
+    *   Implement `IdentityContinuityGuard` protecting core selfhood hashes during structural adaptations.
     *   Validate development over long horizons without identity erosion.
 
-### Phase 44: Cognitive Metrology Integration (🟢 Realigned)
-*   *Objective*: Deploy the mandatory benchmarking substrate.
+### Phase 44: Cognitive Metrology & Calibration (🟢 Realigned)
+*   *Objective*: Deploy benchmarking metrology metrics.
 *   *Key Tasks*:
-    *   Integrate ontology quality, belief consistency, and planning success metrics.
+    *   Deploy suite to measure Predictive Accuracy (PAQ), Surprise Calibration (SCQ), Belief Revision (BRQ), and Model Adaptation (MAQ).
     *   Enforce metrology-gated governance limits before open-world deployment.
 
-### Phase 45: Open-World Semantic Assimilation (🟢 Realigned)
-*   *Objective*: Deploy persistent learning under real-world noise.
+### Phase 45: Open-World Semantic Ingestion (🟢 Realigned)
+*   *Objective*: Persistent learning and validation under real-world noise.
 *   *Key Tasks*:
-    *   Test continuous schema acquisition against live information streams.
-    *   Implement metabolic protection bounds on ontology growth.
+    *   Test continuous schema acquisition against live, high-noise information streams.
+    *   Implement metabolic protection bounds on ontology inflation.
     *   Validate identity preservation under sustained open-world pressure.

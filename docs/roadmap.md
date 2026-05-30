@@ -56,13 +56,14 @@ The architecture transitioned to continuous field dynamics and morphogenetic top
 
 ## Current Frontier — Predictive Systems & Decision Ecology
 
-The current phase marks the transition from memory-centric pattern matching to world-model-centric predictive cognition.
+The current phase marks the transition from memory-centric pattern matching to world-model-centric predictive cognition. We explicitly treat memory as a support mechanism for active prediction.
 
 The core research directions:
-1. **Context Gating & State Cloning:** Can we resolve identity ambiguity by cloning states based on historical context, forming traversable Cognitive Maps?
-2. **World Modeling & Belief Ecology:** Can the system construct counterfactual reality models to explicitly manage uncertainty and competing probabilities?
-3. **Decision Ecology:** Can planning emerge organically from the competition between imagined futures driven by epistemic curiosity and metabolic resource constraints?
-4. **Developmental Adaptation:** How does the architecture structurally reorganize itself (pruning, specializing, growing) over long horizons without causing identity collapse?
+1. **Context Gating & State Cloning:** Disambiguating identity via clone structures (with genealogy tracking) within historical trajectories, forming sequence-first Cognitive Maps.
+2. **Surprise and Expectation Validation:** Deploying mathematical surprise calculations via the `SurpriseEngine` to dynamically calculate the Violation of Expectation and drive attention allocation.
+3. **Belief Confidence Dynamics:** Formulating dynamically-updated belief values based on past expectation accuracy ledger records (Prediction Error Registry).
+4. **Counterfactual Simulation:** Building branching future simulators (`CounterfactualSimulationEngine`) where actions are compared in parallel under strict metabolic computational budgets.
+5. **Developmental Adaptation:** Restructuring topologies (DAE map fusion and topological pruning) under sustained surprise pressure without causing identity erosion.
 
 ---
 

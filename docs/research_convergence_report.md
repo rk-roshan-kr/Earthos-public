@@ -78,14 +78,59 @@ By anchoring Synapse in **sequence-first Clone-Structured Cognitive Graphs** and
 
 | Component | Status | Notes |
 | :--- | :---: | :--- |
-| Memory Persistence | 🟢 Implemented | Graph storage, paging, persistence functional |
-| Context Executive Layer | 🟡 Prototype | Basic gating exists; full thalamic switching pending |
-| State Cloning (CHMM/CSCG) | 🔴 Conceptual | Phase 39 target |
-| Cognitive Maps | 🟡 Prototype | Legacy trajectory maps exist; lack cloned topology |
-| Schema Ecology | 🟡 Prototype | Legacy schemas exist; ecological dynamics theoretical |
-| Belief Ecology | 🟡 Prototype | Probability tracking exists; full factor graph reasoning partial |
-| World Models | 🟡 Prototype | Basic forward prediction; rich counterfactual simulation limited |
-| Counterfactual Search | 🔴 Conceptual | Active research direction |
-| Decision Ecology | 🔴 Conceptual | Multi-pressure competition is aspirational |
-| Developmental Adaptation | 🔴 Conceptual | Self-modification entirely conceptual |
-| FCFT | 🟡 Experimental | Code exists but viability under CSCG unproven |
+| Memory Persistence | 🟢 Operational | Graph storage, paging, persistence functional |
+| Context Executive Layer | 🟡 Prototype | Gating and transition resolution verified but pending open-world integration |
+| State Cloning (CHMM/CSCG) | 🟡 Prototype | Contextual clone resolution and genealogy tracking implemented at snapshot level |
+| Cognitive Maps | 🟡 Prototype | Topological maps with dynamic similarity search active |
+| Schema Ecology | 🟡 Prototype | Competing schemas, causal graph templates in development |
+| Belief Ecology | 🟡 Prototype | Dynamic belief updating and contradiction handling verified |
+| World Models | 🟡 Prototype | Expectation generation and predictive error registry implemented |
+| Counterfactual Search | 🟡 Prototype | Counterfactual projection and branching future tree verification active |
+| Decision Ecology | 🟡 Prototype | Competitions of epistemic curiosity and cost fields |
+| Developmental Adaptation | 🟡 Prototype | Structural map fusion and topological pruning active in development |
+| FCFT | 🟡 Experimental | Localized continuous motor layers beneath discrete cognitive maps |
+
+---
+
+## Research Convergence: Extracted Principles
+
+To govern the transition from memory-centric associative stores to predictive world modeling, the Synapse project has synthesized the foundational research of Dileep George (CSCG / Schema-Based Active Inference) and Karl Friston (Free Energy Principle / Active Inference) into a set of rigorous, actionable principles.
+
+```mermaid
+graph TD
+    classDef george fill:#0d1117,stroke:#ecc94b,stroke-width:1.5px,color:#f6e05e;
+    classDef friston fill:#0d1117,stroke:#4a9eff,stroke-width:1.5px,color:#90cdf4;
+    classDef synapse fill:#0d1117,stroke:#48bb78,stroke-width:2px,color:#9ae6b4;
+
+    DG["Dileep George\nCSCG & S-HAI"]:::george
+    KF["Karl Friston\nFree Energy Principle"]:::friston
+
+    SYN["Synapse Predictive substrate\nPrediction-Surprise-Revision Loop"]:::synapse
+
+    DG -->|Import: State Cloning & Schemas| SYN
+    KF -->|Import: Variational Free Energy| SYN
+
+    DG -.->|Reject: Pure Symbolic Token Action| SYN
+    KF -.->|Reject: Flat Message Passing| SYN
+```
+
+### 1. Dileep George (Clone-Structured Cognitive Graphs & Schema-Based Active Inference)
+*   **Imported Mechanisms**:
+    *   **Contextual State Cloning**: Observations are cloned across distinct historical trajectories (`CognitiveSnapshot.clonelineage` tracking) to prevent perceptual aliasing without unconstrained high-dimensional coordinate histories.
+    *   **Action-Gated Trajectories**: Transition dynamics are explicitly action-conditioned, allowing the system to learn path-dependent transition models.
+*   **Rejected Mechanisms**:
+    *   **Pure Symbolic Action Vectors**: S-HAI models assume discrete, symbolic action tokens. EarthOS rejects this for physical grounding, integrating continuous sensorimotor trajectories coupled with localized continuous field coordinates ($FCFT$).
+    *   **Flat Topological Mapping**: We reject passive state transition counting without attention biasing, integrating the Thalamic `Context Executive Layer` to gate transition priorities.
+*   **Extracted Principles**:
+    *   **Ambiguity Disambiguation via History**: Perceptual ambiguity is resolved structurally by creating clone pathways rather than computationally via complex backpropagation.
+
+### 2. Karl Friston (Free Energy Principle & Active Inference)
+*   **Imported Mechanisms**:
+    *   **Variational Free Energy Minimization**: The primary computational objective of the cognitive substrate is to minimize variational surprise (prediction-observation discrepancies).
+    *   **Epistemic Exploration Drive**: Path selection balances instrumental reward with epistemic value (maximizing information gain in high-uncertainty map regions).
+*   **Rejected Mechanisms**:
+    *   **Flat Multi-Scale Gating**: Standard FEP models propose flat hierarchical message passing. EarthOS rejects this due to **Catastrophic Interference**, enforcing hard thalamic partitioning via `ContextExecutiveLayer`.
+    *   **Passive Homeostasis**: We reject passive minimization that risks the "dark room" deadlock, actively injecting metabolic scarcity pressures that penalize inactive representations.
+*   **Extracted Principles**:
+    *   **Surprise-Driven Development**: High variational surprise acts as a developmental catalyst, halting local updates, routing focal attention, and triggering localized topological restructures.
+    *   **Expectation Gated Grounding**: The environment is the ultimate arbiter; direct physical resistance forces the updating of internal expectations.

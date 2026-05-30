@@ -6,11 +6,13 @@ The world modeling layer of Synapse is the predictive core of the architecture. 
 
 ## Evolution: From Memory to Prediction
 
-The world model was not always what it is now. The architecture historically assumed that better memory produces better cognition — that sufficient storage and retrieval would generate understanding.
+The world model is the predictive engine of Synapse. In our prior roadmap, we stated that "world models store understanding." We now explicitly reject this formulation. 
+
+**World models generate expectations.** Their quality is measured purely by predictive accuracy and surprise reduction under the metabolic constraints of the substrate. A world model that predicts poorly or fails to handle high sensory entropy is considered weak, regardless of its representational complexity or taxonomic depth.
 
 Research into Active Inference, the Free Energy Principle, and World Models (Ha & Schmidhuber) revealed a different relationship: memory exists to support predictive models. A system that remembers everything but predicts nothing is not intelligent. It is an archive.
 
-This insight drove the transition from memory-centric cognition toward world-model-centric cognition. The system now treats prediction — not storage — as the primary cognitive object.
+This insight drove the transition from memory-centric cognition toward world-model-centric predictive cognition. The system now treats prediction — not storage — as the primary cognitive object.
 
 **The Causal Correlation Collapse** — When we introduced sensory noise into the observation streams, the early causal discovery system collapsed. Without clean, structured inputs, it began mistaking random temporal correlations for genuine causal relationships. The agent linked its own internal energy consumption to completely unrelated environmental features and spent significant cycles optimizing for correlations that had no causal basis.
 
@@ -20,7 +22,7 @@ This revealed a fundamental limitation: passive correlation analysis is insuffic
 
 The agent navigated around obstacles that weren't there while ignoring evidence that the space was empty. Its internal model was more trusted than incoming physical feedback.
 
-The resolution: physical consequence must override internal model confidence. When direct environmental feedback contradicts a predicted state, the internal representation yields — not the other way around.
+The resolution: physical consequence must override internal model confidence. When direct environmental feedback contradicts a predicted state, the internal representation yields — not the other way around. Varational surprise acts as the immune response.
 
 ---
 
@@ -36,14 +38,18 @@ Multiple partial world models coexist rather than a single monolithic simulation
 
 ## Uncertainty and Belief Ecology
 
-Beliefs in the world model are not binary. Every representational structure carries an associated uncertainty — a measure of how confident the system is in that representation based on recent grounding feedback.
+Beliefs in the world model are not static binary values or raw unweighted probabilities. Every belief is a dynamic, coordinate-linked representation carrying active **Belief Confidence Dynamics** that adapt in real time to the environment's resistance.
 
-The architecture maintains probability distributions over explanations rather than storing absolute facts. Each belief carries:
-- Confidence score
-- Supporting evidence
-- Alternative explanations (competing beliefs)
+The system maintains probability distributions over explanations rather than storing absolute facts. Confidence in a belief is calculated and updated using the **Violation of Expectation Framework**:
+1. **Theory/Belief Activation**: The agent retrieves the context-relevant belief distribution.
+2. **Expectation Generation**: The belief projects a precise expectation vector ($E$) representing the expected sensorimotor outcome.
+3. **Grounding Observation**: The agent executes an action and ingests the sensory grounding vector ($O$).
+4. **Surprise Assessment**: The Surprise Engine calculates the expectation violation score ($V$) based on the difference between expected and observed results.
+5. **Dynamic Update**: Confidence ($C$) is updated based on the violation score:
+   $$C_{t+1} = C_t \times (1.0 - \eta V_t) + \beta (\text{Evidence})$$
+   where high expectation violations ($V_t$) trigger steep confidence decays, driving attention to seek alternative counterfactual beliefs.
 
-High-uncertainty regions attract additional processing resources. The system allocates attention toward the parts of its world model that are least grounded, using available interaction cycles to gather confirming or disconfirming evidence.
+High-uncertainty regions attract additional processing resources. The system allocates attention toward the parts of its world model that are least grounded, planning active epistemic interventions to gather confirming or disconfirming evidence rather than resting in comfortable, untested assumptions.
 
 When incoming information directly contradicts an established high-confidence belief, the system does not silently update. It flags the contradiction, routes attention toward the conflicting region, and runs evaluation cycles before committing any restructuring. This prevents noisy or adversarial inputs from corrupting stable, well-grounded representations too easily.
 
