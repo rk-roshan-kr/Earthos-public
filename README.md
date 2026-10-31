@@ -1,6 +1,24 @@
-# Earthos / earthoslab
+<div align="center">
+
+# Project Earthos · The Synapse Architecture
 ### Autonomous Biomimetic Cognitive Architecture
 **Beyond Brute-Force Scaling: Autonomous Closed-Loop Distillation, Bayesian Causal Inversion, and Deterministic Graph Traversal at Sub-5W Execution**
+
+[![Release](https://img.shields.io/badge/Release-v1.0.0-0284c7?style=for-the-badge&logo=github)](https://github.com/rk-roshan-kr/Earthos-public/releases/tag/v1.0.0)
+[![Architecture](https://img.shields.io/badge/Architecture-Synapse-0f172a?style=for-the-badge)](docs/PUBLIC_RELEASE_ANNOUNCEMENT.md)
+[![Power](https://img.shields.io/badge/Power-%3C%205%20Watts-10b981?style=for-the-badge)](docs/PUBLIC_RELEASE_ANNOUNCEMENT.pdf)
+[![Evaluated Probes](https://img.shields.io/badge/Evaluated%20Probes-443-8b5cf6?style=for-the-badge)](data/distillation_evaluation_probes.csv)
+[![Net Learning Gain](https://img.shields.io/badge/Net%20Learning%20Gain-%2B47.18%20pp-059669?style=for-the-badge)](data/distillation_evaluation_probes.csv)
+[![Whitepaper](https://img.shields.io/badge/Whitepaper-21%20Pages%20(PDF)-dc2626?style=for-the-badge)](docs/PUBLIC_RELEASE_ANNOUNCEMENT.pdf)
+[![Zero LLM](https://img.shields.io/badge/Zero%20LLM-In%20Production-f59e0b?style=for-the-badge)](docs/PUBLIC_RELEASE_ANNOUNCEMENT.md)
+
+<br/>
+
+**Founder & Lead Architect:** Roshan Kumar Gupta  
+**Organization:** `earthoslab` · **Contact:** `roshankumargupta.sh@gmail.com`  
+**Announcement Date:** October 31, 2026
+
+</div>
 
 ---
 
@@ -10,6 +28,7 @@
 > - 🌐 **[Web-Formatted Announcement](docs/PUBLIC_RELEASE_ANNOUNCEMENT.html)**
 > - 📊 **[Empirical Evaluation Probes Dataset (CSV)](data/distillation_evaluation_probes.csv)** *(Complete 443-probe unedited benchmark)*
 > - 📈 **[155-Round Distillation Time Series (CSV)](data/distillation_time_series.csv)** *(20-column telemetry log)*
+> - 🔬 **[5-Hour Distillation Research Report](experiments/5HR_AUTONOMOUS_DISTILLATION_RESEARCH_REPORT.md)** *(Comprehensive experimental writeup)*
 
 ---
 
@@ -22,9 +41,9 @@ The artificial intelligence industry is racing down a path of brute-force scalin
 
 Nature took a radically different path. A young child learns continuous cause-and-effect models of physical reality from sparse real-time interactions on a metabolic budget of **under 15 Watts**—without dense weight overwrites or requiring complete retraining.
 
-**Earthos** (and its production research vehicle, **earthoslab**) is an autonomous, biomimetic cognitive architecture grounded in sparse topological factor graphs, homeostatic self-regulation, and continuous sleep consolidation.
+**Synapse** is an autonomous, biomimetic cognitive architecture developed under Project **Earthos** by **earthoslab**, grounded in sparse topological factor graphs, homeostatic self-regulation, and continuous sleep consolidation.
 
-In an unbroken **5.05-hour (18,171-second) autonomous distillation experiment**, earthoslab learned from a blank slate (*tabula rasa*) across **155 curriculum modules**, formulating **472 autonomous Socratic questions** and establishing **64 verified causal transitions** across **666 grounded physical concepts** from an extraordinarily compact **25 Kilobyte Socratic curriculum** (874 short sentences). Running deterministically on a single consumer CPU core at **under 5 Watts**, earthoslab demonstrates exact Bayesian causal inversion, zero stochastic fabrication, and modular concept persistence without dense gradient overwrite.
+In an unbroken **5.05-hour (18,171-second) autonomous distillation experiment**, Synapse learned from a blank slate (*tabula rasa*) across **155 curriculum modules**, formulating **472 autonomous Socratic questions** and establishing **64 verified causal transitions** across **666 grounded physical concepts** from an extraordinarily compact **25 Kilobyte Socratic curriculum** (874 short sentences). Running deterministically on a single consumer CPU core at **under 5 Watts**, Synapse demonstrates exact Bayesian causal inversion, zero stochastic fabrication, and modular concept persistence without dense gradient overwrite.
 
 ---
 
@@ -64,17 +83,17 @@ The following transcripts represent actual live outputs generated when querying 
 ```text
 User Prompt: "molecule causes what?"
 
-earthoslab Output:
+Synapse Output:
 Active Causal Transitions for `molecule`:
 * Molecule causes Reaction.
 ```
-*Why this matters:* earthoslab does not produce stochastic token predictions. It verifies $T(s_j \mid s_i) > 0.50$ across its state transitions. If a pathway is proven, it answers with mathematical certainty; if not, it is structurally impossible to fabricate one out of statistical token noise.
+*Scientific Significance:* Synapse does not produce stochastic token predictions. It verifies $T(s_j \mid s_i) > 0.50$ across its state transitions. If a pathway is proven, it answers with mathematical certainty; if not, it is structurally impossible to fabricate one out of statistical token noise.
 
 ### Proof 2: Bayesian Inverse Diagnosis (Abductive Retrodiction)
 ```text
 User Prompt: "reaction happens due to what?"
 
-earthoslab Output:
+Synapse Output:
 Abductive Causal Diagnosis (Backward Retrodiction)
 Reaction is caused by Enzyme.
 
@@ -83,27 +102,27 @@ Reaction is caused by Enzyme.
 * Alternative Candidate Causes: `molecules`, `substrate`, `molecule`,
                                 `enzymes`, `substrates`, `cofactors`
 ```
-*Why this matters:* A search engine or text matcher cannot invert causality without seeing the inverse phrasing during training. earthoslab inverted its hidden Markov states to compute $P(\text{Cause} \mid \text{Effect}=\text{Reaction})$, correctly identifying `enzyme` while ranking biochemically valid candidates (`substrate`, `cofactors`).
+*Scientific Significance:* A search engine or text matcher cannot invert causality without seeing the inverse phrasing during training. Synapse inverted its hidden Markov states to compute $P(\text{Cause} \mid \text{Effect}=\text{Reaction})$, correctly identifying `enzyme` while ranking biochemically valid candidates (`substrate`, `cofactors`).
 
 ### Proof 3: Epistemic Metacognition (Active Uncertainty Tracking)
 ```text
 User Prompt: "sunlight causes what?"
 
-earthoslab Output:
+Synapse Output:
 Novel Symbol Detected: `Sunlight` is novel or weakly grounded (stability: 0.00 < 0.50).
 What are the causes or properties of Sunlight?
 
 * Executive Attention Focus: SOCRATIC_CLARIFICATION(sunlight)
 * Active Vocabulary: 666 grounded tokens
 ```
-*Why this matters:* Rather than hallucinating a plausible falsehood when facing an unfamiliar concept, earthoslab actively interrogates its environment to resolve uncertainty—the hallmark of epistemic metacognition.
+*Scientific Significance:* Rather than hallucinating a plausible falsehood when facing an unfamiliar concept, Synapse actively interrogates its environment to resolve uncertainty—the hallmark of epistemic metacognition.
 
 ### Proof 4: Real-Time Homeostatic Self-Awareness
 ```text
 User Prompt: "system status"
 
-earthoslab Output:
-earthoslab Continuous Cognition Organism Status
+Synapse Output:
+Synapse Continuous Cognition Organism Status
 * Current Tick: 4,868 (Rhythm: 2.0 Hz)
 * Executive Attention Focus: HOMEOSTATIC_TELEMETRY
 * Epistemic Uncertainty: 0.977
@@ -115,9 +134,71 @@ earthoslab Continuous Cognition Organism Status
 
 ---
 
-## Architectural Comparison
+## Standing on the Shoulders of Giants: Theoretical Lineage & Acknowledgments
 
-| Dimension | Monolithic Transformers (LLMs) | **earthoslab Cognitive Organism** |
+Synapse was built on the convergence of computational neuroscience, biophysics, and developmental cognitive science. We express our gratitude to the researchers and theorists whose work laid the groundwork:
+
+```mermaid
+graph TD
+    %% Core Pillars
+    subgraph Computational Neuroscience & Factor Graphs
+        DG["Dileep George<br/><b>Clone-Structured Causal Graphs (CSCG)</b><br/><i>Schema Networks & Cortical Aliasing</i>"]
+        JH["Jeff Hawkins<br/><b>Thousand Brains Theory</b><br/><i>Cortical Reference Frames & On Intelligence</i>"]
+        MLG["Miguel Lázaro-Gredilla<br/><b>Variational Message Passing</b><br/><i>Loopy Belief Propagation & Factor Graphs</i>"]
+        SA["Subutai Ahmad<br/><b>Active Dendritic Sparsity</b><br/><i>Prevention of Catastrophic Interference</i>"]
+    end
+
+    subgraph Cellular Biophysics & Active Inference
+        ML["Matthew Larkum<br/><b>Two-Compartment Pyramidal Neurons</b><br/><i>Apical-Basal BAC Coincidence Bursts</i>"]
+        KF["Karl Friston<br/><b>Variational Free Energy Principle</b><br/><i>Active Inference & Epistemic Curiosity</i>"]
+    end
+
+    subgraph Developmental Child Psychology
+        JS["Jenny Saffran<br/><b>Statistical Word Segmentation</b><br/><i>Transitional Probability & Surprisal Peaks</i>"]
+        MT["Michael Tomasello<br/><b>Usage-Based Grammar</b><br/><i>[Pivot + Variable] Schema Extraction</i>"]
+        LS["Linda Smith & Chen Yu<br/><b>Cross-Situational Grounding</b><br/><i>Statistical Lexical Invariance</i>"]
+    end
+
+    subgraph Memory & Consciousness
+        GB["György Buzsáki<br/><b>Hippocampal SWR Replay</b><br/><i>Sleep Memory Consolidation</i>"]
+        GWT["Bernard Baars & Stanislas Dehaene<br/><b>Global Workspace Theory (GWT)</b><br/><i>Lateral Inhibition & Conscious Broadcast</i>"]
+        JP["Judea Pearl<br/><b>Causal Inference</b><br/><i>Bayesian Inversion & Structural Models</i>"]
+    end
+
+    %% Convergence to Synapse
+    DG --> Synapse["<b>Synapse Cognitive Architecture</b><br/><i>earthoslab · Roshan Kumar Gupta</i>"]
+    JH --> Synapse
+    MLG --> Synapse
+    SA --> Synapse
+    ML --> Synapse
+    KF --> Synapse
+    JS --> Synapse
+    MT --> Synapse
+    LS --> Synapse
+    GB --> Synapse
+    GWT --> Synapse
+    JP --> Synapse
+
+    classDef default fill:#1e293b,stroke:#0284c7,stroke-width:1.5px,color:#f8fafc;
+    classDef highlight fill:#0284c7,stroke:#38bdf8,stroke-width:2.5px,color:#ffffff;
+    class Synapse highlight;
+```
+
+* **Dileep George, Jeff Hawkins, Miguel Lázaro-Gredilla, & Subutai Ahmad:** Pioneered Clone-Structured Causal Graphs (CSCG) and Thousand Brains reference frames, demonstrating how the neocortex resolves perceptual ambiguity through contextual hidden states.
+* **Matthew Larkum:** Uncovered the biophysical basis of associative coincidence: two-compartment pyramidal neurons computing coincidence bursts between feedforward basal inputs and top-down apical context.
+* **Karl Friston:** Formalized the Free Energy Principle, giving Synapse its mathematical foundation for active inference and epistemic curiosity.
+* **Jenny Saffran, Michael Tomasello, Linda Smith, & Chen Yu:** Grounded our infant developmental stages: statistical word boundary segmentation from surprisal peaks, usage-based $[Pivot + Variable]$ schema grammar, and cross-situational lexical grounding.
+* **György Buzsáki:** Discovered hippocampal Sharp-Wave Ripples (SWRs), inspiring Synapse's offline slow-wave sleep replay that consolidates multi-hop shortcuts without catastrophic forgetting.
+* **Bernard Baars & Stanislas Dehaene:** Formulated Global Workspace Theory, inspiring the Thalamic Reticular Nucleus (TRN) explaining-away factor graph.
+* **Judea Pearl:** Established structural causal calculus, enabling our abductive backward diagnosis.
+
+*For full citation trees, see [docs/coauthor_research_index.md](docs/coauthor_research_index.md) and [docs/paper_influence_log.md](docs/paper_influence_log.md).*
+
+---
+
+## Architectural Comparison: Transformers vs. Synapse
+
+| Dimension | Monolithic Transformers (LLMs) | **Synapse Cognitive Architecture** |
 | :--- | :--- | :--- |
 | **Cognitive Nature** | Static text library | **Living cognitive organism** |
 | **Developmental Stage** | Adult encyclopedic mimicry | **Toddler cognitive core ($\approx$\,2.5--3 yrs)** |
@@ -132,15 +213,6 @@ earthoslab Continuous Cognition Organism Status
 | **Lifelong Plasticity** | None (Weights frozen; fine-tuning erases priors) | **Native continuous online plasticity (Sparse edges)** |
 | **Autonomous Curiosity** | None (Passive respondent) | **Active (Formulates Socratic queries)** |
 | **Deployment Mode** | Centralized cloud servers | **100% Sovereign, air-gapped, offline** |
-
----
-
-## The Four Architectural Pillars
-
-1. **Continuous Plasticity Without Dense Overwriting:** Conventional neural networks overwrite dense weight matrices when distributions change, triggering catastrophic forgetting. earthoslab allocates sparse, topological memory pathways, allowing early causal structures to persist across 155 curriculum modules while supporting active developmental restructuring.
-2. **Deterministic Factor Graph Traversal (Zero Stochastic Fabrication):** Queries are resolved via deterministic factor graph traversal. If a causal edge $T(s_j \mid s_i) > 0.50$ exists, it is traversed; if absent, the model structurally cannot invent one out of statistical token sampling noise.
-3. **Epistemic Metacognition & Active Curiosity:** When certainty falls below threshold ($S < 0.50$), the system halts inference and issues targeted Socratic queries, actively driving its own curriculum.
-4. **Sleep-Dependent Neural Consolidation:** During offline periods, synthetic neural replay consolidates transient observations into multi-hop topological shortcuts, discovering indirect causal connections without supervision.
 
 ---
 
@@ -159,6 +231,9 @@ earthoslab Continuous Cognition Organism Status
 | :--- | :--- |
 | [**Technical White Paper & Announcement (PDF)**](docs/PUBLIC_RELEASE_ANNOUNCEMENT.pdf) | Official 21-page technical publication with embedded CSV dataset |
 | [**Markdown Release Announcement**](docs/PUBLIC_RELEASE_ANNOUNCEMENT.md) | Full text announcement with Reviewer Protocol & Interpretation Guide |
+| [**5-Hour Distillation Research Report**](experiments/5HR_AUTONOMOUS_DISTILLATION_RESEARCH_REPORT.md) | Formal empirical analysis of the 5.05-hour run with hardware telemetry |
+| [**Theoretical Lineage & Research Atlas**](docs/coauthor_research_index.md) | Mapping of collaborating research groups (Dileep George, Numenta, DeepMind) |
+| [**Paper Influence & Provenance Log**](docs/paper_influence_log.md) | Intellectual lineage registry behind each architectural milestone |
 | [**The Manifesto**](docs/manifesto.md) | What Earthos is, what it isn't, and why |
 | [**Research Philosophy**](docs/research_philosophy.md) | Project structure, Earthos vs. Synapse, research posture |
 | [**Cognitive Metrology Manifesto**](docs/cognitive_metrology_manifesto.md) | Principles of measuring machine cognition vs. statistical mimicry |

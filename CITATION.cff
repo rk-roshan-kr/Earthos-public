@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you utilize the Synapse Architecture, empirical evaluation probes, or white paper in your research, please cite it as below."
+title: "The Synapse Architecture: Autonomous Biomimetic Cognitive Architecture Beyond Brute-Force Scaling"
+authors:
+  - family-names: "Gupta"
+    given-names: "Roshan Kumar"
+    affiliation: "earthoslab"
+    email: "roshankumargupta.sh@gmail.com"
+date-released: 2026-10-31
+url: "https://github.com/rk-roshan-kr/Earthos-public"
+repository-code: "https://github.com/rk-roshan-kr/Earthos-public"
+keywords:
+  - "cognitive architecture"
+  - "biomimetic ai"
+  - "autonomous distillation"
+  - "bayesian causal inference"
+  - "sparse factor graphs"
+  - "sleep consolidation"
+license: "MIT"
+version: "1.0.0"
