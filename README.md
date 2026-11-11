@@ -6,6 +6,7 @@
 **The Continuous Causal Computing Substrate for Autonomous Edge Intelligence**
 
 [![Website](https://img.shields.io/badge/Website-earthoslab.com-0284c7?style=for-the-badge)](https://earthoslab.com)
+[![Careers](https://img.shields.io/badge/Careers-We're_Hiring-059669?style=for-the-badge)](https://earthoslab.com/careers)
 [![Release](https://img.shields.io/badge/Release-4.0%20(Nov%202026)-0f172a?style=for-the-badge)](releases/release_4.0_nov_2026/)
 [![Paper](https://img.shields.io/badge/White_Paper-PDF-dc2626?style=for-the-badge)](releases/release_4.0_nov_2026/PUBLIC_RELEASE_4_ANNOUNCEMENT.pdf)
 [![Architecture](https://img.shields.io/badge/Architecture-Proprietary%20IP-f59e0b?style=for-the-badge)](#proprietary-technology--ip-notice)
@@ -103,6 +104,20 @@ Modern artificial intelligence relies almost exclusively on monolithic Large Lan
   - Initial proof of concept for continuous online distillation without weight overwriting.
   - +47.18 percentage point net learning gain on held-out prediction and retrodiction probes.
   - Deterministic sub-1.5 ms causal graph traversal with zero stochastic fabrication.
+
+---
+
+## Careers at earthoslab · Building the Frontier
+
+We are assembling an elite, high-density team of engineers, researchers, and systems architects to build the continuous causal computing substrate from first principles. If you are driven by moving beyond brute-force transformer scaling and want to build sovereign cognitive architectures for the physical edge:
+
+* 🌐 **Explore Open Roles & Apply:** [earthoslab.com/careers](https://earthoslab.com/careers)
+* 🔬 **Focus Disciplines:**
+  - **Research:** Non-Autoregressive Architectures, Continuous Memory Substrates, Active Inference, and Computational Neuroscience.
+  - **Systems Engineering:** High-Performance C/C++/Rust Systems, Compilers & Graph Runtimes, Embedded Edge Execution.
+  - **Hardware & Silicon:** Low-Power Edge Accelerators, Sovereign Offline Hardware Integration.
+  - **Founders' Office:** Technical Strategy, Operations, and Institutional Partnerships.
+* 📩 **Direct Inquiries:** Reach out directly to [`roshan@earthoslab.com`](mailto:roshan@earthoslab.com) with links to your GitHub, research papers, or proof of exceptional engineering craft.
 
 ---
 
