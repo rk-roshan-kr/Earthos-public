@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # Project Earthos · Synapse
 ### earthoslab | Continuous Causal Intelligence
@@ -6,7 +6,7 @@
 **The Continuous Causal Computing Substrate for Autonomous Edge Intelligence**
 
 [![Website](https://img.shields.io/badge/Website-earthoslab.com-0284c7?style=for-the-badge)](https://earthoslab.com)
-[![Careers](https://img.shields.io/badge/Careers-We're_Hiring-059669?style=for-the-badge)](https://earthoslab.com/careers)
+[![Careers](https://img.shields.io/badge/Careers-Open_Applications-0284c7?style=for-the-badge)](https://earthoslab.com/careers)
 [![Release](https://img.shields.io/badge/Release-4.0%20(Nov%202026)-0f172a?style=for-the-badge)](releases/release_4.0_nov_2026/)
 [![Paper](https://img.shields.io/badge/White_Paper-PDF-dc2626?style=for-the-badge)](releases/release_4.0_nov_2026/PUBLIC_RELEASE_4_ANNOUNCEMENT.pdf)
 [![Architecture](https://img.shields.io/badge/Architecture-Proprietary%20IP-f59e0b?style=for-the-badge)](#proprietary-technology--ip-notice)
@@ -107,17 +107,18 @@ Modern artificial intelligence relies almost exclusively on monolithic Large Lan
 
 ---
 
-## Careers at earthoslab · Building the Frontier
+## Careers at earthoslab · Open Applications
 
-We are assembling an elite, high-density team of engineers, researchers, and systems architects to build the continuous causal computing substrate from first principles. If you are driven by moving beyond brute-force transformer scaling and want to build sovereign cognitive architectures for the physical edge:
+While we do not have immediate active openings today, earthoslab continuously reviews rolling and speculative applications from world-class researchers, systems engineers, and computational neuroscientists. 
 
-* 🌐 **Explore Open Roles & Apply:** [earthoslab.com/careers](https://earthoslab.com/careers)
-* 🔬 **Focus Disciplines:**
+If you are obsessed with moving beyond brute-force transformer scaling and want to build the next paradigm of sovereign continuous causal intelligence, we welcome your application:
+
+* 🌐 **Submit Application:** [earthoslab.com/careers](https://earthoslab.com/careers)
+* 🔬 **Disciplines of Interest:**
   - **Research:** Non-Autoregressive Architectures, Continuous Memory Substrates, Active Inference, and Computational Neuroscience.
   - **Systems Engineering:** High-Performance C/C++/Rust Systems, Compilers & Graph Runtimes, Embedded Edge Execution.
-  - **Hardware & Silicon:** Low-Power Edge Accelerators, Sovereign Offline Hardware Integration.
-  - **Founders' Office:** Technical Strategy, Operations, and Institutional Partnerships.
-* 📩 **Direct Inquiries:** Reach out directly to [`roshan@earthoslab.com`](mailto:roshan@earthoslab.com) with links to your GitHub, research papers, or proof of exceptional engineering craft.
+  - **Hardware & Silicon:** Low-Power Edge Compute, Neuromorphic & Sovereign Offline Accelerators.
+* 📩 **Direct Inquiries:** Send an introduction, GitHub profile, or links to exceptional work directly to [`roshan@earthoslab.com`](mailto:roshan@earthoslab.com).
 
 ---
 
