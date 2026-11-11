@@ -1,89 +1,121 @@
-# Project Earthos · The Synapse Architecture
+﻿<div align="center">
+
+# Project Earthos · Synapse
 ### earthoslab | Continuous Causal Intelligence
 
-This repository houses the official public research announcements, empirical benchmark datasets, and technical white papers for **Synapse**, an autonomous, bio-inspired cognitive architecture developed by **earthoslab**.
+**The Continuous Causal Computing Substrate for Autonomous Edge Intelligence**
 
-**Official Laboratory Website:** [earthoslab.com](https://earthoslab.com)  
-**Lead Architect & Founder:** Roshan Kumar Gupta ([roshan@earthoslab.com](mailto:roshan@earthoslab.com))  
-**Laboratory Domain:** `earthoslab.com`
+[![Website](https://img.shields.io/badge/Website-earthoslab.com-0284c7?style=for-the-badge)](https://earthoslab.com)
+[![Release](https://img.shields.io/badge/Release-4.0%20(Nov%202026)-0f172a?style=for-the-badge)](releases/release_4.0_nov_2026/)
+[![Paper](https://img.shields.io/badge/White_Paper-PDF-dc2626?style=for-the-badge)](releases/release_4.0_nov_2026/PUBLIC_RELEASE_4_ANNOUNCEMENT.pdf)
+[![Architecture](https://img.shields.io/badge/Architecture-Proprietary%20IP-f59e0b?style=for-the-badge)](#proprietary-technology--ip-notice)
+
+<br/>
+
+**Founder & Lead Architect:** Roshan Kumar Gupta  
+**Laboratory:** `earthoslab` · **Contact:** [`roshan@earthoslab.com`](mailto:roshan@earthoslab.com)  
+**Website:** [earthoslab.com](https://earthoslab.com)
+
+</div>
 
 ---
 
-## Proprietary Research Architecture & IP Protection Notice
+## Executive Overview: Beyond Static Transformers
 
-> **Research Transparency & Intellectual Property Policy:**  
-> The core operational source code, biological factor graph algorithms, and internal training substrates of Synapse are **proprietary closed-source intellectual property of earthoslab**. 
+Modern artificial intelligence relies almost exclusively on monolithic Large Language Models (LLMs). While exceptional at natural language fluency and code generation, transformer self-attention encounters severe physical and architectural boundaries when deployed in autonomous, real-time, or edge environments:
+
+* **Stateless Context Amnesia:** Transformers are episodic. They cannot maintain continuous lifelong memory without re-processing thousands of past tokens on every single query.
+* **The Hardware & Energy Wall:** Dense full-attention scales quadratically. Pushing a leading 8B transformer across 100,000 words on a local GPU pins board power at 302 Watts, saturates 16 GB of VRAM (99.2%), and surges query latencies to over 2.5 minutes while accuracy collapses.
+* **Stochastic Hallucination:** Optimizing next-token probabilities generates fluent syntax but lacks ground-truth causal invariants, leading to uncalibrated fabrications on unfamiliar domains.
+
+### The Solution: The "Brain & The Mouth" Architecture
+
+**earthoslab** develops **Synapse**, an autonomous, non-neural continuous cognitive substrate engineered from first principles:
+
+| Capability Dimension | Monolithic LLMs (The "Mouth") | **Synapse (The "Brain")** |
+| :--- | :--- | :--- |
+| **Primary Role** | Language realization & code compilation | **Continuous causal reasoning & lifelong memory** |
+| **Memory Persistence** | Stateless (Requires re-sending past context) | **Native lifelong persistence (0 past tokens re-sent)** |
+| **Operational Hardware** | Massive GPU VRAM (16 GB - 80 GB+) | **Host CPU (0 MB GPU VRAM required)** |
+| **Memory Footprint** | Bloats linearly with conversation history | **Flat predictable footprint (493 MB RAM)** |
+| **Causal Grounding** | Probabilistic next-token sampling | **Deterministic causal graph proofs** |
+| **Unfamiliar Queries** | High risk of stochastic hallucination | **0.0% false-positive rate (Epistemic abstention)** |
+| **Edge Deployment** | Multi-hundred watt thermal limit | **Native edge execution on commodity hardware** |
+
+> **The Sovereign Deployment Rule:** Use an LLM as the *mouth* to translate natural human dialogue into structured concepts; deploy **Synapse** as the *brain* to manage persistent world state, lifelong memory, and deterministic safety invariants locally.
+
+---
+
+## Proprietary Technology & IP Notice
+
+> **Commercial Intellectual Property Policy:**  
+> The core operational substrate, proprietary algorithms, and implementation source code of Synapse are **closed-source intellectual property of earthoslab**. 
 > 
-> This public repository serves exclusively as the official public research archive, publication announcements, and cryptographic benchmark data ledgers. All quantitative benchmark datasets, model outputs, latencies, and physical hardware telemetry logs are published in full for transparent third-party auditing and empirical verification.
+> As earthoslab operates as a commercial deep-tech startup, internal execution mechanics and state representations remain strictly proprietary. This public repository serves exclusively as the official archive for **executive release announcements, technical white papers, and empirical benchmark datasets**. All quantitative scorecards, model outputs, query latencies, and device telemetry logs are published in full for transparent third-party auditing and empirical validation.
 
 ---
 
-## Catalog of Releases
+## Empirical Release Catalog
 
-### 🧠 [Release 4.0 (November 11, 2026) — Where Attention Ends: Physical Limits of Transformers & The Continuous Substrate](./releases/release_4.0_nov_2026/)
-* **Executive Document:** [`PUBLIC_RELEASE_4_ANNOUNCEMENT.md`](./releases/release_4.0_nov_2026/PUBLIC_RELEASE_4_ANNOUNCEMENT.md)
-* **Benchmark Scope:** Head-to-head empirical evaluation of Synapse against Meta Llama-3.1-8B and Llama-3.2-1B across 4 peer-reviewed academic suites (CLADDER, BABILong, AI2 ARC-Science, HumanEval), 100,000-word context scaling on an NVIDIA RTX 5070 Ti, and continuous stateful lifelong memory.
-* **Benchmark Datasets & Raw Ledgers (`benchmark_data/`):**
-  - [`part_a1_cladder_causal_reasoning.csv`](./releases/release_4.0_nov_2026/benchmark_data/part_a1_cladder_causal_reasoning.csv) (CLADDER causal DAG inference: Pearl's Ladder of Causation)
-  - [`part_a2_babilong_distractor_retention.csv`](./releases/release_4.0_nov_2026/benchmark_data/part_a2_babilong_distractor_retention.csv) (BABILong needle retrieval across 1k–10k distractor words)
-  - [`part_a3_arc_physical_science_qa.csv`](./releases/release_4.0_nov_2026/benchmark_data/part_a3_arc_physical_science_qa.csv) (AI2 ARC physical science multiple-choice reasoning)
-  - [`part_a4_humaneval_python_coding.csv`](./releases/release_4.0_nov_2026/benchmark_data/part_a4_humaneval_python_coding.csv) (OpenAI HumanEval Python execution sandbox)
-  - [`part_a_academic_baselines_scorecard.csv`](./releases/release_4.0_nov_2026/benchmark_data/part_a_academic_baselines_scorecard.csv) (Part A macro accuracy, latency, and power scorecard)
-  - [`part_b_100k_word_horizon_scaling.csv`](./releases/release_4.0_nov_2026/benchmark_data/part_b_100k_word_horizon_scaling.csv) (100,000-word PG-19 context scaling & physical VRAM/wattage telemetry)
-  - [`part_c_lifelong_persistence_scorecard.csv`](./releases/release_4.0_nov_2026/benchmark_data/part_c_lifelong_persistence_scorecard.csv) (100k-word lifelong persistence, zero-stutter retrieval, and online rule revision)
-  - [`part_d_architectural_stress_scorecard.csv`](./releases/release_4.0_nov_2026/benchmark_data/part_d_architectural_stress_scorecard.csv) (Architectural edge-case battery: multi-hop, fan-in/out, prose noise, and density boundaries)
-* **Key Innovations:**
-  - **The "Brain & Mouth" Architecture:** Proves that LLMs are surface translators and static code compilers (Llama 8B achieves 92.0% on HumanEval, 82.0% on ARC), while Synapse provides the deterministic causal substrate and persistent memory controller.
-  - **The Collapse of Edge LLMs:** Llama-3.2-1B collapses to 48.0% on CLADDER (coin flip) and 8.0% on BABILong distractor loads.
-  - **The 100k-Word Hardware Wall:** Pushed a consumer RTX 5070 Ti to 99.2% VRAM (15,943 MB) and 302.1 Watts at 100k words, with 151.8 to 160.2-second query latencies (mean: 155.5s).
-  - **Zero-Stutter Lifelong Persistence:** Synapse retrieves backward retrodiction in 5.29 ms median natively on CPU with 100% accuracy without prompt-history bloat, while stateless LLMs collapse to 15.0% without prompt re-sends.
+### 🧠 [Release 4.0 (November 2026) — Where Attention Ends: Physical Limits of Transformers & The Continuous Substrate](./releases/release_4.0_nov_2026/)
+* **Technical White Paper:** [`PUBLIC_RELEASE_4_ANNOUNCEMENT.pdf`](./releases/release_4.0_nov_2026/PUBLIC_RELEASE_4_ANNOUNCEMENT.pdf) *(Official 9-page formal paper with 8 canonical CSV datasets embedded)*
+* **Executive Summary:** [`PUBLIC_RELEASE_4_ANNOUNCEMENT.md`](./releases/release_4.0_nov_2026/PUBLIC_RELEASE_4_ANNOUNCEMENT.md)
+* **Empirical Datasets (`releases/release_4.0_nov_2026/benchmark_data/`):**
+  - Standard academic baselines across 450 traces (CLADDER, BABILong, AI2 ARC-Science, OpenAI HumanEval).
+  - 100,000-word context scaling telemetry on NVIDIA RTX 5070 Ti (latency, VRAM, and power draw).
+  - 100,005-word lifelong persistence and online rule revision scorecard.
+  - Architectural stress battery scorecard mapping edge-case failure boundaries.
+  - Cryptographic checksum ledger: [`checksums.sha256`](./releases/release_4.0_nov_2026/benchmark_data/checksums.sha256).
+* **Key Findings:**
+  - **Hardware Wall:** Naive dense attention on an RTX 5070 Ti consumes 15,943 MB VRAM (99.2%), pulls 302.1W power, surges to 155s latency, and collapses to 0.0% accuracy at 100k words.
+  - **Zero-Stutter Persistence:** Synapse recalled 100% of causal probes in **5.29 ms** on CPU with **zero past prompt history re-sent** after ingesting 100,005 continuous words. Stateless LLMs suffered near-total amnesia (15.0% score via guessing).
+  - **Epistemic Abstention:** Achieved **0.0% false-positive assertions** on unfamiliar causal DAGs.
 
 ---
 
-### 🚀 [Release 3.0 (November 5, 2026) — The SICE Autonomous Cognitive Organism Evaluation](./releases/release_3.0_nov_2026/)
-* **Compiled Publication PDF:** [`PUBLIC_RELEASE_3_ANNOUNCEMENT.pdf`](./releases/release_3.0_nov_2026/PUBLIC_RELEASE_3_ANNOUNCEMENT.pdf) (Complete formal publication)
-* **Benchmark Datasets & Cryptographic Chains (`benchmark_data/`):**
-  - [`benchmark_sice_pilot1_batteries.csv`](./releases/release_3.0_nov_2026/benchmark_data/benchmark_sice_pilot1_batteries.csv) (11-battery SICE Pilot-1 component evaluation baseline)
-  - [`benchmark_sice_pilot1_battery2_paragraphs.csv`](./releases/release_3.0_nov_2026/benchmark_data/benchmark_sice_pilot1_battery2_paragraphs.csv) (Battery II raw scientific text parsing: 86.67% F1 Kuhn bipartite matching)
-  - [`benchmark_sice_pilot2_per_world_lifecycle.csv`](./releases/release_3.0_nov_2026/benchmark_data/benchmark_sice_pilot2_per_world_lifecycle.csv) (10 procedural worlds across all 8 continuous cognitive stages)
-  - [`benchmark_sice_pilot2_aggregate_metrics.csv`](./releases/release_3.0_nov_2026/benchmark_data/benchmark_sice_pilot2_aggregate_metrics.csv) (Macro performance scorecard with exact statistics, CIs, and p-values)
-  - [`pilot1_benchmark_results.json`](./releases/release_3.0_nov_2026/benchmark_data/pilot1_benchmark_results.json) (Raw JSON Pilot-1 component verification)
-  - [`pilot2_summary_results.json`](./releases/release_3.0_nov_2026/benchmark_data/pilot2_summary_results.json) (Raw JSON Pilot-2 summary metrics)
-  - [`pilot2_audit_chain.jsonl`](./releases/release_3.0_nov_2026/benchmark_data/pilot2_audit_chain.jsonl) (Cryptographic SHA-256 tamper-evident verification ledger)
-* **Key Innovations:**
-  - **SICE-1 Pilot-1 Component Baseline:** 11/11 batteries passed in 5.06s. Unformatted raw text extraction achieves 86.67% F1 via constructivist grammar induction without LLMs.
-  - **SICE-1 Pilot-2 Unbroken Organism Lifecycle:** 10 procedural worlds evaluated in 20.32s with 98.33% text recall and 100% active causal fault recovery (8/8 faults resolved, 2 avoided).
-  - **Structural Analogy Transfer:** 80.0% zero-shot cross-domain analogy transfer ($p = 0.000416$ vs random chance).
-  - **Synaptic Homeostasis & Continual Retention:** 479,621 synapses downscaled across 10 sleep cycles; 95.99% cumulative retention without catastrophic forgetting.
-  - **Sub-Millisecond Sensorimotor Overhead:** 0.0407 ms sampling latency; 443.18 MB peak process RSS on a single consumer CPU core.
+### 🚀 [Release 3.0 (November 2026) — Autonomous Cognitive Organism Evaluation](./releases/release_3.0_nov_2026/)
+* **Technical White Paper:** [`PUBLIC_RELEASE_3_ANNOUNCEMENT.pdf`](./releases/release_3.0_nov_2026/PUBLIC_RELEASE_3_ANNOUNCEMENT.pdf)
+* **Executive Summary:** [`PUBLIC_RELEASE_3_ANNOUNCEMENT.md`](./releases/release_3.0_nov_2026/PUBLIC_RELEASE_3_ANNOUNCEMENT.md)
+* **Benchmark Datasets:** 11-battery component baseline, 10-world autonomous lifecycle logs, and cryptographic audit ledger.
+* **Key Findings:**
+  - Demonstrated end-to-end continuous learning and causal fault recovery across 10 complex procedural environments.
+  - 95.99% cumulative knowledge retention across continuous sleep cycles without catastrophic forgetting.
+  - Sub-millisecond sensorimotor latency with flat 443 MB peak process memory on consumer CPU.
 
 ---
 
-### 🌟 [Release 2.0 (November 2, 2026) — The Unified Cognitive Academy & Causal Discovery Benchmark](./releases/release_2.0_nov_2026/)
-* **Executive Document:** [`PUBLIC_RELEASE_2_ANNOUNCEMENT.md`](./releases/release_2.0_nov_2026/PUBLIC_RELEASE_2_ANNOUNCEMENT.md)
-* **Compiled Publication PDF:** [`PUBLIC_RELEASE_2_ANNOUNCEMENT.pdf`](./releases/release_2.0_nov_2026/PUBLIC_RELEASE_2_ANNOUNCEMENT.pdf) (Exact 3-page formal release)
-* **Appended Benchmark Datasets (`benchmark_data/`):**
-  - [`benchmark_adversarial_struggle_battery.csv`](./releases/release_2.0_nov_2026/benchmark_data/benchmark_adversarial_struggle_battery.csv) (175 adversarial struggle evaluations)
-  - [`benchmark_parallel_cohort_scaling.csv`](./releases/release_2.0_nov_2026/benchmark_data/benchmark_parallel_cohort_scaling.csv) (8-student parallel cohort across 32 cores)
-  - [`benchmark_exact_physics_reasoning.csv`](./releases/release_2.0_nov_2026/benchmark_data/benchmark_exact_physics_reasoning.csv) (6 exact physical equations, 0.00e+00 residual)
-  - [`benchmark_component_ablations.csv`](./releases/release_2.0_nov_2026/benchmark_data/benchmark_component_ablations.csv) (5-condition component ablation suite)
-  - [`benchmark_causal_discovery_30worlds.csv`](./releases/release_2.0_nov_2026/benchmark_data/benchmark_causal_discovery_30worlds.csv) (120 controlled runs across 30 micro-worlds)
-  - [`benchmark_delayed_retention_sleep.csv`](./releases/release_2.0_nov_2026/benchmark_data/benchmark_delayed_retention_sleep.csv) (100.00% delayed retention post-sleep)
-* **Key Innovations:**
-  - **The Unified Cognitive Academy:** 94.97% Cold Baseline Accuracy, 98.67% Post-Grind Retest Accuracy (+75.00% jump on struggle items), 0.0910 Brier calibration score.
-  - **32-Core Parallel Cohort Scalability:** 8 concurrent student organisms executed across 32 cores in 5.08s with 0.00% process variance (bit-level deterministic multiprocessing).
-  - **Exact Quantitative Physics:** 6 physical equation systems solved on factor graphs with 0.00e+00 analytical residual.
-  - **30-World Autonomous Causal Discovery:** 93.15% confounder rejection (SHD 48.4) via active inference vs 78.93% (SHD 83.9) passive observation.
-  - **Zero Catastrophic Forgetting:** 100.00% delayed retention across all 30 micro-worlds post-sleep.
-  - **Commodity CPU Execution:** Runs entirely on native host CPU with zero discrete GPUs required (flat process memory).
+### 🌟 [Release 2.0 (November 2026) — Causal Discovery & Robustness Benchmark](./releases/release_2.0_nov_2026/)
+* **Technical White Paper:** [`PUBLIC_RELEASE_2_ANNOUNCEMENT.pdf`](./releases/release_2.0_nov_2026/PUBLIC_RELEASE_2_ANNOUNCEMENT.pdf)
+* **Executive Summary:** [`PUBLIC_RELEASE_2_ANNOUNCEMENT.md`](./releases/release_2.0_nov_2026/PUBLIC_RELEASE_2_ANNOUNCEMENT.md)
+* **Benchmark Datasets:** Adversarial struggle battery, 30-world causal discovery logs, parallel scaling telemetry, and retention scorecards.
+* **Key Findings:**
+  - 93.15% confounder rejection across 30 autonomous discovery environments.
+  - 100.00% delayed retention across all environments with zero catastrophic interference.
+  - Concurrent deterministic execution across 32 CPU cores with zero process variance.
 
 ---
 
-### 📦 [Release 1.0 (October 31, 2026) — The Tabula Rasa Proof of Concept](./releases/release_1.0_oct_2026/)
-* **Executive Document:** [`PUBLIC_RELEASE_ANNOUNCEMENT.md`](./releases/release_1.0_oct_2026/PUBLIC_RELEASE_ANNOUNCEMENT.md)
-* **Compiled Publication PDF:** [`PUBLIC_RELEASE_ANNOUNCEMENT.pdf`](./releases/release_1.0_oct_2026/PUBLIC_RELEASE_ANNOUNCEMENT.pdf)
-* **Evaluation Dataset:** [`distillation_evaluation_probes.csv`](./releases/release_1.0_oct_2026/distillation_evaluation_probes.csv) (443 diagnostic probes)
-* **Key Innovations:**
-  - Initial demonstration of developmental distillation from tabula rasa across 155 modules and 874 episodes.
-  - +47.18% net distillation gain across held-out forward prediction and backward retrodiction.
-  - Sub-1.5 ms deterministic causal graph traversal with zero stochastic hallucination.
+### 📦 [Release 1.0 (October 2026) — The Continuous Baseline Proof of Concept](./releases/release_1.0_oct_2026/)
+* **Technical White Paper:** [`PUBLIC_RELEASE_ANNOUNCEMENT.pdf`](./releases/release_1.0_oct_2026/PUBLIC_RELEASE_ANNOUNCEMENT.pdf)
+* **Executive Summary:** [`PUBLIC_RELEASE_ANNOUNCEMENT.md`](./releases/release_1.0_oct_2026/PUBLIC_RELEASE_ANNOUNCEMENT.md)
+* **Evaluation Dataset:** 443 diagnostic evaluation probes dataset.
+* **Key Findings:**
+  - Initial proof of concept for continuous online distillation without weight overwriting.
+  - +47.18 percentage point net learning gain on held-out prediction and retrodiction probes.
+  - Deterministic sub-1.5 ms causal graph traversal with zero stochastic fabrication.
+
+---
+
+## Commercial Briefings & Inquiries
+
+For technical briefings, enterprise deployment discussions, or institutional partnerships:
+
+* **Founder & Lead Architect:** Roshan Kumar Gupta
+* **Direct Email:** [`roshan@earthoslab.com`](mailto:roshan@earthoslab.com)
+* **Official Website:** [earthoslab.com](https://earthoslab.com)
+* **Organization:** `earthoslab`
+
+---
+<div align="center">
+<small>© 2026 earthoslab. All rights reserved. Synapse and the Continuous Causal Substrate are proprietary technologies of earthoslab.</small>
+</div>
