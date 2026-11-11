@@ -1,0 +1,12 @@
+# Build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+__pycache__/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db

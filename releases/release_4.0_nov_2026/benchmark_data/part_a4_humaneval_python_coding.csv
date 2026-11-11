@@ -1,0 +1,231 @@
+﻿benchmark,probe_idx,model,task_id,passed,score,latency_ms,peak_gpu_vram_mb,peak_gpu_power_watts,peak_process_rss_mb,error_msg
+HumanEval,0,Synapse (Native CPU),HumanEval/0,False,0.0,32614.98,8585.35,40.28,712.79,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpjbk0oen8.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,1,Synapse (Native CPU),HumanEval/1,False,0.0,63812.77,8593.04,40.17,715.75,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpjg2ypva7.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,2,Synapse (Native CPU),HumanEval/2,False,0.0,36246.03,8599.23,41.39,718.24,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp3i3rozax.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,3,Synapse (Native CPU),HumanEval/3,False,0.0,82330.85,8837.1,41.91,719.82,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpy83msva8.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,4,Synapse (Native CPU),HumanEval/4,False,0.0,74468.17,8634.13,42.99,721.93,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpgb4isfbv.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,5,Synapse (Native CPU),HumanEval/5,False,0.0,82134.08,8829.57,42.89,724.82,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp5pgx_8mw.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,6,Synapse (Native CPU),HumanEval/6,False,0.0,94209.58,9262.01,44.16,726.82,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpqlur4plb.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,7,Synapse (Native CPU),HumanEval/7,False,0.0,53896.0,8771.68,35.05,728.65,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp0ukoe1m8.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,8,Synapse (Native CPU),HumanEval/8,False,0.0,103201.04,9313.0,39.84,730.62,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpwjufu64t.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,9,Synapse (Native CPU),HumanEval/9,False,0.0,81683.0,8749.73,31.26,732.5,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp696d1rom.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,10,Synapse (Native CPU),HumanEval/10,False,0.0,89800.48,9016.51,43.35,734.12,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp2xsl7l0t.py"", line 2
+    No direct inhibitor found for `def` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,11,Synapse (Native CPU),HumanEval/11,False,0.0,83930.14,8721.23,41.66,674.59,"  File ""C:\Users\Admin\AppData\Local\Temp\tmps6ka4x5k.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,12,Synapse (Native CPU),HumanEval/12,False,0.0,88725.61,9012.79,53.0,676.84,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpa4fwljv5.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,13,Synapse (Native CPU),HumanEval/13,False,0.0,37366.19,8581.37,41.98,542.38,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp8xqrqvoh.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,14,Synapse (Native CPU),HumanEval/14,False,0.0,48965.79,8938.56,43.17,544.61,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpdzhqzgo4.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,15,Synapse (Native CPU),HumanEval/15,False,0.0,38790.19,8796.25,38.17,546.35,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpez9ggnep.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,16,Synapse (Native CPU),HumanEval/16,False,0.0,60209.22,8875.18,38.45,548.26,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp10zhh445.py"", line 2
+    No direct inhibitor found for `def` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,17,Synapse (Native CPU),HumanEval/17,False,0.0,101074.98,8920.08,39.01,549.89,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpwlm15dzu.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,18,Synapse (Native CPU),HumanEval/18,False,0.0,43711.29,8731.56,27.73,509.45,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpj4zf94pp.py"", line 2
+    No direct inhibitor found for `def` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,19,Synapse (Native CPU),HumanEval/19,False,0.0,85870.63,8609.42,41.31,511.36,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpvfwgmvpp.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,20,Synapse (Native CPU),HumanEval/20,False,0.0,97314.94,8598.86,40.93,503.14,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp9nlxq1yk.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,21,Synapse (Native CPU),HumanEval/21,False,0.0,92954.29,8554.73,33.49,505.19,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp30qhv7dy.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,22,Synapse (Native CPU),HumanEval/22,False,0.0,57815.16,8638.5,34.4,507.14,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp811t4zvu.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,23,Synapse (Native CPU),HumanEval/23,False,0.0,22670.92,8681.95,40.84,496.16,"  File ""C:\Users\Admin\AppData\Local\Temp\tmpeg6ya5k9.py"", line 2
+    🌱 **Absorbed Causal Transition into Cortical Substrate**
+    ^
+SyntaxError: invalid character '🌱' (U+1F331)
+"
+HumanEval,24,Synapse (Native CPU),HumanEval/24,False,0.0,57214.42,8705.9,39.01,498.22,"  File ""C:\Users\Admin\AppData\Local\Temp\tmp7q78ptkd.py"", line 2
+    No direct inhibitor found for `block` in current knowledge graph.
+       ^^^^^^
+SyntaxError: invalid syntax
+"
+HumanEval,0,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/0,True,1.0,9619.47,15911.91,62.47,713.32,
+HumanEval,1,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/1,True,1.0,14300.28,15865.29,60.65,715.89,
+HumanEval,2,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/2,True,1.0,8336.1,15856.98,69.32,718.41,
+HumanEval,3,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/3,True,1.0,13107.52,15951.92,70.81,719.9,
+HumanEval,4,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/4,True,1.0,12981.98,15862.44,64.99,722.29,
+HumanEval,5,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/5,True,1.0,12009.91,15886.27,66.21,724.91,
+HumanEval,6,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/6,True,1.0,14236.27,15983.35,62.58,726.9,
+HumanEval,7,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/7,True,1.0,9447.68,15952.22,63.75,728.71,
+HumanEval,8,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/8,True,1.0,13810.74,15929.36,63.86,730.69,
+HumanEval,9,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/9,True,1.0,13106.17,15874.61,63.71,732.57,
+HumanEval,10,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/10,False,0.0,12417.49,15883.81,67.26,672.44,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmp8f2cxh9o.py"", line 41, in <module>
+    check(make_palindrome)
+    ~~~~~^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\"
+HumanEval,11,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/11,True,1.0,11023.08,15934.98,62.06,674.96,
+HumanEval,12,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/12,True,1.0,9726.63,15990.45,64.11,540.65,
+HumanEval,13,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/13,True,1.0,8650.52,15907.07,67.28,542.42,
+HumanEval,14,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/14,True,1.0,9374.08,15918.8,69.37,544.65,
+HumanEval,15,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/15,True,1.0,8968.07,15846.02,66.3,546.37,
+HumanEval,16,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/16,True,1.0,8583.84,15864.35,72.81,548.27,
+HumanEval,17,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/17,True,1.0,14316.08,15923.97,64.01,507.32,
+HumanEval,18,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/18,False,0.0,10747.26,15836.04,63.17,509.49,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmp3p6hprmn.py"", line 38, in <module>
+    check(how_many_times)
+    ~~~~~^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\Lo"
+HumanEval,19,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/19,True,1.0,17781.15,15921.36,64.24,511.36,
+HumanEval,20,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/20,True,1.0,15504.18,15941.98,66.35,503.19,
+HumanEval,21,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/21,True,1.0,12824.18,15755.96,68.2,505.55,
+HumanEval,22,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/22,True,1.0,9226.49,15939.57,66.08,493.79,
+HumanEval,23,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/23,True,1.0,7146.95,15802.02,69.15,496.27,
+HumanEval,24,Llama-3.1-8B (GPU RTX 5070 Ti),HumanEval/24,True,1.0,10248.49,15837.73,69.56,498.54,
+HumanEval,0,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/0,True,1.0,3606.97,15911.91,78.34,713.34,
+HumanEval,1,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/1,False,0.0,3784.58,15865.29,137.71,715.91,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpcgstv598.py"", line 71, in <module>
+    check(separate_paren_groups)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Ad"
+HumanEval,2,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/2,False,0.0,3376.69,15856.98,69.53,718.46,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmprki7vyof.py"", line 33, in <module>
+    check(truncate_number)
+    ~~~~~^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\"
+HumanEval,3,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/3,False,0.0,3565.47,15951.92,70.81,719.92,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpjyqdsrsy.py"", line 47, in <module>
+    check(below_zero)
+    ~~~~~^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\Local\Temp"
+HumanEval,4,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/4,True,1.0,3625.23,15862.44,85.34,722.31,
+HumanEval,5,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/5,False,0.0,3950.06,15869.08,77.62,724.93,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpog3me2p6.py"", line 47, in <module>
+    check(intersperse)
+    ~~~~~^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\Local\Te"
+HumanEval,6,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/6,False,0.0,4430.95,15985.35,77.9,726.9,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpc87oagbf.py"", line 53, in <module>
+    check(parse_nested_parens)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\"
+HumanEval,7,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/7,True,1.0,3810.28,15949.6,52.69,728.73,
+HumanEval,8,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/8,True,1.0,3917.72,15929.36,68.53,730.75,
+HumanEval,9,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/9,False,0.0,3709.38,15874.61,153.28,732.58,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpbwz67vpt.py"", line 36, in <module>
+    print(rolling_max(numbers))  # Output: [1, 2, 3, 3, 3, 4, 4]
+          ~~~~~~~~~~"
+HumanEval,10,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/10,False,0.0,3971.5,15884.37,137.78,672.46,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpv5bt1zt4.py"", line 51, in <module>
+    check(make_palindrome)
+    ~~~~~^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\"
+HumanEval,11,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/11,True,1.0,3620.97,15934.04,79.82,674.96,
+HumanEval,12,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/12,True,1.0,3836.42,15990.82,104.91,540.66,
+HumanEval,13,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/13,True,1.0,3436.85,15905.51,68.66,542.43,
+HumanEval,14,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/14,False,0.0,4113.19,15826.55,97.87,544.68,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpzggwwd4h.py"", line 52, in <module>
+    check(all_prefixes)
+    ~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\Local\"
+HumanEval,15,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/15,True,1.0,3284.43,15842.39,60.96,546.63,
+HumanEval,16,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/16,True,1.0,4011.11,15866.16,87.41,548.28,
+HumanEval,17,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/17,False,0.0,4385.12,15947.75,122.94,507.33,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpfj0jt3ia.py"", line 59, in <module>
+    check(parse_music)
+    ~~~~~^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\Local\Te"
+HumanEval,18,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/18,True,1.0,3727.43,15836.04,111.52,509.52,
+HumanEval,19,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/19,False,0.0,4009.21,15922.04,104.62,501.26,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpewpa6_e6.py"", line 48, in <module>
+    check(sort_numbers)
+    ~~~~~^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\Local\"
+HumanEval,20,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/20,False,0.0,3978.04,15954.36,109.66,503.2,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmp3bfm23rh.py"", line 53, in <module>
+    check(find_closest_elements)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Ad"
+HumanEval,21,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/21,False,0.0,3687.63,15753.8,112.56,505.56,"Traceback (most recent call last):
+  File ""C:\Users\Admin\AppData\Local\Temp\tmpo50khed9.py"", line 49, in <module>
+    check(rescale_to_unit)
+    ~~~~~^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Admin\AppData\"
+HumanEval,22,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/22,True,1.0,3690.18,15939.57,55.13,493.79,
+HumanEval,23,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/23,True,1.0,3480.81,15800.58,90.92,496.3,
+HumanEval,24,Llama-3.2-1B (GPU RTX 5070 Ti),HumanEval/24,True,1.0,3608.16,15837.73,60.91,498.56,

@@ -1,0 +1,11 @@
+world_id,family,stage1_text_recall,stage2_initial_entropy,stage3_active_info_gain,stage3_random_info_gain,stage3_passive_info_gain,stage3_edges_discovered,stage4_polar_flips,stage4_restraint_events,stage4_unrelated_retention,stage5_winning_hypothesis,stage5_analogy_confidence,stage5_analogy_correct,stage6_goal_achieved,stage6_fault_status,stage6_fault_recovered,stage6_fault_avoided,stage6_safety_violations,stage7_sleep_triggered,stage7_synapses_downscaled,stage8_post_sleep_retention,stage8_cumulative_retention,sampling_overhead_ms,peak_host_rss_mb,execution_time_sec
+world_geothermal_01,geothermal,1.0,1.4422,0.3522,0.2546,0.103,6,0,43,1.0,HYP_03,0.5468,False,True,ENCOUNTERED,True,False,0,True,9936,1.0,,0.04,432.13,0.247
+world_geothermal_02,geothermal,1.0,1.4464,0.3436,0.3327,0.0992,6,0,43,1.0,HYP_04,0.731,True,True,ACTIVELY_AVOIDED,False,True,0,True,11470,1.0,1.0,0.037,436.92,0.397
+world_astrophysics_01,astrophysics,1.0,1.4914,0.3873,0.3658,0.1206,5,0,44,1.0,HYP_03,0.9811,True,True,ENCOUNTERED,True,False,0,True,24760,1.0,1.0,0.034,438.17,0.654
+world_astrophysics_02,astrophysics,1.0,1.5201,0.4119,0.3773,0.1191,8,0,41,1.0,HYP_03,0.8172,True,True,ENCOUNTERED,True,False,0,True,24188,1.0,1.0,0.031,438.29,0.76
+world_neurochemistry_01,neurochemistry,1.0,1.4809,0.3841,0.3415,0.0878,9,1,40,1.0,HYP_01,0.7047,True,True,ENCOUNTERED,True,False,0,True,45761,1.0,1.0,0.044,438.31,1.433
+world_neurochemistry_02,neurochemistry,1.0,1.4733,0.3853,0.3418,0.0718,6,1,43,1.0,HYP_01,0.4875,False,True,ACTIVELY_AVOIDED,False,True,0,True,43275,1.0,0.9167,0.044,439.83,1.538
+world_oceanic_01,oceanic,0.8333,1.488,0.431,0.3423,0.0922,9,0,40,1.0,HYP_01,0.9907,True,True,ENCOUNTERED,True,False,0,True,73751,0.8333,0.9286,0.037,440.09,2.968
+world_oceanic_02,oceanic,1.0,1.4499,0.3539,0.4257,0.1006,7,0,42,1.0,HYP_02,0.4875,True,True,ENCOUNTERED,True,False,0,True,68423,1.0,0.9118,0.041,441.27,3.164
+world_nonce_shift_01,nonce,1.0,1.3895,0.3244,0.2553,0.0893,6,1,43,1.0,HYP_04,0.9999,True,True,ENCOUNTERED,True,False,0,True,84257,1.0,0.9487,0.056,442.35,4.163
+world_nonce_shift_02,nonce,1.0,1.5385,0.4381,0.3949,0.0943,7,0,42,1.0,HYP_04,0.9135,True,True,ENCOUNTERED,True,False,0,True,93800,1.0,0.9333,0.043,443.18,4.957

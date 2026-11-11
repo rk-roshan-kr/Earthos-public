@@ -1,0 +1,76 @@
+﻿benchmark,probe_idx,model,task_id,target_words,passed,score,latency_ms,peak_gpu_vram_mb,peak_gpu_power_watts,peak_process_rss_mb,ground_truth
+BABILong,0,Synapse (Native CPU),babilong_1000w_0,1000,False,0.0,74.76,8322.18,41.92,561.93,kitchen
+BABILong,1,Synapse (Native CPU),babilong_1000w_1,1000,False,0.0,88.57,8332.43,42.06,563.59,office
+BABILong,2,Synapse (Native CPU),babilong_1000w_2,1000,False,0.0,78.26,8339.05,41.2,565.05,bedroom
+BABILong,3,Synapse (Native CPU),babilong_1000w_3,1000,False,0.0,93.23,8332.37,41.85,566.29,library
+BABILong,4,Synapse (Native CPU),babilong_1000w_4,1000,False,0.0,59.88,8336.74,42.48,568.11,pantry
+BABILong,5,Synapse (Native CPU),babilong_1000w_5,1000,False,0.0,118.42,8332.43,41.74,570.68,garage
+BABILong,6,Synapse (Native CPU),babilong_1000w_6,1000,False,0.0,106.76,8332.43,42.16,572.87,cellar
+BABILong,7,Synapse (Native CPU),babilong_1000w_7,1000,False,0.0,101.79,8332.43,43.52,575.11,bathroom
+BABILong,8,Synapse (Native CPU),babilong_1000w_8,1000,False,0.0,85.54,8339.05,42.7,576.99,hallway
+BABILong,9,Synapse (Native CPU),babilong_1000w_9,1000,False,0.0,121.43,8342.87,42.62,579.28,garden
+BABILong,10,Synapse (Native CPU),babilong_2000w_0,2000,False,0.0,125.69,8332.87,43.81,581.02,kitchen
+BABILong,11,Synapse (Native CPU),babilong_2000w_1,2000,False,0.0,128.17,8336.18,44.25,583.04,office
+BABILong,12,Synapse (Native CPU),babilong_2000w_2,2000,False,0.0,105.28,8340.49,42.87,585.4,bedroom
+BABILong,13,Synapse (Native CPU),babilong_2000w_3,2000,False,0.0,140.34,8340.49,42.55,587.78,library
+BABILong,14,Synapse (Native CPU),babilong_2000w_4,2000,False,0.0,161.68,8341.93,42.21,590.38,pantry
+BABILong,15,Synapse (Native CPU),babilong_2000w_5,2000,False,0.0,124.79,8353.3,41.53,592.24,garage
+BABILong,16,Synapse (Native CPU),babilong_2000w_6,2000,False,0.0,137.23,8361.43,40.88,593.67,cellar
+BABILong,17,Synapse (Native CPU),babilong_2000w_7,2000,False,0.0,162.96,8353.05,40.41,595.75,bathroom
+BABILong,18,Synapse (Native CPU),babilong_2000w_8,2000,False,0.0,122.46,8357.12,40.53,597.62,hallway
+BABILong,19,Synapse (Native CPU),babilong_2000w_9,2000,False,0.0,140.97,8358.55,40.08,599.31,garden
+BABILong,20,Synapse (Native CPU),babilong_4000w_0,4000,False,0.0,131.99,8364.62,40.45,601.5,kitchen
+BABILong,21,Synapse (Native CPU),babilong_4000w_1,4000,False,0.0,144.9,8338.05,46.28,603.69,office
+BABILong,22,Synapse (Native CPU),babilong_4000w_2,4000,False,0.0,132.41,8337.8,41.36,605.29,bedroom
+BABILong,23,Synapse (Native CPU),babilong_4000w_3,4000,False,0.0,87.34,8342.12,47.31,606.93,library
+BABILong,24,Synapse (Native CPU),babilong_4000w_4,4000,False,0.0,128.04,8347.87,41.37,609.3,pantry
+BABILong,0,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_0,1000,True,1.0,5058.27,15664.43,57.68,562.05,kitchen
+BABILong,1,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_1,1000,True,1.0,5307.1,15664.43,72.62,563.72,office
+BABILong,2,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_2,1000,True,1.0,5336.34,15669.74,86.11,565.17,bedroom
+BABILong,3,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_3,1000,True,1.0,5057.23,15675.12,66.96,566.46,library
+BABILong,4,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_4,1000,True,1.0,5349.19,15664.43,71.73,568.77,pantry
+BABILong,5,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_5,1000,True,1.0,5090.09,15664.43,51.7,570.83,garage
+BABILong,6,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_6,1000,True,1.0,5050.77,15664.43,84.97,573.01,cellar
+BABILong,7,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_7,1000,True,1.0,5312.95,15664.43,61.26,575.31,bathroom
+BABILong,8,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_8,1000,True,1.0,5081.43,15664.18,55.61,577.12,hallway
+BABILong,9,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_1000w_9,1000,True,1.0,5106.94,15673.87,67.58,579.43,garden
+BABILong,10,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_0,2000,True,1.0,5603.73,15664.43,98.22,581.22,kitchen
+BABILong,11,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_1,2000,True,1.0,5380.16,15664.43,112.18,583.25,office
+BABILong,12,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_2,2000,True,1.0,5335.69,15668.49,146.39,585.6,bedroom
+BABILong,13,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_3,2000,True,1.0,5347.1,15675.12,141.81,587.93,library
+BABILong,14,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_4,2000,True,1.0,5591.63,15693.18,126.65,590.57,pantry
+BABILong,15,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_5,2000,True,1.0,5369.74,15681.05,96.53,592.38,garage
+BABILong,16,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_6,2000,True,1.0,5398.11,15681.05,139.97,593.83,cellar
+BABILong,17,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_7,2000,True,1.0,5421.99,15681.05,127.68,595.93,bathroom
+BABILong,18,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_8,2000,True,1.0,5366.91,15685.12,107.05,597.75,hallway
+BABILong,19,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_2000w_9,2000,True,1.0,5382.64,15686.55,140.98,599.81,garden
+BABILong,20,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_4000w_0,4000,True,1.0,6005.91,15673.8,202.33,601.66,kitchen
+BABILong,21,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_4000w_1,4000,True,1.0,6334.89,15673.99,182.23,603.86,office
+BABILong,22,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_4000w_2,4000,True,1.0,6034.22,15678.12,197.17,605.46,bedroom
+BABILong,23,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_4000w_3,4000,True,1.0,6102.52,15678.12,191.31,607.08,library
+BABILong,24,Llama-3.1-8B (GPU RTX 5070 Ti),babilong_4000w_4,4000,True,1.0,6065.89,15678.12,202.18,609.46,pantry
+BABILong,0,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_0,1000,False,0.0,2930.33,15664.43,57.68,562.11,kitchen
+BABILong,1,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_1,1000,False,0.0,3060.67,15664.43,72.62,563.78,office
+BABILong,2,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_2,1000,False,0.0,2958.51,15668.18,86.11,565.22,bedroom
+BABILong,3,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_3,1000,True,1.0,2962.36,15675.12,66.96,566.52,library
+BABILong,4,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_4,1000,False,0.0,3021.99,15664.43,71.73,568.82,pantry
+BABILong,5,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_5,1000,False,0.0,3041.06,15664.43,51.7,570.91,garage
+BABILong,6,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_6,1000,False,0.0,3010.9,15664.43,84.97,573.08,cellar
+BABILong,7,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_7,1000,False,0.0,2955.12,15664.43,61.26,575.38,bathroom
+BABILong,8,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_8,1000,False,0.0,3036.5,15664.18,102.57,577.19,hallway
+BABILong,9,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_1000w_9,1000,False,0.0,2948.5,15673.87,67.58,579.51,garden
+BABILong,10,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_0,2000,False,0.0,3048.57,15664.43,98.22,581.36,kitchen
+BABILong,11,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_1,2000,False,0.0,3024.55,15664.43,112.18,583.32,office
+BABILong,12,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_2,2000,False,0.0,3033.8,15668.49,146.39,585.68,bedroom
+BABILong,13,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_3,2000,True,1.0,3052.22,15675.12,141.81,588.09,library
+BABILong,14,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_4,2000,False,0.0,3063.05,15693.18,126.65,590.66,pantry
+BABILong,15,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_5,2000,False,0.0,3017.49,15681.05,96.53,592.48,garage
+BABILong,16,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_6,2000,False,0.0,3067.9,15681.05,139.97,593.93,cellar
+BABILong,17,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_7,2000,False,0.0,3020.99,15681.05,127.68,596.07,bathroom
+BABILong,18,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_8,2000,False,0.0,3075.5,15685.12,107.05,597.98,hallway
+BABILong,19,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_2000w_9,2000,False,0.0,3038.53,15686.55,140.98,599.91,garden
+BABILong,20,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_4000w_0,4000,False,0.0,3093.26,15673.8,202.33,601.88,kitchen
+BABILong,21,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_4000w_1,4000,False,0.0,3125.49,15673.99,182.89,604.0,office
+BABILong,22,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_4000w_2,4000,False,0.0,3144.1,15678.12,197.17,605.66,bedroom
+BABILong,23,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_4000w_3,4000,False,0.0,3089.25,15678.12,191.31,607.23,library
+BABILong,24,Llama-3.2-1B (GPU RTX 5070 Ti),babilong_4000w_4,4000,False,0.0,3162.41,15678.12,202.18,609.67,pantry

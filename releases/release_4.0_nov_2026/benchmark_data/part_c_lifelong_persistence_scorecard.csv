@@ -1,0 +1,763 @@
+﻿benchmark,condition,probe_id,rule_id,query_type,model,passed,score,latency_ms,peak_gpu_vram_mb,peak_gpu_power_watts,peak_process_rss_mb,expected,raw_response
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_01_retrodictive,rule_01,retrodictive,Synapse (Native CPU),True,1.0,3.77,15828.67,24.55,468.45,Friction,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Thermal Wear is caused by Friction."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_01_retrodictive,rule_01,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,5136.42,15828.67,245.28,468.71,Friction,"Thermal wear, also known as thermal degradation or thermal fatigue, is a process that occurs when a material is subjected to repeated heating and cooling cycles. This causes the material's molecular structure to break down, leading to a loss of mechanical properties and eventual failure.
+
+The primary causes of thermal wear are:
+
+1. **Temperature fluctuations**: Repeated heating and cooling cycles cause the material's molecular structure to expand and contract, leading to fatigue and eventual failure.
+2. **Thermal expansion and contraction**: As the material heats up, it expands, and as it cools down, it contracts. This repeated expansion and contraction can cause the material to crack or break.
+3. **Oxidation and corrosion**: High temperatures can cause the material to oxidize or corrode, leading to a loss of mechanical properties and eventual failure.
+4. **Material properties**: The material's inherent properties, such as its thermal conductivity, specific heat capacity, and coefficient of thermal expansion, can also contribute to thermal wear.
+
+Thermal wear can be mitigated by selecting materials with high thermal stability, using proper design and manufacturing techniques, and implementing cooling systems to minimize temperature fluctuations."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_01_retrodictive,rule_01,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,1780.99,8893.68,245.28,468.72,Friction,"Thermal Wear, also known as Thermal Fatigue, is a phenomenon that occurs when a material is subjected to repeated thermal cycles, causing it to degrade and lose its mechanical properties.
+
+The primary cause of Thermal Wear is the thermal expansion and contraction of the material, which leads to micro-cracks and defects. When a material is heated, its atoms vibrate and expand, causing it to increase in size. Conversely, when it is cooled, the atoms contract and decrease in size.
+
+As the material is repeatedly heated and cooled, the thermal expansion and contraction cycles cause the material to experience stress, leading to the formation of micro-cracks and defects. These defects can act as stress concentrators, further weakening the material and increasing the likelihood of Thermal Wear.
+
+Thermal Wear can be caused by various factors, including:
+
+1. Repeated heating and cooling cycles
+2. High temperatures and pressures
+3. Presence of impurities or contaminants
+4. Material properties, such as thermal conductivity and Young's modulus
+
+The severity of Thermal Wear depends on the material, the extent of the thermal cycles, and the temperature range. In general, Thermal Wear can lead to a range of consequences, including:
+
+1. Loss of mechanical properties, such as strength and stiffness
+2. Increased risk of failure, including cracking and breaking
+3. Decreased durability and lifespan
+
+To mitigate Thermal Wear, it is essential to design and manufacture materials with optimized thermal properties, use materials with high thermal stability, and implement effective cooling and thermal management strategies."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_01_forward,rule_01,forward,Synapse (Native CPU),True,1.0,122.59,8893.68,155.78,468.72,Thermal_Wear,Friction causes Thermal Wear.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_01_forward,rule_01,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1246.1,8891.49,215.03,468.74,Thermal_Wear,"Friction causes:
+
+1. **Heat generation**: Friction converts some of the kinetic energy into heat, which can lead to temperature increases.
+2. **Energy loss**: Friction reduces the efficiency of a system by converting some of the energy into heat, sound, or vibrations.
+3. **Slowing down**: Friction opposes motion, causing objects to slow down or stop.
+4. **Tire wear**: Friction between tires and the road surface can lead to tire wear and tear.
+5. **Vibration**: Friction can cause vibrations, which can lead to damage or wear on moving parts.
+6. **Stiction**: Friction can cause objects to stick together, making it difficult to separate them.
+7. **Increased stopping distance**: Friction affects the stopping distance of vehicles, making it longer to stop in emergency situations."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_01_forward,rule_01,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,764.56,8818.13,215.03,468.75,Thermal_Wear,"Friction is a force that opposes the relative motion or attempted motion between two surfaces in contact. It is caused by the interaction between the molecules of the two surfaces, which are in constant motion due to thermal energy.
+
+There are several types of friction, including:
+
+1. Static friction: opposes the initiation of motion between two surfaces that are not moving relative to each other.
+2. Kinetic friction: opposes the maintenance of motion between two surfaces that are moving relative to each other.
+3. Rolling friction: opposes the rolling of a surface, such as a wheel on a rail.
+4. Fluid friction: opposes the flow of fluids, such as air or water, between two surfaces.
+
+Friction is caused by the following factors:
+
+1. Surface roughness: rough surfaces create more friction than smooth surfaces.
+2. Surface texture: surfaces with many small protrusions or asperities create more friction than smooth surfaces.
+3. Velocity: higher velocities create more friction.
+4. Normal force: the normal force between two surfaces is directly proportional to the frictional force.
+5. Surface temperature: friction increases with temperature.
+
+The coefficient of friction (μ) is a measure of the ratio of frictional force to the normal force. It is typically expressed as a decimal value between 0 and 1, with higher values indicating greater friction. For example, the coefficient of friction between two surfaces is typically much higher than 0.1, indicating that a significant amount of energy is required to overcome the frictional force."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_02_retrodictive,rule_02,retrodictive,Synapse (Native CPU),True,1.0,3.97,8818.13,208.71,468.75,Voltage_Surge,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Relay Tripping is caused by Voltage Surge."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_02_retrodictive,rule_02,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1946.99,8844.22,244.6,468.76,Voltage_Surge,"Relay tripping is typically caused by one of the following reasons:
+
+1. **Overcurrent**: Excessive current flowing through the relay, exceeding its rating, causing it to trip.
+2. **Overvoltage**: Voltage exceeding the relay's rating, causing it to trip.
+3. **Short circuit**: A direct connection between two or more conductors, causing an excessive current flow.
+4. **Ground fault**: A fault between a conductor and ground, causing an excessive current flow.
+5. **Faulty relay contacts**: Worn or corroded contacts causing the relay to malfunction.
+6. **Incorrect relay settings**: Settings not matching the system's requirements, causing the relay to trip unnecessarily.
+7. **External interference**: Electromagnetic interference (EMI) or radio-frequency interference (RFI) affecting the relay's operation.
+8. **Temperature extremes**: Operating temperatures outside the relay's specified range, affecting its performance.
+9. **Power supply issues**: Fluctuations or failures in the power supply, affecting the relay's operation.
+10. **Manufacturing defects**: Defects in the relay's design or construction, causing it to malfunction.
+
+To determine the root cause, it is essential to analyze the system's operating conditions, relay settings, and any recent changes or upgrades."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_02_retrodictive,rule_02,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,868.57,8848.63,244.6,468.78,Voltage_Surge,"Relay tripping, also known as relay failure or relay malfunction, occurs when a relay device fails to function correctly, often due to a combination of factors. Here are the common causes:
+
+1. **Power supply issues**: Insufficient or unstable power supply, such as voltage fluctuations, overloading, or a power grid failure, can cause a relay to malfunction.
+2. **Thermal overload**: Overheating of the relay due to excessive current draw or prolonged operation can lead to a failure.
+3. **Faulty or worn-out components**: Worn-out or faulty components, such as resistors, capacitors, or inductors, can cause relay malfunction.
+4. **Incorrect installation**: Improper installation, such as incorrect mounting or wiring, can lead to relay failure.
+5. **Environmental factors**: Exposure to moisture, humidity, or extreme temperatures can affect relay performance.
+6. **Age and wear**: Relays can degrade over time due to wear and tear, leading to malfunction.
+7. **Manufacturing defects**: In some cases, manufacturing defects or quality control issues can cause relay failure.
+8. **Overvoltage or undervoltage**: Exposure to voltage surges or dips can cause relay malfunction.
+9. **Short circuits**: Electrical shorts or faults can cause relay failure.
+10. **Software or firmware issues**: In some cases, software or firmware problems can affect relay functionality.
+
+To prevent relay tripping, it's essential to:
+
+* Regularly inspect and maintain the relay and its components.
+* Ensure proper installation and wiring.
+* Monitor power supply and environmental conditions.
+* Perform routine maintenance and testing.
+* Follow the manufacturer's guidelines and recommendations.
+
+If you suspect relay tripping, it's recommended to consult the manufacturer's documentation or contact a qualified professional for assistance."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_02_forward,rule_02,forward,Synapse (Native CPU),True,1.0,157.39,8848.63,219.15,468.78,Relay_Tripping,Voltage Surge causes Relay Tripping.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_02_forward,rule_02,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,624.49,8839.0,187.52,468.78,Relay_Tripping,"Voltage surge causes:
+
+1. Electrical overloads
+2. Equipment damage
+3. Power grid instability
+4. Potential fires
+5. Data loss (in electronic devices)
+
+Voltage surge occurs when there is a sudden, temporary increase in voltage above the normal operating level, often caused by:
+
+* Lightning strikes
+* Power grid faults
+* Equipment malfunction
+* Electrical storms
+* Switching operations"
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_02_forward,rule_02,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,805.16,8818.85,194.04,468.79,Relay_Tripping,"Voltage surge, also known as voltage spike or voltage jump, is a sudden and temporary increase in voltage that can occur in electrical systems. It is typically caused by a short circuit, overloading, or other disturbances that disrupt the normal flow of electrical current.
+
+Voltage surges can be caused by various factors, including:
+
+1. Power grid fluctuations: Sudden changes in the power grid, such as those caused by severe weather events or maintenance work, can lead to voltage surges.
+2. Electrical equipment failure: A malfunctioning electrical device or appliance can cause a voltage surge.
+3. Lightning strikes: Lightning can strike nearby electrical equipment, causing a voltage surge.
+4. Grounding issues: Poor grounding or grounding faults can allow electrical currents to flow through the ground, creating a voltage surge.
+
+Voltage surges can cause a range of problems, including:
+
+1. Electrical shock: Voltage surges can cause electrical currents to flow through the body, leading to electrical shock or even death.
+2. Equipment damage: Voltage surges can damage electrical equipment, such as motors, transformers, and generators.
+3. Fire hazards: Voltage surges can ignite flammable gases or liquids, leading to fires.
+4. System failures: Voltage surges can cause system failures, including power outages and equipment malfunctions.
+
+To mitigate the effects of voltage surges, it is essential to:
+
+1. Regularly inspect electrical equipment and systems for damage or wear.
+2. Ensure proper grounding and grounding faults are addressed.
+3. Use surge protectors and grounding devices to protect equipment from voltage surges.
+4. Follow electrical codes and standards to ensure safe and reliable electrical systems."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_03_retrodictive,rule_03,retrodictive,Synapse (Native CPU),True,1.0,277.72,8818.85,209.04,468.79,Cavitation,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Impeller Erosion is caused by Cavitation."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_03_retrodictive,rule_03,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,1564.38,8818.6,248.04,468.79,Cavitation,"Impeller erosion is a type of wear and tear that occurs on the impeller of a centrifugal pump due to the interaction between the impeller blades and the fluid being pumped.
+
+The primary causes of impeller erosion are:
+
+1. **Cavitation**: The formation of vapor bubbles in the fluid, which collapse on the impeller surface, causing erosion.
+2. **Abrasion**: The impeller blades come into contact with particles or debris in the fluid, causing wear and tear.
+3. **Corrosion**: Chemical reactions between the impeller material and the fluid, leading to material degradation.
+4. **Vibration**: Excessive vibration of the pump, causing the impeller to rub against the casing or other components.
+5. **Flow-induced vibration**: The fluid flow creates vibrations in the impeller, leading to erosion.
+
+These causes can be mitigated by:
+
+* Proper pump design and selection
+* Regular maintenance and inspection
+* Use of erosion-resistant materials
+* Implementation of anti-cavitation devices
+* Optimization of pump operation and fluid flow conditions."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_03_retrodictive,rule_03,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,907.78,8819.54,248.04,468.79,Cavitation,"Impeller erosion is a phenomenon that occurs when the impeller blades of a pump or turbine are subjected to high-speed water flow and turbulence. The primary causes of impeller erosion are:
+
+1. **High-speed water flow**: Impellers are designed to operate at high velocities, typically above 100 m/s (330 ft/s). When the water flow exceeds this speed, it creates high-energy jets that can erode the impeller blades.
+2. **Turbulence**: The swirling motion of the water flow creates turbulence, which can lead to erosion of the impeller blades. Turbulence can cause the water to accelerate and decelerate rapidly, creating high-pressure areas that can damage the blades.
+3. **Blade wear**: The high-speed water flow and turbulence can cause the impeller blades to wear down over time. This can lead to a reduction in the pump's efficiency and potentially cause it to fail.
+4. **Material fatigue**: The repeated exposure to high-speed water flow and turbulence can cause the impeller blades to fatigue, leading to a reduction in their lifespan.
+5. **Corrosion**: The high-energy environment created by the impeller can also lead to corrosion of the impeller materials, such as stainless steel or cast iron.
+
+To mitigate impeller erosion, pump and turbine manufacturers often incorporate design features, such as:
+
+* **Blade design**: Optimized blade shapes and angles can help reduce erosion.
+* **Material selection**: The use of materials with high wear resistance, such as stainless steel or ceramic, can help extend the lifespan of the impeller.
+* **Flow control**: Regulating the water flow to match the impeller's operating conditions can help reduce erosion.
+* **Maintenance**: Regular maintenance, such as cleaning and inspecting the impeller, can help prevent erosion and extend its lifespan."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_03_forward,rule_03,forward,Synapse (Native CPU),True,1.0,122.19,8819.54,211.57,468.8,Impeller_Erosion,Cavitation causes Impeller Erosion.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_03_forward,rule_03,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1864.68,8840.29,255.52,468.81,Impeller_Erosion,"Cavitation is a phenomenon that occurs when a liquid changes pressure rapidly, creating vapor bubbles. This can cause:
+
+1. **Damage to surfaces**: The collapse of vapor bubbles can create high-pressure shockwaves that can damage or erode surfaces, such as in pipes, pumps, or marine propellers.
+2. **Noise and vibration**: The collapse of vapor bubbles can also produce noise and vibration, which can be a concern in applications such as sonar, medical equipment, or industrial machinery.
+3. **Reduced efficiency**: Cavitation can reduce the efficiency of systems, such as pumps or turbines, by creating pressure drops and increasing energy losses.
+4. **Equipment failure**: In severe cases, cavitation can lead to equipment failure, such as pipe rupture or pump failure.
+
+Cavitation can be caused by various factors, including:
+
+* **Low pressure**: When a liquid is subjected to low pressure, it can vaporize and create bubbles.
+* **High velocity**: When a liquid is moving at high velocity, it can create areas of low pressure that can lead to cavitation.
+* **Temperature changes**: Changes in temperature can also cause cavitation, as liquids can expand and contract with temperature changes.
+
+Understanding and mitigating cavitation is crucial in various industries, including aerospace, marine, and industrial engineering."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_03_forward,rule_03,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,837.98,8840.29,255.52,468.81,Impeller_Erosion,"Cavitation is a phenomenon that occurs when a fluid (liquid or gas) is subjected to rapid changes in pressure or velocity, causing the formation of small, high-pressure bubbles. These bubbles can collapse, creating a shockwave that can cause damage to surrounding structures.
+
+In the context of cavitation in medical imaging, such as ultrasound, cavitation is a common phenomenon that can lead to:
+
+1. **Bleeding and hematomas**: The collapse of bubbles can cause blood vessels to rupture, leading to bleeding and the formation of hematomas.
+2. **Damage to tissues**: The shockwave generated by the collapsing bubbles can cause tissue damage, including edema, inflammation, and even organ failure.
+3. **Disruption of blood flow**: Cavitation can disrupt blood flow, leading to ischemia (reduced blood flow) and potentially causing tissue damage.
+
+In the context of cavitation in industrial processes, such as in the production of certain materials or in the treatment of industrial fluids, cavitation can cause:
+
+1. **Material degradation**: The high-pressure shockwaves can cause the degradation of materials, leading to changes in their physical and chemical properties.
+2. **Equipment damage**: Cavitation can damage equipment, such as pumps, valves, and pipes, leading to costly repairs or even equipment failure.
+
+In the context of cavitation in the environment, such as in the formation of ice or in the collapse of underwater structures, cavitation can cause:
+
+1. **Ice formation**: The rapid changes in pressure can cause the formation of ice, which can be hazardous to people and equipment.
+2. **Structural collapse**: The collapse of underwater structures, such as pipelines or buildings, can cause significant damage and loss of life."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_04_retrodictive,rule_04,retrodictive,Synapse (Native CPU),True,1.0,266.67,8792.54,215.62,468.81,Vibration,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Bearing Misalignment is caused by Vibration."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_04_retrodictive,rule_04,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,1187.54,8814.54,215.62,468.81,Vibration,"Bearing misalignment is typically caused by:
+
+1. **Imperfect installation**: Incorrect mounting, misaligned shafts, or uneven bearing seats can lead to misalignment.
+2. **Shaft deflection**: Excessive loads, vibrations, or thermal expansion can cause the shaft to bend or deflect, resulting in misalignment.
+3. **Foundation or base issues**: Uneven or unstable foundations can cause the machine or bearing to shift, leading to misalignment.
+4. **Machine or equipment design flaws**: Poor design or inadequate consideration of bearing alignment can contribute to misalignment.
+5. **Operational factors**: Vibration, thermal expansion, or uneven loading can cause bearings to become misaligned over time.
+
+These factors can interact with each other and with other system components to cause bearing misalignment."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_04_retrodictive,rule_04,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,800.83,8816.6,218.37,468.81,Vibration,"Bearing misalignment is a condition that occurs when the bearing surfaces in a mechanical system, such as a bearing or a gear, are not properly aligned. This misalignment can lead to reduced efficiency, increased wear, and potentially catastrophic failure.
+
+The causes of bearing misalignment can be attributed to various factors, including:
+
+1. **Manufacturing defects**: Poor quality control or inadequate inspection during the manufacturing process can result in bearings with uneven or incorrect dimensions.
+2. **Operating conditions**: Extreme temperatures, vibrations, or shock loads can cause bearings to become misaligned over time.
+3. **Wear and tear**: Repeated loading and unloading of bearings can lead to wear and tear, causing them to become misaligned.
+4. **Incorrect installation**: Improper installation of bearings, such as incorrect mounting or tightening, can lead to misalignment.
+5. **Design flaws**: Inadequate design or geometry of the bearing or mechanical system can contribute to misalignment.
+6. **Environmental factors**: Exposure to chemicals, dust, or other environmental factors can cause bearings to become misaligned.
+7. **Aging**: Bearings can become misaligned over time due to natural aging processes, such as thermal expansion and contraction.
+
+When bearing misalignment occurs, it can lead to a range of problems, including:
+
+* Reduced efficiency and performance
+* Increased wear and tear on the bearing and surrounding components
+* Increased risk of failure, including catastrophic failure
+* Decreased lifespan of the mechanical system
+
+Regular maintenance, inspection, and monitoring can help prevent bearing misalignment and ensure optimal performance of the mechanical system."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_04_forward,rule_04,forward,Synapse (Native CPU),True,1.0,149.27,8817.16,218.37,468.81,Bearing_Misalignment,Vibration causes Bearing Misalignment.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_04_forward,rule_04,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1596.87,8817.16,242.97,468.81,Bearing_Misalignment,"Vibration can cause:
+
+1. **Damage to materials**: Repeated vibrations can lead to fatigue, cracking, and eventual failure of materials, such as metal fatigue in machinery.
+2. **Noise**: Vibration can produce noise, which can be a nuisance and potentially cause hearing damage.
+3. **Resonance**: Vibration can cause resonance, where a system vibrates at a specific frequency, potentially leading to catastrophic failure.
+4. **Energy loss**: Vibration can cause energy loss, as some of the energy is converted into heat, rather than being used for the intended purpose.
+5. **Human discomfort**: Prolonged exposure to vibration can cause human discomfort, including fatigue, nausea, and even injury.
+6. **Structural damage**: Severe vibrations can cause structural damage to buildings, bridges, and other infrastructure.
+7. **Equipment malfunction**: Vibration can cause equipment to malfunction, including engines, pumps, and other machinery.
+
+These effects can be mitigated through various means, such as vibration isolation, damping, and design modifications."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_04_forward,rule_04,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,888.07,8808.35,242.97,468.81,Bearing_Misalignment,"Vibration can cause a variety of physical and biological effects on the human body. Here are some of the possible effects of vibration:
+
+**Physical Effects:**
+
+1. **Muscle Fatigue**: Prolonged exposure to vibration can lead to muscle fatigue, particularly in the legs and lower back.
+2. **Joint Pain**: Vibration can cause joint pain and stiffness, especially in the hips, knees, and ankles.
+3. **Neck and Back Pain**: Vibration can also cause neck and back pain due to the increased stress on the muscles and joints.
+4. **Cardiovascular Effects**: Prolonged vibration can lead to changes in heart rate and blood pressure.
+
+**Biological Effects:**
+
+1. **Hormonal Changes**: Vibration can affect hormone levels, including testosterone and estrogen, which can lead to changes in mood and behavior.
+2. **Sleep Disturbances**: Exposure to vibration can disrupt sleep patterns and reduce the quality of sleep.
+3. **Immune System Suppression**: Prolonged vibration can weaken the immune system, making individuals more susceptible to illnesses.
+4. **Neurological Effects**: Vibration can cause neurological effects, including dizziness, lightheadedness, and even seizures in extreme cases.
+
+**Other Effects:**
+
+1. **Mental Health**: Vibration can affect mental health, leading to anxiety, depression, and mood swings.
+2. **Cognitive Impairment**: Prolonged vibration can impair cognitive function, including attention, memory, and decision-making.
+3. **Reproductive Effects**: Vibration can affect reproductive health, including fertility and menstrual cycles.
+
+It is essential to note that the effects of vibration can vary depending on the intensity, duration, and frequency of exposure."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_05_retrodictive,rule_05,retrodictive,Synapse (Native CPU),True,1.0,4.18,8806.3,218.78,468.81,Corrosion,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Pipe Thinning is caused by Corrosion."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_05_retrodictive,rule_05,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,2557.57,8806.3,250.88,468.81,Corrosion,"Pipe Thinning, also known as Pipe Wall Loss or Pipe Erosion, is a phenomenon that can be caused by several factors. Here are the primary causes:
+
+1. **Corrosion**: Chemical reactions between the pipe material and the fluid flowing through it can lead to the loss of pipe wall thickness. Common types of corrosion include:
+	* Uniform Corrosion: General loss of material throughout the pipe.
+	* Pitting Corrosion: Localized loss of material, often resulting in small holes or pits.
+	* Crevice Corrosion: Corrosion that occurs in areas where the pipe is in contact with another material, such as a flange or a valve.
+2. **Erosion**: Physical wear and tear on the pipe surface, often caused by:
+	* Fluid velocity: High-velocity fluids can cause mechanical wear on the pipe surface.
+	* Particle impact: Particles or debris carried by the fluid can collide with the pipe surface, causing damage.
+	* Cavitation: Formation and collapse of vapor bubbles can lead to pipe wall erosion.
+3. **Mechanical Damage**: Physical forces that can cause pipe wall loss, such as:
+	* Over-tightening of flanges or bolts.
+	* Vibration or oscillation of the pipe.
+	* Impact from external objects.
+4. **Material Degradation**: Aging or degradation of the pipe material itself, which can lead to a loss of strength and wall thickness.
+
+These causes can be exacerbated by factors such as:
+
+* High temperatures or pressures.
+* Presence of corrosive substances or contaminants.
+* Poor design or installation practices.
+* Inadequate maintenance or inspection.
+
+It's essential to identify the root cause of Pipe Thinning to implement effective mitigation strategies and prevent further damage."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_05_retrodictive,rule_05,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,875.22,8798.8,250.88,468.81,Corrosion,"Pipe thinning, also known as pipe erosion or pipe corrosion, is a process that occurs when a pipe is exposed to corrosive substances or high temperatures, causing the pipe material to deteriorate and weaken. The primary causes of pipe thinning are:
+
+1. **Corrosion**: Corrosion is the chemical reaction between the pipe material and the surrounding environment, resulting in the degradation of the pipe's integrity. Common corrosion sources include oxygen, moisture, and chemicals.
+2. **High temperatures**: Exposure to high temperatures can cause the pipe material to expand and contract, leading to stress and fatigue. This can cause the pipe to thin and become more prone to cracking.
+3. **Chemical exposure**: Corrosion can be accelerated by the presence of chemicals, such as acids, bases, or salts, which can react with the pipe material and cause degradation.
+4. **Oxidation**: Oxidation occurs when the pipe material reacts with oxygen in the air, leading to the formation of rust and other corrosion products.
+5. **Mechanical stress**: Physical stress, such as vibration or impact, can cause the pipe to thin and become more prone to cracking.
+
+Pipe materials that are more susceptible to thinning include:
+
+* **Carbon steel**: Carbon steel pipes are more prone to thinning due to their high carbon content and susceptibility to corrosion.
+* **Alloy steel**: Alloy steel pipes, such as stainless steel, are more resistant to corrosion but can still be susceptible to thinning under certain conditions.
+* **Copper**: Copper pipes are more resistant to corrosion but can still be susceptible to thinning under high-temperature or chemical exposure conditions.
+
+It's essential to note that pipe thinning can be caused by a combination of factors, and identifying the underlying cause is crucial to determining the best course of action for maintenance and repair."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_05_forward,rule_05,forward,Synapse (Native CPU),True,1.0,118.88,8798.8,229.02,468.81,Pipe_Thinning,Corrosion causes Pipe Thinning.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_05_forward,rule_05,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1322.7,8798.8,229.02,468.82,Pipe_Thinning,"Corrosion causes:
+
+1. **Material degradation**: Corrosion weakens the structure and integrity of materials, leading to a loss of mechanical properties.
+2. **Safety hazards**: Corrosion can lead to equipment failure, which can result in accidents, injuries, and fatalities.
+3. **Economic losses**: Corrosion can cause significant economic losses due to:
+	* Replacement of corroded equipment and materials.
+	* Downtime and lost productivity.
+	* Environmental damage and cleanup costs.
+4. **Environmental pollution**: Corrosion can lead to the release of toxic substances into the environment, contaminating soil, water, and air.
+5. **Reduced lifespan**: Corrosion can significantly reduce the lifespan of equipment, structures, and materials, requiring premature replacement or repair.
+
+These effects can be mitigated through proper design, materials selection, and maintenance practices."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_05_forward,rule_05,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,1030.95,8756.62,222.11,468.82,Pipe_Thinning,"Corrosion is a chemical reaction that occurs between a material (such as a metal) and its environment, resulting in the deterioration or degradation of that material. The process involves the transfer of electrons from the material to the environment, leading to the formation of ions and the breakdown of the material's structure.
+
+Corrosion can cause a range of physical and chemical changes, including:
+
+1. **Erosion**: The wearing away of the material's surface, often resulting in the formation of holes or cavities.
+2. **Pitting**: Small, localized areas of corrosion that can weaken the material's structure.
+3. **Crevice corrosion**: Corrosion that occurs in confined spaces, such as cracks or crevices.
+4. **Galvanic corrosion**: Corrosion that occurs when two different metals are in contact with each other, with one metal acting as an anode (oxidizing) and the other metal acting as a cathode (reducing).
+5. **Chemical corrosion**: Corrosion that occurs through chemical reactions, such as oxidation or reduction, rather than through physical contact.
+
+Corrosion can be caused by a range of factors, including:
+
+1. **Environmental factors**: Temperature, humidity, salt air, and exposure to chemicals or pollutants.
+2. **Material properties**: The material's chemical composition, thickness, and surface finish can affect its susceptibility to corrosion.
+3. **Mechanical factors**: Physical stress, vibration, and exposure to mechanical forces can contribute to corrosion.
+4. **Electrical factors**: Electrical currents, such as those generated by lightning or electrical wiring, can initiate corrosion.
+
+Common examples of corrosion include:
+
+1. **Rust on iron and steel**: A red, iron oxide layer that forms when iron or steel is exposed to oxygen and moisture.
+2. **Galvanized steel**: A type of steel that has been coated with a layer of zinc to prevent corrosion.
+3. **Corrosion of electrical wires**: The degradation of electrical wires due to exposure to moisture, heat, and other environmental factors.
+
+Overall, corrosion is a complex process that can have significant economic and environmental impacts, highlighting the importance of understanding and mitigating its effects."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_06_retrodictive,rule_06,retrodictive,Synapse (Native CPU),True,1.0,249.67,8763.68,222.11,468.82,Overpressure,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Diaphragm Rupture is caused by Overpressure."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_06_retrodictive,rule_06,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,2548.17,8961.37,253.51,468.82,Overpressure,"Diaphragm rupture is a serious condition that can be caused by various factors. Here are the possible causes:
+
+1. **Trauma**: The most common cause of diaphragm rupture is blunt or penetrating trauma to the chest or abdomen, such as:
+	* Car accidents
+	* Falls from height
+	* Stab wounds
+	* Gunshot wounds
+2. **Surgical complications**: Diaphragm rupture can occur as a complication of abdominal or thoracic surgery, such as:
+	* Laparoscopic surgery
+	* Open abdominal surgery
+	* Thoracotomy (chest surgery)
+3. **Medical conditions**: Certain medical conditions can weaken the diaphragm and increase the risk of rupture, including:
+	* Congenital diaphragmatic hernia (CDH)
+	* Diaphragmatic eventration (a condition where the diaphragm is weakened and bulges into the chest cavity)
+	* Chronic obstructive pulmonary disease (COPD)
+	* Pneumonia
+4. **Infections**: Certain infections can cause diaphragm rupture, such as:
+	* Pneumonia
+	* Empyema (pus in the pleural space)
+	* Abscesses in the diaphragm or surrounding tissues
+5. **Other causes**: Less common causes of diaphragm rupture include:
+	* Tumors or cysts in the diaphragm
+	* Inflammatory conditions, such as pancreatitis or peritonitis
+	* Iatrogenic causes (caused by medical treatment or devices, such as a central venous catheter)
+
+It's worth noting that diaphragm rupture can be a life-threatening condition, and prompt medical attention is essential for diagnosis and treatment."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_06_retrodictive,rule_06,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,1183.94,8961.37,253.51,468.83,Overpressure,"Diaphragm rupture, also known as diaphragmatic rupture, is a serious medical condition that occurs when the diaphragm, a dome-shaped muscle separating the chest cavity from the abdominal cavity, tears. This can lead to severe complications and potentially life-threatening consequences.
+
+Causes of diaphragm rupture include:
+
+1. **Trauma**: Physical injuries, such as those sustained in a car accident, fall, or violent assault, can cause the diaphragm to rupture.
+2. **Spinal cord injury**: Damage to the spinal cord can lead to diaphragmatic rupture, particularly if the injury is severe or occurs in conjunction with other injuries.
+3. **Pregnancy**: Diaphragmatic rupture is more common in pregnant women, particularly in the third trimester, due to the increased pressure on the diaphragm.
+4. **Congenital diaphragmatic hernia**: A rare congenital condition where there is a hole in the diaphragm, allowing abdominal organs to move into the chest cavity.
+5. **Infections**: Certain infections, such as pneumonia or sepsis, can cause diaphragmatic rupture.
+6. **Tumors**: Tumors, such as lung or breast cancer, can compress or invade the diaphragm, leading to rupture.
+7. **Cancer**: Certain types of cancer, such as lung or esophageal cancer, can cause diaphragmatic rupture.
+8. **Genetic disorders**: Certain genetic disorders, such as diaphragmatic hernia or congenital diaphragmatic hernia, can increase the risk of diaphragmatic rupture.
+
+Symptoms of diaphragm rupture may include:
+
+* Severe chest pain or pressure
+* Shortness of breath or difficulty breathing
+* Coughing up blood or fluid
+* Abdominal pain or tenderness
+* Nausea and vomiting
+* Fatigue or lethargy
+
+Diaphragm rupture requires immediate medical attention. Treatment typically involves surgical repair of the diaphragm, which may involve:
+
+* Thoracotomy (open surgery to repair the diaphragm)
+* Laparotomy (open surgery to repair the diaphragm)
+* Pneumoperitoneum (insertion of a tube into the abdominal cavity to repair the diaphragm)
+* Pneumoperitoneal lavage (removal of air from the abdominal cavity)
+
+In some cases, diaphragm rupture may require long-term ventilation support or other interventions to manage symptoms and prevent complications."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_06_forward,rule_06,forward,Synapse (Native CPU),True,1.0,140.31,8946.27,214.25,468.83,Diaphragm_Rupture,Overpressure causes Diaphragm Rupture.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_06_forward,rule_06,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1586.25,8946.27,258.04,468.83,Diaphragm_Rupture,"Overpressure is a geological phenomenon that occurs when the pressure of fluids (such as water or gas) in a rock formation exceeds the pressure of the surrounding rock. This can cause:
+
+1. **Fracturing**: The rock formation fractures, creating pathways for fluids to migrate through the rock.
+2. **Deformation**: The rock is deformed, causing it to change shape or size.
+3. **Loss of porosity**: The rock's pore spaces are compressed or destroyed, reducing its ability to store fluids.
+4. **Increased permeability**: The rock's permeability increases, allowing fluids to flow more easily through the rock.
+
+Overpressure can also lead to:
+
+1. **Subsidence**: The ground surface sinks or collapses due to the loss of support from the overpressured rock.
+2. **Earthquakes**: The sudden release of pressure can cause seismic activity.
+3. **Hydrocarbon migration**: Overpressure can drive hydrocarbons (such as oil and gas) out of the rock and into adjacent formations or the surface.
+
+These effects can have significant consequences for the environment, infrastructure, and human activities."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_06_forward,rule_06,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,587.55,8940.46,258.04,468.84,Diaphragm_Rupture,"Overpressure is a condition where the pressure in a container or system exceeds the standard atmospheric pressure. This excess pressure can cause various effects, including:
+
+1. **Vaporization of liquids**: Overpressure can cause liquids to evaporate or boil more quickly, leading to increased evaporation rates.
+2. **Gas expansion**: Overpressure can cause gases to expand and potentially lead to the formation of bubbles or foam.
+3. **Material deformation**: Overpressure can cause materials to deform or rupture, especially if they are not designed to withstand the increased pressure.
+4. **Structural failure**: In extreme cases, overpressure can lead to structural failure of containers, tanks, or other equipment.
+5. **Pressure buildup**: Overpressure can cause pressure to build up over time, potentially leading to catastrophic failures if not addressed.
+
+Examples of overpressure include:
+
+* Boiling water or steam in a container
+* Gasoline or fuel vapors in a vehicle or storage tank
+* Liquid nitrogen or other cryogenic fluids in a container
+* High-pressure gases in a laboratory or industrial setting
+
+It's essential to note that overpressure can be hazardous if not managed properly, and it's crucial to follow safety guidelines and regulations to prevent accidents."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_07_retrodictive,rule_07,retrodictive,Synapse (Native CPU),True,1.0,4.28,8939.9,231.92,468.84,Contamination,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Filter Clogging is caused by Contamination."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_07_retrodictive,rule_07,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1648.99,8939.9,249.68,468.84,Contamination,"Filter_Clogging is a common issue in various systems, including water filtration, air filtration, and industrial processes. The primary causes of Filter_Clogging can be categorized into two main groups:
+
+1. **Physical Clogging**:
+	* Particles or debris larger than the filter's pore size entering the system.
+	* Scale buildup or precipitation of minerals within the filter.
+	* Fibers or other contaminants from the filter itself or surrounding environment.
+2. **Chemical Clogging**:
+	* Biofilm growth, where microorganisms adhere to the filter surface and form a layer.
+	* Chemical precipitation or scaling due to changes in water chemistry (e.g., pH, temperature, or concentration of dissolved solids).
+	* Adsorption or absorption of chemicals onto the filter media.
+
+To mitigate Filter_Clogging, it is essential to:
+
+* Regularly inspect and clean the filter.
+* Monitor and control the system's operating conditions (e.g., flow rate, pressure, and temperature).
+* Implement proper filter selection and maintenance procedures.
+* Consider implementing additional treatments or pre-filtration steps to reduce the likelihood of clogging."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_07_retrodictive,rule_07,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,580.63,8787.52,249.68,468.84,Contamination,"Filter clogging is typically caused by a combination of factors, including:
+
+1. **Debris and particles**: Particles such as dust, dirt, hair, and other small objects can accumulate in the filter and cause clogging.
+2. **Mineral buildup**: Hard water or high levels of minerals like calcium and magnesium can deposit onto the filter's media, causing clogging.
+3. **Scale buildup**: Similar to mineral buildup, scale can form on the filter's media and cause clogging.
+4. **Contamination**: Bacteria, viruses, and other microorganisms can contaminate the filter and cause clogging.
+5. **Inadequate maintenance**: Failure to clean or replace the filter regularly can lead to clogging.
+6. **Incorrect filter type**: Using a filter that is not designed for the specific application or environment can cause clogging.
+7. **High flow rates**: Operating the filter at high flow rates can cause excessive pressure and clogging.
+8. **Temperature extremes**: Extreme temperatures can cause the filter media to degrade and become more prone to clogging.
+
+It's essential to regularly inspect and maintain the filter to prevent clogging and ensure optimal performance."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_07_forward,rule_07,forward,Synapse (Native CPU),True,1.0,187.57,8782.27,237.97,468.84,Filter_Clogging,Contamination causes Filter Clogging.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_07_forward,rule_07,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1539.13,8797.16,247.98,468.84,Filter_Clogging,"Contamination can cause:
+
+1. **Biological hazards**: Infection, disease, or illness due to the presence of microorganisms such as bacteria, viruses, or fungi.
+2. **Chemical hazards**: Toxicity, poisoning, or adverse health effects due to the presence of chemicals, such as heavy metals or pesticides.
+3. **Physical hazards**: Damage to equipment, surfaces, or materials due to the presence of foreign substances.
+4. **Quality control issues**: Deviation from established standards or specifications, leading to product rejection or recall.
+5. **Economic losses**: Financial losses due to downtime, rework, or replacement of contaminated materials.
+6. **Environmental harm**: Release of pollutants into the environment, contributing to pollution and ecological damage.
+
+Contamination can occur through various means, including:
+
+* Human error
+* Equipment failure
+* Poor handling or storage practices
+* Inadequate cleaning or sanitizing procedures
+* Cross-contamination from other sources
+
+Prevention and control measures can be implemented to minimize the risks associated with contamination."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_07_forward,rule_07,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,797.61,8797.16,247.98,468.85,Filter_Clogging,"Contamination is the introduction of foreign substances, organisms, or chemicals into a system, process, or environment, which can lead to adverse effects or changes. Contamination can cause a wide range of problems, including:
+
+1. **Economic losses**: Contamination can result in significant financial losses for industries, businesses, and governments due to the costs associated with cleanup, replacement, and reprocessing.
+2. **Health risks**: Contaminants can pose health risks to humans, animals, and the environment. Exposure to certain contaminants can lead to illnesses, injuries, and even death.
+3. **Environmental degradation**: Contamination can harm ecosystems, wildlife, and natural resources, leading to long-term environmental degradation and loss of biodiversity.
+4. **Food safety**: Contamination of food and water sources can lead to foodborne illnesses, which can have serious consequences for public health.
+5. **Infrastructure damage**: Contamination can damage infrastructure, such as roads, bridges, and buildings, which can lead to costly repairs and maintenance.
+6. **Loss of natural resources**: Contamination can deplete natural resources, such as water, air, and soil, which can have far-reaching consequences for human well-being and the environment.
+
+Examples of contamination include:
+
+* Polluting waterways with chemicals or sewage
+* Contaminating food with pesticides, bacteria, or other microorganisms
+* Spreading toxic substances, such as oil or chemicals, through the air or water
+* Damaging ecosystems with invasive species or pollutants
+* Contaminating soil or groundwater with heavy metals or other hazardous substances
+
+Overall, contamination can have significant and far-reaching consequences for individuals, communities, and the environment."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_08_retrodictive,rule_08,retrodictive,Synapse (Native CPU),True,1.0,2.86,8792.8,231.34,468.85,Overheating,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Insulation Breakdown is caused by Overheating."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_08_retrodictive,rule_08,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1670.69,8792.8,254.43,468.85,Overheating,"Insulation Breakdown can be caused by:
+
+1. **Thermal Shock**: Sudden changes in temperature, causing the insulation material to expand and contract, leading to degradation.
+2. **Moisture Ingress**: Water or humidity entering the insulation, causing it to degrade, absorb heat, and reduce its effectiveness.
+3. **Mechanical Damage**: Physical stress, such as compression, abrasion, or puncture, compromising the insulation's integrity.
+4. **Aging and Degradation**: Prolonged exposure to environmental factors, such as UV radiation, ozone, or pollutants, leading to material breakdown.
+5. **Electrical or Thermal Overload**: Excessive electrical or thermal stress, causing the insulation to degrade or fail.
+6. **Poor Installation or Design**: Inadequate or incorrect installation, leading to compromised insulation performance and increased risk of breakdown.
+7. **Material Properties**: Inherent properties of the insulation material, such as its thermal conductivity, dielectric strength, or moisture absorption, contributing to its susceptibility to breakdown.
+
+These factors can interact with each other and with the specific insulation material to cause Insulation Breakdown."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_08_retrodictive,rule_08,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,861.06,8775.36,254.43,468.85,Overheating,"Insulation breakdown, also known as thermal insulation failure, occurs due to a combination of factors. Here's a step-by-step explanation:
+
+1. **Temperature gradient**: When there's a significant temperature difference between two surfaces, it creates a thermal gradient. If the temperature difference is too large, it can cause the insulation to break down.
+2. **Moisture intrusion**: Water vapor or other moisture can penetrate the insulation, causing it to degrade. This is especially true for materials like fiberglass, cellulose, or mineral wool.
+3. **Physical damage**: Physical stress, such as vibrations, impacts, or thermal shock, can damage the insulation fibers or disrupt the insulation's structure.
+4. **Chemical degradation**: Exposure to chemicals, such as mold, mildew, or cleaning products, can break down the insulation materials.
+5. **Age and wear**: Insulation materials naturally degrade over time, especially when exposed to environmental factors like temperature fluctuations, humidity, or UV radiation.
+6. **Inadequate installation**: Improper installation, such as inadequate spacing, poor contact between layers, or insufficient fastening, can lead to insulation breakdown.
+7. **Material degradation**: Over time, insulation materials can degrade due to natural aging processes, such as the breakdown of cellulose or the oxidation of fiberglass.
+
+Common causes of insulation breakdown include:
+
+* Poorly maintained insulation systems
+* Inadequate insulation thickness or coverage
+* Excessive moisture or humidity
+* Thermal shock or extreme temperature fluctuations
+* Physical damage or wear and tear
+
+To prevent insulation breakdown, it's essential to:
+
+* Regularly inspect and maintain insulation systems
+* Use high-quality insulation materials
+* Ensure proper installation and fastening
+* Monitor temperature and humidity levels
+* Address any moisture or chemical issues promptly."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_08_forward,rule_08,forward,Synapse (Native CPU),True,1.0,121.89,8749.29,235.67,468.86,Insulation_Breakdown,Overheating causes Insulation Breakdown.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_08_forward,rule_08,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1815.58,8750.04,251.71,468.86,Insulation_Breakdown,"Overheating can cause:
+
+1. **Reduced performance**: Increased temperature can slow down the operation of electronic devices, leading to decreased efficiency and productivity.
+2. **Damage to components**: Prolonged exposure to high temperatures can cause physical damage to electronic components, such as melting of solder, warping of metal, or degradation of materials.
+3. **Thermal runaway**: In extreme cases, overheating can lead to a self-sustaining cycle of increasing temperature, causing the device to overheat further and potentially leading to catastrophic failure.
+4. **Fire or explosion**: In rare cases, overheating can cause a fire or explosion, especially in devices containing flammable materials or in environments with high oxygen levels.
+5. **Reduced lifespan**: Repeated exposure to high temperatures can reduce the lifespan of electronic devices, leading to premature failure.
+6. **Data loss**: Overheating can cause data corruption or loss, especially in devices with sensitive electronic components, such as hard drives or memory modules.
+7. **Health risks**: Prolonged exposure to high temperatures can cause heat-related illnesses, such as heat exhaustion or heat stroke, in humans and animals.
+
+These effects can vary depending on the specific device, environment, and circumstances."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_08_forward,rule_08,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,645.48,8750.04,251.71,468.86,Insulation_Breakdown,"Overheating is caused by an increase in the temperature of an object or system beyond its thermal tolerance. This can be due to various factors, including:
+
+1. **Insufficient cooling**: Failure to provide adequate cooling, such as through ventilation, air conditioning, or insulation, can lead to overheating.
+2. **High ambient temperature**: Exposure to high ambient temperatures, especially in hot climates or during peak sun hours, can cause objects or systems to overheat.
+3. **Physical obstruction**: Blockages or obstructions that prevent airflow or heat dissipation can lead to overheating.
+4. **Thermal mass**: Objects with high thermal mass, such as concrete or brick, can absorb and retain heat, causing them to overheat.
+5. **Electronic components**: Electronic components, such as microprocessors or memory chips, can overheat if they are subjected to excessive power or heat.
+6. **Manufacturing defects**: Poorly designed or manufactured components can lead to overheating issues.
+7. **Aging**: Components and systems can degrade over time, leading to increased thermal conductivity and heat transfer.
+
+When an object or system overheats, it can experience damage, malfunction, or even failure due to the increased thermal stress."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_09_retrodictive,rule_09,retrodictive,Synapse (Native CPU),True,1.0,3.03,8669.02,217.86,468.86,Underlubrication,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Piston Scuffing is caused by Underlubrication."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_09_retrodictive,rule_09,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1658.14,8727.2,255.02,468.87,Underlubrication,"Piston Scuffing is a type of engine damage caused by:
+
+1. **Incorrect Piston Clearance**: When the piston clearance is too small, the piston rings do not have enough room to move freely, leading to excessive friction and scuffing.
+2. **Worn or Incorrect Piston Rings**: Worn or incorrectly sized piston rings can cause the piston to scuff against the cylinder wall.
+3. **High Engine Speeds**: Operating the engine at high speeds can cause the piston to vibrate excessively, leading to scuffing.
+4. **Incorrect Engine Oil Viscosity**: Using engine oil with the wrong viscosity can lead to inadequate lubrication, causing the piston to scuff.
+5. **Over-Revving**: Revving the engine beyond its recommended RPM limit can cause the piston to scuff due to excessive stress and heat.
+6. **Poor Engine Maintenance**: Failure to regularly maintain the engine, such as neglecting to change the engine oil or replace worn components, can contribute to piston scuffing.
+
+These factors can cause the piston to scuff against the cylinder wall, leading to damage and potentially requiring costly repairs."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_09_retrodictive,rule_09,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,916.8,8727.2,255.02,468.87,Underlubrication,"Piston scuffing is a phenomenon that occurs due to the interaction between two moving piston rings and the cylinder wall. It is a common issue in internal combustion engines, particularly in older models.
+
+The primary causes of piston scuffing are:
+
+1. **Insufficient clearance**: When the clearance between the piston ring and the cylinder wall is too small, it can cause the piston ring to bind and scuff against the cylinder wall.
+2. **Poor piston ring design**: Inadequate design or manufacturing of the piston ring can lead to excessive wear and tear, resulting in scuffing.
+3. **Inadequate engine lubrication**: Insufficient or inadequate lubrication of the piston and cylinder can cause the piston ring to scuff against the cylinder wall.
+4. **High engine speed**: High engine speeds can cause the piston ring to scuff more rapidly due to increased friction and wear.
+5. **Cylinder wall wear**: Wear and tear on the cylinder wall can cause the piston ring to scuff against the wall, particularly if the cylinder wall is not properly lubricated.
+
+Piston scuffing can also be caused by other factors, such as:
+
+* **Cylinder head damage**: Damage to the cylinder head can cause the piston ring to scuff against the cylinder wall.
+* **Piston ring wear**: Worn-out piston rings can cause scuffing, even if the clearance is adequate.
+* **Engine wear**: Worn-out engine components, such as bearings and seals, can cause scuffing.
+
+To prevent or mitigate piston scuffing, it is essential to:
+
+* Regularly maintain the engine and its components.
+* Check and maintain proper clearance between the piston ring and cylinder wall.
+* Use high-quality piston rings and engine lubrication.
+* Address any cylinder head or engine wear issues promptly."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_09_forward,rule_09,forward,Synapse (Native CPU),True,1.0,142.89,8709.88,207.99,468.88,Piston_Scuffing,Underlubrication causes Piston Scuffing.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_09_forward,rule_09,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,814.79,8720.88,207.99,468.88,Piston_Scuffing,"Underlubrication can cause:
+
+1. Increased friction between moving parts, leading to:
+	* Wear and tear on components
+	* Heat generation
+	* Potential for seizure or jamming
+2. Premature failure of mechanical components, such as:
+	* Bearings
+	* Gears
+	* Pumps
+	* Valves
+3. Reduced efficiency and performance of machinery or equipment
+4. Increased energy consumption and operating costs
+5. Potential for catastrophic failure, especially in high-temperature or high-load applications."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_09_forward,rule_09,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,732.06,8720.88,227.81,468.88,Piston_Scuffing,"Underlubrication refers to a condition where the lubricating oil or fluid in a system, such as a gearbox, engine, or hydraulic system, is not adequately circulating or is not reaching all parts of the system. This can cause a range of problems, including:
+
+1. Reduced lubricant viscosity: When the lubricant is not circulating properly, its viscosity (thickness) increases, making it more difficult to lubricate moving parts.
+2. Increased friction: Without adequate lubrication, friction between moving parts can increase, leading to heat generation, wear, and tear.
+3. Premature wear: Underlubrication can cause wear on moving parts, such as gears, bearings, and pistons, leading to premature failure.
+4. Increased energy consumption: Underlubrication can lead to increased energy consumption, as the system must work harder to maintain the required lubrication levels.
+5. Reduced system efficiency: Underlubrication can reduce the overall efficiency of the system, leading to decreased performance, increased emissions, and decreased lifespan.
+
+Underlubrication can be caused by a variety of factors, including:
+
+* Insufficient lubricant levels
+* Poor system design or layout
+* Inadequate oil flow rates
+* Contamination or debris in the system
+* Temperature fluctuations
+* Wear and tear on system components
+
+To prevent underlubrication, it's essential to regularly check and maintain the lubricant levels, ensure proper system design and layout, and address any issues promptly."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_10_retrodictive,rule_10,retrodictive,Synapse (Native CPU),True,1.0,294.01,8713.54,227.81,468.88,Harmonic_Resonance,"🔍 **Abductive Causal Diagnosis (Backward Retrodiction)**
+
+Shaft Fatigue is caused by Harmonic Resonance."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_10_retrodictive,rule_10,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1692.47,8703.79,247.66,468.88,Harmonic_Resonance,"Shaft fatigue is a type of mechanical failure caused by repeated stress and strain on a rotating shaft, leading to cracks and eventual failure. The primary causes of shaft fatigue are:
+
+1. **Repetitive loading**: Repeated application of cyclic stresses, such as those caused by rotation, vibration, or oscillation.
+2. **High stress concentrations**: Areas of high stress, such as notches, holes, or keyways, can concentrate stress and increase the likelihood of fatigue failure.
+3. **Material defects**: Inclusions, voids, or other material defects can reduce the fatigue life of a shaft.
+4. **Surface roughness**: Rough surfaces can increase stress concentrations and promote fatigue failure.
+5. **Corrosion or wear**: Corrosion or wear can weaken the material and reduce its fatigue life.
+6. **Overloading**: Exceeding the design load or applying excessive stress can cause fatigue failure.
+7. **Resonance**: Operating at a resonant frequency can amplify vibrations and increase the likelihood of fatigue failure.
+
+These factors can interact with each other and with the shaft's material properties to cause fatigue failure."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_10_retrodictive,rule_10,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,1117.55,8696.85,247.66,468.88,Harmonic_Resonance,"Shaft fatigue is a condition that occurs in rotating shafts due to repeated loading and unloading cycles, leading to a reduction in the shaft's mechanical properties. The primary causes of shaft fatigue are:
+
+1. **Repetitive loading**: The shaft is subjected to cyclic loading, where it is subjected to both tensile and compressive forces, resulting in alternating stress concentrations.
+2. **Material degradation**: The shaft material, such as steel or aluminum, undergoes microstructural changes due to the cyclic loading, leading to a reduction in its mechanical properties, such as strength and toughness.
+3. **Creep and creep rupture**: The shaft material undergoes creep deformation, which is a gradual increase in length over time, and can lead to a rupture under sustained loading.
+4. **Fatigue crack initiation**: The cyclic loading can initiate fatigue cracks in the shaft, which can propagate under subsequent loading cycles.
+5. **Fracture**: The combination of material degradation, creep, and fatigue can lead to a catastrophic failure of the shaft.
+
+The fatigue process involves a series of events, including:
+
+1. **Initial loading**: The shaft is subjected to a loading cycle, which causes a stress increase in the material.
+2. **Stress relaxation**: The material relaxes, and the stress decreases, allowing the material to recover.
+3. **Re-loading**: The shaft is subjected to another loading cycle, which causes a stress increase in the material again.
+4. **Stress concentration**: The stress concentration due to the initial loading cycle is amplified, leading to an increased risk of fatigue crack initiation.
+5. **Fatigue crack propagation**: The fatigue crack propagates under subsequent loading cycles, leading to a reduction in the shaft's mechanical properties.
+
+Shaft fatigue can be mitigated by:
+
+1. **Material selection**: Choosing materials with high fatigue strength, such as high-strength steels or advanced composites.
+2. **Design**: Designing the shaft to minimize stress concentrations and optimize loading patterns.
+3. **Fatigue testing**: Performing fatigue testing to identify the critical loading ranges and material properties.
+4. **Maintenance**: Regular maintenance, such as lubrication and inspection, can help prevent fatigue-related failures."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_10_forward,rule_10,forward,Synapse (Native CPU),True,1.0,125.93,8696.85,215.32,468.88,Shaft_Fatigue,Harmonic Resonance causes Shaft Fatigue.
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_10_forward,rule_10,forward,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1699.12,8696.85,253.74,468.89,Shaft_Fatigue,"Harmonic resonance is a phenomenon that occurs when a system vibrates at a frequency that matches one of its natural resonant frequencies. This can cause:
+
+1. **Amplification of vibrations**: The system's natural frequency is amplified, leading to increased oscillations or vibrations.
+2. **Energy transfer**: Energy is transferred from the driving force (e.g., a sound wave or an electrical signal) to the system, often resulting in increased motion or oscillations.
+3. **Instability**: Harmonic resonance can lead to instability in the system, causing it to become unbalanced or even collapse.
+4. **Damage**: In extreme cases, harmonic resonance can cause damage to the system or its components, particularly if the resonant frequency is close to a critical frequency.
+
+Examples of harmonic resonance include:
+
+* Bridge collapse due to pedestrian traffic or strong winds
+* Engine failure due to resonance with the engine's natural frequency
+* Building damage due to seismic activity or strong winds
+* Electrical system failures due to resonance with the power grid's frequency
+
+In general, harmonic resonance can have significant consequences, and understanding its effects is crucial for designing and operating systems that are safe and stable."
+Part_C_Persistence,Condition_A_ZeroStutter,part_c_condA_rule_10_forward,rule_10,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,989.8,8675.63,253.74,468.89,Shaft_Fatigue,"Harmonic resonance is a phenomenon that occurs when a system vibrates at a specific frequency in response to an external force or stimulus. This frequency is known as the resonant frequency.
+
+When a system is subjected to a harmonic force, it will vibrate at the resonant frequency, resulting in maximum amplitude and amplitude modulation. The resonant frequency is determined by the system's physical properties, such as its mass, stiffness, and damping.
+
+In general, harmonic resonance can cause a variety of effects, including:
+
+1. **Amplification of vibrations**: Harmonic resonance can amplify vibrations in a system, leading to increased amplitude and potentially catastrophic consequences, such as collapse or damage.
+2. **Increased stress**: The resonant frequency can also increase the stress on a system, particularly if the system is subjected to repeated or sustained harmonic forces.
+3. **Loss of stability**: Harmonic resonance can lead to loss of stability in a system, particularly if the resonant frequency is close to the system's natural frequency.
+4. **Unpredictability**: Harmonic resonance can make it difficult to predict the behavior of a system, as the resonant frequency can vary depending on the specific conditions.
+
+Examples of harmonic resonance include:
+
+1. **Vibrating bridges**: A vibrating bridge can exhibit harmonic resonance, causing it to oscillate at a specific frequency.
+2. **Musical instruments**: Certain musical instruments, such as guitars and violins, can exhibit harmonic resonance, causing them to produce specific frequencies.
+3. **Structural systems**: Harmonic resonance can occur in structural systems, such as buildings and bridges, particularly if they are subjected to repeated harmonic forces.
+
+It's essential to note that harmonic resonance can be mitigated or controlled through various techniques, such as:
+
+1. **Damping**: Adding damping to a system can reduce the amplitude of vibrations and prevent harmonic resonance.
+2. **Stabilization**: Stabilizing a system can help to prevent it from resonating at specific frequencies.
+3. **Frequency selection**: Selecting a frequency that is not resonant with the system's natural frequency can help to reduce harmonic resonance."
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_01_retrodictive,rule_01,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,126.9,8673.45,217.21,468.89,Friction,Friction.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_01_retrodictive,rule_01,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,77.73,8675.45,217.21,468.89,Friction,Thermal_Wear is caused by Friction.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_01_forward,rule_01,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,64.29,8675.45,217.21,468.89,Thermal_Wear,Thermal_Wear.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_01_forward,rule_01,forward,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,53.75,8677.45,217.21,468.89,Thermal_Wear,Friction causes Thermal_Wear.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_02_retrodictive,rule_02,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,49.63,8677.45,201.24,468.89,Voltage_Surge,Voltage_Surge
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_02_retrodictive,rule_02,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,48.07,8677.01,201.24,468.89,Voltage_Surge,Relay_Tripping is caused by Voltage_Surge.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_02_forward,rule_02,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,86.78,8660.63,201.24,468.89,Relay_Tripping,Relay_Tripping.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_02_forward,rule_02,forward,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,39.83,8660.63,201.24,468.9,Relay_Tripping,Voltage_Surge causes Relay_Tripping.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_03_retrodictive,rule_03,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,68.37,8660.63,201.24,468.9,Cavitation,Cavitation.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_03_retrodictive,rule_03,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,44.78,8665.45,201.24,468.9,Cavitation,Impeller_Erosion is caused by Cavitation.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_03_forward,rule_03,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,90.15,8665.45,201.24,468.9,Impeller_Erosion,Impeller_Erosion.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_03_forward,rule_03,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,51.9,8665.45,201.24,468.9,Impeller_Erosion,Cavitation.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_04_retrodictive,rule_04,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,43.6,8665.45,176.24,468.9,Vibration,Vibration
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_04_retrodictive,rule_04,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,50.26,8667.13,176.24,468.9,Vibration,Bearing_Misalignment is caused by Overlubrication.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_04_forward,rule_04,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,75.39,8676.63,176.24,468.9,Bearing_Misalignment,Bearing_Misalignment.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_04_forward,rule_04,forward,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,39.64,8676.7,176.24,468.91,Bearing_Misalignment,Vibration causes Bearing_Misalignment.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_05_retrodictive,rule_05,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,76.1,8676.88,176.24,468.91,Corrosion,Corrosion.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_05_retrodictive,rule_05,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,46.69,8676.88,176.24,468.91,Corrosion,Pipe_Thinning is caused by Corrosion.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_05_forward,rule_05,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,81.65,8676.88,176.24,468.91,Pipe_Thinning,Pipe_Thinning.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_05_forward,rule_05,forward,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,41.63,8676.88,176.24,468.85,Pipe_Thinning,Corrosion causes Pipe_Thinning.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_06_retrodictive,rule_06,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,51.19,8677.2,176.24,468.85,Overpressure,Overpressure.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_06_retrodictive,rule_06,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,31.58,8677.2,153.85,468.85,Overpressure,Pipe_Thinning.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_06_forward,rule_06,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,74.3,8677.2,153.85,468.85,Diaphragm_Rupture,Diaphragm_Rupture.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_06_forward,rule_06,forward,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,86.13,8677.2,153.85,468.85,Diaphragm_Rupture,Overpressure causes Diaphragm_Rupture.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_07_retrodictive,rule_07,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,47.46,8677.2,153.85,468.86,Contamination,Contamination.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_07_retrodictive,rule_07,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,46.77,8677.2,153.85,468.86,Contamination,Pipe_Thinning.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_07_forward,rule_07,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,62.6,8689.13,153.85,468.86,Filter_Clogging,Filter_Clogging.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_07_forward,rule_07,forward,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,49.3,8693.13,153.85,468.86,Filter_Clogging,Contamination causes Filter_Clogging.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_08_retrodictive,rule_08,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,82.09,8693.13,153.85,468.86,Overheating,Overheating.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_08_retrodictive,rule_08,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,66.04,8693.13,152.07,468.86,Overheating,Insulation_Breakdown is caused by Overheating.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_08_forward,rule_08,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,64.76,8693.07,152.07,468.86,Insulation_Breakdown,Insulation_Breakdown
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_08_forward,rule_08,forward,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,67.48,8693.07,152.07,468.86,Insulation_Breakdown,Overheating causes Insulation_Breakdown.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_09_retrodictive,rule_09,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,62.96,8693.07,152.07,468.86,Underlubrication,Underlubrication.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_09_retrodictive,rule_09,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,52.2,8693.07,152.07,468.86,Underlubrication,Piston_Scuffing is caused by Underlubrication.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_09_forward,rule_09,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,77.47,8693.07,152.07,468.86,Piston_Scuffing,Piston_Scuffing.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_09_forward,rule_09,forward,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,23.16,8693.07,152.07,468.86,Piston_Scuffing,Pipe.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_10_retrodictive,rule_10,retrodictive,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,65.28,8693.07,157.21,468.86,Harmonic_Resonance,Harmonic_Resonance
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_10_retrodictive,rule_10,retrodictive,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,59.88,8693.07,157.21,468.86,Harmonic_Resonance,Shaft_Fatigue is caused by Overheating.
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_10_forward,rule_10,forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,64.2,8693.07,157.21,468.86,Shaft_Fatigue,Shaft_Fatigue
+Part_C_Persistence,Condition_B_PromptCrutch,part_c_condB_rule_10_forward,rule_10,forward,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,70.72,8694.38,157.21,468.86,Shaft_Fatigue,Harmonic_Resonance causes Shaft_Fatigue.
+Part_C_Persistence,Condition_C_OnlineRevision,part_c_condC_rule_01_revision,rule_01,revision_forward,Synapse (Native CPU),False,0.0,191.77,8694.38,157.21,469.38,Glazing,Friction causes Thermal Wear and Instead.
+Part_C_Persistence,Condition_C_OnlineRevision,part_c_condC_rule_01_revision,rule_01,revision_forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,55.32,8694.38,157.21,469.38,Glazing,Glazing
+Part_C_Persistence,Condition_C_OnlineRevision,part_c_condC_rule_02_revision,rule_02,revision_forward,Synapse (Native CPU),False,0.0,4.8,8694.38,137.67,469.43,Arc_Flash,"❓ **Novel Symbol Detected:** `Cause` is novel or weakly grounded (stability: 0.00 < 0.50).
+
+*What are the causes or properties of Cause?*
+
+* **Conscious Focus:** `SOCRATIC_CLARIFICATION(cause)`
+* **Active Vocabulary:** 66 grounded tokens"
+Part_C_Persistence,Condition_C_OnlineRevision,part_c_condC_rule_02_revision,rule_02,revision_forward,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,58.59,8694.38,137.67,469.43,Arc_Flash,Arc_Flash

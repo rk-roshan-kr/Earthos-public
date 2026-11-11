@@ -1,0 +1,9 @@
+stage,domain,metric_name,measured_value,baseline_comparison,ci_95_interval,p_value,benchmark_status
+Stage 1,Perceptual Grounding,Mean Text Concept Recall,0.9833,Min: 0.8333,"[0.8333, 1.0000]",N/A,PASSED
+Stage 2-3,Active Causal Interventions,Mean Dirichlet Entropy Reduction (bits),0.3812,Random: 0.3432 | Passive: 0.0978,"[0.3595, 0.4032]","p_random=0.037109375, p_passive=0.001953125",PASSED
+Stage 4,Epistemic Restraint,Unrelated Belief Preservation Rate,1.0,Total Restraint Events: 421,"[1.0, 1.0]",N/A,PASSED
+Stage 5,Structural Analogy Transfer,Blind Hypothesis Selection Accuracy,0.8,Chance Level: 0.25 (0.25),"[0.4900, 0.9430]",exact_binomial_p=0.000416,PASSED
+Stage 6,Interactive Planning,Goal Achievement Rate,1.0,Faults Recovered: 8/8 | Avoided: 2,"[1.0, 1.0]",N/A,PASSED
+Stage 7,Metabolic Sleep,Sleep Self-Initiation Rate,1.0,Cycles: 10 | Synapses Downscaled: 479621,"[1.0, 1.0]",N/A,PASSED
+Stage 8,Lifelong Retention,Immediate Post-Sleep Retention Mean,0.9833,Cumulative Lifelong: 0.9599,"[0.95, 1.0]",N/A,PASSED
+Hardware,Resource Footprint,Peak Host RSS Memory (MB),443.18,Sampling Overhead: 0.0407 ms,N/A,N/A,PASSED

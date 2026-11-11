@@ -1,0 +1,46 @@
+﻿benchmark,probe_idx,probe_id,tier_name,target_word_count,needle_depth_percent,model,passed,score,latency_ms,peak_gpu_vram_mb,peak_gpu_power_watts,peak_process_rss_mb,ground_truth
+Part_B_PG19_Horizon,0,pg19_2000w_depth25_0,2k_words,2000,25,Synapse (Native CPU),False,0.0,705.99,9109.93,20.08,467.94,pantry
+Part_B_PG19_Horizon,0,pg19_2000w_depth25_0,2k_words,2000,25,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,266.53,9128.33,21.09,468.17,pantry
+Part_B_PG19_Horizon,0,pg19_2000w_depth25_0,2k_words,2000,25,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,85.73,9129.58,21.09,468.21,pantry
+Part_B_PG19_Horizon,1,pg19_2000w_depth50_1,2k_words,2000,50,Synapse (Native CPU),False,0.0,744.09,9130.08,59.63,471.55,garden
+Part_B_PG19_Horizon,1,pg19_2000w_depth50_1,2k_words,2000,50,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,87.3,9132.08,59.63,471.55,garden
+Part_B_PG19_Horizon,1,pg19_2000w_depth50_1,2k_words,2000,50,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,393.04,9132.08,98.46,471.56,garden
+Part_B_PG19_Horizon,2,pg19_2000w_depth75_2,2k_words,2000,75,Synapse (Native CPU),False,0.0,815.0,9130.14,109.4,473.52,cellar
+Part_B_PG19_Horizon,2,pg19_2000w_depth75_2,2k_words,2000,75,Llama-3.2-1B (GPU RTX 5070 Ti),True,1.0,85.92,9127.55,109.4,473.52,cellar
+Part_B_PG19_Horizon,2,pg19_2000w_depth75_2,2k_words,2000,75,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,288.38,9129.55,109.4,473.52,cellar
+Part_B_PG19_Horizon,3,pg19_10000w_depth25_0,10k_words,10000,25,Synapse (Native CPU),False,0.0,7270.17,9129.86,113.21,480.86,pantry
+Part_B_PG19_Horizon,3,pg19_10000w_depth25_0,10k_words,10000,25,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,1748.86,9558.11,98.36,480.86,pantry
+Part_B_PG19_Horizon,3,pg19_10000w_depth25_0,10k_words,10000,25,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,8517.92,11085.52,297.06,480.86,pantry
+Part_B_PG19_Horizon,4,pg19_10000w_depth50_1,10k_words,10000,50,Synapse (Native CPU),False,0.0,8641.65,11156.03,297.06,483.74,garden
+Part_B_PG19_Horizon,4,pg19_10000w_depth50_1,10k_words,10000,50,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,524.85,11156.03,27.8,483.75,garden
+Part_B_PG19_Horizon,4,pg19_10000w_depth50_1,10k_words,10000,50,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,1917.81,11165.05,295.69,483.75,garden
+Part_B_PG19_Horizon,5,pg19_10000w_depth75_2,10k_words,10000,75,Synapse (Native CPU),False,0.0,9985.96,11172.49,292.48,486.45,cellar
+Part_B_PG19_Horizon,5,pg19_10000w_depth75_2,10k_words,10000,75,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,475.57,11040.7,22.63,486.54,cellar
+Part_B_PG19_Horizon,5,pg19_10000w_depth75_2,10k_words,10000,75,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,1206.37,11040.7,286.02,486.62,cellar
+Part_B_PG19_Horizon,6,pg19_32000w_depth25_0,32k_words,32000,25,Synapse (Native CPU),False,0.0,91565.8,11092.86,286.02,504.68,pantry
+Part_B_PG19_Horizon,6,pg19_32000w_depth25_0,32k_words,32000,25,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,3310.98,12256.18,303.27,504.68,pantry
+Part_B_PG19_Horizon,6,pg19_32000w_depth25_0,32k_words,32000,25,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,18193.94,12679.33,303.27,504.68,pantry
+Part_B_PG19_Horizon,7,pg19_32000w_depth50_1,32k_words,32000,50,Synapse (Native CPU),False,0.0,103167.06,12719.55,261.47,508.27,garden
+Part_B_PG19_Horizon,7,pg19_32000w_depth50_1,32k_words,32000,50,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,3078.01,15789.47,304.27,508.27,garden
+Part_B_PG19_Horizon,7,pg19_32000w_depth50_1,32k_words,32000,50,Llama-3.1-8B (GPU RTX 5070 Ti),True,1.0,9181.96,15792.55,304.27,508.28,garden
+Part_B_PG19_Horizon,8,pg19_32000w_depth75_2,32k_words,32000,75,Synapse (Native CPU),False,0.0,142731.63,15795.38,295.88,512.97,cellar
+Part_B_PG19_Horizon,8,pg19_32000w_depth75_2,32k_words,32000,75,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,1462.98,15648.14,232.19,512.97,cellar
+Part_B_PG19_Horizon,8,pg19_32000w_depth75_2,32k_words,32000,75,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,6154.37,15648.14,298.62,512.97,cellar
+Part_B_PG19_Horizon,9,pg19_64000w_depth25_0,64k_words,64000,25,Synapse (Native CPU),False,0.0,562885.78,15643.83,298.62,539.19,pantry
+Part_B_PG19_Horizon,9,pg19_64000w_depth25_0,64k_words,64000,25,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,8930.89,7191.71,301.83,539.21,pantry
+Part_B_PG19_Horizon,9,pg19_64000w_depth25_0,64k_words,64000,25,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,51303.39,15878.86,301.83,539.29,pantry
+Part_B_PG19_Horizon,10,pg19_64000w_depth50_1,64k_words,64000,50,Synapse (Native CPU),False,0.0,139162.89,7188.89,32.65,503.74,garden
+Part_B_PG19_Horizon,10,pg19_64000w_depth50_1,64k_words,64000,50,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,8242.3,11779.63,300.59,503.84,garden
+Part_B_PG19_Horizon,10,pg19_64000w_depth50_1,64k_words,64000,50,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,56386.41,15903.38,300.59,503.88,garden
+Part_B_PG19_Horizon,11,pg19_64000w_depth75_2,64k_words,64000,75,Synapse (Native CPU),False,0.0,241226.33,16033.7,190.02,515.0,cellar
+Part_B_PG19_Horizon,11,pg19_64000w_depth75_2,64k_words,64000,75,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,9950.92,16033.7,300.42,515.0,cellar
+Part_B_PG19_Horizon,11,pg19_64000w_depth75_2,64k_words,64000,75,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,52162.54,15943.29,300.42,515.0,cellar
+Part_B_PG19_Horizon,12,pg19_100000w_depth25_0,100k_words,100000,25,Synapse (Native CPU),False,0.0,740185.91,15943.29,246.55,539.49,pantry
+Part_B_PG19_Horizon,12,pg19_100000w_depth25_0,100k_words,100000,25,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,19895.74,8597.43,284.71,539.5,pantry
+Part_B_PG19_Horizon,12,pg19_100000w_depth25_0,100k_words,100000,25,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,151849.59,15793.05,284.71,539.5,pantry
+Part_B_PG19_Horizon,13,pg19_100000w_depth50_1,100k_words,100000,50,Synapse (Native CPU),False,0.0,455818.3,15793.05,62.85,540.56,garden
+Part_B_PG19_Horizon,13,pg19_100000w_depth50_1,100k_words,100000,50,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,19230.21,8770.66,289.33,469.89,garden
+Part_B_PG19_Horizon,13,pg19_100000w_depth50_1,100k_words,100000,50,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,154325.56,15764.89,289.33,469.89,garden
+Part_B_PG19_Horizon,14,pg19_100000w_depth75_2,100k_words,100000,75,Synapse (Native CPU),False,0.0,702761.8,15764.89,63.2,470.96,cellar
+Part_B_PG19_Horizon,14,pg19_100000w_depth75_2,100k_words,100000,75,Llama-3.2-1B (GPU RTX 5070 Ti),False,0.0,19257.49,8737.2,290.28,408.89,cellar
+Part_B_PG19_Horizon,14,pg19_100000w_depth75_2,100k_words,100000,75,Llama-3.1-8B (GPU RTX 5070 Ti),False,0.0,160177.98,15746.44,290.28,408.89,cellar

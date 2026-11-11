@@ -1,0 +1,11 @@
+paragraph_id,scientific_domain,gold_causal_triples,settled_edges_extracted,candidate_edges_evaluated,strict_bipartite_tp,strict_bipartite_fp,strict_bipartite_fn,strict_bipartite_f1,endpoint_match_tp,downstream_eval_query,adversarial_distractor_decoy,fact_lookup_passed,decoy_rejection_passed,downstream_reasoning_passed
+BIO-01,BIO,3,3,3,3,0,0,1.0,3,metabolism -> species,metabolism -> gluconeogenesis,True,True,True
+BIO-02,BIO,3,3,3,3,0,0,1.0,3,storage -> gluconeogenesis,glucose -> apoptosis,False,True,False
+PHYS-01,PHYS,3,3,3,3,0,0,1.0,3,collapse -> density,collapse -> gluconeogenesis,True,True,True
+PHYS-02,PHYS,3,3,3,3,0,0,1.0,3,voltage -> current,voltage -> density,True,True,True
+CHEM-01,CHEM,3,3,3,2,1,1,0.6667,2,temperature -> motion,temperature -> force,True,True,True
+CHEM-02,CHEM,3,3,3,3,0,0,1.0,3,catalyst -> energy,catalyst -> shockwaves,False,True,False
+GEOL-01,GEOL,3,3,3,2,1,1,0.6667,3,convergence -> stress,convergence -> energy,True,True,True
+GEOL-02,GEOL,3,3,3,1,2,2,0.3333,1,dehydration -> point,subduction -> reaction,False,True,False
+ENG-01,ENG,3,3,3,3,0,0,1.0,3,failure -> load,failure -> plumes,True,True,True
+ENG-02,ENG,3,3,3,3,0,0,1.0,3,closure -> drop,closure -> stress,True,True,True

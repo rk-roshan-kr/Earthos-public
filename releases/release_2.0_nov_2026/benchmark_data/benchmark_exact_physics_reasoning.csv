@@ -1,0 +1,7 @@
+problem_id,equation_name,formula,target_variable,expected_value,calculated_value,analytical_residual,unit,verification_status
+PHYS-01,Hydrostatic Equilibrium,P_grav = (3 * G * M^2) / (8 * pi * R^4),gravitational_pressure,134473649563525.9,134473649563525.9,0.0,Pascals,PASSED
+PHYS-02,Jeans Instability Criterion,M_J = ((5 * k_B * T) / (G * mu * m_H))^(3/2) * (3 / (4 * pi * rho))^(1/2),jeans_mass,2.795736390697072e+32,2.795736390697072e+32,0.0,kg,PASSED
+PHYS-03,Mass-Energy Equivalence,E = Delta_m * c^2,energy,4.314024857936725e-12,4.314024857936725e-12,0.0,Joules,PASSED
+PHYS-04,Stefan-Boltzmann Luminosity,L = 4 * pi * R^2 * sigma * T^4,luminosity,3.8439325407467496e+26,3.8439325407467496e+26,0.0,Watts,PASSED
+PHYS-05,Schwarzschild Event Horizon,R_s = (2 * G * M) / c^2,schwarzschild_radius,8860.018146200635,8860.018146200635,0.0,meters,PASSED
+PHYS-06,Carnot Thermal Efficiency,eta = 1 - (T_cold / T_hot),efficiency,0.625,0.625,0.0,dimensionless,PASSED

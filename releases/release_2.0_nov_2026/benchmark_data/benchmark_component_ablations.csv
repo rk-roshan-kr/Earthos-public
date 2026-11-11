@@ -1,0 +1,6 @@
+condition,runtime_sec,flashcards_ingested,sensorimotor_stability,equations_solved,mean_equation_residual,swr_transitions_replayed,post_interference_retention_rate,struggle_denominator,struggle_retest_passed_count,struggle_retest_pass_rate,cold_binary_pass_rate,post_grind_binary_pass_rate,binary_learning_delta,cold_mean_rubric_score,post_grind_mean_rubric_score,rubric_learning_delta,cold_brier,post_grind_brier,isomorphic_transfer_binary_pass_rate,isomorphic_transfer_mean_rubric,struggle_delta_vs_baseline,post_pass_delta_vs_baseline
+FULL_ORGANISM,4.87,32,0.9200,6,0.000000,80,1.0000,19,4,0.2105,0.8733,0.9000,0.0267,0.8980,0.9247,0.0267,0.4223,0.2213,0.3000,0.3600,0.0000,0.0000
+NO_SWR_SLEEP,5.16,32,0.9200,6,0.000000,0,1.0000,19,4,0.2105,0.8733,0.9000,0.0267,0.8980,0.9247,0.0267,0.4223,0.2213,0.3000,0.3600,0.0000,0.0000
+NO_SOCRATIC_GRIND,3.61,32,0.9200,6,0.000000,80,1.0000,19,2,0.1053,0.8733,0.8867,0.0133,0.8980,0.9113,0.0133,0.4223,0.1503,0.3000,0.3600,-0.1052,-0.0133
+NO_INFANCY_CRADLE,5.19,0,0.3500,6,0.000000,80,1.0000,19,4,0.2105,0.8733,0.9000,0.0267,0.8980,0.9247,0.0267,0.4223,0.2213,0.3000,0.3600,0.0000,0.0000
+NO_FACTOR_GRAPH,5.7,32,0.9200,0,1.000000,80,1.0000,19,4,0.2105,0.8733,0.9000,0.0267,0.8980,0.9247,0.0267,0.4223,0.2213,0.3000,0.3600,0.0000,0.0000

@@ -1,0 +1,8 @@
+test_id,name,condition,result,details
+part_d_test1_multihop,Multi-Hop Causal Chains,4-Hop Transitive Reasoning,PARTIAL,1-Hop immediate retrodiction passed; multi-hop requires recursive traversal
+part_d_test2_fan_in,Fan-In Confluence,3 Converging Causes to 1 Effect,PASS,"Synthesized Spark, Gas Leak, and Static Discharge into fluent natural language"
+part_d_test3_fan_out,Fan-Out Divergence,1 Cause to 3 Divergent Effects,PASS,"Synthesized Blackout, Pump Shutdown, and Data Loss with Oxford comma"
+part_d_test4_asymmetry,Causal Asymmetry,Anti-Reversal Directionality Check,PASS,Strictly rejected backward causality without hallucinations
+part_d_test5_ood_hallucination,OOD Hallucination Resistance,Unseen Physical Concepts,PASS,Zero hallucination; emitted Socratic clarification inquiries
+part_d_test6_noisy_extraction,Messy Prose Relation Extraction,Causal Needle in Complex Engineering Paragraph,FAIL,Symbolic parser failed to segment causal clause from dense prose (Parser Boundary)
+part_d_test7_high_density,High-Density Scaling,50 Interlocking Causal Pairs Back-to-Back,PARTIAL,Ingested in 2.5s; recalled rules 1-40; dropped rules beyond buffer capacity (>40)

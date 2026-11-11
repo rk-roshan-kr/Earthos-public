@@ -1,0 +1,12 @@
+battery_id,battery_key,battery_name,units_evaluated,primary_metric,measured_score,verification_status
+SICE-EXP-I-LEARNING,battery_i_learning,Saffran-Tomasello Developmental Learning,10,Domain Learning Pass Rate,1.0,PASSED
+SICE-EXP-II-RAW-TEXT,battery_ii_raw_text,Kuhn Bipartite Raw Text Reading,10,Strict Typed Bipartite F1,0.8667,PASSED
+SICE-EXP-III-DIALOGUE,battery_iii_dialogue,Grosz Centering Theory Anaphora & Dialogue,20,Classification / Transfer Accuracy,1.0,PASSED
+SICE-EXP-IV-CAUSAL,battery_iv_causal,Matched-Budget Active Causal Discovery,10,Domain Learning Pass Rate,1.0,PASSED
+SICE-EXP-V-ANALOGY,battery_v_analogy,Gentner Relational Analogy Transfer,20,Classification / Transfer Accuracy,0.9,PASSED
+SICE-EXP-VI-PHYSICS,battery_vi_physics,Buckingham Pi Dimensional Law Discovery,10,Domain Learning Pass Rate,1.0,PASSED
+SICE-EXP-VII-METACOGNITION,battery_vii_metacognition,Metacognitive Confidence & Belief Revision,20,Brier Calibration Error,0.016,PASSED
+SICE-EXP-VIII-PLANNING,battery_viii_planning,Active Inference Planning & Blunder Attractor Quenching,10,Domain Learning Pass Rate,1.0,PASSED
+SICE-EXP-IX-METABOLISM,battery_ix_metabolism,Thermodynamic Metabolism & Sleep Downscaling,10,Domain Learning Pass Rate,1.0,PASSED
+SICE-EXP-X-SAFETY,battery_x_safety,Sovereign Safety Governance & Immune Defense,10,Domain Learning Pass Rate,1.0,PASSED
+SICE-EXP-XI-SCALE,battery_xi_scale,Sparse CSR Neuromorphic Scaling Ladder,10,Domain Learning Pass Rate,1.0,PASSED

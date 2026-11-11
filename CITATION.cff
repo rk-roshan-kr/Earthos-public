@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you cite the Synapse architecture benchmark evaluations, public announcements, or white papers in your research, please cite as below."
+title: "Synapse Architecture: Continuous Causal Intelligence & Empirical Head-to-Head Benchmarks"
+authors:
+  - family-names: "Gupta"
+    given-names: "Roshan Kumar"
+    affiliation: "earthoslab"
+    email: "roshan@earthoslab.com"
+date-released: 2026-11-11
+url: "https://earthoslab.com"
+repository-code: "https://github.com/rk-roshan-kr/Earthos-public"
+keywords:
+  - "continuous causal intelligence"
+  - "factor graphs"
+  - "active inference"
+  - "lifelong learning"
+  - "edge autonomy"
+  - "transformer physical limits"
+license: "Restricted Research License"
+version: "4.0.0"
