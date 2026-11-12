@@ -10,3 +10,8 @@ __pycache__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Internal policies & standards
+standards/
+*STANDARD*.md
+
