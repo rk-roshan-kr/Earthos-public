@@ -19,13 +19,13 @@
 
 The prevailing consensus across the artificial intelligence industry assumes that Large Language Models (LLMs) based on Transformer self-attention will scale indefinitely to solve all cognitive workloads—from web search to embodied robotics and real-time edge autonomy.
 
-In **Public Release 4.0**, earthoslab presents a rigorous, peer-reviewed, three-part empirical head-to-head benchmark comparing **Synapse** (our pure biological factor-graph cognitive organism) against modern local LLMs (**Meta Llama-3.1-8B** and **Llama-3.2-1B**) executing natively on consumer enthusiast hardware.
+In **Public Release 4.0**, earthoslab presents a rigorous, peer-reviewed, three-part empirical head-to-head benchmark comparing **Synapse** (a pure biological factor-graph cognitive organism) against modern local LLMs (**Meta Llama-3.1-8B** and **Llama-3.2-1B**) executing natively on consumer enthusiast hardware.
 
-We deliberately designed this benchmark to eliminate all home-turf bias:
+This benchmark was deliberately designed to eliminate all home-turf bias:
 
 1. **Zero Cherry-Picked Questions**: 100% of evaluation queries are derived from established peer-reviewed academic datasets (**CLADDER**, **BABILong**, **AI2 ARC-Science**, and **OpenAI HumanEval**) and authentic Project Gutenberg literature (**PG-19**).
 2. **Zero Core Modifications**: The Synapse core organism remained 100% frozen; not a single line of heuristic crutch, keyword bypass, or artificial patch was introduced (verified via static AST audit).
-3. **Full Credit to Transformers**: We explicitly tested areas where massive pre-training on 15 trillion internet tokens gives LLMs an overwhelming advantage (Python syntax generation and middle-school science trivia).
+3. **Full Credit to Transformers**: Evaluations explicitly tested domains where massive pre-training on 15 trillion internet tokens gives LLMs an overwhelming advantage (Python syntax generation and middle-school science trivia).
 
 ### The Methodological Paradox: An Unequal Comparison That Must Be Made
 
@@ -33,11 +33,11 @@ From a scientific standpoint, comparing Synapse directly against a Large Languag
 
 Evaluating a newly initialized causal substrate on Python code synthesis or general-knowledge examinations against an extensively pretrained language model is therefore not a comparison of equivalent capabilities. It is, in several respects, a category mismatch.
 
-However, we deliberately conducted this comparison because Large Language Models have become the dominant practical paradigm in modern artificial intelligence. If we propose that persistent causal representations and continuous learning offer a viable alternative computational architecture, we cannot restrict evaluation to isolated synthetic benchmarks or theoretical performance claims.
+However, this comparison was deliberately conducted because Large Language Models have become the dominant practical paradigm in modern artificial intelligence. Proposing that persistent causal representations and continuous learning offer a viable alternative computational architecture requires rigorous empirical evaluation against established industry systems rather than restricting scope to isolated synthetic benchmarks or theoretical performance claims.
 
 An alternative architecture must demonstrate its capabilities against established industry systems, using transparent datasets, reproducible experiments, and identical task definitions wherever applicable.
 
-We therefore approach this evaluation not as an attempt to establish universal superiority, but as a rigorous effort to locate the precise computational and physical boundaries of both approaches.
+This evaluation is therefore approached not as an attempt to claim universal superiority, but as a rigorous empirical effort to locate the precise computational and physical boundaries of both paradigms.
 
 ### The Three Discoveries
 
@@ -157,7 +157,7 @@ _Table 2: Part B Physical Telemetry: Uncompressed FP16 context scaling on an RTX
 
 The fundamental architectural difference between transformers and dynamical cognitive substrates lies in **statefulness**: transformers are pure stateless functions evaluated over a sliding prompt window, whereas Synapse is a stateful dynamical factor graph.
 
-In Part C, we benchmarked the **Unique Value Proposition of Synapse**: **Persistent, lifelong causal learning without prompt-history re-transmission and without KV-cache explosion.**
+Part C benchmarks the **Unique Value Proposition of Synapse**: **Persistent, lifelong causal learning without prompt-history re-transmission and without KV-cache explosion.**
 
 ### Experimental Design:
 
