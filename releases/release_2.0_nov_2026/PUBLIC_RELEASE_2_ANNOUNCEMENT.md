@@ -26,7 +26,7 @@ In **Public Release 1.0** (October 31, 2026), **earthoslab** introduced **Synaps
 
 In **Public Release 2.0**, the cognitive seed enters the Academy. 
 
-Here we report verified empirical benchmarks across five landmark evaluation suites:
+Here, verified empirical benchmarks are reported across five landmark evaluation suites:
 1. **The Unified Cognitive Academy:** An adversarial schooling curriculum across 6 demanding scientific domains demonstrating **87.33% Cold Binary Pass Rate** (89.80% Mean Rubric Score) and **90.00% Post-Grind Binary Pass Rate** (92.47% Mean Rubric Score), with **21.05% struggle remediation** (4/19 failed items recovered on retest, yielding a +2.67 pp net gain across 150 items) and a calibrated **0.2213 Brier score** (substantially improved from 0.4223 cold baseline).
 2. **32-Core Parallel Cohort Scalability:** 8 concurrent student organisms executed simultaneously across multi-core workers in **6.14 seconds wall-clock time**, achieving **0.00% process variance** ($87.33\% \pm 0.00\%$ Cold, $90.00\% \pm 0.00\%$ Post-Grind) and zero observed deadlocks.
 3. **Exact Quantitative Physics & Equation Solving ($0.00e+00$ Residual):** Analytical constraint satisfaction across 6 fundamental physical equation systems (Hydrostatic equilibrium, Jeans mass, $E=mc^2$, Stefan-Boltzmann luminosity, Schwarzschild radius, Carnot efficiency) with zero numerical approximation error (input parameters fully disclosed).
@@ -48,13 +48,13 @@ Modern artificial intelligence has reached an unsustainable physical, financial,
 
 Nature took a radically different path. A human child learns continuously from sparse, real-time experience on a biological metabolic budget of **under 15 Watts**—without ever wiping past memories or needing to be retrained from scratch.
 
-Today, under Project **Earthos**, **earthoslab** announces **Synapse Public Release 2.0**, advancing our sovereign biomimetic architecture into university-level causal discovery, exact physical reasoning, and adversarial dialectics.
+Today, under Project **Earthos**, **earthoslab** announces **Synapse Public Release 2.0**, advancing the sovereign biomimetic architecture into university-level causal discovery, exact physical reasoning, and adversarial dialectics.
 
 ---
 
 ## 2. An Honest Distinction: From Toddler to University Scholar (Zero Clout)
 
-Before examining empirical metrics, we make a candid, scientifically honest distinction: **We do not claim that Synapse today matches the encyclopedic conversational breadth, essay writing, or coding fluency of a 70B Large Language Model.**
+Before examining empirical metrics, an objective scientific distinction is stated: **earthoslab does not claim that Synapse today matches the encyclopedic conversational breadth, essay writing, or coding fluency of a 70B Large Language Model.**
 
 A modern 70B LLM is like the **Library of Alexandria**: an adult repository of nearly all recorded human text, trained by brute-forcing millions of books. It can generate conversational prose and write Python scripts because it has ingested tens of trillions of tokens.
 
@@ -77,7 +77,7 @@ In contrast, **Synapse is a sovereign, biologically inspired cognitive reasoning
 
 ## 3. Evolution of Evaluation Batteries: Release 1.0 vs. Release 2.0
 
-The following table provides the direct empirical comparison between our initial demonstration (**Release 1.0**) and the definitive **Release 2.0** benchmark battery:
+The following table provides the direct empirical comparison between the initial demonstration (**Release 1.0**) and the definitive **Release 2.0** benchmark battery:
 
 | Benchmark Dimension | Public Release 1.0 (Oct 31) | Public Release 2.0 (Nov 4) | Measured Capability |
 | :--- | :--- | :--- | :--- |
@@ -205,7 +205,7 @@ Operating with mathematical determinism and zero stochastic fabrication on under
 3. **Sovereign Green Intelligence:** Edge appliances and privacy-first personal cognition operating entirely offline on local microcontrollers without subscription costs, data harvesting, or multi-kilowatt power draws.
 
 ### 7.3 Open Science & Data Verification
-In accordance with our commitment to open empirical science and zero IP leakage, all six verified benchmark datasets are appended as public CSV files in [`benchmark_data/`](benchmark_data/), physically embedded as downloadable attachments directly within the PDF document, and transcribed in the Appendix tables below:
+In accordance with open empirical science and zero IP leakage, all six verified benchmark datasets are appended as public CSV files in [`benchmark_data/`](benchmark_data/), physically embedded as downloadable attachments directly within the PDF document, and transcribed in the Appendix tables below:
 - **Adversarial Struggle Battery (`189 evaluations`):** [`benchmark_data/benchmark_adversarial_struggle_battery.csv`](benchmark_data/benchmark_adversarial_struggle_battery.csv)
 - **32-Core Parallel Cohort Scaling (`8 students`):** [`benchmark_data/benchmark_parallel_cohort_scaling.csv`](benchmark_data/benchmark_parallel_cohort_scaling.csv)
 - **Exact Quantitative Physics Reasoning (`6 equations`):** [`benchmark_data/benchmark_exact_physics_reasoning.csv`](benchmark_data/benchmark_exact_physics_reasoning.csv)
@@ -214,7 +214,7 @@ In accordance with our commitment to open empirical science and zero IP leakage,
 - **Sleep Delayed Retention Benchmark (`30 micro-worlds`):** [`benchmark_data/benchmark_delayed_retention_sleep.csv`](benchmark_data/benchmark_delayed_retention_sleep.csv)
 
 > **Confidentiality & Intellectual Property Protection:**  
-> The internal algorithmic implementations, continuous state mappings, and proprietary architectural mechanisms of the Synapse cognitive engine constitute confidential trade-secret intellectual property of **earthoslab** and are strictly withheld. In accordance with open empirical science, this publication discloses all external inputs, verbatim outputs, diagnostic scores, and hardware metrics, establishing rigorous empirical verification without compromising our proprietary core IP.
+> The internal algorithmic implementations, continuous state mappings, and proprietary architectural mechanisms of the Synapse cognitive engine constitute confidential trade-secret intellectual property of **earthoslab** and are strictly withheld. In accordance with open empirical science, this publication discloses all external inputs, verbatim outputs, diagnostic scores, and hardware metrics, establishing rigorous empirical verification without compromising the proprietary core IP.
 
 ---
 

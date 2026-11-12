@@ -20,13 +20,13 @@ Yet despite their linguistic fluency, modern transformers suffer from fundamenta
 
 Nature took a radically different path. A 3-year-old child learns continuously from sparse, real-time experience on a biological metabolic budget of **under 15 Watts**—without ever wiping past memories or needing to be retrained from scratch.
 
-Today, we are announcing a paradigm shift: **Synapse**, an autonomous, bio-inspired cognitive architecture developed under Project **Earthos** by **earthoslab**, designed for continuous lifelong learning, deterministic causal reasoning (zero stochastic fabrication), and microscopic computational footprint.
+Today, earthoslab presents **Synapse**, an autonomous, bio-inspired cognitive architecture developed under Project **Earthos** by **earthoslab**, designed for continuous lifelong learning, deterministic causal reasoning (zero stochastic fabrication), and microscopic computational footprint.
 
 ---
 
 ## The Breakthrough: The 5-Hour Autonomous Distillation Run
 
-To test our developmental architecture, we executed an unbroken, **5-hour autonomous learning benchmark** on a single consumer workstation. 
+To test the developmental architecture, an unbroken **5-hour autonomous learning benchmark** was executed on a single consumer workstation. 
 
 Starting from **complete tabula rasa**—zero initial vocabulary, zero pre-training, and zero pre-configured world knowledge—the Synapse organism was taught continuously by an external local language model acting as an omniscient Socratic tutor across **155 sequential curriculum modules** (spanning physics, chemistry, thermodynamics, genetics, computing, and geology).
 
@@ -61,14 +61,14 @@ To rigorously measure capability emergence without data leakage, the organism wa
 
 ## An Honest Distinction: A Cognitive Seed vs. A Linguistic Library
 
-Before examining empirical metrics, we must make a candid, scientifically honest distinction: **We do not claim that Synapse today matches the encyclopedic conversational breadth, essay writing, or coding fluency of a 70B Large Language Model.**
+Before examining empirical metrics, an objective scientific distinction is stated: **earthoslab does not claim that Synapse today matches the encyclopedic conversational breadth, essay writing, or coding fluency of a 70B Large Language Model.**
 
 A modern 70B LLM is like the **Library of Alexandria**: an adult-level repository of nearly all recorded human text. It can write sonnets, generate Python scripts, and converse in 40 languages because it was trained by brute-forcing millions of books.
 
 In contrast, **Synapse is currently at the developmental stage of a 2.5 to 3-year-old child**—an early, living cognitive core. It knows 666 words and reasons over physical causes and effects. It cannot write a novel, and it does not possess encyclopedic trivia.
 
 **So why compare them at all?**
-Because we are comparing the **fundamental mechanism of intelligence and learning**, not surface linguistic volume:
+Because the evaluation compares the **fundamental mechanism of intelligence and learning**, not surface linguistic volume:
 * An LLM is an inanimate library: it cannot learn new facts on the fly without catastrophic forgetting, it cannot tell you when it is ignorant (hallucinating instead), and it requires the electrical power of a small town.
 * Synapse is a living seedling: it possesses the genuine machinery of cognition—lifelong continuous learning, epistemic curiosity, sleep consolidation, and deterministic causal truth (zero stochastic fabrication)—operating on less than 5 Watts.
 
@@ -173,7 +173,7 @@ Between learning sessions, Synapse enters autonomous offline sleep cycles. Throu
 
 ## Architectural Comparison: Statistical Transformers vs. Biomimetic Cognitive Organism
 
-We contrast the two architectures not on superficial conversational breadth, but on their fundamental **learning mechanics, data appetite, and computational footprint**:
+The two architectures are contrasted not on superficial conversational breadth, but on their fundamental **learning mechanics, data appetite, and computational footprint**:
 
 | Dimension | Monolithic Transformers (LLMs) | **Synapse Cognitive Architecture** |
 | :--- | :--- | :--- |
@@ -193,7 +193,7 @@ We contrast the two architectures not on superficial conversational breadth, but
 
 ---
 
-## Where We Are Today
+## Current Developmental State
 
 Developmentally, Synapse has achieved the milestones of an early **human toddler**: an active lexicon of 666 grounded physical concepts, functional cause-and-effect reasoning, an incessant "Why?" curiosity mechanism, and restorative sleep consolidation. 
 
@@ -211,7 +211,7 @@ Crucially, because its teacher was an LLM oracle, the organism's concepts are un
 
 ## What’s Ahead
 
-We are expanding continuous distillation runs to 24-hour longitudinal benchmarks, introducing multi-hop counterfactual planning, and deploying earthoslab onto low-power embedded microcontrollers.
+Continuous distillation runs are being expanded to 24-hour longitudinal benchmarks, introducing multi-hop counterfactual planning, and deploying earthoslab onto low-power embedded microcontrollers.
 
 The future of intelligence is not bigger data centers. It is better architecture.
 
@@ -235,7 +235,7 @@ This appendix documents the evaluation methodology and diagnostic exam dataset a
 Think of this benchmark as the **unedited examination report card** of the organism during its 5.05-hour life. Every single row represents an actual diagnostic exam probe administered by an independent evaluation module.
 
 #### 2. How to Interpret the Columns (`Pre` vs. `Post`)
-We employ the standard cognitive psychology **Pre-Test / Post-Test Protocol**:
+The evaluation employs the standard cognitive psychology **Pre-Test / Post-Test Protocol**:
 
 | Column | What It Means | Why It Matters |
 | :--- | :--- | :--- |

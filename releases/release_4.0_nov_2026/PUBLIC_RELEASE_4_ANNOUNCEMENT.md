@@ -41,7 +41,7 @@ This evaluation is therefore approached not as an attempt to claim universal sup
 
 ### The Three Discoveries
 
-Our empirical findings expose the fundamental physical and architectural realities separating statistical surface-form generators from biological causal substrates:
+The empirical findings expose the fundamental physical and architectural realities separating statistical surface-form generators from biological causal substrates:
 
 1. **The Static Encyclopedia Reality (Part A - 450 Traces)**:
    - **Llama-3.1-8B dominates where pre-training excels**: achieving **92.0% on OpenAI HumanEval** and **82.0% on AI2 ARC-Science**.
