@@ -1,0 +1,265 @@
+\vspace{1.0em}
+\appendix
+% ==============================================================================
+% APPENDIX: COMPLETE EMPIRICAL BENCHMARK TRANSCRIPTION & DATA LEDGER
+% ==============================================================================
+\begin{center}
+  {\Large\bfseries\color{brandnavy}\sffamily Appendix: Complete Empirical Benchmark Data Ledger}
+  
+  \vspace{0.2em}
+  \textsf{\small Complete quantitative tables transcribed directly from the 8 embedded CSV datasets.}
+\end{center}
+\vspace{-0.2em}
+\noindent{\color{bordergray}\hrule height 0.75pt}
+\vspace{0.4em}
+
+\noindent\textbf{\textsf{\color{brandnavy}Open Science Data Provenance \& Replication Protocol}}\\[0.2em]
+\noindent This appendix transcribes the full empirical records of \textbf{Public Release 4.0}. All rows, raw responses, latencies, and physical hardware telemetry were recorded under uncompromised local execution on an AMD Ryzen 9 9950X workstation with an NVIDIA GeForce RTX 5070 Ti (16 GB VRAM). All corresponding raw datasets are physically embedded in this PDF.
+
+\vspace{0.5em}
+\subsection*{Appendix A: Part A Macro Academic Baselines Scorecard}
+\noindent\textsf{\footnotesize Source Dataset: \path{benchmark_data/part_a_academic_baselines_scorecard.csv} (12 evaluation rows across 450 traces)}
+\vspace{0.2em}
+
+{\footnotesize\sffamily
+\setlength{\tabcolsep}{4pt}
+\rowcolors{2}{rowgray}{white}
+\noindent\begin{tabularx}{\textwidth}{p{3.4cm} X c c c r r}
+\toprule
+\textbf{\color{brandnavy}Model Evaluated} & \textbf{\color{brandnavy}Track} & \textbf{\color{brandnavy}Probes} & \textbf{\color{brandnavy}Pass} & \textbf{\color{brandnavy}Accuracy} & \textbf{\color{brandnavy}Median Lat.} & \textbf{\color{brandnavy}Peak VRAM} \\
+\midrule
+Synapse (Native CPU) & CLADDER & 50 & 4 & 8.0\% & 605.5 ms & 0.0 MB \\
+Synapse (Native CPU) & BABILONG & 25 & 0 & 0.0\% & 122.5 ms & 0.0 MB \\
+Synapse (Native CPU) & ARC & 50 & 0 & 0.0\% & 5692.7 ms & 0.0 MB \\
+Synapse (Native CPU) & HUMANEVAL & 25 & 0 & 0.0\% & 74468.2 ms & 0.0 MB \\
+Llama-3.1-8B (GPU RTX 5070 Ti) & CLADDER & 50 & 33 & 66.0\% & 5996.3 ms & 15669.7 MB \\
+Llama-3.1-8B (GPU RTX 5070 Ti) & BABILONG & 25 & 25 & 100.0\% & 5366.9 ms & 15673.3 MB \\
+Llama-3.1-8B (GPU RTX 5070 Ti) & ARC & 50 & 41 & 82.0\% & 6549.5 ms & 15802.1 MB \\
+Llama-3.1-8B (GPU RTX 5070 Ti) & HUMANEVAL & 25 & 23 & 92.0\% & 11023.1 ms & 15895.1 MB \\
+Llama-3.2-1B (GPU RTX 5070 Ti) & CLADDER & 50 & 24 & 48.0\% & 2954.6 ms & 15669.7 MB \\
+Llama-3.2-1B (GPU RTX 5070 Ti) & BABILONG & 25 & 2 & 8.0\% & 3038.5 ms & 15673.2 MB \\
+Llama-3.2-1B (GPU RTX 5070 Ti) & ARC & 50 & 22 & 44.0\% & 3270.2 ms & 15803.2 MB \\
+Llama-3.2-1B (GPU RTX 5070 Ti) & HUMANEVAL & 25 & 13 & 52.0\% & 3727.4 ms & 15891.9 MB \\
+\bottomrule
+\end{tabularx}
+\vspace{0.2em}
+\captionof{table}{Part A Macro Academic Baseline Scorecard across CLADDER, BABILong, ARC, and HumanEval.}
+}
+
+\vspace{0.8em}
+\subsection*{Appendix B: Part B 100,000-Word Horizon Scaling \& Physical Hardware Telemetry}
+\noindent\textsf{\footnotesize Source Dataset: \path{benchmark_data/part_b_100k_word_horizon_scaling.csv} (45 execution traces across 5 context tiers)}
+\vspace{0.2em}
+
+{\scriptsize\sffamily\renewcommand{\arraystretch}{0.88}
+\setlength{\tabcolsep}{3.5pt}
+\rowcolors{2}{rowgray}{white}
+\noindent\begin{longtable}{p{1.6cm} p{1.6cm} c p{3.4cm} c r r r}
+\toprule
+\textbf{\color{brandnavy}Tier} & \textbf{\color{brandnavy}Words} & \textbf{\color{brandnavy}Depth} & \textbf{\color{brandnavy}Model} & \textbf{\color{brandnavy}Result} & \textbf{\color{brandnavy}Latency} & \textbf{\color{brandnavy}VRAM} & \textbf{\color{brandnavy}Power} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+2k\_words & 2,000 & 25\% & Synapse (Native CPU) & \color{gray}FAIL & 706.0 ms & 0 MB & CPU \\
+2k\_words & 2,000 & 25\% & Llama-3.2-1B & \color{gray}FAIL & 266.5 ms & 9128 MB & 21.1 W \\
+2k\_words & 2,000 & 25\% & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 85.7 ms & 9130 MB & 21.1 W \\
+2k\_words & 2,000 & 50\% & Synapse (Native CPU) & \color{gray}FAIL & 744.1 ms & 0 MB & CPU \\
+2k\_words & 2,000 & 50\% & Llama-3.2-1B & \color{gray}FAIL & 87.3 ms & 9132 MB & 59.6 W \\
+2k\_words & 2,000 & 50\% & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 393.0 ms & 9132 MB & 98.5 W \\
+2k\_words & 2,000 & 75\% & Synapse (Native CPU) & \color{gray}FAIL & 815.0 ms & 0 MB & CPU \\
+2k\_words & 2,000 & 75\% & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 85.9 ms & 9128 MB & 109.4 W \\
+2k\_words & 2,000 & 75\% & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 288.4 ms & 9130 MB & 109.4 W \\
+10k\_words & 10,000 & 25\% & Synapse (Native CPU) & \color{gray}FAIL & 7.27 s & 0 MB & CPU \\
+10k\_words & 10,000 & 25\% & Llama-3.2-1B & \color{gray}FAIL & 1.75 s & 9558 MB & 98.4 W \\
+10k\_words & 10,000 & 25\% & Llama-3.1-8B & \color{gray}FAIL & 8.52 s & 11086 MB & 297.1 W \\
+10k\_words & 10,000 & 50\% & Synapse (Native CPU) & \color{gray}FAIL & 8.64 s & 0 MB & CPU \\
+10k\_words & 10,000 & 50\% & Llama-3.2-1B & \color{gray}FAIL & 524.9 ms & 11156 MB & 27.8 W \\
+10k\_words & 10,000 & 50\% & Llama-3.1-8B & \color{gray}FAIL & 1.92 s & 11165 MB & 295.7 W \\
+10k\_words & 10,000 & 75\% & Synapse (Native CPU) & \color{gray}FAIL & 9.99 s & 0 MB & CPU \\
+10k\_words & 10,000 & 75\% & Llama-3.2-1B & \color{gray}FAIL & 475.6 ms & 11041 MB & 22.6 W \\
+10k\_words & 10,000 & 75\% & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 1.21 s & 11041 MB & 286.0 W \\
+32k\_words & 32,000 & 25\% & Synapse (Native CPU) & \color{gray}FAIL & 91.57 s & 0 MB & CPU \\
+32k\_words & 32,000 & 25\% & Llama-3.2-1B & \color{gray}FAIL & 3.31 s & 12256 MB & 303.3 W \\
+32k\_words & 32,000 & 25\% & Llama-3.1-8B & \color{gray}FAIL & 18.19 s & 12679 MB & 303.3 W \\
+32k\_words & 32,000 & 50\% & Synapse (Native CPU) & \color{gray}FAIL & 103.17 s & 0 MB & CPU \\
+32k\_words & 32,000 & 50\% & Llama-3.2-1B & \color{gray}FAIL & 3.08 s & 15789 MB & 304.3 W \\
+32k\_words & 32,000 & 50\% & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 9.18 s & 15793 MB & 304.3 W \\
+32k\_words & 32,000 & 75\% & Synapse (Native CPU) & \color{gray}FAIL & 142.73 s & 0 MB & CPU \\
+32k\_words & 32,000 & 75\% & Llama-3.2-1B & \color{gray}FAIL & 1.46 s & 15648 MB & 232.2 W \\
+32k\_words & 32,000 & 75\% & Llama-3.1-8B & \color{gray}FAIL & 6.15 s & 15648 MB & 298.6 W \\
+64k\_words & 64,000 & 25\% & Synapse (Native CPU) & \color{gray}FAIL & 562.89 s & 0 MB & CPU \\
+64k\_words & 64,000 & 25\% & Llama-3.2-1B & \color{gray}FAIL & 8.93 s & 7192 MB & 301.8 W \\
+64k\_words & 64,000 & 25\% & Llama-3.1-8B & \color{gray}FAIL & 51.30 s & 15879 MB & 301.8 W \\
+64k\_words & 64,000 & 50\% & Synapse (Native CPU) & \color{gray}FAIL & 139.16 s & 0 MB & CPU \\
+64k\_words & 64,000 & 50\% & Llama-3.2-1B & \color{gray}FAIL & 8.24 s & 11780 MB & 300.6 W \\
+64k\_words & 64,000 & 50\% & Llama-3.1-8B & \color{gray}FAIL & 56.39 s & 15903 MB & 300.6 W \\
+64k\_words & 64,000 & 75\% & Synapse (Native CPU) & \color{gray}FAIL & 241.23 s & 0 MB & CPU \\
+64k\_words & 64,000 & 75\% & Llama-3.2-1B & \color{gray}FAIL & 9.95 s & 16034 MB & 300.4 W \\
+64k\_words & 64,000 & 75\% & Llama-3.1-8B & \color{gray}FAIL & 52.16 s & 15943 MB & 300.4 W \\
+100k\_words & 100,000 & 25\% & Synapse (Native CPU) & \color{gray}FAIL & 740.19 s & 0 MB & CPU \\
+100k\_words & 100,000 & 25\% & Llama-3.2-1B & \color{gray}FAIL & 19.90 s & 8597 MB & 284.7 W \\
+100k\_words & 100,000 & 25\% & Llama-3.1-8B & \color{gray}FAIL & 151.85 s & 15793 MB & 284.7 W \\
+100k\_words & 100,000 & 50\% & Synapse (Native CPU) & \color{gray}FAIL & 455.82 s & 0 MB & CPU \\
+100k\_words & 100,000 & 50\% & Llama-3.2-1B & \color{gray}FAIL & 19.23 s & 8771 MB & 289.3 W \\
+100k\_words & 100,000 & 50\% & Llama-3.1-8B & \color{gray}FAIL & 154.33 s & 15765 MB & 289.3 W \\
+100k\_words & 100,000 & 75\% & Synapse (Native CPU) & \color{gray}FAIL & 702.76 s & 0 MB & CPU \\
+100k\_words & 100,000 & 75\% & Llama-3.2-1B & \color{gray}FAIL & 19.26 s & 8737 MB & 290.3 W \\
+100k\_words & 100,000 & 75\% & Llama-3.1-8B & \color{gray}FAIL & 160.18 s & 15746 MB & 290.3 W \\
+\end{longtable}
+\vspace{-0.5em}
+\captionof{table}{Part B Complete 45-Trace Telemetry Log from 2,000 to 100,000 Words.}
+}
+
+\vspace{0.8em}
+\subsection*{Appendix C: Part C Lifelong Persistence \& Continuous Memory Scorecard}
+\noindent\textsf{\footnotesize Source Dataset: \path{benchmark_data/part_c_lifelong_persistence_scorecard.csv} (104 execution traces across Conditions A, B, and C)}
+\vspace{0.2em}
+
+{\scriptsize\sffamily\renewcommand{\arraystretch}{0.88}
+\setlength{\tabcolsep}{3.5pt}
+\rowcolors{2}{rowgray}{white}
+\noindent\begin{longtable}{p{2.2cm} p{1.2cm} p{2.0cm} p{3.8cm} c r}
+\toprule
+\textbf{\color{brandnavy}Condition} & \textbf{\color{brandnavy}Rule} & \textbf{\color{brandnavy}Type} & \textbf{\color{brandnavy}Model} & \textbf{\color{brandnavy}Result} & \textbf{\color{brandnavy}Latency} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+A NativeDirect & rule\_01 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 3.8 ms \\
+A NativeDirect & rule\_01 & retrodictive & Llama-3.1-8B & \color{gray}FAIL & 5136.4 ms \\
+A NativeDirect & rule\_01 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 1781.0 ms \\
+A NativeDirect & rule\_01 & forward & Synapse & \textbf{\color{passgreen}PASS} & 122.6 ms \\
+A NativeDirect & rule\_01 & forward & Llama-3.1-8B & \color{gray}FAIL & 1246.1 ms \\
+A NativeDirect & rule\_01 & forward & Llama-3.2-1B & \color{gray}FAIL & 764.6 ms \\
+A NativeDirect & rule\_02 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 4.0 ms \\
+A NativeDirect & rule\_02 & retrodictive & Llama-3.1-8B & \color{gray}FAIL & 1947.0 ms \\
+A NativeDirect & rule\_02 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 868.6 ms \\
+A NativeDirect & rule\_02 & forward & Synapse & \textbf{\color{passgreen}PASS} & 157.4 ms \\
+A NativeDirect & rule\_02 & forward & Llama-3.1-8B & \color{gray}FAIL & 624.5 ms \\
+A NativeDirect & rule\_02 & forward & Llama-3.2-1B & \color{gray}FAIL & 805.2 ms \\
+A NativeDirect & rule\_03 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 277.7 ms \\
+A NativeDirect & rule\_03 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 1564.4 ms \\
+A NativeDirect & rule\_03 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 907.8 ms \\
+A NativeDirect & rule\_03 & forward & Synapse & \textbf{\color{passgreen}PASS} & 122.2 ms \\
+A NativeDirect & rule\_03 & forward & Llama-3.1-8B & \color{gray}FAIL & 1864.7 ms \\
+A NativeDirect & rule\_03 & forward & Llama-3.2-1B & \color{gray}FAIL & 838.0 ms \\
+A NativeDirect & rule\_04 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 266.7 ms \\
+A NativeDirect & rule\_04 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 1187.5 ms \\
+A NativeDirect & rule\_04 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 800.8 ms \\
+A NativeDirect & rule\_04 & forward & Synapse & \textbf{\color{passgreen}PASS} & 149.3 ms \\
+A NativeDirect & rule\_04 & forward & Llama-3.1-8B & \color{gray}FAIL & 1596.9 ms \\
+A NativeDirect & rule\_04 & forward & Llama-3.2-1B & \color{gray}FAIL & 888.1 ms \\
+A NativeDirect & rule\_05 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 4.2 ms \\
+A NativeDirect & rule\_05 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 2557.6 ms \\
+A NativeDirect & rule\_05 & retrodictive & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 875.2 ms \\
+A NativeDirect & rule\_05 & forward & Synapse & \textbf{\color{passgreen}PASS} & 118.9 ms \\
+A NativeDirect & rule\_05 & forward & Llama-3.1-8B & \color{gray}FAIL & 1322.7 ms \\
+A NativeDirect & rule\_05 & forward & Llama-3.2-1B & \color{gray}FAIL & 1031.0 ms \\
+A NativeDirect & rule\_06 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 249.7 ms \\
+A NativeDirect & rule\_06 & retrodictive & Llama-3.1-8B & \color{gray}FAIL & 2548.2 ms \\
+A NativeDirect & rule\_06 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 1183.9 ms \\
+A NativeDirect & rule\_06 & forward & Synapse & \textbf{\color{passgreen}PASS} & 140.3 ms \\
+A NativeDirect & rule\_06 & forward & Llama-3.1-8B & \color{gray}FAIL & 1586.2 ms \\
+A NativeDirect & rule\_06 & forward & Llama-3.2-1B & \color{gray}FAIL & 587.5 ms \\
+A NativeDirect & rule\_07 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 4.3 ms \\
+A NativeDirect & rule\_07 & retrodictive & Llama-3.1-8B & \color{gray}FAIL & 1649.0 ms \\
+A NativeDirect & rule\_07 & retrodictive & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 580.6 ms \\
+A NativeDirect & rule\_07 & forward & Synapse & \textbf{\color{passgreen}PASS} & 187.6 ms \\
+A NativeDirect & rule\_07 & forward & Llama-3.1-8B & \color{gray}FAIL & 1539.1 ms \\
+A NativeDirect & rule\_07 & forward & Llama-3.2-1B & \color{gray}FAIL & 797.6 ms \\
+A NativeDirect & rule\_08 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 2.9 ms \\
+A NativeDirect & rule\_08 & retrodictive & Llama-3.1-8B & \color{gray}FAIL & 1670.7 ms \\
+A NativeDirect & rule\_08 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 861.1 ms \\
+A NativeDirect & rule\_08 & forward & Synapse & \textbf{\color{passgreen}PASS} & 121.9 ms \\
+A NativeDirect & rule\_08 & forward & Llama-3.1-8B & \color{gray}FAIL & 1815.6 ms \\
+A NativeDirect & rule\_08 & forward & Llama-3.2-1B & \color{gray}FAIL & 645.5 ms \\
+A NativeDirect & rule\_09 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 3.0 ms \\
+A NativeDirect & rule\_09 & retrodictive & Llama-3.1-8B & \color{gray}FAIL & 1658.1 ms \\
+A NativeDirect & rule\_09 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 916.8 ms \\
+A NativeDirect & rule\_09 & forward & Synapse & \textbf{\color{passgreen}PASS} & 142.9 ms \\
+A NativeDirect & rule\_09 & forward & Llama-3.1-8B & \color{gray}FAIL & 814.8 ms \\
+A NativeDirect & rule\_09 & forward & Llama-3.2-1B & \color{gray}FAIL & 732.1 ms \\
+A NativeDirect & rule\_10 & retrodictive & Synapse & \textbf{\color{passgreen}PASS} & 294.0 ms \\
+A NativeDirect & rule\_10 & retrodictive & Llama-3.1-8B & \color{gray}FAIL & 1692.5 ms \\
+A NativeDirect & rule\_10 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 1117.5 ms \\
+A NativeDirect & rule\_10 & forward & Synapse & \textbf{\color{passgreen}PASS} & 125.9 ms \\
+A NativeDirect & rule\_10 & forward & Llama-3.1-8B & \color{gray}FAIL & 1699.1 ms \\
+A NativeDirect & rule\_10 & forward & Llama-3.2-1B & \color{gray}FAIL & 989.8 ms \\
+B PromptReFeed & rule\_01 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 126.9 ms \\
+B PromptReFeed & rule\_01 & retrodictive & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 77.7 ms \\
+B PromptReFeed & rule\_01 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 64.3 ms \\
+B PromptReFeed & rule\_01 & forward & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 53.8 ms \\
+B PromptReFeed & rule\_02 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 49.6 ms \\
+B PromptReFeed & rule\_02 & retrodictive & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 48.1 ms \\
+B PromptReFeed & rule\_02 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 86.8 ms \\
+B PromptReFeed & rule\_02 & forward & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 39.8 ms \\
+B PromptReFeed & rule\_03 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 68.4 ms \\
+B PromptReFeed & rule\_03 & retrodictive & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 44.8 ms \\
+B PromptReFeed & rule\_03 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 90.2 ms \\
+B PromptReFeed & rule\_03 & forward & Llama-3.2-1B & \color{gray}FAIL & 51.9 ms \\
+B PromptReFeed & rule\_04 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 43.6 ms \\
+B PromptReFeed & rule\_04 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 50.3 ms \\
+B PromptReFeed & rule\_04 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 75.4 ms \\
+B PromptReFeed & rule\_04 & forward & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 39.6 ms \\
+B PromptReFeed & rule\_05 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 76.1 ms \\
+B PromptReFeed & rule\_05 & retrodictive & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 46.7 ms \\
+B PromptReFeed & rule\_05 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 81.7 ms \\
+B PromptReFeed & rule\_05 & forward & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 41.6 ms \\
+B PromptReFeed & rule\_06 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 51.2 ms \\
+B PromptReFeed & rule\_06 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 31.6 ms \\
+B PromptReFeed & rule\_06 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 74.3 ms \\
+B PromptReFeed & rule\_06 & forward & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 86.1 ms \\
+B PromptReFeed & rule\_07 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 47.5 ms \\
+B PromptReFeed & rule\_07 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 46.8 ms \\
+B PromptReFeed & rule\_07 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 62.6 ms \\
+B PromptReFeed & rule\_07 & forward & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 49.3 ms \\
+B PromptReFeed & rule\_08 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 82.1 ms \\
+B PromptReFeed & rule\_08 & retrodictive & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 66.0 ms \\
+B PromptReFeed & rule\_08 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 64.8 ms \\
+B PromptReFeed & rule\_08 & forward & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 67.5 ms \\
+B PromptReFeed & rule\_09 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 63.0 ms \\
+B PromptReFeed & rule\_09 & retrodictive & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 52.2 ms \\
+B PromptReFeed & rule\_09 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 77.5 ms \\
+B PromptReFeed & rule\_09 & forward & Llama-3.2-1B & \color{gray}FAIL & 23.2 ms \\
+B PromptReFeed & rule\_10 & retrodictive & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 65.3 ms \\
+B PromptReFeed & rule\_10 & retrodictive & Llama-3.2-1B & \color{gray}FAIL & 59.9 ms \\
+B PromptReFeed & rule\_10 & forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 64.2 ms \\
+B PromptReFeed & rule\_10 & forward & Llama-3.2-1B & \textbf{\color{passgreen}PASS} & 70.7 ms \\
+C OnlineRevision & rule\_01 & revision\_forward & Synapse & \color{gray}FAIL & 191.8 ms \\
+C OnlineRevision & rule\_01 & revision\_forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 55.3 ms \\
+C OnlineRevision & rule\_02 & revision\_forward & Synapse & \color{gray}FAIL & 4.8 ms \\
+C OnlineRevision & rule\_02 & revision\_forward & Llama-3.1-8B & \textbf{\color{passgreen}PASS} & 58.6 ms \\
+\end{longtable}
+\vspace{-0.5em}
+\captionof{table}{Part C Lifelong Persistence \& Continual Memory Complete Scorecard.}
+}
+
+\vspace{0.8em}
+\subsection*{Appendix D: Part D Architectural Stress Battery Ledger}
+\noindent\textsf{\footnotesize Source Dataset: \path{benchmark_data/part_d_architectural_stress_scorecard.csv} (7 architectural failure-mode stress tests)}
+\vspace{0.2em}
+
+{\footnotesize\sffamily
+\rowcolors{2}{rowgray}{white}
+\noindent\begin{tabularx}{\textwidth}{p{3.8cm} p{3.5cm} c X}
+\toprule
+\textbf{\color{brandnavy}Test Name} & \textbf{\color{brandnavy}Stress Condition} & \textbf{\color{brandnavy}Result} & \textbf{\color{brandnavy}Architectural Diagnosis \& Details} \\
+\midrule
+Multi-Hop Causal Chains & 4-Hop Transitive Reasoning & \textbf{\color{darkslate}PARTIAL} & 1-Hop immediate retrodiction passed; multi-hop requires recursive traversal \\
+Fan-In Confluence & 3 Converging Causes to 1 Effect & \textbf{\color{passgreen}PASS} & Synthesized Spark, Gas Leak, and Static Discharge into fluent natural language \\
+Fan-Out Divergence & 1 Cause to 3 Divergent Effects & \textbf{\color{passgreen}PASS} & Synthesized Blackout, Pump Shutdown, and Data Loss with Oxford comma \\
+Causal Asymmetry & Anti-Reversal Directionality Check & \textbf{\color{passgreen}PASS} & Strictly rejected backward causality without hallucinations \\
+OOD Hallucination Resistance & Unseen Physical Concepts & \textbf{\color{passgreen}PASS} & Zero hallucination; emitted Socratic clarification inquiries \\
+Messy Prose Relation Extraction & Causal Needle in Complex Engineering Paragraph & \textbf{\color{red}FAIL} & Symbolic parser failed to segment causal clause from dense prose (Parser Boundary) \\
+High-Density Scaling & 50 Interlocking Causal Pairs Back-to-Back & \textbf{\color{darkslate}PARTIAL} & Ingested in 2.5s; recalled rules 1-40; dropped rules beyond buffer capacity (\textgreater{}40) \\
+\bottomrule
+\end{tabularx}
+\vspace{0.2em}
+\captionof{table}{Part D Architectural Stress Battery: Edge cases and architectural boundaries.}
+}
+
+\vspace{0.6em}
+\noindent{\color{bordergray}\hrule height 0.75pt}
+\vspace{0.2em}
+\noindent{\footnotesize\textsf{\color{gray}Appendix transcription verified against cryptographic SHA-256 ledger. Benchmark datasets and hardware telemetry are archived for empirical verification.}}

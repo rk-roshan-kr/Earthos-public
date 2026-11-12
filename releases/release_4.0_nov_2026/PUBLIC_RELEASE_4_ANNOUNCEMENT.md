@@ -105,6 +105,9 @@ Part A evaluated 150 unique, peer-reviewed probes across three models (450 total
 
 _Table 1: Official Part A Performance Summary across 450 execution traces._
 
+![Figure 1: Official Academic Baselines Comparison across 450 Probes](figures/fig1_academic_baselines.png)
+_Figure 1: Official academic baselines scorecard comparison across 450 evaluation probes in Part A._
+
 > **Methodological Clarification on Table 1 Metrics:**
 > - **The 8.0% CLADDER Score (Deterministic Refusal vs. Random Guessing):** Standard CLADDER probes primarily present binary causal choices where ungrounded random guessing yields an expected score of ~50.0% (as observed with Llama-3.2-1B at 48.0%). Synapse was evaluated strictly zero-shot with zero pre-loaded domain knowledge; it accurately resolved the 8.0% of probes that matched explicit causal relations and deterministically returned _"No direct causal path exists"_ on the remaining 92.0% of probes (a 0.0% hallucination rate). Academic evaluation harnesses score all non-affirmative responses as incorrect, penalizing epistemic honesty relative to random guessing.
 > - **The HumanEval 74-Second Latency:** The recorded 74,468 ms latency represents the full external test-harness timeout and multi-probe execution budget across the 25 Python sandbox runs, rather than internal factor-graph traversal latency (which operates deterministically in sub-10 ms).
@@ -144,6 +147,9 @@ Part B evaluated the scaling behavior of Transformer Self-Attention against Syna
 
 _Table 2: Part B Physical Telemetry: Uncompressed FP16 context scaling on an RTX 5070 Ti (16 GB GDDR7). Tier 5 query latency ranged from 151.8s to 160.2s across needle depths (mean: 155.5s)._
 
+![Figure 2: Physical Scaling Limits of Full Dense Attention](figures/fig2_context_horizon_scaling.png)
+_Figure 2: Physical scaling limits of full dense attention across extended context horizons (Part B). (a) Query latency scaling divergence up to 100,000 words. (b) Hardware saturation ceiling on consumer hardware (16 GB VRAM and 300W board power)._
+
 ### The Physical Ceiling of Consumer Hardware:
 
 1. **VRAM Saturation at 99.2%**:
@@ -181,6 +187,9 @@ In Part C, the benchmark evaluated the **core architectural characteristic of Sy
 | Llama-3.2-1B (GPU)       | Condition B (Prompt Re-feed Baseline)         |   70.0% (14/20)    |    52.1 ms     | 176.2 W                       |
 
 _Table 3: Part C Scorecard: Continuous persistence across 20 diagnostic probes after 100,005 words of streaming prose._
+
+![Figure 3: Lifelong Persistence vs Stateless Amnesia](figures/fig3_lifelong_persistence.png)
+_Figure 3: Lifelong persistence comparison after 100,005 words of continuous literary prose (Part C). (a) Causal recall accuracy under Condition A (direct querying without transcript history) and Condition B (re-feeding transcript). (b) Median query latency and board power burden._
 
 ### 5.1 Empirical Execution Trace: Stateful Rule Ingestion, Background Streaming, and Direct Retrodiction
 
@@ -292,6 +301,9 @@ This head-to-head empirical benchmark establishes the definitive deployment taxo
 | • Strictly enforces causal directionality ($A \to B \not\implies B \to A$) | • Severe 300W / 16GB hardware wall at long context  |
 
 _Table 5: The Brain & The Mouth Deployment Taxonomy._
+
+![Figure 4: The Sovereign Brain & Mouth Architecture](figures/fig4_brain_and_mouth_architecture.png)
+_Figure 4: Architectural division of labor between the neural foundation model (The Mouth) and the active inference factor-graph organism (The Brain)._
 
 ### When to Use What:
 
